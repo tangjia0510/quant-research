@@ -1,0 +1,42 @@
+{
+  "formula_checks": [
+    {
+      "factor": "R1_band_volume_trend",
+      "independent_formula_match": true,
+      "scale_invariant": true,
+      "compared_rows": 20496,
+      "changed_fraction": 0.0,
+      "max_abs_change": 5.10489428506844e-11
+    },
+    {
+      "factor": "R1_range_pos20",
+      "independent_formula_match": true,
+      "scale_invariant": true,
+      "compared_rows": 20496,
+      "changed_fraction": 0.0,
+      "max_abs_change": 4.871103520542874e-15
+    },
+    {
+      "factor": "R2_band_dir_persist",
+      "independent_formula_match": true,
+      "scale_invariant": true,
+      "compared_rows": 20190,
+      "changed_fraction": 0.0,
+      "max_abs_change": 0.0
+    },
+    {
+      "factor": "R2_expand_on_volume",
+      "independent_formula_match": true,
+      "scale_invariant": false,
+      "compared_rows": 20326,
+      "changed_fraction": 0.827560759618223,
+      "max_abs_change": 69.91935859398335
+    }
+  ],
+  "date_filter_repair_preserved_existing_values": true,
+  "normalization_change": "Different positive scale per instrument for adjusted OHLC and factor; inverse scale for volume. Restored raw prices unchanged.",
+  "scale_sensitive_factors": [
+    "R2_expand_on_volume"
+  ],
+  "interpretation": "Scale dependence is a robustness limitation, not a future-data leak. Do not change the frozen candidate or selection after observing replay results."
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "factor_id": "return_5",
+  "version": "1.0.0",
+  "display_name": "return_5",
+  "aliases": [],
+  "description": "Five-session close return.",
+  "formula": "C[t] / C[t-5] - 1",
+  "max_lookback": 6,
+  "scale_invariant": true,
+  "status": "accepted",
+  "output_columns": [
+    "return_5"
+  ],
+  "parameters": {},
+  "limitations": [
+    "Implementation availability and historical checks do not establish profitable or stable out-of-sample returns.",
+    "Rolling windows require all observations (min_periods equals window); missing inputs and warmup rows remain missing."
+  ],
+  "source": {
+    "kind": "builtin",
+    "studies": [],
+    "original_path": "scripts/quantlib/factors.py",
+    "original_sha256": "688b40cd0cf8aea3eae239b992aa391ff62fe7a53c595eecab16ae4156fe885e",
+    "original_snapshot": "provenance/original.py",
+    "adapter_sha256": "3125952d7a8680b22790c85536aed9dc788de4c52e07be7bba6439c0f45e5c27"
+  },
+  "validation_context": {
+    "historical": {
+      "source": "quant-research builtin implementation"
+    },
+    "adapter_validation": {
+      "status": "passed",
+      "kind": "numerical parity against source",
+      "evidence": "provenance/adapter-parity.json",
+      "evidence_sha256": "8c780eae9fde2d013b89bf349b632eff7d8c8846026bc5955d55c6ccf8ca50e0",
+      "scope": "Implementation parity only; no performance test, selection or profitability conclusion.",
+      "causality_and_worker_checks": "Run factor validate to record current-runtime contract checks separately."
+    },
+    "research_effectiveness": "not established"
+  }
+}

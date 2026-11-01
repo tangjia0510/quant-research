@@ -1,0 +1,53 @@
+{
+  "frozen_at": "2026-10-29T23:01:21.954634+08:00",
+  "factors": [
+    {
+      "name": "R1_band_volume_trend",
+      "round": 1,
+      "path": "configs/factors/R1_band_volume_trend.py",
+      "sha256": "d11bb30ce0a9ad3337632123478b651742b5a02ebad96c82d111f7304d41efdb",
+      "description": "[量价交互因子] 带内位置与量能比交互：z20与20日均量比的乘积，检验量能放大时带位置偏离是否具有增量信息。",
+      "formulation": "\\text{band\\_volume\\_trend} = z_{20} \\times \\frac{V_t}{\\mathrm{mean}(V_{t-19..t})}"
+    },
+    {
+      "name": "R1_range_pos20",
+      "round": 1,
+      "path": "configs/factors/R1_range_pos20.py",
+      "sha256": "de978f99bca6f0c09a9cc7bde2bdf3fbdf062ec43a1f470ed0a9be1251319bd6",
+      "description": "[位置因子] 20日高低价通道内相对位置：(close-lowest20)/(highest20-lowest20)，与z20的均值偏离信息互补。",
+      "formulation": "\\text{range\\_pos20} = \\frac{C_t - L_{20}}{H_{20} - L_{20}}"
+    },
+    {
+      "name": "R2_band_dir_persist",
+      "round": 2,
+      "path": "configs/factors/R2_band_dir_persist.py",
+      "sha256": "f32f2d83e1d996a2313a3d6f2432e8d227314f871037cf8425e995e70ad75c8a",
+      "description": "[趋势持续性因子] 布林带内方向符号的持续性：sign(close-SMA20) 的10日滚动均值，取值[-1,1]，衡量价格在带内方向的时间持续性，与z20的水平信息维度正交。",
+      "formulation": "\\text{band\\_dir\\_persist} = \\frac{1}{10}\\sum_{i=0}^{9} \\operatorname{sign}(C_{t-i} - \\mathrm{SMA}_{20,t-i})"
+    },
+    {
+      "name": "R2_expand_on_volume",
+      "round": 2,
+      "path": "configs/factors/R2_expand_on_volume.py",
+      "sha256": "6740fe7cca62754d5aa36b44bc04f78731408249b91a1df383d878a93825a97f",
+      "description": "[带宽-量能交互因子] 带宽5日变化（扩张方向）与5日平滑量比的乘积，用平滑抑制当日量噪声，检验放量伴随带宽扩张是否含增量信息。",
+      "formulation": "\\text{expand\\_on\\_volume} = \\left( \\mathrm{width}_{20,t} - \\mathrm{width}_{20,t-5} \\right) \\times \\frac{1}{5}\\sum_{i=0}^{4} \\frac{V_{t-i}}{\\mathrm{mean}(V_{t-19..t-i})}"
+    }
+  ],
+  "factor_map": {
+    "XGB_Alpha20_BB_RD1": [
+      "R1_band_volume_trend",
+      "R1_range_pos20"
+    ],
+    "XGB_Alpha20_BB_RD2": [
+      "R2_band_dir_persist",
+      "R2_expand_on_volume"
+    ]
+  },
+  "primary_variant": "XGB_Alpha20_BB_RD2",
+  "selection_rule": "highest positive 2021 mean RankIC increment; otherwise baseline",
+  "discovery_feedback_year": 2021,
+  "final_test_seen_by_agent": false,
+  "rounds_completed": 2,
+  "embedding_calls": 0
+}

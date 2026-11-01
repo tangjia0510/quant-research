@@ -1,0 +1,6 @@
+interface:
+  display_name: "Quant Research"
+  short_description: "Reproducible factor, model and report research with Qlib"
+  default_prompt: "Use $quant-research to investigate a quantitative hypothesis using my data, record the experiments, and produce a reproducible evidence report."
+policy:
+  allow_implicit_invocation: true

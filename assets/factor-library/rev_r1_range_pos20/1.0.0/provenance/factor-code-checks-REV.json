@@ -1,0 +1,28 @@
+[
+  {
+    "factor": "REV_R1_VOL_DRYUP5",
+    "future_perturbation_invariant": true,
+    "max_60_session_window_verified_dates": [
+      "2020-12-31",
+      "2021-06-30",
+      "2021-12-31"
+    ],
+    "code_io_gate": true,
+    "scale_invariant": true,
+    "discovery_max_date": "2021-12-31 00:00:00",
+    "rows": 1081372
+  },
+  {
+    "factor": "REV_R1_RANGE_POS20",
+    "future_perturbation_invariant": true,
+    "max_60_session_window_verified_dates": [
+      "2020-12-31",
+      "2021-06-30",
+      "2021-12-31"
+    ],
+    "code_io_gate": true,
+    "scale_invariant": true,
+    "discovery_max_date": "2021-12-31 00:00:00",
+    "rows": 1081372
+  }
+]

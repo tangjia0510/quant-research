@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "validation_kind": "adapter_parity",
+  "status": "passed",
+  "tested_at": "2026-11-01T09:10:46.038213+00:00",
+  "factor_id": "rev_r1_vol_dryup5",
+  "version": "1.0.0",
+  "method": "Execute preserved original.py; intercept only pandas HDF5 read/write to supply the same data and capture the output; no formula extraction or rewriting.",
+  "input": {
+    "dataset_id": "cn-csi300-pv-panel",
+    "dataset_version": "derived-2026-10-29",
+    "manifest_sha256": "f2afd4efea0010b28192697891882abc44ec8b51b334bb95f57c999d29b9d1fd",
+    "start": "2021-01-01",
+    "end": "2021-12-31",
+    "rows": 161168,
+    "instruments": 671,
+    "dtypes": {
+      "open": "float32",
+      "high": "float32",
+      "low": "float32",
+      "close": "float32",
+      "volume": "float32",
+      "factor": "float32"
+    }
+  },
+  "result": {
+    "preserves_index": true,
+    "missing_mask_equal": true,
+    "finite_values": 157783,
+    "max_absolute_difference": 0.0,
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  "runtime": {
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3"
+  },
+  "scope": "Implementation parity only; no performance test, selection or profitability conclusion."
+}

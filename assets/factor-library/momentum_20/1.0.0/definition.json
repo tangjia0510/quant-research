@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "factor_id": "momentum_20",
+  "version": "1.0.0",
+  "display_name": "momentum_20",
+  "aliases": [],
+  "description": "Twenty-session close return.",
+  "formula": "C[t] / C[t-20] - 1",
+  "max_lookback": 21,
+  "scale_invariant": true,
+  "status": "accepted",
+  "output_columns": [
+    "momentum_20"
+  ],
+  "parameters": {},
+  "limitations": [
+    "Implementation availability and historical checks do not establish profitable or stable out-of-sample returns.",
+    "Rolling windows require all observations (min_periods equals window); missing inputs and warmup rows remain missing."
+  ],
+  "source": {
+    "kind": "builtin",
+    "studies": [],
+    "original_path": "scripts/quantlib/factors.py",
+    "original_sha256": "688b40cd0cf8aea3eae239b992aa391ff62fe7a53c595eecab16ae4156fe885e",
+    "original_snapshot": "provenance/original.py",
+    "adapter_sha256": "8c3ff6fc796e96e9642ef22f1cf9879edec357c575ed3ffea7068518a51e8405"
+  },
+  "validation_context": {
+    "historical": {
+      "source": "quant-research builtin implementation"
+    },
+    "adapter_validation": {
+      "status": "passed",
+      "kind": "numerical parity against source",
+      "evidence": "provenance/adapter-parity.json",
+      "evidence_sha256": "ba785c675d5b51ededc31215ae7ba38b2ab9e79b6d5bc3b127169ce30ec05f85",
+      "scope": "Implementation parity only; no performance test, selection or profitability conclusion.",
+      "causality_and_worker_checks": "Run factor validate to record current-runtime contract checks separately."
+    },
+    "research_effectiveness": "not established"
+  }
+}

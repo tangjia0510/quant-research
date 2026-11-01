@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "factor_id": "r2_band_dir_persist",
+  "version": "1.0.0",
+  "display_name": "R2_band_dir_persist",
+  "aliases": [
+    "R2_band_dir_persist"
+  ],
+  "description": "[趋势持续性因子] 布林带内方向符号的持续性：sign(close-SMA20) 的10日滚动均值，取值[-1,1]，衡量价格在带内方向的时间持续性，与z20的水平信息维度正交。",
+  "formula": "rolling_mean(sign(close-SMA20),10)",
+  "max_lookback": 29,
+  "scale_invariant": true,
+  "status": "accepted",
+  "output_columns": [
+    "band_dir_persist"
+  ],
+  "parameters": {},
+  "limitations": [
+    "Implementation availability and historical checks do not establish profitable or stable out-of-sample returns.",
+    "Rolling windows require all observations (min_periods equals window); missing inputs and warmup rows remain missing."
+  ],
+  "source": {
+    "kind": "historical",
+    "studies": [
+      "20261101-084832Z-archive-rd-bollinger-xgboost-2026-04b7d2"
+    ],
+    "original_path": "configs/factors/R2_band_dir_persist.py",
+    "original_sha256": "f32f2d83e1d996a2313a3d6f2432e8d227314f871037cf8425e995e70ad75c8a",
+    "original_snapshot": "provenance/original.py",
+    "adapter_sha256": "688f925ee3312c9ee02ac0192166d7ffe96cb9ab614ad009d1cf61f53264429f"
+  },
+  "validation_context": {
+    "historical": {
+      "frozen_at": "2026-10-29T23:01:21.954634+08:00",
+      "accepted_in_original_freeze": true,
+      "original_sha256_verified": true,
+      "evidence_files": [
+        {
+          "path": "provenance/factor-freeze.json",
+          "sha256": "1076ec780258defb53d5b01848c71ba4c10305afdb3dab6399c38908a43625ff",
+          "origin": "20261101-084832Z-archive-rd-bollinger-xgboost-2026-04b7d2/original/results/factor-freeze.json"
+        },
+        {
+          "path": "provenance/factor-math-checks.json",
+          "sha256": "1ad7e4ce939d0b7da9e58491e461d8f53a798b08281ca83ccf536cd30cc6360a",
+          "origin": "20261101-084832Z-archive-rd-bollinger-xgboost-2026-04b7d2/original/results/factor-math-checks.json"
+        },
+        {
+          "path": "provenance/factor-code-checks-round-2.json",
+          "sha256": "925d45b7781af296ec26a3ceab56138d03f732a7f67692fdb1916bba9fc1f90d",
+          "origin": "20261101-084832Z-archive-rd-bollinger-xgboost-2026-04b7d2/original/results/factor-code-checks-round-2.json"
+        },
+        {
+          "path": "provenance/technical-repair.json",
+          "sha256": "4de133148006fb7e1f3eb887bdae2fdeb7dbb5c150ca088bbf7eb9b95be46a9e",
+          "origin": "20261101-084832Z-archive-rd-bollinger-xgboost-2026-04b7d2/original/results/technical-repair.json"
+        }
+      ]
+    },
+    "adapter_validation": {
+      "status": "passed",
+      "kind": "numerical parity against source",
+      "evidence": "provenance/adapter-parity.json",
+      "evidence_sha256": "ed5468332005037f5d55f14018f8e3a53cf1fc22e681fa5f80bfc67404bf1dee",
+      "scope": "Implementation parity only; no performance test, selection or profitability conclusion.",
+      "causality_and_worker_checks": "Run factor validate to record current-runtime contract checks separately."
+    },
+    "research_effectiveness": "not established"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "factor_id": "rev_r1_vol_dryup5",
+  "version": "1.0.0",
+  "display_name": "REV_R1_VOL_DRYUP5",
+  "aliases": [
+    "REV_R1_VOL_DRYUP5"
+  ],
+  "description": "[量能萎缩因子] 当日成交量相对过去5日均量的比值，衡量恐慌性放量后的量能退潮程度。假设：超卖状态下若当日量能相对萎缩（比值<1），卖压耗尽、反弹更易持续。无量纲，对股价同比例缩放不变，对成交量按1/常数缩放不变。",
+  "formula": "volume / rolling_mean(volume,5)",
+  "max_lookback": 5,
+  "scale_invariant": true,
+  "status": "accepted",
+  "output_columns": [
+    "VOL_DRYUP5"
+  ],
+  "parameters": {},
+  "limitations": [
+    "Implementation availability and historical checks do not establish profitable or stable out-of-sample returns.",
+    "Rolling windows require all observations (min_periods equals window); missing inputs and warmup rows remain missing.",
+    "The initial REV completion failure and subsequent format recovery remain historical records; the accepted frozen formula is preserved unchanged."
+  ],
+  "source": {
+    "kind": "historical",
+    "studies": [
+      "20261101-084846Z-archive-qlib-strategy-discovery-2026-ac666a"
+    ],
+    "original_path": "configs/factors/REV_R1_VOL_DRYUP5.py",
+    "original_sha256": "8a7dfad9d1d94bfb1fdbdafa2f1b5e06ff108f9c0d96406eb7eeb0294daa2459",
+    "original_snapshot": "provenance/original.py",
+    "adapter_sha256": "c824f3847c509b5f1a6b3339a2d38462072bec9d68c7d190fcc7dd03c72605f8"
+  },
+  "validation_context": {
+    "historical": {
+      "frozen_at": "2026-10-30T00:14:56.887874+08:00",
+      "accepted_in_original_freeze": true,
+      "original_sha256_verified": true,
+      "evidence_files": [
+        {
+          "path": "provenance/factor-freeze.json",
+          "sha256": "3bf8c2646ba78cdc35ac68427caf2a2434521e973b82949fc6e79c8a204330bd",
+          "origin": "20261101-084846Z-archive-qlib-strategy-discovery-2026-ac666a/original/results/factor-freeze.json"
+        },
+        {
+          "path": "provenance/factor-math-checks.json",
+          "sha256": "c3e3afb00e765f7306bd9c925855691cde1b09eaf1b6d37beb17da66e5410a55",
+          "origin": "20261101-084846Z-archive-qlib-strategy-discovery-2026-ac666a/original/results/factor-math-checks.json"
+        },
+        {
+          "path": "provenance/factor-code-checks-REV.json",
+          "sha256": "0a07b1b202acb8bf55858024137609077440e7f39ac2129b42485947db4c32fa",
+          "origin": "20261101-084846Z-archive-qlib-strategy-discovery-2026-ac666a/original/results/factor-code-checks-REV.json"
+        },
+        {
+          "path": "provenance/format-recovery-checks.json",
+          "sha256": "f106a063bc354df39e50a6bdb50936b177bad6bca3ff2a33c53463c23912e06c",
+          "origin": "20261101-084846Z-archive-qlib-strategy-discovery-2026-ac666a/original/results/format-recovery-checks.json"
+        },
+        {
+          "path": "provenance/agent-completion-REV-initial-failure.json",
+          "sha256": "eadd39a7bf44e12dd4d65e11e856c630c0b11085d8e84ae52453702289d0c145",
+          "origin": "20261101-084846Z-archive-qlib-strategy-discovery-2026-ac666a/original/results/agent-completion-REV-initial-failure.json"
+        }
+      ]
+    },
+    "adapter_validation": {
+      "status": "passed",
+      "kind": "numerical parity against source",
+      "evidence": "provenance/adapter-parity.json",
+      "evidence_sha256": "08d7ad99667aa86c2fbd211fc4b5b9d65219613c3913a8434b31ca4a20080024",
+      "scope": "Implementation parity only; no performance test, selection or profitability conclusion.",
+      "causality_and_worker_checks": "Run factor validate to record current-runtime contract checks separately."
+    },
+    "research_effectiveness": "not established"
+  },
+  "formula_family": "volume-ratio-5",
+  "equivalence_note": "Shares the same mathematical volume-ratio formula with volume_ratio_5 and rev_r1_vol_dryup5. Separate IDs preserve provenance and numerical source behavior; do not count them as independent signals."
+}

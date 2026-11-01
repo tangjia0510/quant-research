@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "factor_id": "r1_band_volume_trend",
+  "version": "1.0.0",
+  "display_name": "R1_band_volume_trend",
+  "aliases": [
+    "R1_band_volume_trend"
+  ],
+  "description": "[量价交互因子] 带内位置与量能比交互：z20与20日均量比的乘积，检验量能放大时带位置偏离是否具有增量信息。",
+  "formula": "((close-SMA20)/(2*population_std20)) * (volume/SMA20(volume))",
+  "max_lookback": 20,
+  "scale_invariant": true,
+  "status": "accepted",
+  "output_columns": [
+    "band_volume_trend"
+  ],
+  "parameters": {},
+  "limitations": [
+    "Implementation availability and historical checks do not establish profitable or stable out-of-sample returns.",
+    "Rolling windows require all observations (min_periods equals window); missing inputs and warmup rows remain missing.",
+    "Uses the final frozen source after removing an invalid hardcoded date filter; the rejected first attempt and repair hashes are retained in provenance/technical-repair.json and the original archive."
+  ],
+  "source": {
+    "kind": "historical",
+    "studies": [
+      "20261101-084832Z-archive-rd-bollinger-xgboost-2026-04b7d2"
+    ],
+    "original_path": "configs/factors/R1_band_volume_trend.py",
+    "original_sha256": "d11bb30ce0a9ad3337632123478b651742b5a02ebad96c82d111f7304d41efdb",
+    "original_snapshot": "provenance/original.py",
+    "adapter_sha256": "87593612dd4520c7d74812d63ec49a2f96b2a886cf7e1f84ea9523586a825f25"
+  },
+  "validation_context": {
+    "historical": {
+      "frozen_at": "2026-10-29T23:01:21.954634+08:00",
+      "accepted_in_original_freeze": true,
+      "original_sha256_verified": true,
+      "evidence_files": [
+        {
+          "path": "provenance/factor-freeze.json",
+          "sha256": "1076ec780258defb53d5b01848c71ba4c10305afdb3dab6399c38908a43625ff",
+          "origin": "20261101-084832Z-archive-rd-bollinger-xgboost-2026-04b7d2/original/results/factor-freeze.json"
+        },
+        {
+          "path": "provenance/factor-math-checks.json",
+          "sha256": "1ad7e4ce939d0b7da9e58491e461d8f53a798b08281ca83ccf536cd30cc6360a",
+          "origin": "20261101-084832Z-archive-rd-bollinger-xgboost-2026-04b7d2/original/results/factor-math-checks.json"
+        },
+        {
+          "path": "provenance/factor-code-checks-round-1.json",
+          "sha256": "d52a5504a5ba188ea321133ad0723daa87f3c3b796c0cbf7651cd7c72c04c936",
+          "origin": "20261101-084832Z-archive-rd-bollinger-xgboost-2026-04b7d2/original/results/factor-code-checks-round-1.json"
+        },
+        {
+          "path": "provenance/technical-repair.json",
+          "sha256": "4de133148006fb7e1f3eb887bdae2fdeb7dbb5c150ca088bbf7eb9b95be46a9e",
+          "origin": "20261101-084832Z-archive-rd-bollinger-xgboost-2026-04b7d2/original/results/technical-repair.json"
+        }
+      ]
+    },
+    "adapter_validation": {
+      "status": "passed",
+      "kind": "numerical parity against source",
+      "evidence": "provenance/adapter-parity.json",
+      "evidence_sha256": "0adbafeeda49ff6b801e1ccb109417cf2bdbc375066b705a3e0fa85f44754a05",
+      "scope": "Implementation parity only; no performance test, selection or profitability conclusion.",
+      "causality_and_worker_checks": "Run factor validate to record current-runtime contract checks separately."
+    },
+    "research_effectiveness": "not established"
+  }
+}

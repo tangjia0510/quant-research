@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "factor_id": "squeeze20_40",
+  "version": "1.0.0",
+  "display_name": "squeeze20_40",
+  "aliases": [],
+  "description": "[Volatility-Regime / Band-Squeeze Factor] Ratio of the current 20-session population standard deviation to its own trailing 40-session rolling mean. Values below 1 indicate the bands are currently tighter than their recent norms (squeeze regime); the ratio is scalar and interpretable. The lookback is corrected from the rejected version: the outer trailing mean window is reduced from 60 to 40 sessions so the total consumed history is 20 + 40 - 1 = 59 sessions, satisfying the 60-session cap with ALL rolling min_periods equal to their full window. No additional parameters beyond the fixed 20/2 band are introduced.",
+  "formula": "population_std(close,20) / rolling_mean(population_std(close,20),40)",
+  "max_lookback": 59,
+  "scale_invariant": true,
+  "status": "accepted",
+  "output_columns": [
+    "squeeze20_40"
+  ],
+  "parameters": {},
+  "limitations": [
+    "Implementation availability and historical checks do not establish profitable or stable out-of-sample returns.",
+    "Rolling windows require all observations (min_periods equals window); missing inputs and warmup rows remain missing.",
+    "Original 20/60 proposal consumed79 prices and was rejected under the historical60-observation cap; accepted20/40 formula consumes59. The earlier pctB20/deltaB20_5/squeeze20_60 proposal rejection remains in provenance/proposal-rejections.json."
+  ],
+  "source": {
+    "kind": "historical",
+    "studies": [
+      "20261101-084342Z-archive-rd-bollinger-study-18e283",
+      "20261101-084815Z-archive-rd-bollinger-study-2026-5d0bf0"
+    ],
+    "original_path": "configs/factors/squeeze20_40.py",
+    "original_sha256": "969d0d0c6fb08331c5e101efffd9299a584dd9f5bd58bda0c30f491f84d49537",
+    "original_snapshot": "provenance/original.py",
+    "adapter_sha256": "12d75162bb2115ecf6d9f2077f9116acf41305563ec18a9f0388ee97231bbd83"
+  },
+  "validation_context": {
+    "historical": {
+      "frozen_at": "2026-10-29T16:43:18+0800",
+      "accepted_in_original_freeze": true,
+      "original_sha256_verified": true,
+      "evidence_files": [
+        {
+          "path": "provenance/factor-freeze.json",
+          "sha256": "4b758d4e423e07c51cbfc4bad12371b288ba01d063772e64ff5e6b281fb247db",
+          "origin": "20261101-084342Z-archive-rd-bollinger-study-18e283/original/results/factor-freeze.json"
+        },
+        {
+          "path": "provenance/factor-code-checks.json",
+          "sha256": "791c457a7314e8c9c55bde056094303e6de4377c19593b5856fb585fdb0a3a8c",
+          "origin": "20261101-084342Z-archive-rd-bollinger-study-18e283/original/results/factor-code-checks.json"
+        },
+        {
+          "path": "provenance/proposal-rejections.json",
+          "sha256": "7372177ad4b0ac992a16c8748018dd2e1b7668e731e1a35f77bc056c30ade161",
+          "origin": "20261101-084342Z-archive-rd-bollinger-study-18e283/original/results/proposal-rejections.json"
+        }
+      ]
+    },
+    "adapter_validation": {
+      "status": "passed",
+      "kind": "numerical parity against source",
+      "evidence": "provenance/adapter-parity.json",
+      "evidence_sha256": "0a6730e52416e175fe0ec359678aff3ff52aac51cffb9682fab3fc405f04163e",
+      "scope": "Implementation parity only; no performance test, selection or profitability conclusion.",
+      "causality_and_worker_checks": "Run factor validate to record current-runtime contract checks separately."
+    },
+    "research_effectiveness": "not established"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "method": "NumPy sliding_window_view; independent from generated pandas groupby code",
+  "rows": 1941037,
+  "checks": [
+    {
+      "factor": "REV_R1_VOL_DRYUP5",
+      "independent_formula_match": true,
+      "finite_rows": 1883671,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "factor": "REV_R1_RANGE_POS20",
+      "independent_formula_match": true,
+      "finite_rows": 1843106,
+      "max_absolute_difference": 0.0
+    }
+  ]
+}

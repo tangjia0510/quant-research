@@ -1,0 +1,26 @@
+[
+  {
+    "factor": "R2_band_dir_persist",
+    "future_perturbation_invariant": true,
+    "max_60_session_window_verified_dates": [
+      "2020-12-31",
+      "2021-06-30",
+      "2021-12-31"
+    ],
+    "code_io_gate": true,
+    "discovery_max_date": "2021-12-31 00:00:00",
+    "rows": 1081372
+  },
+  {
+    "factor": "R2_expand_on_volume",
+    "future_perturbation_invariant": true,
+    "max_60_session_window_verified_dates": [
+      "2020-12-31",
+      "2021-06-30",
+      "2021-12-31"
+    ],
+    "code_io_gate": true,
+    "discovery_max_date": "2021-12-31 00:00:00",
+    "rows": 1081372
+  }
+]

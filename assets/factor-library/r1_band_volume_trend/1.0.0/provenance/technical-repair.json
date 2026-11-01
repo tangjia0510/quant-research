@@ -1,0 +1,12 @@
+{
+  "changes": [
+    {
+      "factor": "band_volume_trend",
+      "before_sha256": "2265fe4c69bf00213815fd44b10d3a47bcb12c664a69ab018979ad55dd073584",
+      "after_sha256": "d11bb30ce0a9ad3337632123478b651742b5a02ebad96c82d111f7304d41efdb",
+      "reason": "Remove hardcoded output date filter; formula unchanged; original invalid feedback excluded"
+    }
+  ],
+  "other_fix": "Provide both gross and net feedback metric keys required by upstream second-round prompt",
+  "replay_results_seen": false
+}

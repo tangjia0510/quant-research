@@ -1,0 +1,41 @@
+{
+  "original_failure": "float32 versus scaled float64 log arithmetic tripped a strict tolerance; it is not evidence of dimensional price dependence.",
+  "confirmed_contract_failure": "TREND_PATH_QUAL55 requires 55 one-day returns plus skip5, hence 61 input price observations, exceeding the frozen 60-observation limit.",
+  "decision": "Entire original TREND RD bundle remains rejected. No new formula, window, proposal or performance evaluation was substituted. Simple and fixed XGB TREND variants still evaluated.",
+  "checks": [
+    {
+      "factor": "TREND_RANGE_POS55",
+      "float64_scale_invariant": true,
+      "max_float64_scale_difference": 2.7755575615628914e-15,
+      "tail_checks": {
+        "60": {
+          "matches": true,
+          "mismatched_rows": 0,
+          "finite_full_values": 29
+        },
+        "61": {
+          "matches": true,
+          "mismatched_rows": 0,
+          "finite_full_values": 29
+        }
+      }
+    },
+    {
+      "factor": "TREND_PATH_QUAL55",
+      "float64_scale_invariant": true,
+      "max_float64_scale_difference": 3.747002708109903e-15,
+      "tail_checks": {
+        "60": {
+          "matches": false,
+          "mismatched_rows": 29,
+          "finite_full_values": 29
+        },
+        "61": {
+          "matches": true,
+          "mismatched_rows": 0,
+          "finite_full_values": 29
+        }
+      }
+    }
+  ]
+}

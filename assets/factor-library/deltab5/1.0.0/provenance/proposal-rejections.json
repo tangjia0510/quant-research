@@ -1,0 +1,17 @@
+[
+  {
+    "stage": "experiment expansion, before any performance evaluation",
+    "source_call": "results/model-calls/1793263048588789000-64ca70.json",
+    "rejected_candidates": [
+      "pctB20",
+      "deltaB20_5",
+      "squeeze20_60"
+    ],
+    "reasons": [
+      "3 factors exceeds max2",
+      "pctB20 is algebraically identical to z20/4+0.5",
+      "nested20 and60 windows require79 observations, exceeding60"
+    ],
+    "action": "resume the same actual hypothesis with technical validation feedback; no post2016 outcomes observed"
+  }
+]

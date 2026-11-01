@@ -1,0 +1,23 @@
+{
+  "frozen_at": "2026-10-29T16:43:18+0800",
+  "factors": [
+    {
+      "name": "deltaB5",
+      "path": "configs/factors/deltaB5.py",
+      "sha256": "ed4b6bdc118c86ad255d840e81e093183357535eb4bf48cbabca4de00a5e7387",
+      "description": "[Bollinger Band-Position Momentum Factor] The 5-session change in Bollinger %B, i.e. the change in the standardized distance of the close from the lower band over the last 5 trading sessions. It is NOT a scalar pctB level (which is just a rescaling of z20); it measures the velocity of movement within the fixed 20/2 band structure, capturing directional persistence or reversion after band excursions. Total historical lookback = 20 + 5 = 25 sessions, well within the 60-session cap. All inputs are adjusted closes observed through the current session only.",
+      "formulation": "\\Delta B_t = \\%B_t - \\%B_{t-5} = \\frac{1}{4}\\left(\\frac{C_t - SMAt{20,t}}{\\sigma_{20,t}} - \\frac{C_{t-5} - SMAt{20,t-5}}{\\sigma_{20,t-5}}\\right), \\quad SMAt{20,t} = \\frac{1}{20}\\sum_{j=0}^{19} C_{t-j}, \\quad \\sigma_{20,t} = \\sqrt{\\frac{1}{20}\\sum_{j=0}^{19}\\left(C_{t-j} - SMAt{20,t}\\right)^2}"
+    },
+    {
+      "name": "squeeze20_40",
+      "path": "configs/factors/squeeze20_40.py",
+      "sha256": "969d0d0c6fb08331c5e101efffd9299a584dd9f5bd58bda0c30f491f84d49537",
+      "description": "[Volatility-Regime / Band-Squeeze Factor] Ratio of the current 20-session population standard deviation to its own trailing 40-session rolling mean. Values below 1 indicate the bands are currently tighter than their recent norms (squeeze regime); the ratio is scalar and interpretable. The lookback is corrected from the rejected version: the outer trailing mean window is reduced from 60 to 40 sessions so the total consumed history is 20 + 40 - 1 = 59 sessions, satisfying the 60-session cap with ALL rolling min_periods equal to their full window. No additional parameters beyond the fixed 20/2 band are introduced.",
+      "formulation": "S_t = \\frac{\\sigma_{20,t}}{\\overline{\\sigma}_{20,t}}, \\quad \\overline{\\sigma}_{20,t} = \\frac{1}{40}\\sum_{j=0}^{39} \\sigma_{20,t-j}, \\quad \\sigma_{20,t} = \\sqrt{\\frac{1}{20}\\sum_{j=0}^{19}\\left(C_{t-j} - SMAt{20,t}\\right)^2}"
+    }
+  ],
+  "discovery_feedback_year": 2016,
+  "final_test_seen": false,
+  "semantic_retrieval": false,
+  "embedding_calls": 0
+}

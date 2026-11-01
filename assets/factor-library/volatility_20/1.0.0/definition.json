@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "factor_id": "volatility_20",
+  "version": "1.0.0",
+  "display_name": "volatility_20",
+  "aliases": [],
+  "description": "Population standard deviation of twenty one-session returns.",
+  "formula": "population_std(daily simple returns, 20)",
+  "max_lookback": 21,
+  "scale_invariant": true,
+  "status": "accepted",
+  "output_columns": [
+    "volatility_20"
+  ],
+  "parameters": {},
+  "limitations": [
+    "Implementation availability and historical checks do not establish profitable or stable out-of-sample returns.",
+    "Rolling windows require all observations (min_periods equals window); missing inputs and warmup rows remain missing."
+  ],
+  "source": {
+    "kind": "builtin",
+    "studies": [],
+    "original_path": "scripts/quantlib/factors.py",
+    "original_sha256": "688b40cd0cf8aea3eae239b992aa391ff62fe7a53c595eecab16ae4156fe885e",
+    "original_snapshot": "provenance/original.py",
+    "adapter_sha256": "33ea411b5ffb6ca5bdfafa3fefd882410da0b404c5d6bf7872e7fe225a72b870"
+  },
+  "validation_context": {
+    "historical": {
+      "source": "quant-research builtin implementation"
+    },
+    "adapter_validation": {
+      "status": "passed",
+      "kind": "numerical parity against source",
+      "evidence": "provenance/adapter-parity.json",
+      "evidence_sha256": "319ec9966f00c909fd1b5b5443418337dc50d400b330d5dc974f4736a5eb3f81",
+      "scope": "Implementation parity only; no performance test, selection or profitability conclusion.",
+      "causality_and_worker_checks": "Run factor validate to record current-runtime contract checks separately."
+    },
+    "research_effectiveness": "not established"
+  }
+}

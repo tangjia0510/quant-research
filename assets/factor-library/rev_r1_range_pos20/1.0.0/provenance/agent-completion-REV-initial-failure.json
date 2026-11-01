@@ -1,0 +1,10 @@
+{
+  "family": "REV",
+  "loops_completed": 0,
+  "records": [],
+  "failure": {
+    "type": "RuntimeError",
+    "reason": "Failed to create chat completion after 2 retries."
+  },
+  "valid_bundle_exists": false
+}

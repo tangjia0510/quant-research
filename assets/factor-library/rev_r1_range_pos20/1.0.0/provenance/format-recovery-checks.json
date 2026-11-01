@@ -1,0 +1,16 @@
+[
+  {
+    "factor": "VOL_DRYUP5",
+    "original_code_sha256": "8a7dfad9d1d94bfb1fdbdafa2f1b5e06ff108f9c0d96406eb7eeb0294daa2459",
+    "formula_unchanged": true,
+    "independent_formula_matches": true,
+    "actual_debug_index_matches": true
+  },
+  {
+    "factor": "RANGE_POS20",
+    "original_code_sha256": "70a58b84716d774abffc791f2493b208d3aef6a4e0ecbdcae7c088fc9a2ab716",
+    "formula_unchanged": true,
+    "independent_formula_matches": true,
+    "actual_debug_index_matches": true
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "factor_id": "r1_range_pos20",
+  "version": "1.0.0",
+  "display_name": "R1_range_pos20",
+  "aliases": [
+    "R1_range_pos20"
+  ],
+  "description": "[位置因子] 20日高低价通道内相对位置：(close-lowest20)/(highest20-lowest20)，与z20的均值偏离信息互补。",
+  "formula": "(close - rolling_min(low,20)) / (rolling_max(high,20) - rolling_min(low,20))",
+  "max_lookback": 20,
+  "scale_invariant": true,
+  "status": "accepted",
+  "output_columns": [
+    "range_pos20"
+  ],
+  "parameters": {},
+  "limitations": [
+    "Implementation availability and historical checks do not establish profitable or stable out-of-sample returns.",
+    "Rolling windows require all observations (min_periods equals window); missing inputs and warmup rows remain missing."
+  ],
+  "source": {
+    "kind": "historical",
+    "studies": [
+      "20261101-084832Z-archive-rd-bollinger-xgboost-2026-04b7d2"
+    ],
+    "original_path": "configs/factors/R1_range_pos20.py",
+    "original_sha256": "de978f99bca6f0c09a9cc7bde2bdf3fbdf062ec43a1f470ed0a9be1251319bd6",
+    "original_snapshot": "provenance/original.py",
+    "adapter_sha256": "ee0603d7fd1ae11b1817751108483091a52dc7f922430674b406948774f9f12c"
+  },
+  "validation_context": {
+    "historical": {
+      "frozen_at": "2026-10-29T23:01:21.954634+08:00",
+      "accepted_in_original_freeze": true,
+      "original_sha256_verified": true,
+      "evidence_files": [
+        {
+          "path": "provenance/factor-freeze.json",
+          "sha256": "1076ec780258defb53d5b01848c71ba4c10305afdb3dab6399c38908a43625ff",
+          "origin": "20261101-084832Z-archive-rd-bollinger-xgboost-2026-04b7d2/original/results/factor-freeze.json"
+        },
+        {
+          "path": "provenance/factor-math-checks.json",
+          "sha256": "1ad7e4ce939d0b7da9e58491e461d8f53a798b08281ca83ccf536cd30cc6360a",
+          "origin": "20261101-084832Z-archive-rd-bollinger-xgboost-2026-04b7d2/original/results/factor-math-checks.json"
+        },
+        {
+          "path": "provenance/factor-code-checks-round-1.json",
+          "sha256": "d52a5504a5ba188ea321133ad0723daa87f3c3b796c0cbf7651cd7c72c04c936",
+          "origin": "20261101-084832Z-archive-rd-bollinger-xgboost-2026-04b7d2/original/results/factor-code-checks-round-1.json"
+        },
+        {
+          "path": "provenance/technical-repair.json",
+          "sha256": "4de133148006fb7e1f3eb887bdae2fdeb7dbb5c150ca088bbf7eb9b95be46a9e",
+          "origin": "20261101-084832Z-archive-rd-bollinger-xgboost-2026-04b7d2/original/results/technical-repair.json"
+        }
+      ]
+    },
+    "adapter_validation": {
+      "status": "passed",
+      "kind": "numerical parity against source",
+      "evidence": "provenance/adapter-parity.json",
+      "evidence_sha256": "86491231f317618d64c85a33165b9bf0da97476a370b89a28cd8cefc4e9dcbee",
+      "scope": "Implementation parity only; no performance test, selection or profitability conclusion.",
+      "causality_and_worker_checks": "Run factor validate to record current-runtime contract checks separately."
+    },
+    "research_effectiveness": "not established"
+  },
+  "formula_family": "range-position-20",
+  "equivalence_note": "Shares the same mathematical high/low channel formula with range_position_20, r1_range_pos20 and rev_r1_range_pos20. Separate IDs retain original source, output name and experiment history; do not count them as independent signals."
+}

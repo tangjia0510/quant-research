@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "factor_id": "volume_ratio_5",
+  "version": "1.0.0",
+  "display_name": "volume_ratio_5",
+  "aliases": [],
+  "description": "Current volume divided by its five-session mean.",
+  "formula": "volume / rolling_mean(volume,5)",
+  "max_lookback": 5,
+  "scale_invariant": true,
+  "status": "accepted",
+  "output_columns": [
+    "volume_ratio_5"
+  ],
+  "parameters": {},
+  "limitations": [
+    "Implementation availability and historical checks do not establish profitable or stable out-of-sample returns.",
+    "Rolling windows require all observations (min_periods equals window); missing inputs and warmup rows remain missing."
+  ],
+  "source": {
+    "kind": "builtin",
+    "studies": [],
+    "original_path": "scripts/quantlib/factors.py",
+    "original_sha256": "688b40cd0cf8aea3eae239b992aa391ff62fe7a53c595eecab16ae4156fe885e",
+    "original_snapshot": "provenance/original.py",
+    "adapter_sha256": "39ad96b8d8fdb200c00ba47698618201fe26ffaceaf74ef78462c385b9777664"
+  },
+  "validation_context": {
+    "historical": {
+      "source": "quant-research builtin implementation"
+    },
+    "adapter_validation": {
+      "status": "passed",
+      "kind": "numerical parity against source",
+      "evidence": "provenance/adapter-parity.json",
+      "evidence_sha256": "1123fbe69bd8e0556f4c51c0ccf1ba202112b87f8dfd9079985ae10757bd2583",
+      "scope": "Implementation parity only; no performance test, selection or profitability conclusion.",
+      "causality_and_worker_checks": "Run factor validate to record current-runtime contract checks separately."
+    },
+    "research_effectiveness": "not established"
+  },
+  "formula_family": "volume-ratio-5",
+  "equivalence_note": "Shares the same mathematical volume-ratio formula with volume_ratio_5 and rev_r1_vol_dryup5. Separate IDs preserve provenance and numerical source behavior; do not count them as independent signals."
+}

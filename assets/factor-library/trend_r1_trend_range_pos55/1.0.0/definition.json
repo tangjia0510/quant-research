@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "factor_id": "trend_r1_trend_range_pos55",
+  "version": "1.0.0",
+  "display_name": "TREND_R1_TREND_RANGE_POS55",
+  "aliases": [
+    "TREND_R1_TREND_RANGE_POS55",
+    "TREND_RANGE_POS55"
+  ],
+  "description": "Rejected historical member of the original TREND bundle; retained for audit only.",
+  "formula": "(close[t-5]-min(low[t-59:t-5])) / (max(high[t-59:t-5])-min(low[t-59:t-5]))",
+  "max_lookback": 60,
+  "scale_invariant": true,
+  "status": "rejected",
+  "output_columns": [
+    "TREND_RANGE_POS55"
+  ],
+  "parameters": {},
+  "limitations": [
+    "Historical rejection is binding for this version: no runnable adapter is supplied.",
+    "Implementation availability and historical checks do not establish profitable or stable out-of-sample returns."
+  ],
+  "source": {
+    "kind": "historical",
+    "studies": [
+      "20261101-084846Z-archive-qlib-strategy-discovery-2026-ac666a"
+    ],
+    "original_path": "configs/factors/TREND_R1_TREND_RANGE_POS55.py",
+    "original_sha256": "53e106ac2c2369e0dd8ae80e7ad49c6a3f4a719a41693fcf8c77d5af29d6f7ef",
+    "original_snapshot": "provenance/original.py"
+  },
+  "validation_context": {
+    "historical": {
+      "evidence_files": [
+        {
+          "path": "provenance/factor-freeze.json",
+          "sha256": "3bf8c2646ba78cdc35ac68427caf2a2434521e973b82949fc6e79c8a204330bd",
+          "origin": "20261101-084846Z-archive-qlib-strategy-discovery-2026-ac666a/original/results/factor-freeze.json"
+        },
+        {
+          "path": "provenance/failure-TREND.json",
+          "sha256": "f8cbbffbbacc5d97c816d71fb0d5d19901dde804af35cc766d3d8a109fb83b9a",
+          "origin": "20261101-084846Z-archive-qlib-strategy-discovery-2026-ac666a/original/results/failure-TREND.json"
+        },
+        {
+          "path": "provenance/trend-code-diagnostic.json",
+          "sha256": "83169a4dad99b4146c4a9e2f62ec2e50530921febd648a0f853221e9f8c3881f",
+          "origin": "20261101-084846Z-archive-qlib-strategy-discovery-2026-ac666a/original/results/trend-code-diagnostic.json"
+        },
+        {
+          "path": "provenance/proposal-TREND.json",
+          "sha256": "9f315faab75dfb7834e826506fe1c00ae88281f847f0dfd5fef8d791fa004432",
+          "origin": "20261101-084846Z-archive-qlib-strategy-discovery-2026-ac666a/original/results/proposal-TREND.json"
+        }
+      ],
+      "individual_float64_scale_and60_observation_checks_passed": true,
+      "entered_final_evaluation": false
+    },
+    "adapter_validation": "not applicable: rejected record",
+    "research_effectiveness": "not evaluated"
+  },
+  "rejection": {
+    "scope": "entire original TREND RD bundle",
+    "original_failure": "Strict scale tolerance failed due to float32 versus scaled float64 log arithmetic; this was not evidence of dimensional price dependence.",
+    "confirmed_contract_failure": "Sibling TREND_PATH_QUAL55 consumes55 one-day returns plus skip5:61 input price observations, above the frozen60-observation cap. TREND_RANGE_POS55 itself passes the60-observation tail check.",
+    "decision": "Keep entire original TREND RD bundle rejected; no replacement formula or performance result was substituted.",
+    "evidence": [
+      "provenance/failure-TREND.json",
+      "provenance/trend-code-diagnostic.json"
+    ]
+  }
+}

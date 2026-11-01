@@ -1,0 +1,16 @@
+[
+  {
+    "factor": "deltaB5",
+    "future_perturbation_invariant": true,
+    "code_io_gate": true,
+    "discovery_max_date": "2016-12-30 00:00:00",
+    "rows": 853251
+  },
+  {
+    "factor": "squeeze20_40",
+    "future_perturbation_invariant": true,
+    "code_io_gate": true,
+    "discovery_max_date": "2016-12-30 00:00:00",
+    "rows": 853251
+  }
+]

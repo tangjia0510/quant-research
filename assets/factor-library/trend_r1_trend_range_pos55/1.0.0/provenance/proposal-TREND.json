@@ -1,0 +1,19 @@
+{
+  "hypothesis": "Hypothesis: 在中期趋势延续假设下，提出两个新的可解释无量纲特征：(1) TREND_RANGE_POS55：close.shift(5) 在过去55个交易日高低区间中的相对位置 (close.shift(5)-min_low55)/(max_high55-min_low55)，检验趋势延续是否依赖于价格处于区间高位（突破持续性状态）；(2) TREND_PATH_QUAL55：过去55日（以close.shift(5)为终点，跳过最近5日）日均对数收益除以同期收益标准差，即风险调整后的趋势质量（类似夏普比），检验趋势的路径平滑度是否包含超出简单动量的增量信息。两个特征均基于close.shift(5)，与基准TREND60_5共享'跳过最近5日'的设定。\nReason: 2021年反馈显示TREND60_5单独IC为负(-0.029)，加入BB特征后XGB整体IC提升至0.023，说明趋势方向本身信息有限、条件状态类特征更有价值。RANGE_POS55提供'趋势处于突破区还是区间中部'的可证伪条件状态，PATH_QUAL55提供趋势稳定性维度，两者均无量纲、对价格缩放不变、总回看窗口55+5=60日满足上限，且都是简单的一步计算，符合'先简单后复杂'的原则，可与基准特征在XGBoost中自然形成交互。",
+  "tasks": [
+    {
+      "factor_name": "TREND_RANGE_POS55",
+      "factor_description": "[条件状态因子] close.shift(5)在过去55个交易日高低区间中的相对位置，检验趋势延续是否依赖价格处于区间高位（突破持续性状态）。",
+      "factor_formulation": "\\frac{close_{t-5}-\\min_{55d}(low)_{t-5}}{\\max_{55d}(high)_{t-5}-\\min_{55d}(low)_{t-5}}",
+      "variables": "{'close_{t-5}': '第t-5日收盘价（跳过最近5日）', 'min_low55': '以t-5为末端的55日滚动最低价（min_periods=55）', 'max_high55': '以t-5为末端的55日滚动最高价（min_periods=55）'}",
+      "factor_implementation": "False"
+    },
+    {
+      "factor_name": "TREND_PATH_QUAL55",
+      "factor_description": "[趋势质量因子] 过去55日（以close.shift(5)为终点）日均对数收益除以收益标准差，风险调整后的趋势平滑度，检验路径质量是否含超出简单动量的增量信息。",
+      "factor_formulation": "\\frac{\\mathrm{mean}(r_{t-5}^{55d})}{\\mathrm{std}_{ddof=0}(r_{t-5}^{55d})},\\quad r_t=\\log(close_t)-\\log(close_{t-1})",
+      "variables": "{'r_t': '第t日对数收益，使用close.shift(5)截断，即窗口为t-60至t-5的收益', 'mean': '55日收益均值（min_periods=55）', 'std_ddof0': '总体标准差（ddof=0，min_periods=55）'}",
+      "factor_implementation": "False"
+    }
+  ]
+}

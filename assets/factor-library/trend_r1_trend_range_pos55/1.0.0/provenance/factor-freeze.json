@@ -1,0 +1,49 @@
+{
+  "frozen_at": "2026-10-30T00:14:56.887874+08:00",
+  "factors": [
+    {
+      "name": "REV_R1_VOL_DRYUP5",
+      "round": 1,
+      "path": "configs/factors/REV_R1_VOL_DRYUP5.py",
+      "sha256": "8a7dfad9d1d94bfb1fdbdafa2f1b5e06ff108f9c0d96406eb7eeb0294daa2459",
+      "description": "[量能萎缩因子] 当日成交量相对过去5日均量的比值，衡量恐慌性放量后的量能退潮程度。假设：超卖状态下若当日量能相对萎缩（比值<1），卖压耗尽、反弹更易持续。无量纲，对股价同比例缩放不变，对成交量按1/常数缩放不变。",
+      "formulation": "VOL_DRYUP5 = volume_t / mean(volume_{t-4..t})"
+    },
+    {
+      "name": "REV_R1_RANGE_POS20",
+      "round": 1,
+      "path": "configs/factors/REV_R1_RANGE_POS20.py",
+      "sha256": "70a58b84716d774abffc791f2493b208d3aef6a4e0ecbdcae7c088fc9a2ab716",
+      "description": "[价格位置因子] 当日收盘价在最近20日最高最低区间中的相对位置。假设：收盘位于区间底部（低位）而处于超卖区时，抛压趋于耗尽，短期反弹概率更高。无量纲，对OHLC同比例缩放不变。",
+      "formulation": "RANGE_POS20 = (close_t - min(low,20)) / (max(high,20) - min(low,20))"
+    }
+  ],
+  "factor_map": {
+    "XGB_REV_BB_RD": [
+      "REV_R1_VOL_DRYUP5",
+      "REV_R1_RANGE_POS20"
+    ]
+  },
+  "families": {
+    "REV": {
+      "status": "RUNNABLE",
+      "rank_ic_increment_2021": 0.0011865764507714913
+    },
+    "TREND": {
+      "status": "FAILED_OR_NO_RUNNABLE_FACTOR",
+      "failure": {
+        "round": 1,
+        "stage": "causality_or_research_evaluation",
+        "error_type": "AssertionError",
+        "reason": "\nNot equal to tolerance rtol=1e-05, atol=1e-07\nDimensionless factor scale gate failed\nMismatched elements: 96 / 21170 (0.453%)\nMax absolute difference: 1.09574767e-06\nMax relative difference: 1.\n x: array([[      nan],\n       [      nan],\n       [      nan],...\n y: array([[      nan],\n       [      nan],\n       [      nan],...",
+        "entered_final_evaluation": false
+      },
+      "diagnostic": "results/trend-code-diagnostic.json"
+    }
+  },
+  "discovery_feedback_year": 2021,
+  "final_test_seen_by_agent": false,
+  "primary_variant": null,
+  "selection_rule": "No post-replay winner selection. All declared candidates and failures remain visible.",
+  "embedding_calls": 0
+}
