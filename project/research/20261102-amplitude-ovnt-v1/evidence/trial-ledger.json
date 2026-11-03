@@ -1,0 +1,96 @@
+{
+  "protocol_sha256": "58b6490676ef273df6876b9f5dbfc3eab8e0ee1fa7b28e2b046138e2081e0676",
+  "candidates": [
+    {
+      "id": "ideal_amplitude20",
+      "status": "complete",
+      "results_seen": true,
+      "decision": {
+        "adapted_retrospective_conditional_association_supported": true,
+        "original_universe_replication": false,
+        "deployable_strategy_certified": false,
+        "gates": {
+          "at_least24months": true,
+          "positive_mean": true,
+          "positive_hac95_lower": true,
+          "holm2_p": true
+        },
+        "long_only_cost30bp_mean": -0.0008386317175633088,
+        "long_only_cost30bp_ci95": [
+          -0.003910729894584542,
+          0.002233466459457924
+        ]
+      }
+    },
+    {
+      "id": "ovnt12",
+      "status": "complete",
+      "results_seen": true,
+      "decision": {
+        "adapted_retrospective_conditional_association_supported": true,
+        "original_universe_replication": false,
+        "deployable_strategy_certified": false,
+        "gates": {
+          "at_least24months": true,
+          "positive_mean": true,
+          "positive_hac95_lower": true,
+          "holm2_p": true
+        },
+        "long_only_cost30bp_mean": 0.0024238074094097323,
+        "long_only_cost30bp_ci95": [
+          -0.0020712646080858353,
+          0.0069188794269053
+        ]
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "at": "2026-11-02T15:48:57.416884+00:00",
+      "protocol_sha256": "58b6490676ef273df6876b9f5dbfc3eab8e0ee1fa7b28e2b046138e2081e0676",
+      "new_candidate_results_seen": false,
+      "kind": "pre-result semantic clarification, no calculation or threshold change",
+      "field": "ovnt12 zero_return_filter",
+      "clarification": "The source says zero returns for three consecutive months but the inspected statement does not pin daily versus monthly frequency. Frozen last3_months_zero checks three monthly endpoint returns exactly0; this is explicitly a local monthly-zero proxy, NOT certified exact original suspension filtering. A month with offsetting nonzero daily returns can have zero endpoint return.",
+      "missing_original_filter_added": "Exact frequency/implementation of original consecutive-zero-return filter",
+      "code_changed": false
+    },
+    {
+      "stage": "source_extract_report",
+      "status": "success",
+      "python": "existing system Python with pypdf for document only",
+      "pages": 23
+    },
+    {
+      "stage": "formula_statistical_tests",
+      "status": "success",
+      "tests": 10,
+      "new_empirical_results_seen_before_tests": false
+    },
+    {
+      "stage": "year_chunk_monthly_build",
+      "status": "success",
+      "session": 82867
+    },
+    {
+      "stage": "fixed_supplementary_analysis",
+      "status": "success",
+      "session": 75186,
+      "candidates": 2,
+      "extra_variants": 0
+    },
+    {
+      "stage": "posthoc_coverage_classification_attempt1",
+      "status": "failed",
+      "reason": "Old attribute name decile after generic group rename",
+      "retained": "outputs/coverage-audit-attempt1.py and .log"
+    },
+    {
+      "stage": "posthoc_coverage_classification_attempt2",
+      "status": "success",
+      "session": 44257,
+      "fix": "Change attribute lookup to group; no factor, label, assignment, score, return, cost, or gate changes"
+    }
+  ],
+  "completed_computation_at": "2026-11-02T16:03:31.907873+00:00"
+}

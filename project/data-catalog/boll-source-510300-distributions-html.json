@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "boll-source-510300-distributions-html",
+  "kind": "file",
+  "version": "frozen-20261102",
+  "sha256": "5e4ae101f0657c392798170029ef5de9f05900da49e57c6f03b0bc4226bc25d3",
+  "locator": {
+    "root": "legacy_library",
+    "path": "reproductions/20261102-strategies-v1/sources/510300-distributions.html"
+  },
+  "provenance": {
+    "url": "https://fundf10.eastmoney.com/fhsp_510300.html",
+    "http_status": 200,
+    "acquired_utc": null,
+    "acquisition_interval_utc": [
+      "2026-11-02T16:39:00Z",
+      "2026-11-02T16:39:22Z"
+    ],
+    "interval_evidence": "exec session60751 and subsequent successful raw HTML read; exact timestamp not originally recorded",
+    "sha256": "5e4ae101f0657c392798170029ef5de9f05900da49e57c6f03b0bc4226bc25d3"
+  },
+  "description": "Original vendor response",
+  "limitations": [
+    "Retrospective source snapshot; not PIT-certified"
+  ]
+}

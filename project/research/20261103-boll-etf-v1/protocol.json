@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "id": "20261103-boll-etf-v1",
+  "objective": "Prespecified two BOLL mechanisms on one traded Chinese ETF, not original-author strategy return replication",
+  "asset": "sh510300",
+  "frozen_before_any_new_strategy_returns": true,
+  "created_utc": "2026-11-03T04:09:28.128934+00:00",
+  "source_card": "Bollinger official rules and Back into bands screening; locally specified exits/execution/account",
+  "indicators": {
+    "input": "causal dividend-adjusted total-return close index; raw closes execute and mark account",
+    "tr": "TR_t=TR_(t-1)*(raw_close_t+ex_cash_t)/raw_close_(t-1), initial level100",
+    "window_sessions": 20,
+    "min_periods": 20,
+    "std_ddof": 0,
+    "band_width_std": 2,
+    "percent_b": "(TR-lower)/(upper-lower)",
+    "bandwidth": "(upper-lower)/middle",
+    "zero_std": "percent_b undefined; no new signal, retain previous target; no arbitrary zero imputation"
+  },
+  "rules": [
+    {
+      "id": "boll_breakout",
+      "entry": "when flat: percent_b_previous <= 1 and percent_b_today > 1",
+      "exit": "when long: TR_today < middle_today (strict below, not only first crossing)",
+      "local_adaptations": [
+        "Full position long/cash, middle exit, total-return input, next-open execution"
+      ]
+    },
+    {
+      "id": "boll_reentry",
+      "entry": "when flat: percent_b_previous < 0 and 0 <= percent_b_today < 0.5",
+      "exit": "when long: TR_today >= middle_today (touch inclusive)",
+      "local_adaptations": [
+        "Back-into-band screening turned into local mean-reversion hypothesis, upper entry cap prevents entering after exit target already reached",
+        "Full position long/cash, middle exit, total-return input, next-open execution"
+      ]
+    }
+  ],
+  "signal_semantics": {
+    "exit_priority": "If already long, evaluate exit only. If flat, evaluate entry only. No same-close exit and re-entry.",
+    "warmup": "State may evolve in2018; initial2019 target from last2018 close only; no warmup holdings or profit",
+    "pending": "New end-of-day target supersedes any unfilled old target; after-close change executes next global trading-session open",
+    "reinvestment": "Month-end schedules same-target execution on next open; if long, only paid cash plus residual cash may buy additional whole lots. No fractional shares, leverage or target resizing while long.",
+    "benchmark": "Always-long same ETF, first evaluation open and same month-end cash reinvestment; same fees/slippage/dividend rights and valuation"
+  },
+  "periods": {
+    "warmup": [
+      "2018-01-01",
+      "2018-12-31"
+    ],
+    "evaluation": [
+      "2019-01-01",
+      "2026-10-30"
+    ],
+    "exposure": "All historical market period previously used, including2026; not independent unseen holdout. No fitted parameters or train/test optimization in this batch."
+  },
+  "account": {
+    "initial_cash": 100000,
+    "lot_units": 100,
+    "unit": "ETF fund units",
+    "short": false,
+    "leverage": false,
+    "cash_interest": 0,
+    "primary_total_friction_bp_each_side": 10,
+    "sensitivity_bp_each_side": [
+      0,
+      30
+    ],
+    "friction_split": "half commission, half price slippage, minimum fee0",
+    "dividends": "Record-date closing shares establish entitlement; ex-date receivable; cash usable from actual pay-date next eligible trading open, matching previous audited study convention. No withholding modeled.",
+    "execution": "Next session raw open plus side slippage; defer on invalid open or +/-10% ex-cash adjusted prior-close conservative boundary with0.001 tick. No future full-day volume/high-low decision.",
+    "t_plus_one": "No bought units sold on same session; at most one order per day.",
+    "terminal": "Mark raw close plus cash and receivables, no forced liquidation"
+  },
+  "data_refs": [
+    "boll-510300-bars-20261102",
+    "boll-510300-dividends-20261102",
+    "boll-510300-calendar-20261102"
+  ],
+  "quality": {
+    "unknown_missing_session": "Fail rather than carry price or assume zero return",
+    "posthoc_bar_quality": "Nonpositive volume/one-price bars fail data-quality review, not used to select trade fills",
+    "limitations": [
+      "Not orderbook-certified historical fills; conservative daily boundary proxy",
+      "Current snapshot and incomplete older dividend announcement as-of chain",
+      "Single ETF generalization only; no claimed all-Ashare effectiveness",
+      "No cash interest, actual broker min commissions or calibrated impact"
+    ]
+  },
+  "budget": {
+    "strategies": 2,
+    "parameter_searches": 0,
+    "diagnostics": 1,
+    "workers": 1
+  },
+  "statistics": {
+    "primary": "Monthly strategy-minus-same-ETF benchmark net returns; Bartlett HAC lag3 mean CI, two-sided normal p-values Holm corrected across2 strategies at5%. Gate requires mean positive, CI lower>0, Holm p<0.05 and strategy CAGR>benchmark at10bp.",
+    "risk": "Report max drawdown improvement separately, does not rescue failed return gate.",
+    "metrics": [
+      "net total return",
+      "calendar CAGR",
+      "max drawdown",
+      "annualized daily volatility",
+      "Sharpe rf0",
+      "annual returns",
+      "trade count",
+      "exposure",
+      "fees",
+      "turnover",
+      "blocked orders"
+    ],
+    "diagnostic": "Descriptive full-sample time-series Pearson and Spearman between percent_b_t and TR_(t+5)/TR_t-1. Overlapping 5-session labels; not cross-sectional IC, no significance/admission claim, not an executable return and not used for choosing sign/strategy.",
+    "sensitivity": "0bp and30bp are fixed stress tests, not extra candidates or admission rescue. No promotion to registry without separate evidence review."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "reason": "BaoStock public endpoint failed two logins and DNS diagnostics; change source before prices or any model result",
+  "original_prereg_sha256": "cff1eb7f4d9143a4a85f30a8d63765cd8c2efff5c4c57172b50d94d86d3e5afe",
+  "universe_source": "SSE and SZSE official current plus delisted listings, fetched fresh by HTTPS",
+  "price_source_proposed": "Tencent publicly documented raw and hfq daily endpoints; preserve raw and validate canonical factors/volume/calendar before registration",
+  "algorithm_unchanged": "pre2019IPO; outdate empty or>=2019-01-01; first10code perSH60/SZ00/SZ30; no replacement",
+  "source_documents": [
+    "https://akshare.akfamily.xyz/data/stock/stock_issue.html",
+    "https://akshare.akfamily.xyz/data/stock/stock_quote.html"
+  ],
+  "reference_code_commit": "akfamily/akshare@1b88b68356bebf1fd32461d74a8aaaa66588d2d5",
+  "price_requests_so_far": 0,
+  "limitations": [
+    "Different provider snapshots can revise historical prices and listings",
+    "Official current+delisted union not full point-in-time daily eligibility; code reuse/mergers need checks",
+    "Tencent missing selected stocks is a hard data-quality blocker, never silently replaced"
+  ]
+}

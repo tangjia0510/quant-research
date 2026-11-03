@@ -1,0 +1,34 @@
+# 迁移后研究入口
+
+本目录是轻量研究记录。下方保留历史结论原文，但原文提及的 outputs/、report/、admission.json 等路径属于旧归档，并不表示这些大产物已搬到本目录。
+
+- 当前元信息与数据引用：`research.yaml`、`protocol.json`。
+- 尝试/失败历史：`attempts.jsonl`。
+- 当前可用关键证据：`evidence/admission.json`, `evidence/outputs/summary.json`。
+- 原文按字节保存在 `evidence/legacy-conclusion.md`，旧路径应通过 `research.yaml` 的 `legacy_ref` 解析。
+- 回放入口：`src/replay.py --project-root PROJECT --work-dir PROJECT/work/NEW_ATTEMPT`。
+- 此入口默认只做 dry-run。加 `--execute` 才计算；本轮只验证输入哈希、依赖和输出路径，未重算大规模历史结果。见 `evidence/migration-replay-plan.json`。
+- 曲线、矩阵、账本和新运行报告写入指定 `work/`，不属于迁移包。
+
+## 历史结论（保留当时措辞和路径）
+
+# Round 2: ideal amplitude and OVNT12
+
+Both fixed mechanisms pass the predeclared **retrospective conditional association** gate in the local adapted universe. This is neither exact source-universe replication nor live strategy admission. Read `admission.json`, `outputs/summary.json`, the final report, and both pre-result semantic clarifications in `amendments/`.
+
+## Implementations and time roles
+- Ideal amplitude: fixed20 exchange sessions, at least10 valid days after finite/positive and H>L checks. H=L is only a conservative one-price proxy. Sort valid adjusted closes; use k=floor(25% × valid count), stable chronological ties; score=negative(high-price-day average amplitude minus low-price-day average amplitude). Five groups, HAC lag3. Adjustment basis, rounding and IPO60 exchange-session interpretation are explicit local choices, not claimed exact original conventions. No raw-price alternative was tested.
+- OVNT12: daily adjusted_open[d]/adjusted_close[d-1]−1; full-calendar-month product; for holding month t use t−12 through t−2 (11 complete months), skip t−1, compound and then divide by11. Ten groups, HAC lag12 following source. First2019January overnight month is unavailable withoutDecember2018close, so the first eligible target isFebruary2020. The monthly-zero-return screen is only a local proxy for an ambiguously specified source filter.
+- Source OVNT short-side attribution refers to **FF3 alpha**, not mechanically to the raw0.52% long-short mean. No local FF3 alpha was estimated. Source amplitude annual23.3% return under its incompletely specified cost setup is not comparable to our conditional monthly difference or unneutralized results.
+
+## Measured evidence and practical limits
+Ideal amplitude:82 months, signed-score RankIC about0.07868, conditional five-group difference1.291%/month. OVNT12:81 months, RankIC about0.03469, conditional decile difference1.036%/month. Both within-batch Holm-adjusted association gates pass. But ideal-amplitude30bp turnover-proxy long-only excess is negative; OVNT raw and30bp-proxy long-only excess confidence intervals include zero. Do not summarize these as two deployable profitable strategies.
+
+Only15/82 ideal-amplitude and46/81 OVNT top-group months have complete constituent outcomes. Report conditional means, missing weights, full-weight known contributions, complete return and long-only missing-return lower bounds separately. Missing is never0 and no outcomes determine group membership. Unknown terminal prices and stock tradability remain unresolved. The additional outcome-classification script initially failed because of an old column name; only that audit lookup was repaired, with failed script/log retained. No research computation was repeated or expanded.
+
+Target-weight turnover is a proxy without return drift or real fills. Costs use10/25/30/50bp times the **sum** of two legs; OVNT paper convention uses the **average** of two legs. Both local forms are reported so they are not mixed when interpreting source break-even fees. Shorting/capacity/slippage are unassessed. Historical ST, market cap, exact suspension/limit boards and risk neutralization are incomplete. All2025/2026history was already exposed.
+
+## Provenance and continuation
+The original amplitude PDF was web-read but local download failed: its source notes are not an original PDF and have no original-PDF SHA. The OVNT CC-BY institutional PDF was saved and extracted with the skill's native document command. Factor/statistics execution is explicitly standalone supplementary research, not native Ridge prepare/check/evaluate. Reused OHLC and monthly endpoints were SHA-verified; prices match exactly. One heavy worker, one numeric thread,6000MiB planning budget, no claimed OS-enforced cap. No newer lake repairs or old-data rewrites.
+
+The ILLIQ bookmark remains separately under `favorites/illiq20-jansen2021.json`. This round does not automatically register new favorites or accepted native factors. Stop after these2 mechanisms; MAX,52-week high, other J windows and direction variants were not tested. Any further validation needs a new finite protocol. No Site publication or native finalization occurred.

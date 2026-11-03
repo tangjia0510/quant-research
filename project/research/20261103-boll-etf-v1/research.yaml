@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "20261103-boll-etf-v1",
+  "title": "BOLL20/2：沪深300ETF突破与重入带内回归",
+  "type": "mixed",
+  "status": "rejected",
+  "data_refs": [
+    "boll-510300-bars-20261102",
+    "boll-510300-dividends-20261102",
+    "boll-510300-calendar-20261102",
+    "boll-source-510300-2018-raw-json",
+    "boll-source-510300-2020-raw-json",
+    "boll-source-510300-2022-raw-json",
+    "boll-source-510300-2024-raw-json",
+    "boll-source-510300-2026-raw-json",
+    "boll-source-510300-distributions-html",
+    "boll-source-calendar-2018-json",
+    "boll-source-calendar-observed-2019-2026-txt"
+  ],
+  "entrypoint": "src/run.py",
+  "metadata": {
+    "admitted": false,
+    "bookmark": false,
+    "protocol_sha256": "048ceb889b5f046cf5cde6aa4ec2d94763323334c7d29a59724bc7eb403ddf88",
+    "reproducibility": "Frozen external inputs required; all calculated outputs excluded from portable bundle",
+    "literature_refs": [
+      "literature/objects/8836c6c9b357bb21f3c097fa915f3a31c58dab7c32847295c739f58e10624eb0.md",
+      "literature/objects/32417bd37e1d2657b790e896c0cee0e618171dd9ef898c7d4a00b8e3918822a2.json"
+    ],
+    "decision": "No net outperformance supported for either fixed strategy; lower drawdown is descriptive at much lower exposure",
+    "audit_status": "passed"
+  }
+}

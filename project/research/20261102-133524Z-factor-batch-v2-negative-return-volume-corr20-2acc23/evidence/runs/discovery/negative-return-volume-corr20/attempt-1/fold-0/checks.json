@@ -1,0 +1,40 @@
+{
+  "splits": {
+    "train": [
+      "2020-01-02",
+      "2024-12-31"
+    ],
+    "valid": [
+      "2025-01-02",
+      "2025-06-30"
+    ],
+    "discovery": [
+      "2025-07-01",
+      "2025-12-31"
+    ],
+    "final": [
+      "2026-01-05",
+      "2026-10-30"
+    ]
+  },
+  "rows": {
+    "train": 5460638,
+    "valid": 564844,
+    "evaluation": 647737
+  },
+  "feature_names": [
+    "return_5",
+    "volatility_20",
+    "x_negative_return_volume_corr20"
+  ],
+  "label_transform": "raw",
+  "train_only_preprocessing": true,
+  "validation_label_boundary": "2025-07-01",
+  "label_boundaries_purged": true,
+  "model": {
+    "kind": "ridge",
+    "seed": 42,
+    "reload_predictions_match": true,
+    "best_iteration": 0
+  }
+}

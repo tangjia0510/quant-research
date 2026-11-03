@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "20261102-strategies-v1",
+  "title": "Faber十月均线与沪深300ETF完整策略",
+  "type": "strategy",
+  "status": "rejected",
+  "data_refs": [
+    "legacy-20261102-strategies-v1"
+  ],
+  "entrypoint": "src/replay.py",
+  "legacy_ref": {
+    "root": "legacy_library",
+    "path": "reproductions/20261102-strategies-v1"
+  },
+  "favorite": false,
+  "registry_admitted": false,
+  "replay_status": "verified_with_external_raw",
+  "replay_limitations": [
+    "Requires matching externally bound frozen raw responses and Python pandas/numpy/beautifulsoup4.",
+    "Replays historical fixed rule only; 2026 is exposed, not fresh independent holdout."
+  ],
+  "evidence_level": "historical_research_only",
+  "migration_scope": "lightweight_source_protocol_conclusions_and_attempt_history",
+  "replay_verification": "evidence/migration-replay.json"
+}

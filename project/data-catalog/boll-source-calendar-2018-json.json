@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "boll-source-calendar-2018-json",
+  "kind": "file",
+  "version": "frozen-20261102",
+  "sha256": "cacb806f53eb63f337c92a2bf2805f2bf9a7d130e46e87e45871845699ebd179",
+  "locator": {
+    "root": "legacy_library",
+    "path": "reproductions/20261102-strategies-v1/sources/calendar-2018.json"
+  },
+  "provenance": {
+    "url": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get?param=sh000001%2Cday%2C2018-01-01%2C2019-12-31%2C640%2C",
+    "status": 200,
+    "sha256": "cacb806f53eb63f337c92a2bf2805f2bf9a7d130e46e87e45871845699ebd179",
+    "acquired_utc": "2026-11-02T16:43:07.748538+00:00"
+  },
+  "description": "Original vendor response",
+  "limitations": [
+    "Retrospective source snapshot; not PIT-certified"
+  ]
+}

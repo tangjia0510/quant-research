@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "legacy-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a",
+  "version": "frozen-20261102",
+  "sha256": null,
+  "locator": {
+    "root": "legacy_library",
+    "path": "studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a"
+  },
+  "kind": "directory",
+  "limitations": [
+    "External frozen archive; not included in portable package. Bind legacy_library on destination.",
+    "Historical code may require original execution layout; source hash alone does not guarantee executable replay."
+  ],
+  "reacquisition": "Historical source may change; preserve external frozen raw inputs separately.",
+  "manifest": {
+    "path": "supplementary/final-artifact-manifest.json",
+    "sha256": "a8eef7164086482f4337255508090c59901d2ec3c74b31a74d2a3d4fc2590108"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-02T15:05:15.090815+00:00",
+  "new_candidate_results_seen": false,
+  "pre_analysis_audit_repairs": [
+    "Reject infinite metric values",
+    "Complete-month count explicitly top-decile only"
+  ],
+  "sha256": {
+    "test_formulas.py": "5cedd1c15b5d1ff9199d32307481d6596d7b891e53568cd0d89086cb2be8ba77",
+    "formulas.py": "d07961ab438a59975b7b6a44ad726fd31957960dc66b844049e3e7e358f1280e",
+    "analyze.py": "babbdd546c9649f3c69310cd3ce05eaa9b43b4e09f53967ef4c3a44591e46d2f",
+    "test_analysis.py": "0d2471fc125363c1551964a9d8cb83e3d844feaeb7bb3e9d52d7261e8e03c716",
+    "build_monthly.py": "68e271b3a1de42ee7d106b4d1e535b19c8732ba0d7b5a162c9d626e51b4b57c1"
+  }
+}

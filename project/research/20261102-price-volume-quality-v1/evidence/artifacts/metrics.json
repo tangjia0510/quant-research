@@ -1,0 +1,246 @@
+{
+  "historical_descriptive": {
+    "pearson_ic": {
+      "n": 1206,
+      "mean": -0.03589520325806947,
+      "std": 0.13331389670055724,
+      "hac_t": -5.157582707024751,
+      "hac_se": 0.006959695131825873
+    },
+    "rank_ic": {
+      "n": 1206,
+      "mean": -0.043808302387043974,
+      "std": 0.15102412139028673,
+      "hac_t": -5.604256954175495,
+      "hac_se": 0.007816968912248796
+    },
+    "group_mean_forward5": {
+      "1": 0.0027506259483034063,
+      "2": 0.003197034208545594,
+      "3": 0.003746002151996372,
+      "4": 0.003646752146145659,
+      "5": -0.0008915761604194657
+    },
+    "rows": 5412792,
+    "securities": 5267,
+    "start": "2020-01-02",
+    "end": "2024-12-23",
+    "q5_minus_q1_forward5": {
+      "n": 1206,
+      "mean": -0.003642202108722873,
+      "std": 0.027394935199219782,
+      "hac_t": -2.554184539775326,
+      "hac_se": 0.00142597453394783
+    },
+    "nonoverlap_phase0": {
+      "1": {
+        "periods": 242,
+        "terminal_gross_diagnostic_return": 0.5477272769365054,
+        "missing_phase_dates": 1
+      },
+      "2": {
+        "periods": 242,
+        "terminal_gross_diagnostic_return": 0.8488816727200352,
+        "missing_phase_dates": 1
+      },
+      "3": {
+        "periods": 242,
+        "terminal_gross_diagnostic_return": 0.9924131506927842,
+        "missing_phase_dates": 1
+      },
+      "4": {
+        "periods": 242,
+        "terminal_gross_diagnostic_return": 1.1580222809268168,
+        "missing_phase_dates": 1
+      },
+      "5": {
+        "periods": 242,
+        "terminal_gross_diagnostic_return": -0.33227494932551205,
+        "missing_phase_dates": 1
+      }
+    }
+  },
+  "validation_descriptive": {
+    "pearson_ic": {
+      "n": 111,
+      "mean": -0.06621250785312885,
+      "std": 0.1293660604987304,
+      "hac_t": -3.3003976769972954,
+      "hac_se": 0.020061978686571204
+    },
+    "rank_ic": {
+      "n": 111,
+      "mean": -0.09247531491201999,
+      "std": 0.16558036463388234,
+      "hac_t": -3.6390322940766398,
+      "hac_se": 0.025412062174481054
+    },
+    "group_mean_forward5": {
+      "1": 0.010898070313912772,
+      "2": 0.01015761295945459,
+      "3": 0.010051593002173063,
+      "4": 0.008474510423369311,
+      "5": 0.0019446448252670547
+    },
+    "rows": 558059,
+    "securities": 5138,
+    "start": "2025-01-02",
+    "end": "2025-06-20",
+    "q5_minus_q1_forward5": {
+      "n": 111,
+      "mean": -0.008953425488645715,
+      "std": 0.02445976644988667,
+      "hac_t": -2.3310737386371048,
+      "hac_se": 0.0038409018729199285
+    },
+    "nonoverlap_phase0": {
+      "1": {
+        "periods": 23,
+        "terminal_gross_diagnostic_return": 0.21232835035090414,
+        "missing_phase_dates": 1
+      },
+      "2": {
+        "periods": 23,
+        "terminal_gross_diagnostic_return": 0.21343939715939286,
+        "missing_phase_dates": 1
+      },
+      "3": {
+        "periods": 23,
+        "terminal_gross_diagnostic_return": 0.21697781686369955,
+        "missing_phase_dates": 1
+      },
+      "4": {
+        "periods": 23,
+        "terminal_gross_diagnostic_return": 0.19230014636728376,
+        "missing_phase_dates": 1
+      },
+      "5": {
+        "periods": 23,
+        "terminal_gross_diagnostic_return": 0.010541348105406634,
+        "missing_phase_dates": 1
+      }
+    }
+  },
+  "discovery": {
+    "pearson_ic": {
+      "n": 120,
+      "mean": -0.015492919551189562,
+      "std": 0.10796446094520745,
+      "hac_t": -0.884329250413433,
+      "hac_se": 0.01751940190143712
+    },
+    "rank_ic": {
+      "n": 120,
+      "mean": -0.060867770641997346,
+      "std": 0.10256119527078206,
+      "hac_t": -3.5483242098078627,
+      "hac_se": 0.01715394846777354
+    },
+    "group_mean_forward5": {
+      "1": 0.007762606983868448,
+      "2": 0.007652284853357181,
+      "3": 0.00756906779476329,
+      "4": 0.007985582327566595,
+      "5": 0.006480835743549591
+    },
+    "rows": 610202,
+    "securities": 5152,
+    "start": "2025-07-01",
+    "end": "2025-12-23",
+    "q5_minus_q1_forward5": {
+      "n": 120,
+      "mean": -0.0012817712403188563,
+      "std": 0.016625771219656083,
+      "hac_t": -0.4606197469960495,
+      "hac_se": 0.002782710139280784
+    },
+    "nonoverlap_phase0": {
+      "1": {
+        "periods": 24,
+        "terminal_gross_diagnostic_return": 0.1899428999634658,
+        "missing_phase_dates": 2
+      },
+      "2": {
+        "periods": 24,
+        "terminal_gross_diagnostic_return": 0.18856820880294567,
+        "missing_phase_dates": 2
+      },
+      "3": {
+        "periods": 24,
+        "terminal_gross_diagnostic_return": 0.19933196184235347,
+        "missing_phase_dates": 2
+      },
+      "4": {
+        "periods": 24,
+        "terminal_gross_diagnostic_return": 0.20115235462245584,
+        "missing_phase_dates": 2
+      },
+      "5": {
+        "periods": 24,
+        "terminal_gross_diagnostic_return": 0.1329856251397321,
+        "missing_phase_dates": 2
+      }
+    }
+  },
+  "final": {
+    "pearson_ic": {
+      "n": 192,
+      "mean": -0.02081206697018235,
+      "std": 0.17845050208199736,
+      "hac_t": -0.839449745429676,
+      "hac_se": 0.024792510907880025
+    },
+    "rank_ic": {
+      "n": 192,
+      "mean": -0.039417311901287305,
+      "std": 0.17661684030349623,
+      "hac_t": -1.6205502128115308,
+      "hac_se": 0.02432341286907814
+    },
+    "group_mean_forward5": {
+      "1": -0.003487262984355964,
+      "2": -0.001316740647494364,
+      "3": -0.001053729558025672,
+      "4": -0.0021014263785727235,
+      "5": -0.005228182248689335
+    },
+    "rows": 980968,
+    "securities": 5217,
+    "start": "2026-01-05",
+    "end": "2026-10-22",
+    "q5_minus_q1_forward5": {
+      "n": 192,
+      "mean": -0.0017409192643333723,
+      "std": 0.03715528529186627,
+      "hac_t": -0.3379162299903685,
+      "hac_se": 0.005151925565643867
+    },
+    "nonoverlap_phase0": {
+      "1": {
+        "periods": 39,
+        "terminal_gross_diagnostic_return": -0.12815039277218987,
+        "missing_phase_dates": 1
+      },
+      "2": {
+        "periods": 39,
+        "terminal_gross_diagnostic_return": -0.06643559357022966,
+        "missing_phase_dates": 1
+      },
+      "3": {
+        "periods": 39,
+        "terminal_gross_diagnostic_return": -0.04486735433523348,
+        "missing_phase_dates": 1
+      },
+      "4": {
+        "periods": 39,
+        "terminal_gross_diagnostic_return": -0.0908024199986377,
+        "missing_phase_dates": 1
+      },
+      "5": {
+        "periods": 39,
+        "terminal_gross_diagnostic_return": -0.16368799237983955,
+        "missing_phase_dates": 1
+      }
+    }
+  }
+}

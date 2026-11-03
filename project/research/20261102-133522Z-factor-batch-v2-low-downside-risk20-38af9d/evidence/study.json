@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-02T13:35:22.565029+00:00",
+  "protocol_hash": "9ecb6b4d2afb1aacd6c6512447ef9b1332f2bcf5a0d0324f5916e7c342e7d3bb",
+  "mode": "factor",
+  "final_exposed": false,
+  "scope": "historical_research",
+  "freeze_hash": "3a5a7cc985694aa467910430b51b101dbd0214774e5d9bf169d4d6b4cfec1556"
+}

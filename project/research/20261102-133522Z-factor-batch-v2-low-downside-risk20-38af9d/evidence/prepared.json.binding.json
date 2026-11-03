@@ -1,0 +1,11 @@
+{
+  "source": "studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/prepared.json",
+  "source_root": "legacy_library",
+  "sha256": "e2fc276302652dd37be882df947bc5f53545132acc9d59cc53825d0f259b9ef3",
+  "bytes": 4599531,
+  "top_level_keys": [
+    "files",
+    "prepared_at"
+  ],
+  "note": "Full enumerated data/derived hashes stay external; this binding is not the full frozen manifest."
+}

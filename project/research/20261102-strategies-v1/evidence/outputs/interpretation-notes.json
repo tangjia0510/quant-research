@@ -1,0 +1,6 @@
+{
+  "local_blocked_log_semantics": "Blocked entries are local pending allocation-check deferrals, not actual submitted/exchange-rejected orders. In always-long benchmark a no-cash/no-change monthly allocation can also be logged blocked before zero desired buy is determined; this has no portfolio effect. Do not interpret as one real failed exchange order.",
+  "primary_strategy_block": "2024-10-08 open at conservative upper10% threshold;pending buy executed2024-10-09;fixed rule retained after results.",
+  "holding_cycle_return": "End cash/start cash per completed invested episode, includes internally credited dividends and trading costs; not incremental factor alpha.",
+  "future_unseen": "No independent unseen historical segment claimed."
+}

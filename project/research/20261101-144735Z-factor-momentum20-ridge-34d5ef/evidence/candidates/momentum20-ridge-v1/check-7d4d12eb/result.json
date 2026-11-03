@@ -1,0 +1,28 @@
+{
+  "candidate": "momentum20-ridge-v1",
+  "factor_checks": {
+    "stage": "discovery",
+    "rows": 50525,
+    "builtin_features": [
+      "return_5",
+      "volatility_20"
+    ],
+    "input_end": "2025-12-31",
+    "generated_factor": true,
+    "execution_is_security_sandbox": false,
+    "factor_sha256": "ec5a33ce63cc70eb98e80182a75aaca0d2ba73f9d382189f7d7e2d50a96c8184",
+    "future_perturbation": true,
+    "prefix_invariance": true,
+    "declared_lookback_verified": 21,
+    "scale_invariance_checked": true,
+    "coverage": {
+      "return_5": 0.9949332013854527,
+      "volatility_20": 0.9774171202375062,
+      "momentum20_added": 0.9857100445324097
+    }
+  },
+  "model_checks": {
+    "kind": "ridge",
+    "dependency_available": true
+  }
+}

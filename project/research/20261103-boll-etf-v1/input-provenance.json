@@ -1,0 +1,103 @@
+{
+  "files": [
+    {
+      "id": "boll-source-510300-2018-raw-json",
+      "name": "510300-2018-raw.json",
+      "sha256": "10b06ee708fd382225c7f1476feeaa845961df9d03c0fe21a5c60aaa085599f0",
+      "provenance": {
+        "url": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get?param=sh510300%2Cday%2C2018-01-01%2C2019-12-31%2C640%2C",
+        "status": 200,
+        "sha256": "10b06ee708fd382225c7f1476feeaa845961df9d03c0fe21a5c60aaa085599f0",
+        "requested_start": "2018-01-01",
+        "requested_end": "2019-12-31",
+        "acquired_utc": "2026-11-02T16:40:05.292629+00:00"
+      }
+    },
+    {
+      "id": "boll-source-510300-2020-raw-json",
+      "name": "510300-2020-raw.json",
+      "sha256": "bbe852a69ff87a255594d040b42c077ad1cc9fc0dc326444d07c4291079693c9",
+      "provenance": {
+        "url": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get?param=sh510300%2Cday%2C2020-01-01%2C2021-12-31%2C640%2C",
+        "status": 200,
+        "sha256": "bbe852a69ff87a255594d040b42c077ad1cc9fc0dc326444d07c4291079693c9",
+        "requested_start": "2020-01-01",
+        "requested_end": "2021-12-31",
+        "acquired_utc": "2026-11-02T16:40:13.850711+00:00"
+      }
+    },
+    {
+      "id": "boll-source-510300-2022-raw-json",
+      "name": "510300-2022-raw.json",
+      "sha256": "3fb1381050da0426e46338878997a23f1cfa6326ee1efcf6e9bd2e51c2d216f6",
+      "provenance": {
+        "url": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get?param=sh510300%2Cday%2C2022-01-01%2C2023-12-31%2C640%2C",
+        "status": 200,
+        "sha256": "3fb1381050da0426e46338878997a23f1cfa6326ee1efcf6e9bd2e51c2d216f6",
+        "requested_start": "2022-01-01",
+        "requested_end": "2023-12-31",
+        "acquired_utc": "2026-11-02T16:40:21.403628+00:00"
+      }
+    },
+    {
+      "id": "boll-source-510300-2024-raw-json",
+      "name": "510300-2024-raw.json",
+      "sha256": "d119dd860deb4f3e934da6c7f50142660d43f2733558c9e968552e2d8f990e2d",
+      "provenance": {
+        "url": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get?param=sh510300%2Cday%2C2024-01-01%2C2025-12-31%2C640%2C",
+        "status": 200,
+        "sha256": "d119dd860deb4f3e934da6c7f50142660d43f2733558c9e968552e2d8f990e2d",
+        "requested_start": "2024-01-01",
+        "requested_end": "2025-12-31",
+        "acquired_utc": "2026-11-02T16:40:27.623340+00:00"
+      }
+    },
+    {
+      "id": "boll-source-510300-2026-raw-json",
+      "name": "510300-2026-raw.json",
+      "sha256": "b02cfc05f9471244732c1c852c9686abc12752e5bcefb8284fe246fdd359adb0",
+      "provenance": {
+        "url": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get?param=sh510300%2Cday%2C2026-01-01%2C2026-10-30%2C640%2C",
+        "status": 200,
+        "sha256": "b02cfc05f9471244732c1c852c9686abc12752e5bcefb8284fe246fdd359adb0",
+        "requested_start": "2026-01-01",
+        "requested_end": "2026-10-30",
+        "acquired_utc": "2026-11-02T16:40:35.669020+00:00"
+      }
+    },
+    {
+      "id": "boll-source-510300-distributions-html",
+      "name": "510300-distributions.html",
+      "sha256": "5e4ae101f0657c392798170029ef5de9f05900da49e57c6f03b0bc4226bc25d3",
+      "provenance": {
+        "url": "https://fundf10.eastmoney.com/fhsp_510300.html",
+        "http_status": 200,
+        "acquired_utc": null,
+        "acquisition_interval_utc": [
+          "2026-11-02T16:39:00Z",
+          "2026-11-02T16:39:22Z"
+        ],
+        "interval_evidence": "exec session60751 and subsequent successful raw HTML read; exact timestamp not originally recorded",
+        "sha256": "5e4ae101f0657c392798170029ef5de9f05900da49e57c6f03b0bc4226bc25d3"
+      }
+    },
+    {
+      "id": "boll-source-calendar-2018-json",
+      "name": "calendar-2018.json",
+      "sha256": "cacb806f53eb63f337c92a2bf2805f2bf9a7d130e46e87e45871845699ebd179",
+      "provenance": {
+        "url": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get?param=sh000001%2Cday%2C2018-01-01%2C2019-12-31%2C640%2C",
+        "status": 200,
+        "sha256": "cacb806f53eb63f337c92a2bf2805f2bf9a7d130e46e87e45871845699ebd179",
+        "acquired_utc": "2026-11-02T16:43:07.748538+00:00"
+      }
+    },
+    {
+      "id": "boll-source-calendar-observed-2019-2026-txt",
+      "name": "calendar-observed-2019-2026.txt",
+      "sha256": "164762ead9ff63bf5356a361bbd6c6ebd872bdca14861467b5074ac2929a2a3a",
+      "provenance": {}
+    }
+  ],
+  "recipe": "src/rebuild_inputs.py recreates the three normalized inputs in work/ from fixed-hash original responses; derived refs only check identity, not portable contents"
+}

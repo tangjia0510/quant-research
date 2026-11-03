@@ -123,11 +123,17 @@ def _eligibility(frame, path):
     intervals['end'] = pd.to_datetime(intervals.end)
     if intervals[['start', 'end']].isna().any().any() or (intervals.start > intervals.end).any():
         raise ValueError('Invalid membership interval')
-    result['eligible'] = False
+    selected = np.zeros(len(frame), dtype=bool)
     dates = frame.index.get_level_values('datetime')
-    instruments = frame.index.get_level_values('instrument')
+    # One instrument grouping instead of an all-market string scan per interval.
+    groups = frame.groupby(level='instrument', sort=False).indices
     for row in intervals.itertuples():
-        result.loc[(instruments == row.instrument) & (dates >= row.start) & (dates <= row.end), 'eligible'] = True
+        positions = groups.get(row.instrument)
+        if positions is None:
+            continue
+        subset_dates = dates.take(positions)
+        selected[positions[(subset_dates >= row.start) & (subset_dates <= row.end)]] = True
+    result['eligible'] = selected
     if not result.eligible.any():
         raise ValueError('No observations overlap the declared universe')
     return result

@@ -1,0 +1,31 @@
+{
+  "schema": "supplementary_admission_v1_not_native_cli_state",
+  "at": "2026-11-02T12:54:14.145845+00:00",
+  "decision": "rejected_for_native_model_use",
+  "positive_momentum_validated": false,
+  "selected_direct_candidate": "reversal20",
+  "direct_claim": "retrospective cross-sectional RankIC association, not new alpha, not independent holdout evidence",
+  "native_increment_admitted": false,
+  "native_prediction_equivalence_to_reference": true,
+  "native_final_executed": false,
+  "reason_native_final_skipped": "discovery criteria rejected; no need to consume exposed period for model admission",
+  "secondary_2026_status": "retrospective robustness complete; all6 primary RankIC nominal95CI cross0",
+  "budget": {
+    "direct_candidates": 6,
+    "native_discovery_evaluations": 2,
+    "no_new_candidates": true
+  },
+  "required_new_evidence": [
+    "new justified hypothesis and explicitly bounded next protocol/budget",
+    "historical asof industry/size controls for exposure attribution",
+    "terminal delisting and actual tradability/fill evidence",
+    "genuinely new period or honest walk-forward historical research with exposure disclosure"
+  ],
+  "artifact_links": [
+    "development/selection.json",
+    "native-evidence-summary.json",
+    "ridge-sign-equivalence.json",
+    "retrospective2026/direct-summary-exposed2026.json",
+    "final-trial-ledger.json"
+  ]
+}

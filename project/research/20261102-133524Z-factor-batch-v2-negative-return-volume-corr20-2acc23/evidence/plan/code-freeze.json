@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-02T13:27:01.207191+00:00",
+  "empirical_results_seen": false,
+  "files": {
+    "scripts/factor_family.py": "7597bd19371951a7e852080d7f808bbb4ff6fb3cf9e1ff3cfa52b9d8580476ae",
+    "scripts/build_supplementary.py": "35b36a90ca9e298cd35042c464ef3008ee947336f6ad60401d45827378a599df",
+    "scripts/test_factor_family.py": "5b4372aa1339707a3cb66ba1237dd07968f7993e979d82be10735b9b56c2285a"
+  }
+}

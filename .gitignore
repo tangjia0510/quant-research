@@ -29,3 +29,9 @@ dist/
 /private/
 /runtime/
 /smoke-output/
+
+project/work/
+project/local-paths.json
+**/__pycache__/
+**/.pytest_cache/
+*.zip

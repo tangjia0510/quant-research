@@ -1,0 +1,8 @@
+{
+  "at": "2026-11-02T15:55:11.737435+00:00",
+  "kind": "source interpretation precision before local metric analysis",
+  "new_candidate_metrics_seen": false,
+  "source_page": 9,
+  "clarification": "Primarily short-side contribution refers to FF3 alpha: D1 -0.92%, D10 -0.05%, spread+0.86%. Raw excess-return means D1+0.31%,D10+0.83%,spread+0.52% must not be described as mechanically short-driven. No local FF3 model estimated.",
+  "formula_or_gate_changed": false
+}

@@ -1,0 +1,11 @@
+{
+  "source": "studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/prepared.json",
+  "source_root": "legacy_library",
+  "sha256": "644a94b24533b8a89f97c3ccf9ecd34e9069521c6ab36c764678291c2db03a93",
+  "bytes": 4599531,
+  "top_level_keys": [
+    "files",
+    "prepared_at"
+  ],
+  "note": "Full enumerated data/derived hashes stay external; this binding is not the full frozen manifest."
+}

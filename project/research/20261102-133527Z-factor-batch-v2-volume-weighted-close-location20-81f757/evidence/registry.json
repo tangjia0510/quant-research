@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "id": "20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757",
+  "slug": "batch-v2-volume-weighted-close-location20",
+  "title": "量价并行研究 volume-weighted-close-location20",
+  "mode": "factor",
+  "created_at": "2026-11-02T13:35:27.049983+00:00"
+}

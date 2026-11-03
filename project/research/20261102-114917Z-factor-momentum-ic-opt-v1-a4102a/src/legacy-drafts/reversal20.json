@@ -1,0 +1,22 @@
+{
+  "id": "reversal20",
+  "kind": "factor",
+  "hypothesis": "monthly reversal; direction chosen with prior exposed negative momentum evidence, NOT independent discovery; direct selected by frozen Holm6 gates; model prediction IC is a separate baseline increment; all reversal-family directions influenced by previously exposed history",
+  "features": [
+    "return_5",
+    "volatility_20"
+  ],
+  "factor_file": "drafts/factor_family.py",
+  "factor_params": {
+    "candidate_id": "reversal20"
+  },
+  "max_lookback": 21,
+  "factor_timeout": 600,
+  "scale_invariant": true,
+  "model": {
+    "kind": "ridge",
+    "params": {
+      "alpha": 1.0
+    }
+  }
+}

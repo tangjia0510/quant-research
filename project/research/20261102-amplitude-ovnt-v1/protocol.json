@@ -1,0 +1,145 @@
+{
+  "id": "20261102-amplitude-ovnt-v1",
+  "frozen_at": "2026-11-02T15:43:43.568898+00:00",
+  "kind": "supplementary source-driven monthly mechanism replication, explicitly adapted universe/execution",
+  "skill_usage": "Report reproduction guidance and native extract-report for accessible OVNT PDF; standalone reviewed factor/statistic scripts, no native model trials",
+  "data": {
+    "prepared_bars": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/data/bars.parquet",
+    "bars_sha256": "0db1d51daa36dc178170f3ca419c3d1d14a34d62b01f27c9c4bad247a54235e5",
+    "prior_monthly_panel": "quant-research-library/reproductions/20261102-illiq-seas-v1/outputs/monthly-panel.parquet",
+    "monthly_panel_sha256": "03edce963dd9bc9a6ce6d9241a54110ff15e8c6c59ea377d6e557d9ff1e6c155",
+    "prior_seal_sha256": "e9137c1255b7308a3f6b158bab4930034e4fe4dc920dbf93510a780e25b8a272",
+    "master": "quant-research-library/diagnostics/20261102-price-volume-quality-v1/dataset/universe-frozen.csv",
+    "original_manifest_sha256": "5d3b44f9c463931ba4a3e19f04c32bad21f4c7170fdbdbf6d9a02cfdf924ed56",
+    "universe": "5435 instruments in frozen real OHLC source, historical SH/SZ including delisted; not complete all-A history; no BSE/new source repairs",
+    "prices": "Same-date multiplicative vendor adjusted OHLC; volume raw shares/factor. Vendor adjustments not certified total-return/PIT vintage.",
+    "calendar": "Frozen observed global SSE calendar; preserve every internal missing session",
+    "old_illiq_seas_factors_used": false
+  },
+  "candidates": [
+    {
+      "id": "ideal_amplitude20",
+      "name": "理想振幅",
+      "source_url": "https://bigdata-s3.wmcloud.com/researchreport/cc/f5c30e9fdf01014d9160ff7c74a01bbb.pdf",
+      "source": "开源证券2020-05-16 振幅因子的隐藏结构",
+      "pages": "p5 Table2 and implementation; p6 section3; p7 five groups",
+      "original_pdf_local": false,
+      "original_pdf_sha256": null,
+      "source_evidence": "Web-read original and independent same-institution continuation; source notes hashed separately, not fake PDF hash",
+      "formula": "Within last20 global exchange sessions, valid day amplitude=high/low-1; sort valid days by adjusted close; VH mean highest k amplitudes, VL lowest k; score=-(VH-VL)",
+      "valid_days": "Finite positive OHLC from frozen quality source, high>low; H=L excluded as conservative one-price proxy, not verified limit-board history; at least10 valid days among fixed20, NOT last20 valid observations",
+      "k_rule": "max(1,floor(.25*n_valid)); chronological stable sort resolves equal closes",
+      "direction": "Higher signed score predicts higher next-month return (original V has negative sign)",
+      "sort_price_choice": "Adjusted close only; raw/adjusted sorting basis not explicit in original, fixed local choice to avoid ex-right jumps; no second variant",
+      "ipo_rule": "At least60 observed global exchange sessions since max(actual IPO,source calendar start), conservative local interpretation because source60days not explicitly trading/calendar",
+      "bins": 5,
+      "monthly_hac_lag": 3,
+      "period": "2020-01..2026-10, at most82",
+      "paper_evidence": {
+        "original_backtest_period": "2010-04-30..2020-04-30",
+        "annual_long_short_return": 0.233,
+        "raw_V_reported_IC": -0.067,
+        "raw_V_reported_ICIR": -2.97,
+        "monthly_win_rate": 0.842,
+        "fee_setting": 0.003,
+        "fee_single_double_side_unknown": true,
+        "neutralized_original_IC": -0.033,
+        "neutralized_original_rankIC": -0.041,
+        "neutralized_followup_IC": -0.06,
+        "neutralized_followup_period": "2010-04..2021-03"
+      },
+      "missing_original_filters": [
+        "Historical ST exclusion",
+        "Verified suspension and limit-board identities",
+        "Original weighting/adjustment/ties/rounding details ambiguous",
+        "PIT industry/size and other neutralization not performed"
+      ]
+    },
+    {
+      "id": "ovnt12",
+      "name": "隔夜趋势12月",
+      "source_url": "https://research-management.mq.edu.au/ws/portalfiles/portal/397611310/397269748.pdf",
+      "doi": "10.1016/j.jedc.2024.104997",
+      "source": "Guo, Han, Li, Li (2025) The nexus of overnight trend and asset prices in China",
+      "pdf_sha256": "0ed9988aa6c60173e687083653ce9a92eeca9a510ee691a1c9b2c09b8083d0e6",
+      "pages": "p7 Eq3.1-3.4; p8 Eq4.1 and one-month gap; p8-9 Table1; p20-21 Table11",
+      "daily_overnight": "adj_open[d]/adj_close[d-1]-1, equal to (1+adjusted total daily return)/(raw_close[d]/raw_open[d])-1 only under unified same-day factor; vendor adjusted price is local total-return proxy",
+      "monthly_overnight": "Product of(1+daily overnight)-1 over ALL global sessions of the month, requiring every daily pair valid; missing full calendar month stays missing, no fill",
+      "formula": "Holding month t: score=(product of(1+monthly_overnight[t-j]) for j=2..12 -1)/11; 11 complete inputs, NOT arithmetic mean",
+      "time_mapping": "Form at t-1 month-end, skip t-1, use t-12..t-2. Original one-month gap resolves indexing; no extra lag. Jan2024 holding usesJan-Nov2023, skipsDec2023.",
+      "direction": 1,
+      "ipo_rule": "At least3 calendar months; additionally11 complete historical input months needed",
+      "zero_return_filter": "Exclude when all last3 completed adjusted close-to-close monthly returns at formation are exactly0; strictly past data, NaN not0",
+      "bins": 10,
+      "monthly_hac_lag": 12,
+      "period": "Earliest expected2020-02 through2026-10, at most81; first Jan2019 overnight month invalid withoutDec2018close",
+      "paper_evidence": {
+        "period": "1996-07..2018-12",
+        "months": 270,
+        "monthly_long_short_return": 0.0052,
+        "nw12_t": 3.33,
+        "ff3_ls_alpha": 0.0086,
+        "ff3_ls_t": 3.43,
+        "ff3_long_alpha": -0.0005,
+        "ff3_long_t": -0.29,
+        "ff3_short_alpha": -0.0092,
+        "first_half_raw_t": 1.61,
+        "annual_turnover_average_two_legs": 3.16,
+        "break_even_cost_bp_under_paper_convention": 211
+      },
+      "missing_original_filters": [
+        "Bottom30% PIT total market cap exclusion",
+        "Exact Datastream total return/dividend source",
+        "Monthly missing/suspension implementation unspecified; strict full-month convention local",
+        "FF3 matched factors unavailable, no claimed alpha reproduction"
+      ]
+    }
+  ],
+  "monthly_definition": {
+    "formation": "Month-end known signal, next natural calendar month target",
+    "primary_label": "Adjusted close target month end / adjusted close formation month end -1; conditional statistical association, not same-close fill",
+    "open_sensitivity": "First opening after formation month end to first opening after holding month end; October2026 lacksNovemberopen and is immature",
+    "groups": "Candidate-specific5/10 bins, score ascending then instrument; floor(rank0*bins/N)+1; N>=100; target weights fixed before labels",
+    "missing_outcomes": "Preserve membership; conditional means, full-weight known contribution, missing mass, complete top-group returns and -100% unknown long-only lower bound separately. Never missing=0 or outcome-based reranking.",
+    "long_only": "Top group vs same signal pool EW, not official market index; conditional comparison only when outcomes missing",
+    "cost_proxy_bp": [
+      10,
+      25,
+      30,
+      50
+    ],
+    "cost_convention": "Target-weight absolute changes summed per leg, first entry included, no return drift. Long-short fees apply sum of two legs. Also report average two-leg turnover only for convention transparency. Original amplitude0.3% fee side ambiguity and OVNT average-leg B-E prevent like-for-like net comparison.",
+    "shorting": "Theoretical LS only; no assumption borrow/financing/fills feasible"
+  },
+  "inference": {
+    "primary": "Monthly conditional top-minus-bottom spread for both fixed candidates",
+    "hac": "ideal_amplitude20 lag3 local choice; ovnt12 lag12 following source; full calendar grid not compressed after missing values",
+    "family": "2 one-sided mean tests Holm2, includes failed candidates",
+    "support_gate": "n>=24, mean>0, two-sided HAC95% lower>0, Holm2p<=.05; only adapted retrospective association, not live strategy or exact universe replication",
+    "secondary": "Separate Holm2 family for direct monthly RankIC; Pearson/rank ICIR, annual and2020-23/2024-25/2026 blocks, matched candidate months descriptive",
+    "sensitivities": "Open-label and fixed costs/long-only descriptive, never alternative winner selection",
+    "paper_comparisons": "Do not compare original neutral/FF3 alpha to unneutral localIC; do not equate source annualized strategy returns to conditional monthly means"
+  },
+  "budget": {
+    "candidates": 2,
+    "native_model_trials": 0,
+    "extra_windows_signs": 0,
+    "heavy_workers": 1,
+    "numeric_threads": 1,
+    "planned_memory_mb": 6000,
+    "memory_is_not_os_hard_cap": true,
+    "implementation": "Reuse frozen OHLC with year chunks, old monthly endpoint table only as labels; no duplicate native prepare",
+    "estimated_compute_minutes": "5-10",
+    "estimated_audit_report_minutes": "10-20, not guaranteed"
+  },
+  "exposure": {
+    "all_history_retrospective": true,
+    "2025_2026_previously_exposed": true,
+    "no_untouched_holdout_claim": true,
+    "new_factor_results_not_seen_before_freeze": true,
+    "past_failed_candidates_not_retested": true,
+    "ILLIQ_favorite_not_reoptimized": true,
+    "global_adaptive_search_not_corrected": true
+  },
+  "stop_rule": "Run these2 only; MAX/52-week-high/tail-risk not tested; no raw-vs-adjusted or6/9/15month sweep. Log implementation repairs, preserve negative results. No Site/nativefinal."
+}

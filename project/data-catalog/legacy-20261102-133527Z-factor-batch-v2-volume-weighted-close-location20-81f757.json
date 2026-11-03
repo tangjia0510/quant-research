@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "legacy-20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757",
+  "version": "frozen-20261102",
+  "sha256": null,
+  "locator": {
+    "root": "legacy_library",
+    "path": "studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757"
+  },
+  "kind": "directory",
+  "limitations": [
+    "External frozen archive; not included in portable package. Bind legacy_library on destination.",
+    "Historical code may require original execution layout; source hash alone does not guarantee executable replay."
+  ],
+  "reacquisition": "Historical source may change; preserve external frozen raw inputs separately.",
+  "manifest": {
+    "path": "supplementary/final-artifact-manifest.json",
+    "sha256": "9e85618031349cfd488ec1178092e4fc94ea6d203e7695133868da3c73deb368"
+  }
+}

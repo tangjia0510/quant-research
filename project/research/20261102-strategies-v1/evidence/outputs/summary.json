@@ -1,0 +1,165 @@
+{
+  "results": [
+    {
+      "kind": "strategy",
+      "total_friction_bp": 0,
+      "blocked_orders": 1,
+      "total_return": -0.013390000000000124,
+      "cagr": -0.0017201049259994994,
+      "annualized_volatility": 0.14798756546666164,
+      "sharpe_rf0": 0.062211433499032825,
+      "max_drawdown": -0.42400583457631014,
+      "max_drawdown_duration_sessions": 1382,
+      "mean_exposure": 0.5871938666629075,
+      "trades": 24,
+      "sum_traded_notional": 2038771.5,
+      "turnover_notional_over_mean_equity": 18.827477026319162,
+      "commission": 0.0,
+      "slippage_cost": 0.0,
+      "final_equity": 98660.99999999999,
+      "calendar_years": 7.83025325119781
+    },
+    {
+      "kind": "benchmark",
+      "total_friction_bp": 0,
+      "blocked_orders": 1,
+      "total_return": 0.5325940000000002,
+      "cagr": 0.056041192191293554,
+      "annualized_volatility": 0.19148803186193866,
+      "sharpe_rf0": 0.3919383717603488,
+      "max_drawdown": -0.42073541352042443,
+      "max_drawdown_duration_sessions": 1382,
+      "mean_exposure": 0.9977586413485029,
+      "trades": 10,
+      "sum_traded_notional": 121246.49999999999,
+      "turnover_notional_over_mean_equity": 0.8181149284412507,
+      "commission": 0.0,
+      "slippage_cost": 0.0,
+      "final_equity": 153259.40000000002,
+      "calendar_years": 7.83025325119781
+    },
+    {
+      "kind": "active_monthly_hac",
+      "total_friction_bp": 0,
+      "n": 94,
+      "mean": -0.005610851207392886,
+      "lag": 3,
+      "se": 0.004690789937307346,
+      "ci95": [
+        -0.014804799484515284,
+        0.0035830970697295125
+      ]
+    },
+    {
+      "kind": "strategy",
+      "total_friction_bp": 10,
+      "blocked_orders": 1,
+      "total_return": -0.03231577405074937,
+      "cagr": -0.004186409814808334,
+      "annualized_volatility": 0.14794996616747563,
+      "sharpe_rf0": 0.04480114730840673,
+      "max_drawdown": -0.42987418320039816,
+      "max_drawdown_duration_sessions": 1382,
+      "mean_exposure": 0.5872040599877386,
+      "trades": 24,
+      "sum_traded_notional": 2018479.7101500002,
+      "turnover_notional_over_mean_equity": 18.79357905156635,
+      "commission": 1009.2398550749999,
+      "slippage_cost": 1009.2375499999207,
+      "final_equity": 96768.42259492507,
+      "calendar_years": 7.83025325119781
+    },
+    {
+      "kind": "benchmark",
+      "total_friction_bp": 10,
+      "blocked_orders": 1,
+      "total_return": 0.5325315122035006,
+      "cagr": 0.05603569322746771,
+      "annualized_volatility": 0.19154929117542469,
+      "sharpe_rf0": 0.39184599192811886,
+      "max_drawdown": -0.4207302988026379,
+      "max_drawdown_duration_sessions": 1382,
+      "mean_exposure": 0.9978816100923983,
+      "trades": 9,
+      "sum_traded_notional": 120778.95929999997,
+      "turnover_notional_over_mean_equity": 0.8154570159152995,
+      "commission": 60.38947965,
+      "slippage_cost": 60.35929999998615,
+      "final_equity": 153253.15122035006,
+      "calendar_years": 7.83025325119781
+    },
+    {
+      "kind": "active_monthly_hac",
+      "total_friction_bp": 10,
+      "n": 94,
+      "mean": -0.005816661105868475,
+      "lag": 3,
+      "se": 0.0047157185532662954,
+      "ci95": [
+        -0.015059469470270415,
+        0.0034261472585334638
+      ]
+    },
+    {
+      "kind": "strategy",
+      "total_friction_bp": 30,
+      "blocked_orders": 1,
+      "total_return": -0.07049606111850026,
+      "cagr": -0.0092926800961729,
+      "annualized_volatility": 0.14806253360790725,
+      "sharpe_rf0": 0.008771369977269117,
+      "max_drawdown": -0.44108840080585665,
+      "max_drawdown_duration_sessions": 1382,
+      "mean_exposure": 0.5872598479561663,
+      "trades": 25,
+      "sum_traded_notional": 1981275.4079,
+      "turnover_notional_over_mean_equity": 18.752968076652373,
+      "commission": 2971.91311185,
+      "slippage_cost": 2971.8929999999805,
+      "final_equity": 92950.39388814998,
+      "calendar_years": 7.83025325119781
+    },
+    {
+      "kind": "benchmark",
+      "total_friction_bp": 30,
+      "blocked_orders": 1,
+      "total_return": 0.5285169427390002,
+      "cagr": 0.05568199810782315,
+      "annualized_volatility": 0.19148883874090122,
+      "sharpe_rf0": 0.3900896667003331,
+      "max_drawdown": -0.4206585316549021,
+      "max_drawdown_duration_sessions": 1382,
+      "mean_exposure": 0.9974595759924264,
+      "trades": 9,
+      "sum_traded_notional": 120592.2174,
+      "turnover_notional_over_mean_equity": 0.816202063967823,
+      "commission": 180.8883261,
+      "slippage_cost": 180.61740000000793,
+      "final_equity": 152851.6942739,
+      "calendar_years": 7.83025325119781
+    },
+    {
+      "kind": "active_monthly_hac",
+      "total_friction_bp": 30,
+      "n": 94,
+      "mean": -0.006213933932885385,
+      "lag": 3,
+      "se": 0.004760978078051041,
+      "ci95": [
+        -0.015545450965865425,
+        0.003117583100094655
+      ]
+    }
+  ],
+  "decision": {
+    "net_outperformance_supported": false,
+    "drawdown_reduced": false,
+    "investable_certification": false
+  },
+  "limitations": [
+    "Conditional assumed open fills, incomplete historic order-book/limits",
+    "Historical adaptation,not independent future evidence",
+    "Original global strategy not A-share proof",
+    "Full older dividend announcement-asof chain unavailable"
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "event": "pre_results_clarification",
+    "utc": "2026-11-03T04:10:46.978973+00:00",
+    "base_protocol_sha256": "048ceb889b5f046cf5cde6aa4ec2d94763323334c7d29a59724bc7eb403ddf88",
+    "changes": [
+      "Pay-date first trading session on/after pay_date opening assumed cash available (not verified intraday time); consistent with prior ledger.",
+      "Three normalized input files are derived external caches, not raw originals. Runner reconstructs them from fixed raw JSON/HTML/observed calendar and verifies normalized identity. No raw source rows copied into portable bundle."
+    ],
+    "reason": "Independent protocol review before any BOLL outcomes"
+  }
+]

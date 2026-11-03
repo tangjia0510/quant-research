@@ -127,6 +127,8 @@ The command copies retained files under a new `*-archive-*` study's `original/` 
 
 ## Move to another machine
 
+For the lightweight default, use [Portable research projects](portable-project.md): export code, contracts and small evidence, bind separately retained original data, and rebuild intermediate outputs. The full-copy procedure below is an optional archival transfer, not required for lightweight migration.
+
 Copy the complete warehouse, factor library, studies and acquisition sources, plus the configuration and this skill version. With the default relative roots, copying the containing library directory preserves their relationship. Select the copied configuration using `--config` or `QUANT_RESEARCH_CONFIG`, rebuild the Python environment under the new runtime root, run `doctor`, then run `index refresh`. The old virtual environment is replaceable and should not be treated as portable executable state.
 
 Do not edit frozen protocols, candidate identities or hashes to make a move appear successful. Managed source identities resolve through the new configuration; stored historical source paths can remain as provenance. Legacy explicit-path protocols retain their original contracts: preserve required locations or create a distinct imported study instead of rewriting the original experiment.

@@ -1,0 +1,26 @@
+{
+  "id": "volume-weighted-close-location20",
+  "kind": "factor",
+  "hypothesis": "Persistent closes near the high, weighted by observed participation, proxy buying pressure; not signed order flow or market-cap turnover; expected positive direct orientation, primary model incremental objective assessed separately",
+  "features": [
+    "return_5",
+    "volatility_20"
+  ],
+  "factor_file": "candidates/volume-weighted-close-location20/factor.py",
+  "factor_params": {
+    "candidate_id": "volume-weighted-close-location20"
+  },
+  "max_lookback": 20,
+  "factor_timeout": 600,
+  "scale_invariant": true,
+  "model": {
+    "kind": "ridge",
+    "params": {
+      "alpha": 1.0
+    }
+  },
+  "files": {
+    "factor.py": "7597bd19371951a7e852080d7f808bbb4ff6fb3cf9e1ff3cfa52b9d8580476ae"
+  },
+  "candidate_hash": "0df1caf3535f6d2d51891d63352b213b06685f6f6154587f36ed8a4bf86f389a"
+}

@@ -1,0 +1,14 @@
+{
+  "source": "studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/freeze.json",
+  "source_root": "legacy_library",
+  "sha256": "b12492234e80787ca6eb863177b09da22d586ec7b10db1e0600afd3aecb1514a",
+  "bytes": 4600029,
+  "top_level_keys": [
+    "candidates",
+    "data",
+    "protocol_hash",
+    "discovery_inputs",
+    "frozen_at"
+  ],
+  "note": "Full enumerated data/derived hashes stay external; this binding is not the full frozen manifest."
+}

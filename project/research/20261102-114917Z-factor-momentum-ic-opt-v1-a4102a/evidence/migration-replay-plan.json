@@ -1,0 +1,270 @@
+{
+  "research_id": "20261102-114917Z-factor-momentum-ic-opt-v1-a4102a",
+  "status": "dryrun_verified_not_recomputed",
+  "raw_or_normalized_source_files_verified": 10931,
+  "input_bytes_verified": 564731958,
+  "old_intermediate_panels_consumed": false,
+  "execution_order": [
+    {
+      "name": "rebuild_shared_diagnostic_from_frozen_lake_sources",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/diagnostics/20261102-price-volume-quality-v1/scripts/build_diagnostic.py"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox"
+    },
+    {
+      "name": "seal_rebuilt_diagnostic_manifest",
+      "internal": "seal_diagnostic",
+      "target": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/diagnostics/20261102-price-volume-quality-v1"
+    },
+    {
+      "name": "rebuild_native_source_from_rebuilt_diagnostic",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/plans/momentum-opt-v1/scripts/build_native_source.py"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox"
+    },
+    {
+      "name": "rebuild_fixed_direct_factor_family",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/plans/momentum-direct-replay/scripts/build_supplementary.py"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox"
+    },
+    {
+      "name": "direct_diagnostics_development",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/plans/momentum-direct-replay/scripts/analyze_supplementary.py",
+        "--phase",
+        "development"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox"
+    },
+    {
+      "name": "direct_diagnostics_exposed2026",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/plans/momentum-direct-replay/scripts/analyze_supplementary.py",
+        "--phase",
+        "exposed2026"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox"
+    },
+    {
+      "name": "initialize_replay_study",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/skill/scripts/quant.py",
+        "--config",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/quant-research.json",
+        "--worker-threads",
+        "1",
+        "init",
+        "--workspace",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a",
+        "--protocol",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/runtime-protocol.json"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox"
+    },
+    {
+      "name": "copy_frozen_candidates",
+      "internal": "copy_drafts",
+      "source": "${PROJECT_ROOT}/research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-drafts",
+      "target": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/drafts"
+    },
+    {
+      "name": "prepare_native_replay",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/skill/scripts/quant.py",
+        "--config",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/quant-research.json",
+        "--worker-threads",
+        "1",
+        "prepare",
+        "--workspace",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox"
+    },
+    {
+      "name": "check_momentum20-reference",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/skill/scripts/quant.py",
+        "--config",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/quant-research.json",
+        "--worker-threads",
+        "1",
+        "check",
+        "--workspace",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a",
+        "--candidate",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/drafts/momentum20-reference.json"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox"
+    },
+    {
+      "name": "evaluate_momentum20-reference",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/skill/scripts/quant.py",
+        "--config",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/quant-research.json",
+        "--worker-threads",
+        "1",
+        "evaluate",
+        "--workspace",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a",
+        "--candidate",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/drafts/momentum20-reference.json"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox"
+    },
+    {
+      "name": "check_reversal20",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/skill/scripts/quant.py",
+        "--config",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/quant-research.json",
+        "--worker-threads",
+        "1",
+        "check",
+        "--workspace",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a",
+        "--candidate",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/drafts/reversal20.json"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox"
+    },
+    {
+      "name": "evaluate_reversal20",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/skill/scripts/quant.py",
+        "--config",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/quant-research.json",
+        "--worker-threads",
+        "1",
+        "evaluate",
+        "--workspace",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a",
+        "--candidate",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/drafts/reversal20.json"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox"
+    },
+    {
+      "name": "report_native_replay",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/skill/scripts/quant.py",
+        "--config",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/quant-research.json",
+        "--worker-threads",
+        "1",
+        "report",
+        "--workspace",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox"
+    }
+  ],
+  "output_root": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a",
+  "protocol_locator_amendments": [
+    {
+      "reason": "External managed dataset locator replaced by recomputed work-local files; statistical rules unchanged",
+      "original_data_identity": {
+        "region": "cn",
+        "price_basis": "adjusted",
+        "volume_unit": "units",
+        "synthetic": false,
+        "currency": "CNY",
+        "frequency": "day",
+        "adjustment_identity": "audited-shsz-multiplicative-v1",
+        "volume_basis": "raw volume_shares / asof Sina factor",
+        "limitations": [
+          "All input snapshots retrospective, not independently certified PIT/vintage",
+          "No future-label condition used in source eligibility; missing current bars remain NaN",
+          "Native train-median factor imputation differs from supplementary matched61 complete history sample",
+          "Historical ST/board-specific limits/suspensions not fully available",
+          "No complete terminal delisting returns or forced liquidation",
+          "302132 pre-switch mapped history excluded; old300114 not independently covered",
+          "sh689009 excluded for missing factor; sh600680 no period bars",
+          "Calendar observed SSE composite, not exchange certified",
+          "2026 previously exposed; final means retrospective robustness not untouched holdout",
+          "Daily simulator not calibrated slippage/capacity and benchmark synthetic"
+        ],
+        "universe_scope": "Frozen SH/SZ master including delisted, lifecycle/code boundaries and IPO>=60 observed calendar sessions; not complete historical entire A-share identity universe",
+        "source": "Frozen audited Tencent whole rows + HF whole rows + Tencent supplement; Sina effective-date factors",
+        "format": "parquet",
+        "dataset_id": "cn-shsz-audited-quality",
+        "dataset_version": "2026-11-02-v1",
+        "manifest_hash": "c055571c73783e99138542f753db0bdadf9b6bcf514e4030e8e8591177598ede"
+      },
+      "runtime_data_identity": {
+        "region": "cn",
+        "price_basis": "adjusted",
+        "volume_unit": "units",
+        "synthetic": false,
+        "currency": "CNY",
+        "frequency": "day",
+        "adjustment_identity": "audited-shsz-multiplicative-v1",
+        "volume_basis": "raw volume_shares / asof Sina factor",
+        "limitations": [
+          "All input snapshots retrospective, not independently certified PIT/vintage",
+          "No future-label condition used in source eligibility; missing current bars remain NaN",
+          "Native train-median factor imputation differs from supplementary matched61 complete history sample",
+          "Historical ST/board-specific limits/suspensions not fully available",
+          "No complete terminal delisting returns or forced liquidation",
+          "302132 pre-switch mapped history excluded; old300114 not independently covered",
+          "sh689009 excluded for missing factor; sh600680 no period bars",
+          "Calendar observed SSE composite, not exchange certified",
+          "2026 previously exposed; final means retrospective robustness not untouched holdout",
+          "Daily simulator not calibrated slippage/capacity and benchmark synthetic"
+        ],
+        "universe_scope": "Frozen SH/SZ master including delisted, lifecycle/code boundaries and IPO>=60 observed calendar sessions; not complete historical entire A-share identity universe",
+        "source": "Frozen audited Tencent whole rows + HF whole rows + Tencent supplement; Sina effective-date factors",
+        "format": "parquet",
+        "path": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/plans/momentum-opt-v1/native-source/bars.parquet",
+        "universe": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/plans/momentum-opt-v1/native-source/universe.csv",
+        "calendar": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/sandbox/quant-research-library/plans/momentum-opt-v1/native-source/calendar.txt"
+      },
+      "original_protocol_sha256": "232a80672d6d2e94a4fb7d0b5980ee0940c256f74ce136c710b97244cbc7dd37",
+      "runtime_protocol_sha256": "cdf9077d7dbfb87d0d2d38f1fef651fea62c4815a52d6f384cb41152c22a212e"
+    },
+    {
+      "native_candidate_ids": [
+        "momentum20-reference",
+        "reversal20"
+      ],
+      "selection": "Historical frozen choices replayed, no new candidate selection; no finalize or fresh holdout claim."
+    }
+  ],
+  "python": "3.11.17 (main, Oct 14 2026, 01:05:33) [Clang 23.1.3 ]",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.1",
+    "scipy": "1.17.1",
+    "pyqlib": "0.9.7",
+    "scikit-learn": "1.9.1"
+  },
+  "environment_lock_hashes": {
+    "environment/uv.lock": "387866300297eecb5a7fce2632ee02c9db09a26b6becc407aebb54d21200f7cb",
+    "environment/pyproject.toml": "94a14b4299e3945a1580887dd7624300af949cbf87e15b2d32e74bba6e9012e1"
+  },
+  "limitations": [
+    "Hash-validated external data-lake normalized source snapshots still required; these are external dataset inputs, not included in bundle.",
+    "Dryrun is path/inputs/dependency validation only; no new historical statistics computed."
+  ],
+  "adapter_sha256": "59f73d5a4e3bf6c7cb05585990c93dc39d71330a489042716ab76778c9993db9",
+  "entrypoint_sha256": "b6e7008f770101643cab504bda4dadecb0306efa61c60d42f672242c6be32fdd",
+  "verification_scope": "All frozen input sizes/SHA, staged commands and compilation checked. Heavy historical computations NOT executed; independent review separately required."
+}

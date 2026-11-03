@@ -1,0 +1,30 @@
+{
+ "id":"momentum-opt-v1","frozen_at":"2026-11-02T11:41:00Z","request":"Use quant-research skill to optimize momentum and find evidence of useful IC, without guaranteed success",
+ "source_diagnostic":"20261102-price-volume-quality-v1","source_manifest_sha256":"5d3b44f9c463931ba4a3e19f04c32bad21f4c7170fdbdbf6d9a02cfdf924ed56",
+ "candidates":[
+  {"id":"momentum20-reference","formula":"close[t]/close[t-20]-1","direction":"positive","mechanism":"prespecified continuation baseline, known weak in prior diagnostic","lookback":21},
+  {"id":"reversal5","formula":"-(close[t]/close[t-5]-1)","direction":"positive","mechanism":"short-term price pressure reversal","lookback":6},
+  {"id":"reversal20","formula":"-(close[t]/close[t-20]-1)","direction":"positive","mechanism":"monthly reversal; direction chosen with prior exposed negative momentum evidence, NOT independent discovery","lookback":21},
+  {"id":"momentum60-skip5","formula":"close[t-5]/close[t-60]-1","direction":"positive","mechanism":"medium-term continuation excluding recent reversal window","lookback":61},
+  {"id":"reversal5-risk-adjusted","formula":"-(close[t]/close[t-5]-1)/std(daily_return,20,ddof=0)","direction":"positive","mechanism":"short-term reversal scaled by recent risk; zero variance yields missing","lookback":21},
+  {"id":"reversal5-volume-confirmed","formula":"-(close[t]/close[t-5]-1)*clip(mean(adjusted_volume,5)/mean(adjusted_volume,20),0.25,4)","direction":"positive","mechanism":"recent volume pressure amplifies transitory reversal","lookback":20}
+ ],
+ "trial_budget":{"supplementary_factor_variants":6,"native_evaluations":2,"implementation_repairs_max":2,"native_evaluation_timeout_seconds":3600,"no_new_candidates_after_results":true},
+ "price_basis":"verified raw OHLC times Sina backward-asof effective-date multiplier; volume_shares/factor",
+ "quality_gate":"existing frozen observed current-day bar_good and NOT abs(adjusted_one_day_return)>0.5; unknown/missing remains NaN, no future outcome quality gate for signal selection",
+ "supplementary_signal_gate":"common matched universe across all6, complete61 past global-calendar quality bars, IPO age>=60; all factors finite; does not require future prices",
+ "label":"open[t+1+h]/open[t+1]-1; only observed quality entry/exit endpoints, no all-future-bar gate; outcomes may remain missing",
+ "horizons":{"primary":5,"secondary":[1,10]},"missing_outcomes":"groups formed on all ex-ante eligible signals before outcome availability; mean among available outcomes reported alongside missing counts, not a tradable return or zero-fill",
+ "splits":{"train":["2020-01-02","2024-12-31"],"valid":["2025-01-02","2025-06-30"],"discovery":["2025-07-01","2025-12-31"],"final":["2026-01-05","2026-10-30"]},
+ "selection":"2025H2 discovery primary-horizon only; retain nonbaseline candidate with maximum mean RankIC among those meeting all gates; if none pass select largest RankIC only as exploratory native comparator, do NOT admit",
+ "direct_admission_gates":{"mean_rank_ic_min":0.02,"daily_rank_icir_min":0.1,"one_sided_hac_positive_mean_holm_p_max":0.05,"positive_months_min_of6":4,"both_discovery_quarters_positive":true,"mean_q5_minus_q1_forward5_min":0.0005,"min_daily_cross_section":100},
+ "multiple_testing":"Holm across6 primary one-sided HAC normal-approximation p-values; secondary12 candidate-horizon comparisons separately Holm and never select by them; report raw and corrected p",
+ "uncertainty":"daily HAC lag=max(5,2*horizon), nonannualized daily ICIR; predeclared monthly/quarterly/yearly summaries; no iid stock-day t test",
+ "native_model":{"kind":"ridge","params":{"alpha":1.0}},"native_baseline_features":["return_5","volatility_20"],
+ "native_increment_admission":"separate from standalone IC: paired prediction RankIC HAC lower95>0 and net annualized return difference>=0 on same discovery; no claim added value if linear redundancy",
+ "native_missingness":"engine train-median imputation differs from direct complete61 matched-signal estimand; native predictions available without future label; endpoint missing exclusions remain disclosed",
+ "portfolio":{"top_k":10,"rebalance":5,"initial_cash":100000,"position":0.95,"buy_cost":0.0005,"sell_cost":0.0015,"min_cost":0,"trade_unit":100},
+ "holdout":"2025 and2026 price-volume results already exposed in previous20d diagnostic; this is retrospective research. 2026 metrics revealed only after candidate frozen but cannot restore independent holdout",
+ "neutralization":"not performed; complete historical PIT industry/size controls unavailable",
+ "unresolved":["No complete delisting liquidation or terminal returns","Historical ST/board limits/tradability incomplete","Vendor snapshots not vintage/PIT certified","Ex-post missing outcome selection uncertainty remains","Synthetic benchmark not official index; daily fills/impact/capacity unassessed"]
+}

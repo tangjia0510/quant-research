@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "id": "illiq20-jansen2021",
+  "display_name": "ILLIQ20 流动性溢价（研究收藏）",
+  "status": "bookmarked_research_candidate",
+  "bookmarked_at": "2026-11-02T15:24:06.795845+00:00",
+  "native_factor_registration": false,
+  "registration_note": "Research bookmark links the validated supplementary implementation; not registered as native accepted factor or investment-admitted strategy. A native compute adapter would require separate contract validation.",
+  "formula": "mean_d(abs(adjusted_close[d]/adjusted_close[d-1]-1)/(raw_close[d]*actual_volume_shares[d])), last20 complete daily pairs",
+  "direction": "Higher score -> higher expected next-calendar-month return; fixed before results",
+  "lookback_prices": 21,
+  "signal_frequency": "month-end",
+  "holding_period": "next calendar month",
+  "sort": "10 equal-weight groups formed before labels; theoretical D10 minus D1",
+  "source": {
+    "authors": "Jansen, Swinkels, Zhou",
+    "title": "Anomalies in the China A-share market",
+    "year": 2021,
+    "doi": "10.1016/j.pacfin.2021.101607",
+    "url": "https://pure.eur.nl/ws/portalfiles/portal/58642799/Anomalies_in_the_China_A_share_market.pdf",
+    "formula_pages": "printed21/PDF22",
+    "original_return_pages": "Table4 printed8/PDF9",
+    "original_ew_monthly_return": 0.0124,
+    "original_vw_monthly_return": 0.0071,
+    "original_vw_t": 1.5
+  },
+  "local_evidence": {
+    "period": "2020-01..2026-10",
+    "months": 82,
+    "pearson_ic": 0.03345248051211138,
+    "rank_ic": 0.07183131160864055,
+    "rank_icir_monthly": 0.45607753761649084,
+    "conditional_monthly_d10_minus_d1": 0.016091595449321084,
+    "hac3_ci95": [
+      0.00434017456387472,
+      0.027843016334767448
+    ],
+    "primary_holm2_p": 0.007277093227828328,
+    "association_gate_passed": true,
+    "original_universe_replication_passed": false,
+    "deployable_strategy_passed": false,
+    "top_decile_mean_missing_weight": 0.00799078361248235,
+    "top_decile_complete_months": 13,
+    "negative_years": [
+      2020,
+      2024
+    ]
+  },
+  "limitations": [
+    "Missing PIT bottom30% total-market-cap exclusion and historical ST/PT/suspension filters: microcap/illiquidity confounding unresolved",
+    "Conditional available-outcome means are not complete-weight portfolio returns; missing/terminal exits not filled with0",
+    "Theoretical long-short not evidence of A-share borrow availability",
+    "Cost is target-weight turnover sensitivity without drift, market impact, fills or capacity",
+    "All2025/2026history previously exposed; retrospective evidence only, no independent holdout",
+    "Vendor adjustment snapshot not independently PIT/vintage or total-shareholder-return certified",
+    "Raw close times volume is paper proxy, not actual turnover amount"
+  ],
+  "pinned_evidence": {
+    "protocol": {
+      "path": "reproductions/20261102-illiq-seas-v1/protocol.json",
+      "sha256": "66234bbc9ebcad5305690a776c15ccfd4dfdb8146b8ab958415e09b98bd6877e"
+    },
+    "admission": {
+      "path": "reproductions/20261102-illiq-seas-v1/admission.json",
+      "sha256": "e2d94694a2a693b7c798f06a14e60a5d35c657ce0e850d3b4ffed843806e2dab"
+    },
+    "summary": {
+      "path": "reproductions/20261102-illiq-seas-v1/outputs/summary.json",
+      "sha256": "8c31ca8984429442e2be3cba7294af6f0ee04d61fa45237689b83a63eeae5e63"
+    },
+    "source_pdf": {
+      "path": "reproductions/20261102-illiq-seas-v1/sources/jansen_swinkels_zhou_2021.pdf",
+      "sha256": "7b3cf15008779e9a974a3d9f2cb84d9c48b0ba526dd232544c6a2301c14f90ab"
+    },
+    "implementation": {
+      "path": "reproductions/20261102-illiq-seas-v1/scripts/formulas.py",
+      "sha256": "d07961ab438a59975b7b6a44ad726fd31957960dc66b844049e3e7e358f1280e"
+    },
+    "study_manifest": {
+      "path": "reproductions/20261102-illiq-seas-v1/final-artifact-manifest.json",
+      "sha256": "e9137c1255b7308a3f6b158bab4930034e4fe4dc920dbf93510a780e25b8a272"
+    },
+    "report": {
+      "path": "reproductions/20261102-illiq-seas-v1/report/report.html",
+      "sha256": "6b1166603ad199559dce17c4d02db21d1e1053ab7dfe541d2f1289ebacacee48"
+    },
+    "results-independent-audit.json": {
+      "path": "engineering-audits/paper-illiq-seas-v1/results-independent-audit.json",
+      "sha256": "2f33b3be3478585c38827a3108dedf029440bea2c53cadcb431cd392b9203f30"
+    },
+    "final-seal-independent-audit.json": {
+      "path": "engineering-audits/paper-illiq-seas-v1/final-seal-independent-audit.json",
+      "sha256": "8b78d70a3cf1accd0b8cda06c5390effadb60c88f81793848eff0fa7e2be2d40"
+    }
+  },
+  "next_validation_priorities": [
+    "Historical market cap exclusion and size-controlled evidence",
+    "ST/PT/suspensions and delisting exits",
+    "Long-only executable strategy and costs/capacity",
+    "Fresh forward evidence under new frozen protocol"
+  ],
+  "evidence_classification": "conditional_retrospective_association"
+}

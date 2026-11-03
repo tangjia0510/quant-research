@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "config": "${ORIGINAL_WORKSPACE}/quant-research-library/quant-research.json",
+  "max_workers": 2,
+  "worker_threads": 1,
+  "global_candidate_budget": 3,
+  "max_attempts": 2,
+  "timeout_seconds": 3600,
+  "memory_budget_mb": 6000,
+  "worker_memory_mb": 3000,
+  "prepare_memory_mb": 4500,
+  "cpu_budget": 2,
+  "tasks": [
+    {
+      "id": "low-downside-risk20-prepare",
+      "command": "prepare",
+      "workspace": "${ORIGINAL_WORKSPACE}/quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d",
+      "depends_on": []
+    },
+    {
+      "id": "negative-return-volume-corr20-prepare",
+      "command": "prepare",
+      "workspace": "${ORIGINAL_WORKSPACE}/quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23",
+      "depends_on": []
+    },
+    {
+      "id": "volume-weighted-close-location20-prepare",
+      "command": "prepare",
+      "workspace": "${ORIGINAL_WORKSPACE}/quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757",
+      "depends_on": []
+    },
+    {
+      "id": "low-downside-risk20-check",
+      "command": "check",
+      "workspace": "${ORIGINAL_WORKSPACE}/quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d",
+      "candidate": "${ORIGINAL_WORKSPACE}/quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/drafts/low-downside-risk20.json",
+      "depends_on": [
+        "low-downside-risk20-prepare",
+        "negative-return-volume-corr20-prepare",
+        "volume-weighted-close-location20-prepare"
+      ]
+    },
+    {
+      "id": "low-downside-risk20-evaluate",
+      "command": "evaluate",
+      "workspace": "${ORIGINAL_WORKSPACE}/quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d",
+      "candidate": "${ORIGINAL_WORKSPACE}/quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/drafts/low-downside-risk20.json",
+      "depends_on": [
+        "low-downside-risk20-check"
+      ]
+    },
+    {
+      "id": "negative-return-volume-corr20-check",
+      "command": "check",
+      "workspace": "${ORIGINAL_WORKSPACE}/quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23",
+      "candidate": "${ORIGINAL_WORKSPACE}/quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/drafts/negative-return-volume-corr20.json",
+      "depends_on": [
+        "low-downside-risk20-prepare",
+        "negative-return-volume-corr20-prepare",
+        "volume-weighted-close-location20-prepare"
+      ]
+    },
+    {
+      "id": "negative-return-volume-corr20-evaluate",
+      "command": "evaluate",
+      "workspace": "${ORIGINAL_WORKSPACE}/quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23",
+      "candidate": "${ORIGINAL_WORKSPACE}/quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/drafts/negative-return-volume-corr20.json",
+      "depends_on": [
+        "negative-return-volume-corr20-check"
+      ]
+    },
+    {
+      "id": "volume-weighted-close-location20-check",
+      "command": "check",
+      "workspace": "${ORIGINAL_WORKSPACE}/quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757",
+      "candidate": "${ORIGINAL_WORKSPACE}/quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/drafts/volume-weighted-close-location20.json",
+      "depends_on": [
+        "low-downside-risk20-prepare",
+        "negative-return-volume-corr20-prepare",
+        "volume-weighted-close-location20-prepare"
+      ]
+    },
+    {
+      "id": "volume-weighted-close-location20-evaluate",
+      "command": "evaluate",
+      "workspace": "${ORIGINAL_WORKSPACE}/quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757",
+      "candidate": "${ORIGINAL_WORKSPACE}/quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/drafts/volume-weighted-close-location20.json",
+      "depends_on": [
+        "volume-weighted-close-location20-check"
+      ]
+    }
+  ]
+}

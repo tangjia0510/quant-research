@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "legacy-diagnostic-input-manifest",
+  "version": "frozen-20261102",
+  "sha256": "9d81e7b8de8619f083772618107b9a66661fb7c2f87525b78fdff2f624465149",
+  "locator": {
+    "root": "legacy_library",
+    "path": "diagnostics/20261102-price-volume-quality-v1/artifacts/input-manifest.json"
+  },
+  "kind": "file",
+  "limitations": [
+    "Frozen external source; not included in portable payload."
+  ]
+}

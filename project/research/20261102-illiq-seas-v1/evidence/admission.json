@@ -1,0 +1,39 @@
+{
+  "at": "2026-11-02T15:12:37.325365+00:00",
+  "protocol_sha256": "66234bbc9ebcad5305690a776c15ccfd4dfdb8146b8ab958415e09b98bd6877e",
+  "summary_sha256": "8c31ca8984429442e2be3cba7294af6f0ee04d61fa45237689b83a63eeae5e63",
+  "decisions": {
+    "illiq20": {
+      "adapted_historical_association_supported": true,
+      "original_universe_replication": false,
+      "deployable_strategy_certified": false,
+      "gates": {
+        "at_least24months": true,
+        "positive_mean": true,
+        "positive_hac95_lower": true,
+        "holm2_p": true
+      }
+    },
+    "seas": {
+      "adapted_historical_association_supported": false,
+      "original_universe_replication": false,
+      "deployable_strategy_certified": false,
+      "gates": {
+        "at_least24months": true,
+        "positive_mean": true,
+        "positive_hac95_lower": false,
+        "holm2_p": true
+      }
+    }
+  },
+  "native_model_trials": 0,
+  "no_new_candidates_or_variants_after_results": true,
+  "all_history_exposed": true,
+  "next_validation_needed": [
+    "PIT A-share total market cap bottom30% exclusion",
+    "Historical ST/PT and suspension filters",
+    "Resolve terminal/missing outcomes and implementable monthly exits",
+    "Capacity/slippage/borrow and long-only tradability"
+  ],
+  "negative_results_preserved": true
+}

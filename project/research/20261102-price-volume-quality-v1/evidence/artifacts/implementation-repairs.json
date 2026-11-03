@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-02T09:44:00Z",
+  "before_evaluation": true,
+  "repairs": [
+    "Audit clarifies delist_date is exclusive effective termination date; change <= to < without changing factor or thresholds",
+    "Replace repeated full-index symbol lookup with precomputed group indices, same whole-row result",
+    "An existing but empty source CSV for delisted sh600680 led to empty object DataFrame finite-check TypeError; explicitly report no_raw_bars and do not synthesize panel",
+    "Equivalent vectorized group max-minus-min replaces slow Python callbacks for source overlap check"
+  ],
+  "initial_build_interrupted": true,
+  "no_metrics_seen": true
+}

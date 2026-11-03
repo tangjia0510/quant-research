@@ -1,0 +1,12 @@
+{
+  "reason": "Tencent raw/hfq probe proved nonmultiplicative OHLC; do not register that incompatible pair",
+  "universe": "Exact previously frozen 30 codes unchanged",
+  "original_selection_sha256": "81dbc821e5ec90177f02dc97077b6356629dd76a6bc024cc5e564c4f64c689cc",
+  "source": "Fresh Tencent raw daily OHLCV plus fresh Sina dated high-precision hfq multiplicative factors; exchange listing histories",
+  "adjustment_identity": "tencent-raw-sina-hfq-multiplicative-v1",
+  "formula": "asof factor on or before observation date; adjusted OHLC=raw OHLC*factor; raw volume lots*100; adjusted volume=raw shares/factor",
+  "factor_reference": "https://github.com/akfamily/akshare/blob/1b88b68356bebf1fd32461d74a8aaaa66588d2d5/akshare/stock/quote/stock_zh_a_sina.py",
+  "calendar": "Tencent observed SSE Composite dates, checked against frozen-stock observed dates; not independently exchange-certified complete calendar",
+  "validation": ["No future/backward factor filling", "Positive finite factors; unique dated records", "Raw OHLC consistent and observed nonnegative volume", "Volume unit cross-check from raw amount/volume versus low-high for every usable row", "Factor-event adjusted return and implied price-drop audit", "Explicit lifecycle and missing-session counts; missing quotes remain missing, never forward-fill", "Any missing selected-security history or unvalidated material factor discontinuity blocks registration; never replace stocks", "No synthetic substitute, no adjustment gate changes based on strategy returns"],
+  "limitations": ["Mixed provider snapshot not official PIT-certified feed", "Vendor hfq factors may revise historical records and do not prove information available on each historical date", "Observed-index calendar not exchange-certified", "Missing quote days cannot by themselves distinguish suspension from vendor omission", "Raw ST status and historical board-specific limits unavailable; existing simulator approximations remain", "This is a documented alternative provider construction, not BaoStock output or Tencent native hfq"]
+}

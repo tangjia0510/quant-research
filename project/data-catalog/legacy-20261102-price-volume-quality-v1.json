@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "legacy-20261102-price-volume-quality-v1",
+  "version": "frozen-20261102",
+  "sha256": null,
+  "locator": {
+    "root": "legacy_library",
+    "path": "diagnostics/20261102-price-volume-quality-v1"
+  },
+  "kind": "directory",
+  "limitations": [
+    "External frozen archive; not included in portable package. Bind legacy_library on destination.",
+    "Historical code may require original execution layout; source hash alone does not guarantee executable replay."
+  ],
+  "reacquisition": "Historical source may change; preserve external frozen raw inputs separately.",
+  "manifest": {
+    "path": "artifacts/artifact-manifest.json",
+    "sha256": "5d3b44f9c463931ba4a3e19f04c32bad21f4c7170fdbdbf6d9a02cfdf924ed56"
+  }
+}

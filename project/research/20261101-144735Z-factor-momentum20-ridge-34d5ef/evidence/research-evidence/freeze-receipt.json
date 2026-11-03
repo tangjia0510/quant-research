@@ -1,0 +1,9 @@
+{
+  "receipt_written_after_first_probe_launch": true,
+  "selection_sha256_observed_before_price_requests_at_utc": "2026-11-01T14:24:53Z",
+  "first_price_probe_launched_at_utc": "2026-11-01T14:25:06Z",
+  "timestamps_basis": "tool-call transcript current_time_reminder; this receipt records prior observations, not a pretended earlier file write",
+  "selection_sha256": "81dbc821e5ec90177f02dc97077b6356629dd76a6bc024cc5e564c4f64c689cc",
+  "source_amendment_sha256": "9359362a294819ac4390d616973335ba9c1b0122f0ecd93ac4e8e82811c57576",
+  "preregistration_sha256": "cff1eb7f4d9143a4a85f30a8d63765cd8c2efff5c4c57172b50d94d86d3e5afe"
+}

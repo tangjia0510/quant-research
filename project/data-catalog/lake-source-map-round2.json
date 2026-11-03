@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "lake-source-map-round2",
+  "version": "20261102-round5-context",
+  "sha256": "eb3820c1cdd345e54d51fd0be89045679119716c53fd6ec5fdc972bada8bced4",
+  "kind": "file",
+  "locator": {
+    "root": "data_lake",
+    "path": "catalog/core-gap-round2/DATA_SOURCE_MAP_20261102.json"
+  },
+  "role": "Source/endpoint map; counts may predate later gap rounds",
+  "limitations": [
+    "Metadata reference only; does not itself contain or certify every underlying dataset."
+  ]
+}

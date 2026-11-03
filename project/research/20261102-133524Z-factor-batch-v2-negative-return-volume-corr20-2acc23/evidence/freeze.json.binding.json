@@ -1,0 +1,14 @@
+{
+  "source": "studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/freeze.json",
+  "source_root": "legacy_library",
+  "sha256": "07f58acbce2184ba39c6154dac1736ef1add1aef62c2162725b4f15d508bffa5",
+  "bytes": 4599875,
+  "top_level_keys": [
+    "candidates",
+    "data",
+    "protocol_hash",
+    "discovery_inputs",
+    "frozen_at"
+  ],
+  "note": "Full enumerated data/derived hashes stay external; this binding is not the full frozen manifest."
+}

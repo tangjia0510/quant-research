@@ -13,6 +13,8 @@ You are the research agent. Form hypotheses, write candidate implementations, in
 
 Identify the objective, supplied data, intended market, prediction horizon, comparison baseline and resource budget. Infer what is already explicit in the request or workspace. Ask only for missing information that changes the experiment. If the user supplies an existing study, run `status` before doing new work; otherwise inspect `config show`, `dataset list`, `factor list` and `index show` before creating a new one.
 
+Read [Factor discovery](references/factor-discovery.md) when proposing a hypothesis or transferring a published factor. It turns a mechanism into a measurable, falsifiable research plan and uses ILLIQ as an adapted-replication case, not a guaranteed strategy.
+
 Choose the mode and read its section in [Research modes](references/research-modes.md):
 
 - `factor`: hold the prediction model fixed and test additional signals.
@@ -22,7 +24,7 @@ Choose the mode and read its section in [Research modes](references/research-mod
 
 Read [Contracts](references/contracts.md) before creating the protocol or first candidate. The scope is daily-equity research. Different asset classes need their own calendars, labels and execution assumptions; do not quietly reuse equity defaults.
 
-Unless the user supplies a different protocol, use the fixed default plan: **2020–2024 training, 2025 validation, 2026 testing, and 100,000 initial cash (RMB for the intended China-equity studies)**. Internally, 2025 H1 is model validation and H2 is discovery for factor selection. Run `defaults` to inspect the policy; `study new` without `--protocol` resolves these periods against the registered data's actual coverage. The years do not roll forward automatically. Defaults for new studies do not rewrite existing protocols.
+Choose the temporal design by the research question using [Temporal research design](references/temporal-design.md). The installed CLI retains this fixed legacy compatibility preset when no explicit protocol is supplied: **2020–2024 training, 2025 validation, 2026 testing, and 100,000 initial cash (RMB for the intended China-equity studies)**. Internally, 2025 H1 is model validation and H2 is discovery for factor selection. Run `defaults` to inspect the policy; `study new` without `--protocol` resolves these periods against the registered data's actual coverage. The years do not roll forward automatically. Defaults for new studies do not rewrite existing protocols.
 
 ## Run the workflow
 
@@ -30,11 +32,17 @@ Resolve this skill's actual directory; never assume an installation path. Use `s
 
 For installation in Codex or Claude Code and a first request using real data, see [Portability](references/portability.md). The [migration map](references/provenance.md) explains which RD-Agent responsibilities moved to the host agent and which are executable scripts.
 
+For lightweight migration and a unified factor/strategy catalogue, read [Portable research projects](references/portable-project.md) and use `scripts/project.py`. Keep code, protocols, small decision/evidence ledgers and conclusions portable; keep raw inputs externally referenced and recomputable bulk outputs under `work/`. This adapter preserves the native study engine rather than changing its directory contract.
+
 Read [Storage and study registry](references/storage.md) when establishing the library, registering data, naming a study or moving to another machine. Use the configured warehouse and study root for new research; keep explicit-workspace `init` for an existing workflow that requires it.
 
 Read [Market-data preparation](references/data-preparation.md) when real inputs are missing or need updating. The first bundled adapter is free, account-free BaoStock; inspect `source list` and `doctor`. `data fetch` defaults to 2019-01-01 through the latest available completed exchange session. Downloading, standardizing, checking and registering real data are one preparation stage. Keep raw batches under `sources_root`, separate from immutable warehouse versions. Other providers can implement the same adapter contract; combine only semantically compatible versions with recorded source priority and conflicts. Never substitute the current constituent list for a historical stock universe.
 
 Read [Factor library](references/factor-library.md) to reuse or publish a factor. Shared implementations belong under configured `factor_root`, default `~/quant-research/factors`, as immutable ID/version packages. Use exact `factor_refs` in candidates; inspect their source, validation and limitations before reuse. Draft new code inside a study and register a version with `factor add` when it is ready to share. Never overwrite a registered version or edit bundled seed assets during research.
+
+Read [Factor validation and admission](references/factor-validation.md) when assessing a factor's empirical value or selecting it for a model. It separates direct factor diagnostics from model-prediction metrics and identifies additional checks that are not implemented by the current CLI.
+
+Read [Factor optimization research loop](references/factor-optimization.md) when improving a factor: diagnose a mechanism, predeclare a finite selection plan, compare controlled variants on development data, then freeze and evaluate without relabeling exposed evidence. Its parallel-candidate guidance distinguishes isolated work from same-study CLI operations that must remain serialized. Read [Batch research](references/batch-research.md) before using the bundled `scripts/batch.py` discovery scheduler; it preserves study locks and does not select or finalize candidates.
 
 For prior RD-Agent/Qlib artifacts, use the historical import workflow in that reference. Preserve original protocols, rejected attempts and reports inside an archive; historical records must not masquerade as newly executed studies.
 

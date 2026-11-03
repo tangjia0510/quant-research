@@ -1,0 +1,33 @@
+{
+  "plan_sha256": "bee18d090f8feb883ed7e8e616665a354543a5c593f912e37b2429482219df39",
+  "candidates": [
+    {
+      "id": "low-downside-risk20",
+      "status": "planned",
+      "results_seen": false
+    },
+    {
+      "id": "negative-return-volume-corr20",
+      "status": "planned",
+      "results_seen": false
+    },
+    {
+      "id": "volume-weighted-close-location20",
+      "status": "planned",
+      "results_seen": false
+    }
+  ],
+  "global_mechanism_budget": 3,
+  "attempts": [
+    {
+      "at": "2026-11-02T13:18:05.604247+00:00",
+      "stage": "preflight_unit_tests_before_native_registration",
+      "attempt": 1,
+      "status": "failed_single_instrument_groupby_apply_return_shape",
+      "fix": "explicit_concat_of_per_instrument_series_same_formula",
+      "no_empirical_results_seen": true,
+      "retained_code": "outputs/factor-family-preflight-draft1.py",
+      "retained_log": "outputs/factor-tests-preflight-attempt1.log"
+    }
+  ]
+}

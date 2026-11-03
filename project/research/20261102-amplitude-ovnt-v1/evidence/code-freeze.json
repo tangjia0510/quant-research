@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-02T15:48:57.421911+00:00",
+  "new_candidate_results_seen": false,
+  "sha256": {
+    "test_formulas.py": "2cb1dac692e58bee35062c021904ab7b23be959b535b7cb5296a354f74d699c6",
+    "formulas.py": "42d4aa623bf49a98b43cc43748e3ccd043de0c4f4440696506e52cb2c8b121cf",
+    "build_monthly.py": "b6f603f1d4d8e54ec8e48a06ac7464afbffa5ece99c3c93d4abdf37e17b5c1fb"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "source": "studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/prepared.json",
+  "source_root": "legacy_library",
+  "sha256": "185aa01d89d7112de82c403973b951b43f9f5d004974ca9d6e72f678d7263dc8",
+  "bytes": 4599531,
+  "top_level_keys": [
+    "files",
+    "prepared_at"
+  ],
+  "note": "Full enumerated data/derived hashes stay external; this binding is not the full frozen manifest."
+}

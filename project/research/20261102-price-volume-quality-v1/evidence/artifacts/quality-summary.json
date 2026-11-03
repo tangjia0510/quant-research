@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-11-02T09:54:01.391017+00:00",
+  "universe": 5461,
+  "source_priority": [
+    "Tencent normalized full whole row",
+    "Tencent historical supplement whole row",
+    "HF unadjusted normalized whole row"
+  ],
+  "quality_totals": {
+    "observed_rows": 8754660,
+    "missing_within_lifecycle": 28845,
+    "outside_lifecycle_observed": 1472,
+    "invalid_numeric": 0,
+    "ohlc_ordering_fail": 0,
+    "nonpositive_ohlcv_amount": 0,
+    "vwap_outside_2pct": 32,
+    "factor_missing_or_invalid": 1456,
+    "adjusted_move_over_50pct": 17,
+    "good_bars": 8751700,
+    "signal_rows": 8355509,
+    "signal_with_missing_outcome": 52200,
+    "signal_labeled": 8303309
+  },
+  "statuses": {
+    "active": 5223,
+    "delisted": 238
+  },
+  "source_overlap_dates": 293214,
+  "source_ohlc_conflicts": 0,
+  "signal_samples": 8355509
+}

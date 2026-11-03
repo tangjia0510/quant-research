@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "boll-510300-dividends-20261102",
+  "version": "frozen-20261102",
+  "kind": "file",
+  "sha256": "e60fa7af893e9405b65e2694d2a58cca175c3744c876905e57dbb26909152728",
+  "locator": {
+    "root": "legacy_library",
+    "path": "reproductions/20261102-strategies-v1/sources/510300-dividends.csv"
+  },
+  "description": "Reused frozen source from independently audited Faber ETF study; no new downloads",
+  "limitations": [
+    "Vendor historical snapshot, not point-in-time certified",
+    "Raw external input remains outside portable project; must resolve exact hash"
+  ]
+}

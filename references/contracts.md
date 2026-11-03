@@ -4,6 +4,8 @@ Inspect `scripts/quant.py --help` for the installed command interface. All paths
 
 ## Default research plan
 
+This installed default is a **legacy compatibility preset**, not a universal research design. Choose dates and roles deliberately using [Temporal research design](temporal-design.md); pass an explicit protocol for a different supported design. This guidance does not change the default policy ID, CLI behavior or existing studies.
+
 Data preparation defaults independently to **2019-01-01 through the latest available completed exchange session**, with 2019 used for feature warmup. Use the [source preparation workflow](data-preparation.md); downloading additional dates does not roll the research split years forward.
 
 `defaults` reports the installed policy without creating a study. A managed `study new` call that omits `--protocol` uses these fixed periods:

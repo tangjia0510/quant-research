@@ -1,0 +1,243 @@
+{
+  "research_id": "20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d",
+  "status": "dryrun_verified_not_recomputed",
+  "raw_or_normalized_source_files_verified": 10931,
+  "input_bytes_verified": 564731958,
+  "old_intermediate_panels_consumed": false,
+  "execution_order": [
+    {
+      "name": "rebuild_shared_diagnostic_from_frozen_lake_sources",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/diagnostics/20261102-price-volume-quality-v1/scripts/build_diagnostic.py"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox"
+    },
+    {
+      "name": "seal_rebuilt_diagnostic_manifest",
+      "internal": "seal_diagnostic",
+      "target": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/diagnostics/20261102-price-volume-quality-v1"
+    },
+    {
+      "name": "rebuild_native_source_from_rebuilt_diagnostic",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/plans/momentum-opt-v1/scripts/build_native_source.py"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox"
+    },
+    {
+      "name": "initialize_replay_study",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/skill/scripts/quant.py",
+        "--config",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/quant-research.json",
+        "--worker-threads",
+        "1",
+        "init",
+        "--workspace",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d",
+        "--protocol",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/runtime-protocol.json"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox"
+    },
+    {
+      "name": "copy_frozen_candidates",
+      "internal": "copy_drafts",
+      "source": "${PROJECT_ROOT}/research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/src/legacy-drafts",
+      "target": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/drafts"
+    },
+    {
+      "name": "prepare_native_replay",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/skill/scripts/quant.py",
+        "--config",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/quant-research.json",
+        "--worker-threads",
+        "1",
+        "prepare",
+        "--workspace",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox"
+    },
+    {
+      "name": "bind_rebuilt_native_for_direct_batch",
+      "internal": "bind_batch",
+      "native": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d",
+      "family": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/plans/price-volume-batch-v2",
+      "diag": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/diagnostics/20261102-price-volume-quality-v1",
+      "reference": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a"
+    },
+    {
+      "name": "rebuild_fixed_direct_factor_family",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/plans/price-volume-batch-v2/scripts/build_supplementary.py"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox"
+    },
+    {
+      "name": "direct_diagnostics_development",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/plans/price-volume-batch-v2/scripts/analyze_supplementary.py",
+        "--phase",
+        "development"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox"
+    },
+    {
+      "name": "direct_diagnostics_exposed2026",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/plans/price-volume-batch-v2/scripts/analyze_supplementary.py",
+        "--phase",
+        "exposed2026"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox"
+    },
+    {
+      "name": "check_low-downside-risk20",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/skill/scripts/quant.py",
+        "--config",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/quant-research.json",
+        "--worker-threads",
+        "1",
+        "check",
+        "--workspace",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d",
+        "--candidate",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/drafts/low-downside-risk20.json"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox"
+    },
+    {
+      "name": "evaluate_low-downside-risk20",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/skill/scripts/quant.py",
+        "--config",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/quant-research.json",
+        "--worker-threads",
+        "1",
+        "evaluate",
+        "--workspace",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d",
+        "--candidate",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/drafts/low-downside-risk20.json"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox"
+    },
+    {
+      "name": "report_native_replay",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/skill/scripts/quant.py",
+        "--config",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/quant-research.json",
+        "--worker-threads",
+        "1",
+        "report",
+        "--workspace",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox"
+    }
+  ],
+  "output_root": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d",
+  "protocol_locator_amendments": [
+    {
+      "reason": "External managed dataset locator replaced by recomputed work-local files; statistical rules unchanged",
+      "original_data_identity": {
+        "region": "cn",
+        "price_basis": "adjusted",
+        "volume_unit": "units",
+        "synthetic": false,
+        "currency": "CNY",
+        "frequency": "day",
+        "adjustment_identity": "audited-shsz-multiplicative-v1",
+        "volume_basis": "raw volume_shares / asof Sina factor",
+        "limitations": [
+          "All input snapshots retrospective, not independently certified PIT/vintage",
+          "No future-label condition used in source eligibility; missing current bars remain NaN",
+          "Native train-median factor imputation differs from supplementary matched61 complete history sample",
+          "Historical ST/board-specific limits/suspensions not fully available",
+          "No complete terminal delisting returns or forced liquidation",
+          "302132 pre-switch mapped history excluded; old300114 not independently covered",
+          "sh689009 excluded for missing factor; sh600680 no period bars",
+          "Calendar observed SSE composite, not exchange certified",
+          "2026 previously exposed; final means retrospective robustness not untouched holdout",
+          "Daily simulator not calibrated slippage/capacity and benchmark synthetic"
+        ],
+        "universe_scope": "Frozen SH/SZ master including delisted, lifecycle/code boundaries and IPO>=60 observed calendar sessions; not complete historical entire A-share identity universe",
+        "source": "Frozen audited Tencent whole rows + HF whole rows + Tencent supplement; Sina effective-date factors",
+        "format": "parquet",
+        "dataset_id": "cn-shsz-audited-quality",
+        "dataset_version": "2026-11-02-v1",
+        "manifest_hash": "c055571c73783e99138542f753db0bdadf9b6bcf514e4030e8e8591177598ede"
+      },
+      "runtime_data_identity": {
+        "region": "cn",
+        "price_basis": "adjusted",
+        "volume_unit": "units",
+        "synthetic": false,
+        "currency": "CNY",
+        "frequency": "day",
+        "adjustment_identity": "audited-shsz-multiplicative-v1",
+        "volume_basis": "raw volume_shares / asof Sina factor",
+        "limitations": [
+          "All input snapshots retrospective, not independently certified PIT/vintage",
+          "No future-label condition used in source eligibility; missing current bars remain NaN",
+          "Native train-median factor imputation differs from supplementary matched61 complete history sample",
+          "Historical ST/board-specific limits/suspensions not fully available",
+          "No complete terminal delisting returns or forced liquidation",
+          "302132 pre-switch mapped history excluded; old300114 not independently covered",
+          "sh689009 excluded for missing factor; sh600680 no period bars",
+          "Calendar observed SSE composite, not exchange certified",
+          "2026 previously exposed; final means retrospective robustness not untouched holdout",
+          "Daily simulator not calibrated slippage/capacity and benchmark synthetic"
+        ],
+        "universe_scope": "Frozen SH/SZ master including delisted, lifecycle/code boundaries and IPO>=60 observed calendar sessions; not complete historical entire A-share identity universe",
+        "source": "Frozen audited Tencent whole rows + HF whole rows + Tencent supplement; Sina effective-date factors",
+        "format": "parquet",
+        "path": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/plans/momentum-opt-v1/native-source/bars.parquet",
+        "universe": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/plans/momentum-opt-v1/native-source/universe.csv",
+        "calendar": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/sandbox/quant-research-library/plans/momentum-opt-v1/native-source/calendar.txt"
+      },
+      "original_protocol_sha256": "9ecb6b4d2afb1aacd6c6512447ef9b1332f2bcf5a0d0324f5916e7c342e7d3bb",
+      "runtime_protocol_sha256": "5c66e9131039e97fe67c659befde4e7b75904b3ddbd84cc0d1259fa1fada4f40"
+    },
+    {
+      "native_candidate_ids": [
+        "low-downside-risk20"
+      ],
+      "selection": "Historical frozen choices replayed, no new candidate selection; no finalize or fresh holdout claim."
+    }
+  ],
+  "python": "3.11.17 (main, Oct 14 2026, 01:05:33) [Clang 23.1.3 ]",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.1",
+    "scipy": "1.17.1",
+    "pyqlib": "0.9.7",
+    "scikit-learn": "1.9.1"
+  },
+  "environment_lock_hashes": {
+    "environment/uv.lock": "387866300297eecb5a7fce2632ee02c9db09a26b6becc407aebb54d21200f7cb",
+    "environment/pyproject.toml": "94a14b4299e3945a1580887dd7624300af949cbf87e15b2d32e74bba6e9012e1"
+  },
+  "limitations": [
+    "Hash-validated external data-lake normalized source snapshots still required; these are external dataset inputs, not included in bundle.",
+    "Dryrun is path/inputs/dependency validation only; no new historical statistics computed."
+  ],
+  "adapter_sha256": "59f73d5a4e3bf6c7cb05585990c93dc39d71330a489042716ab76778c9993db9",
+  "entrypoint_sha256": "b6e7008f770101643cab504bda4dadecb0306efa61c60d42f672242c6be32fdd",
+  "verification_scope": "All frozen input sizes/SHA, staged commands and compilation checked. Heavy historical computations NOT executed; independent review separately required."
+}

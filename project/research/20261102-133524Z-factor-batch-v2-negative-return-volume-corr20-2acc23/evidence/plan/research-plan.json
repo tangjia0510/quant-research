@@ -1,0 +1,148 @@
+{
+  "id": "price-volume-batch-v2",
+  "frozen_at": "2026-11-02T13:14:30.333746+00:00",
+  "request": "Use authorized built-in parallel batch scheduler for a bounded set of new price-volume factors; no guarantee of an effective factor",
+  "prior_research": "20261102-114917Z-factor-momentum-ic-opt-v1-a4102a rejected native model admission; keep that decision unchanged",
+  "dataset": {
+    "id": "cn-shsz-audited-quality",
+    "version": "2026-11-02-v1",
+    "warehouse_manifest_sha256": "c055571c73783e99138542f753db0bdadf9b6bcf514e4030e8e8591177598ede",
+    "reference_prepared_bars_sha256": "0db1d51daa36dc178170f3ca419c3d1d14a34d62b01f27c9c4bad247a54235e5",
+    "reference_eligibility_sha256": "103f8945d1644e05991c012c7c8771f466a5859bc80ea31f5172e961c8a032d8",
+    "scope": "5435 frozen SH/SZ securities including historical delisted; not complete all-A-share identity history; BSE excluded"
+  },
+  "candidates": [
+    {
+      "id": "low-downside-risk20",
+      "lookback": 21,
+      "direction": "positive score predicts higher future return",
+      "formula": "-sqrt(mean(min(close[t]/close[t-1]-1,0)^2,20 complete sessions))",
+      "mechanism": "Lower downside-specific risk may add information beyond total volatility; incremental Ridge baseline explicitly includes volatility20",
+      "missing": "Any unavailable constituent return yields missing full20-session estimate; zero downside risk is legitimate zero, not missing"
+    },
+    {
+      "id": "negative-return-volume-corr20",
+      "lookback": 21,
+      "direction": "positive score predicts higher future return",
+      "formula": "-rolling_corr(close[t]/close[t-1]-1, log(volume[t])-log(volume[t-1]),20 complete pairs)",
+      "mechanism": "Strong contemporaneous price/participation coupling may reflect transitory pressure rather than continuation; direction informed by prior reversal results and not independent prior knowledge",
+      "missing": "volume<=0 or unavailable makes log-volume missing; any missing pair or zero variance of either series gives missing correlation; no zero filling"
+    },
+    {
+      "id": "volume-weighted-close-location20",
+      "lookback": 20,
+      "direction": "positive score predicts higher future return",
+      "formula": "sum(volume*(2*close-high-low)/(high-low),20 complete sessions)/sum(volume,20)",
+      "mechanism": "Persistent closes near the high, weighted by observed participation, proxy buying pressure; not signed order flow or market-cap turnover",
+      "missing": "high<=low, unavailable OHLC, or volume<=0 makes daily location missing; require all20 valid sessions and positive denominator; never assign0 to a flat-range bar"
+    }
+  ],
+  "price_volume_basis": "Same frozen adjusted OHLC=raw*Sina effective-date multiplier, volume=raw_shares/multiplier; no new data fixes. Native factor contract lacks true amount, so no Amihud or invented close*volume turnover-amount claim",
+  "splits": {
+    "train": [
+      "2020-01-02",
+      "2024-12-31"
+    ],
+    "valid": [
+      "2025-01-02",
+      "2025-06-30"
+    ],
+    "discovery": [
+      "2025-07-01",
+      "2025-12-31"
+    ],
+    "final": [
+      "2026-01-05",
+      "2026-10-30"
+    ]
+  },
+  "label": {
+    "price": "open",
+    "entry_lag": 1,
+    "horizon": 5
+  },
+  "supplementary_horizons": {
+    "primary": 5,
+    "secondary": [
+      1,
+      10
+    ]
+  },
+  "primary_objective": "Positive paired model prediction RankIC increment versus identical return5+volatility20 Ridge baseline; direct expected-sign factor association reported and judged separately",
+  "native_admission_gates": {
+    "paired_mean_rankic_increment_positive": true,
+    "paired_hac10_lower95_positive": true,
+    "one_sided_hac10_p_holm_across3_max": 0.05,
+    "annualized_net_return_difference_vs_baseline_min": 0
+  },
+  "native_uncertainty": "Preserve engine native lag5 outputs; use separately computed prespecified HAC10 and Holm3 for this batch admission; normal approximation and adaptive historical research limitations retained",
+  "direct_admission_gates": {
+    "mean_rank_ic_min": 0.02,
+    "daily_rank_icir_min": 0.1,
+    "one_sided_hac10_p_holm_across3_max": 0.05,
+    "positive_months_min_of6": 4,
+    "both_discovery_quarters_positive": true,
+    "mean_q5_minus_q1_forward5_min": 0.0005,
+    "min_daily_cross_section": 100
+  },
+  "multiple_testing": "Separate prespecified families: native paired increments3; direct primary5d factors3; direct secondary1/10d6. Holm for each; no claim they or prior research are independent; no correction claims for cumulative adaptive project search",
+  "selection": "Run all3 native candidates regardless direct-screen outcome; await all terminal results. Retain for further predictor research only if native and declared-direction direct gates both pass; rank passing candidates by paired mean model RankIC increment, then lower native mean turnover, then lexical id. No outcome-based sign/window/universe changes",
+  "supplementary_signal_gate": "Native lifecycle/IPO>=60 membership plus all3 finite scores on common21 consecutive globally aligned quality bars; no future outcome used to form ranks/quintiles. High=low exclusion induces an explicitly disclosed common-sample restriction",
+  "missing_labels": "Attach open[t+1+h]/open[t+1]-1 only when entry/exit observed positive quality prices exist; cross-split labels purged. Groups formed before future-label missingness; report mature missing outcomes vs immature tails separately, no zero return or reranking",
+  "native_missingness": "Native train-only median/IQR imputation uses its own full eligibility; differs from supplementary common21 complete-case factors. No industry/size neutralization without PIT data",
+  "model": {
+    "kind": "ridge",
+    "params": {
+      "alpha": 1.0
+    }
+  },
+  "baseline_features": [
+    "return_5",
+    "volatility_20"
+  ],
+  "preprocessing": {
+    "clip": 10,
+    "label_transform": "raw"
+  },
+  "seed": 42,
+  "portfolio": {
+    "top_k": 10,
+    "rebalance": 5,
+    "initial_cash": 100000,
+    "position": 0.95,
+    "buy_cost": 0.0005,
+    "sell_cost": 0.0015,
+    "min_cost": 0,
+    "trade_unit": 100
+  },
+  "portfolio_caveats": "Actual exposure/cash/fees/turnover and gross/net paths must be reported. Native all-universe equalweight at100k/100share lots is near-cash and NOT a valid market benchmark; QRBENCH synthetic not official index; no fills/capacity certification",
+  "budget": {
+    "mechanism_candidates": 3,
+    "native_discovery_evaluations": 3,
+    "native_final_evaluations": 0,
+    "supplementary_variants": 3,
+    "same_identity_attempts_per_task_max": 2,
+    "new_parameter_variants_after_results": 0,
+    "timeout_seconds_per_native_task": 3600
+  },
+  "parallel_execution": {
+    "required": "new audited built-in batch scheduler only; no direct internal worker or same-study lock bypass",
+    "isolated_studies": 3,
+    "max_workers": 2,
+    "inner_threads": 1,
+    "prepare_policy": "One exclusive prepare at a time before its study downstream steps; no hardlink/shared-writable snapshots. Initial implementation has no automatic prepared reuse; compare independent prepared identities to audited reference",
+    "resource_budget": "9.7GiB host total; monitor actual task memory, stop/defer admission on insufficient headroom; two real independent tasks must overlap if safe, not merely two agent messages",
+    "timing": "Rough25-35min compute after scheduler readiness, NOT promised; engineering, audits and failed attempts recorded separately; exact stage receipts required"
+  },
+  "exposure": "Prior2025 and2026 direct momentum/reversal and native2025 outputs influenced this new family; no untouched historical holdout. New2026 direct metrics only after batch selection fixed, retrospective stability not new validation. Native finalize not in budget, even if research-retained",
+  "stop": "All3 completed/failed within exact-identity retry budget and audited, then freeze/report decisions. Negative or inconclusive outcomes stop this batch; any new mechanism requires a new bounded protocol",
+  "limitations": [
+    "Unknown historical ST/board-specific limits and suspensions",
+    "Terminal delisting/exit prices incomplete; outcome-selection bias unresolved",
+    "Vendor adjusted snapshots not certified vintage/PIT",
+    "Native median imputation and direct matched sample differ",
+    "No historical industry/size neutralization",
+    "No calibrated slippage, capacity, executable shorting or actual fills",
+    "Source repairs collected after old freeze remain excluded"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-02T15:48:57.416884+00:00",
+  "protocol_sha256": "58b6490676ef273df6876b9f5dbfc3eab8e0ee1fa7b28e2b046138e2081e0676",
+  "new_candidate_results_seen": false,
+  "kind": "pre-result semantic clarification, no calculation or threshold change",
+  "field": "ovnt12 zero_return_filter",
+  "clarification": "The source says zero returns for three consecutive months but the inspected statement does not pin daily versus monthly frequency. Frozen last3_months_zero checks three monthly endpoint returns exactly0; this is explicitly a local monthly-zero proxy, NOT certified exact original suspension filtering. A month with offsetting nonzero daily returns can have zero endpoint return.",
+  "missing_original_filter_added": "Exact frequency/implementation of original consecutive-zero-return filter",
+  "code_changed": false
+}

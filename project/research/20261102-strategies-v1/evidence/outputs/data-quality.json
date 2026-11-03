@@ -1,0 +1,21 @@
+{
+  "rows": 2140,
+  "first": "2018-01-02",
+  "last": "2026-10-30",
+  "missing_calendar_rows": 0,
+  "duplicate_rows": 0,
+  "ohlc_bounds_pass": true,
+  "volume_unit": "source lots *100 verified amount/VWAP within OHLC1% tolerance",
+  "dividend_nav_event_dates_match": true,
+  "dividend_events_2019_2026": 8,
+  "splits_as_published": [
+    [
+      "2012\u5e74",
+      "2012-05-11",
+      "\u4efd\u989d\u6298\u7b97",
+      "1:0.3709"
+    ]
+  ],
+  "quote_snapshots_ignored": true,
+  "strategy_results_not_computed": true
+}

@@ -1,0 +1,49 @@
+{
+  "at": "2026-11-02T16:03:31.907873+00:00",
+  "protocol_sha256": "58b6490676ef273df6876b9f5dbfc3eab8e0ee1fa7b28e2b046138e2081e0676",
+  "summary_sha256": "e0512d7a24f5fa3e7acc6549c1e26200da25cad2cedc3352d813716e33e9937f",
+  "decisions": {
+    "ideal_amplitude20": {
+      "adapted_retrospective_conditional_association_supported": true,
+      "original_universe_replication": false,
+      "deployable_strategy_certified": false,
+      "gates": {
+        "at_least24months": true,
+        "positive_mean": true,
+        "positive_hac95_lower": true,
+        "holm2_p": true
+      },
+      "long_only_cost30bp_mean": -0.0008386317175633088,
+      "long_only_cost30bp_ci95": [
+        -0.003910729894584542,
+        0.002233466459457924
+      ]
+    },
+    "ovnt12": {
+      "adapted_retrospective_conditional_association_supported": true,
+      "original_universe_replication": false,
+      "deployable_strategy_certified": false,
+      "gates": {
+        "at_least24months": true,
+        "positive_mean": true,
+        "positive_hac95_lower": true,
+        "holm2_p": true
+      },
+      "long_only_cost30bp_mean": 0.0024238074094097323,
+      "long_only_cost30bp_ci95": [
+        -0.0020712646080858353,
+        0.0069188794269053
+      ]
+    }
+  },
+  "native_model_trials": 0,
+  "no_new_candidates_or_variants_after_results": true,
+  "all_history_exposed": true,
+  "next_requirements": [
+    "PIT historical status/market cap and original filters",
+    "Credible terminal and missing exits",
+    "Executable long-only cost/capacity tests",
+    "Fresh forward evidence under new protocol"
+  ],
+  "no_automatic_favorite_registration": true
+}

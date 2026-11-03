@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "decided_at": "2026-11-01T14:50:18.397989+00:00",
+  "study_id": "20261101-144735Z-factor-momentum20-ridge-34d5ef",
+  "candidate_id": "momentum20-ridge-v1",
+  "research_decision": "reject_incremental_hypothesis",
+  "run_status": "complete",
+  "gates": {
+    "positive_rank_ic_increment": false,
+    "positive_hac95_lower": false,
+    "net_return_above_baseline": false,
+    "drawdown_no_worse": false
+  },
+  "final_run": "not_run_gate_failed",
+  "final_return": null,
+  "parameter_search": false,
+  "trials_used": 1,
+  "repairs_used": 0,
+  "preregistration_sha256": "cff1eb7f4d9143a4a85f30a8d63765cd8c2efff5c4c57172b50d94d86d3e5afe",
+  "metrics_sha256": "2e0c647efc9f9490af060c8286d5809e9e52446fabfc4a159160311bd967087d",
+  "summary_zh": "20日动量在本固定样本/协议下没有提供相对两因子Ridge基线的可信增量；停止本候选，不进入2026 final。此结论不等于所有动量策略无效。",
+  "signal_metric_scope": "prediction-vs-forward-return Pearson IC / Spearman RankIC, not raw standalone momentum factor IC",
+  "bindings": {
+    "protocol.json": "4bf55e45f8ab5a74644682f4ad6d8151c776694c52421fbd5625240e14081952",
+    "candidates/momentum20-ridge-v1/candidate.json": "ad53e2b9a894ce5042270924737bba80ea3b6db48f8f43c72b311f9c0ea11626",
+    "runs/discovery/momentum20-ridge-v1/run.json": "da565aa8d267d9f68ec9f8f59867fcad58e608f7cc22b0df4a12a09577ecf88e",
+    "runs/discovery/momentum20-ridge-v1/attempt-1/metrics.json": "2e0c647efc9f9490af060c8286d5809e9e52446fabfc4a159160311bd967087d",
+    "research-evidence/preregistration.json": "cff1eb7f4d9143a4a85f30a8d63765cd8c2efff5c4c57172b50d94d86d3e5afe"
+  },
+  "metrics_path": "runs/discovery/momentum20-ridge-v1/attempt-1/metrics.json",
+  "phase": "discovery",
+  "interpretation_path": "interpretation.md",
+  "limitations": [
+    "30只代码分层样本，包含退市股，不代表全A股或沪深300，也不保证行业分散。",
+    "混合供应商复权因子是事后获取，未获独立PIT认证；交易日历来自观察到的上证指数日期。",
+    "141个原始缺口保留：138停牌日有证据、2摘牌日、1个预热期日期未完全核验；2025下半年无缺口，原始价格不补填。",
+    "统一涨跌停代理不能精确模拟历史ST/创业板规则，退市清算、容量和真实成交不完整。",
+    "2026 final未运行；不声称研究者从未接触该时期历史。",
+    "IC是模型预测对未来收益的日截面相关，不是单独20日动量原始因子的IC。"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "source_bundle_sha256": "ac79f1052ab78dc63a5354954b762444a28a7b6b10896de08ade8564e1e6e407",
+  "changes": [
+    {
+      "path": "literature/objects/0ed9988aa6c60173e687083653ce9a92eeca9a510ee691a1c9b2c09b8083d0e6.pdf",
+      "action": "omit-third-party-pdf",
+      "original_sha256": "0ed9988aa6c60173e687083653ce9a92eeca9a510ee691a1c9b2c09b8083d0e6"
+    },
+    {
+      "path": "literature/objects/4888e9f328ce5d63f863e26a73999fbb717b6589d3530560518c68c233ab73ae.pdf",
+      "action": "omit-third-party-pdf",
+      "original_sha256": "4888e9f328ce5d63f863e26a73999fbb717b6589d3530560518c68c233ab73ae"
+    },
+    {
+      "path": "literature/objects/595bbe748df51506ab44b90c54aedda1006da190822dc8e66e94f3044fce2506.pdf",
+      "action": "omit-third-party-pdf",
+      "original_sha256": "595bbe748df51506ab44b90c54aedda1006da190822dc8e66e94f3044fce2506"
+    },
+    {
+      "path": "literature/objects/6908ca31e92e750881255742a99ffc3daf00ca2e9d0b0012652809d0f538b87a.pdf",
+      "action": "omit-third-party-pdf",
+      "original_sha256": "6908ca31e92e750881255742a99ffc3daf00ca2e9d0b0012652809d0f538b87a"
+    },
+    {
+      "path": "literature/objects/7b3cf15008779e9a974a3d9f2cb84d9c48b0ba526dd232544c6a2301c14f90ab.pdf",
+      "action": "omit-third-party-pdf",
+      "original_sha256": "7b3cf15008779e9a974a3d9f2cb84d9c48b0ba526dd232544c6a2301c14f90ab"
+    },
+    {
+      "path": "literature/objects/b958a4da96783b9db082935994fb644cdaaf503945ec280c39a1e3d07fc62e00.pdf",
+      "action": "omit-third-party-pdf",
+      "original_sha256": "b958a4da96783b9db082935994fb644cdaaf503945ec280c39a1e3d07fc62e00"
+    },
+    {
+      "path": "literature/objects/df21355fd97daa6bf0dc36e72f0f7a01d9a07733e8539a6cbeae21b79088086a.pdf",
+      "action": "omit-third-party-pdf",
+      "original_sha256": "df21355fd97daa6bf0dc36e72f0f7a01d9a07733e8539a6cbeae21b79088086a"
+    },
+    {
+      "path": "literature/objects/f2dabb6d31b18901cb64a0f57cea86f32f514570dcb5840fbeaa4877f24bdd3f.pdf",
+      "action": "omit-third-party-pdf",
+      "original_sha256": "f2dabb6d31b18901cb64a0f57cea86f32f514570dcb5840fbeaa4877f24bdd3f"
+    },
+    {
+      "path": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-plan/select_universe.py",
+      "action": "redact-historical-path",
+      "original_sha256": "97a6908b181569834f7eb5b06b2504384f55b19510834ac44aa160b2b8e826ba",
+      "public_sha256": "8fd584140d66e1d30a2c50b31e978d706842da76037f41ef3c9ea69a38723352",
+      "note": "Historical evidence only; use the research replay entrypoint, not this archived standalone command."
+    },
+    {
+      "path": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/supplementary/native-command-ledger.jsonl",
+      "action": "redact-historical-path",
+      "original_sha256": "08f0605c98de758305c0828bc0f596c1391eaf85b08654acc6657d7c15727cab",
+      "public_sha256": "c241d3f36386400e07e5ada7b75f99cbf77a6add6fb8e67e9eb9c4076eb2f759",
+      "note": "Historical evidence only; use the research replay entrypoint, not this archived standalone command."
+    },
+    {
+      "path": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/plan/batch-plan.json",
+      "action": "redact-historical-path",
+      "original_sha256": "1f3bb10fcc2080beb3603ee82d3872fca4762c62ad7cbb4be0431478b8ca97bb",
+      "public_sha256": "4ca3411a23fa0a1313f82d0ec02a5fca7e318ac81709a244f9ced51095de7d67",
+      "note": "Historical evidence only; use the research replay entrypoint, not this archived standalone command."
+    },
+    {
+      "path": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/plan/batch-plan.json",
+      "action": "redact-historical-path",
+      "original_sha256": "1f3bb10fcc2080beb3603ee82d3872fca4762c62ad7cbb4be0431478b8ca97bb",
+      "public_sha256": "4ca3411a23fa0a1313f82d0ec02a5fca7e318ac81709a244f9ced51095de7d67",
+      "note": "Historical evidence only; use the research replay entrypoint, not this archived standalone command."
+    },
+    {
+      "path": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/attempts.jsonl",
+      "action": "redact-historical-path",
+      "original_sha256": "153109bf99a41c8766cb78faf2eceeece2f07f174feaead73759f4641249a5bb",
+      "public_sha256": "b0ca598c21c7b45217ebad2cfe7cdb02bd250f404ac226789a1a9eaf1e939ff7",
+      "note": "Historical evidence only; use the research replay entrypoint, not this archived standalone command."
+    },
+    {
+      "path": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/plan/batch-plan.json",
+      "action": "redact-historical-path",
+      "original_sha256": "1f3bb10fcc2080beb3603ee82d3872fca4762c62ad7cbb4be0431478b8ca97bb",
+      "public_sha256": "4ca3411a23fa0a1313f82d0ec02a5fca7e318ac81709a244f9ced51095de7d67",
+      "note": "Historical evidence only; use the research replay entrypoint, not this archived standalone command."
+    }
+  ],
+  "limitations": [
+    "Original private evidence hashes remain historical provenance, not public-edition file checksums.",
+    "Public redacted archival scripts are not the supported execution entrypoints.",
+    "External raw input bindings still required.",
+    "No blanket license granted; retain upstream notices."
+  ]
+}

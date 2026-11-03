@@ -1,0 +1,122 @@
+{
+  "id": "20261102-illiq-seas-v1",
+  "frozen_at": "2026-11-02T14:56:21.719361+00:00",
+  "kind": "supplementary faithful-formula monthly paper reproduction with explicit universe/execution adaptations",
+  "skill_usage": "Read report-reproduction/reference methodology; native extract-report; standalone reviewed supplementary formulas/diagnostics, NOT native Ridge prepare/check/evaluate",
+  "source": {
+    "title": "Anomalies in the China A-share market",
+    "authors": "Jansen, Swinkels, Zhou",
+    "year": 2021,
+    "url": "https://pure.eur.nl/ws/portalfiles/portal/58642799/Anomalies_in_the_China_A_share_market.pdf",
+    "doi": "10.1016/j.pacfin.2021.101607",
+    "pdf_sha256": "7b3cf15008779e9a974a3d9f2cb84d9c48b0ba526dd232544c6a2301c14f90ab",
+    "source_period": "2000-01..2019-12",
+    "holding": "Monthly end-of-month sorts, K=1 month, EW deciles, high minus low",
+    "paper_hac_lag": "Not explicitly identified; local lag 3 not claimed original",
+    "paper_monthly_return_transaction_timestamp": "Month-end statistical convention; precise execution order not specified"
+  },
+  "data": {
+    "root": "quant-research-library/diagnostics/20261102-price-volume-quality-v1",
+    "manifest": "artifacts/artifact-manifest.json",
+    "manifest_sha256": "5d3b44f9c463931ba4a3e19f04c32bad21f4c7170fdbdbf6d9a02cfdf924ed56",
+    "calendar_source": "Frozen original panel dates, cross-panel identical; observed SSE calendar not exchange-certified",
+    "date_range": [
+      "2019-01-01",
+      "2026-10-30"
+    ],
+    "new_data_repairs_included": false,
+    "source_universe": "Frozen SH/SZ master including delisted; known code migration gaps and incomplete terminal coverage, BSE excluded",
+    "price": "raw_close * asof Sina hfq factor; vendor adjusted-price return, not independently certified total shareholder return",
+    "volume": "Actual normalized shares, never multiply by100 again",
+    "denominator": "raw_close * volume_shares, exactly paper proxy, NOT actual amount_cny"
+  },
+  "candidates": [
+    {
+      "id": "illiq20",
+      "paper_pages": "Appendix B printed21/PDF22; Table4 printed8/PDF9",
+      "formula": "mean(abs(adj_close[d]/adj_close[d-1]-1)/(raw_close[d]*volume_shares[d]), d=t-19..t)",
+      "direction": 1,
+      "local_missing_rule": "Require all20 pairs and21 consecutive global-calendar good prices; volume>0, raw_close>0; no compressed missing-day shifts; no fill",
+      "expected_evaluation_months": "2020-01..2026-10, at most82",
+      "paper_ew_monthly_return": 0.0124,
+      "paper_ew_nw_t": 3.35,
+      "paper_vw_monthly_return": 0.0071,
+      "paper_vw_nw_t": 1.5,
+      "paper_ew_turnover": 1.4854,
+      "paper_ew_break_even_cost": 0.0083
+    },
+    {
+      "id": "seas",
+      "paper_pages": "Appendix B printed20/PDF21; Table4 printed8/PDF9",
+      "formula": "For target month m, mean of e_i,m-12k where e_i,j=R_i,j-cross_section_mean(R_*,j), using past same calendar months within20years",
+      "direction": 1,
+      "historical_cross_section": "Each historical month own then-eligible SH/SZ universe and available full calendar-month returns; never future survivor universe",
+      "history": "At signal >=60 calendar months since IPO and first observed source date; at least5 valid past same-calendar-month full returns; all available past up to20years, not cherry-picked5; no missing-month fill",
+      "first_month_boundary": "2019-01 requires missing2018-12 close and is invalid; earliest potential full target2024-02, actual eligibility verified",
+      "expected_evaluation_months": "2024-02..2026-10, at most33; materially low statistical power",
+      "paper_ew_monthly_return": 0.0042,
+      "paper_ew_nw_t": 2.79,
+      "paper_vw_monthly_return": 0.0059,
+      "paper_vw_nw_t": 1.93,
+      "paper_ew_turnover": 3.6676,
+      "paper_ew_break_even_cost": 0.0011
+    }
+  ],
+  "universe_adaptation": {
+    "ipo_age": "At least6 calendar months for current and historical month-end membership; SEAS additionally5-year observed/IPO history",
+    "current_gate": "Known lifecycle, observed finite positive current bar, bar_good and no flagged >50% adjusted current move; existing data-quality rule, not proof extreme error",
+    "paper_filters_not_replicated": [
+      "Exclude bottom30% A-share total market cap",
+      "Historical ST/PT exclusion",
+      "Historical suspension<5days/month and<120days/year and tradability at rebalance",
+      "Value weighting by PIT total market cap"
+    ],
+    "no_proxy_claim": "Current static classifications/size not substituted. Formula replication is possible; original universe replication is NOT. Small/illiquid-stock confounding unresolved."
+  },
+  "monthly_definition": {
+    "formation": "Last global trading day of calendar month, only currently observable fields",
+    "primary_label": "Adjusted close at target month end / adjusted close at signal month end -1; statistical association, not same-close executable fill",
+    "open_sensitivity": "First global session AFTER signal month end to first global session AFTER next month end, adjusted opens; last target October2026 lacks November open and is immature",
+    "completed_target_months": "Through October2026 primary, September2026 open sensitivity; no partial November",
+    "groups": "Sort score ascending then instrument lexicographic to break ties; floor(rank0*10/N)+1, N>=100; assign before future labels; equal target weights",
+    "label_missing": "Keep intended group membership/weights; report available-return conditional means separately from full-weight known-return contribution and missing weight. Complete portfolio return only when missing weight=0. No missing=0, no post-outcome reranking. Theoretical long-short/IC inference remains conditional on outcome availability and not executable portfolio evidence.",
+    "long_only": "D10 and same signal-eligible universe EW; conditional available-return comparison plus missing-weight and full-weight long-only conservative lower bound using unknown returns>=-100%. No market-index claim.",
+    "costs": "Fixed target-weight turnover proxy sum abs(w_t-w_prev) each leg, no return-drift adjustment; first formation counted entry. Gross conditional diagnostic minus10/25/50bp times turnover, not actual fills/net portfolio. B-E mean gross conditional spread / mean two-leg turnover proxy; exact paper drift convention not asserted.",
+    "short_sales": "D10-D1 theoretical only; no claim A-share borrow availability/financing."
+  },
+  "inference": {
+    "primary": "Each candidate mean monthly conditional EW D10-D1 on paper close-close labels; includes all candidate months, not selected regimes",
+    "monthly_hac_lag": 3,
+    "family": "2 one-sided tests, Holm2; preserve both including failure",
+    "support_gate": "At least24 finite months; mean>0; HAC3 95% lower>0; Holm2 p<=0.05. Passing is retrospective adapted association only, never faithful-universe or tradability certification.",
+    "secondary": "Pearson/RankIC same monthly labels, mean/std/ICIR/positive rate, HAC3 and separate Holm2 RankIC family; open-label and cost sensitivities descriptive not extra selection",
+    "calendar_hac": "Use monthly grid with explicit missing values and lag based on calendar distance, not silently compress missing months",
+    "stability": "All annual blocks, fixed2020-23/2024-25/2026 and matched2024-26 comparison, no winner horizon selection"
+  },
+  "budget": {
+    "candidates": 2,
+    "variants": 0,
+    "native_model_trials": 0,
+    "heavy_workers": 1,
+    "threads": 1,
+    "memory_reservation_mb": 6000,
+    "data_passes": "Stock-wise frozen-panel pass, monthly outputs only; no duplicate whole-market native prepare",
+    "estimate": "Data/formula+tests roughly5-10min; assessment/audit/report roughly10-20min, not guarantee"
+  },
+  "exposure": {
+    "all_history_retrospective": true,
+    "2025_and_2026_previously_exposed": true,
+    "not_an_independent_holdout": true,
+    "no_candidate_metrics_seen_before_freeze": true,
+    "paper_evidence_informed_choice": true,
+    "project_wide_adaptive_search_not_corrected": true
+  },
+  "deliverables": [
+    "immutable protocol/source PDF+extract/code/trial ledger",
+    "monthly scores/deciles/labels/coverage/missing-weight",
+    "IC/RankIC/HAC/Holm/yearly/cost/long-only diagnostics",
+    "paper-vs-local differences and independent audit",
+    "report/figures/lightweight Library bundle"
+  ],
+  "stop_rule": "Run these2 once under fixed definitions; implementation repairs logged/tested, no addedfactor/window/sign search. Negative/inconclusive results delivered; no Site or native finalize."
+}

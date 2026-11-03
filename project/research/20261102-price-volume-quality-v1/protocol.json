@@ -1,0 +1,15 @@
+{
+ "id":"20261102-price-volume-quality-v1","frozen_at":"2026-11-02T09:39:00Z","purpose":"Fixed daily price-volume data quality and momentum20 diagnostic, not native Qlib strategy simulation",
+ "universe":"Frozen 5818 source master restricted SH/SZ incl delisted; exclude BSE; known code lifespan boundaries enforced without stitching",
+ "date_range":["2019-01-01","2026-10-30"],"calendar":"observed SSE composite, not official certified",
+ "source_priority":["Tencent normalized full whole row","Tencent historical supplement whole row","HF unadjusted normalized whole row"],
+ "factor":"adjusted_close[t]/adjusted_close[t-20]-1; adjusted_price=raw_price*Sina_hfq_asof_effective_date; no factor=1 fill",
+ "label":"adjusted_open[t+6]/adjusted_open[t+1]-1 on global trading calendar, no compressed missing-session shifts",
+ "signal_gate":"21 consecutive calendar bars valid, positive finite OHLC and volume/amount; OHLC ordering; VWAP within OHLC +/-2%; known lifecycle; >=60 observed calendar sessions since IPO; no >50% one-day adjusted move in lookback",
+ "outcome_gate":"all six future calendar bars valid, no >50% adjusted daily moves; no cross-split labels. Outcome availability is ex-post diagnostic conditioning, NOT implementable portfolio eligibility",
+ "extreme_policy":"Flag >50% adjusted one-session move, exclude only from strict diagnostic windows; not proof source erroneous; report counts",
+ "splits":{"historical_descriptive":["2020-01-01","2024-12-31"],"validation_descriptive":["2025-01-01","2025-06-30"],"discovery":["2025-07-01","2025-12-31"],"final":["2026-01-01","2026-10-30"]},
+ "factor_trials":1,"optimization":false,"model":null,"quintiles":5,"min_cross_section":100,
+ "metrics":["daily Pearson IC","daily Spearman RankIC","Newey-West lag5 t statistic","quintile mean five-day forward returns","non-overlap phase0 five-session diagnostic wealth, no transaction or tradability constraints"],
+ "limitations":["Retrospectively obtained vendor prices and factors not historical-vintage certified","Missing labels and delisting terminal returns create selection bias; no forced liquidation","Unknown ST/suspension/price limits not assumed tradeable; no executable strategy claims","No fees, impact, T+1 or cash portfolio simulator","Volume gate may exclude legitimate block-trade/rounding cases","Source union observes scope, not certified entire A-share market","2026 final exposed after fixed protocol, unavailable as untouched holdout for future tuned studies"]
+}

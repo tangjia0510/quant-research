@@ -1,0 +1,194 @@
+[
+  {
+    "candidate": "momentum20-reference",
+    "native_prediction_signal": {
+      "ic": 0.012899541439435235,
+      "rank_ic": 0.013258009213347596,
+      "ic_days": 120,
+      "rank_ic_positive_fraction": 0.525
+    },
+    "native_increment_lag5_preserved": {
+      "days": 120,
+      "mean_rank_ic_increment": 0.0018673545180699761,
+      "hac_lag": 5,
+      "hac_ci95": [
+        -0.0070390397945904945,
+        0.010773748830730446
+      ],
+      "interpretation": "exploratory paired estimate; not corrected for adaptive search or multiple trials",
+      "annualized_net_return_difference": -0.519796916379168
+    },
+    "prespecified_hac_lag10_increment": {
+      "n": 120,
+      "mean": 0.0018673545180699729,
+      "std": 0.0265401834818504,
+      "icir": 0.07035951802469527,
+      "positive_fraction": 0.5166666666666667,
+      "se": 0.004963189115347536,
+      "t": 0.37624085535963214,
+      "one_sided_p": 0.35336892239653706,
+      "ci95": [
+        -0.007860496148011199,
+        0.011595205184151143
+      ],
+      "hac_lag": 10
+    },
+    "native_model_admission_gates": {
+      "paired_rankic_hac10_ci_lower_positive": false,
+      "annualized_net_difference_nonnegative": false
+    },
+    "native_model_admitted": false,
+    "portfolio_audit": {
+      "candidate": {
+        "days": 125,
+        "net_total_return_recomputed": -0.3096844477790286,
+        "gross_total_return_recomputed": -0.28874166638381604,
+        "terminal_account": 69031.55522209707,
+        "terminal_cash": 23094.555880165157,
+        "terminal_stock_value": 45936.99934193192,
+        "mean_stock_exposure": 0.7305414460253231,
+        "min_stock_exposure": 0.32815920403530685,
+        "max_stock_exposure": 0.9396816726491356,
+        "near_cash_days_below_1pct_stock": 0,
+        "total_nominal_cost": 2453.113501340094,
+        "requested_orders": 371,
+        "requested_unique_instruments": 165,
+        "requested_buys_max_on_day": 10,
+        "holdings_count": "not saved by native artifact; order counts are not holdings or fills",
+        "weight_and_lot_note": "top10 target 95%, 100 raw-share units; price/lot/cash constraints affect realized exposures; requested orders not executed fill log"
+      },
+      "baseline": {
+        "days": 125,
+        "net_total_return_recomputed": -0.10774171532904397,
+        "gross_total_return_recomputed": -0.07974504579865438,
+        "terminal_account": 89225.82846709547,
+        "terminal_cash": 37704.828842102754,
+        "terminal_stock_value": 51520.99962499271,
+        "mean_stock_exposure": 0.7256844840318706,
+        "min_stock_exposure": 0.39071911520745384,
+        "max_stock_exposure": 0.9649499765661403,
+        "near_cash_days_below_1pct_stock": 0,
+        "total_nominal_cost": 2835.937158458317,
+        "requested_orders": 375,
+        "requested_unique_instruments": 179,
+        "requested_buys_max_on_day": 10,
+        "holdings_count": "not saved by native artifact; order counts are not holdings or fills",
+        "weight_and_lot_note": "top10 target 95%, 100 raw-share units; price/lot/cash constraints affect realized exposures; requested orders not executed fill log"
+      },
+      "equal_weight": {
+        "days": 125,
+        "net_total_return_recomputed": 4.984500691684879e-05,
+        "gross_total_return_recomputed": 5.0000014668816206e-05,
+        "terminal_account": 100004.9845006917,
+        "terminal_cash": 99968.98449967506,
+        "terminal_stock_value": 36.00000101664711,
+        "mean_stock_exposure": 0.00035806277018534115,
+        "min_stock_exposure": 0.0003100000512977675,
+        "max_stock_exposure": 0.0003799734690955244,
+        "near_cash_days_below_1pct_stock": 125,
+        "total_nominal_cost": 0.0155000001623879,
+        "requested_orders": 2,
+        "requested_unique_instruments": 2,
+        "requested_buys_max_on_day": 2,
+        "holdings_count": "not saved by native artifact; order counts are not holdings or fills",
+        "weight_and_lot_note": "top10 target 95%, 100 raw-share units; price/lot/cash constraints affect realized exposures; requested orders not executed fill log"
+      }
+    }
+  },
+  {
+    "candidate": "reversal20",
+    "native_prediction_signal": {
+      "ic": 0.012899541439435235,
+      "rank_ic": 0.013258009213347596,
+      "ic_days": 120,
+      "rank_ic_positive_fraction": 0.525
+    },
+    "native_increment_lag5_preserved": {
+      "days": 120,
+      "mean_rank_ic_increment": 0.0018673545180699761,
+      "hac_lag": 5,
+      "hac_ci95": [
+        -0.0070390397945904945,
+        0.010773748830730446
+      ],
+      "interpretation": "exploratory paired estimate; not corrected for adaptive search or multiple trials",
+      "annualized_net_return_difference": -0.519796916379167
+    },
+    "prespecified_hac_lag10_increment": {
+      "n": 120,
+      "mean": 0.0018673545180699729,
+      "std": 0.0265401834818504,
+      "icir": 0.07035951802469527,
+      "positive_fraction": 0.5166666666666667,
+      "se": 0.004963189115347536,
+      "t": 0.37624085535963214,
+      "one_sided_p": 0.35336892239653706,
+      "ci95": [
+        -0.007860496148011199,
+        0.011595205184151143
+      ],
+      "hac_lag": 10
+    },
+    "native_model_admission_gates": {
+      "paired_rankic_hac10_ci_lower_positive": false,
+      "annualized_net_difference_nonnegative": false
+    },
+    "native_model_admitted": false,
+    "portfolio_audit": {
+      "candidate": {
+        "days": 125,
+        "net_total_return_recomputed": -0.30968444777902693,
+        "gross_total_return_recomputed": -0.28874166638381527,
+        "terminal_account": 69031.55522209709,
+        "terminal_cash": 23094.555880165157,
+        "terminal_stock_value": 45936.99934193193,
+        "mean_stock_exposure": 0.7305414460253231,
+        "min_stock_exposure": 0.32815920403530685,
+        "max_stock_exposure": 0.9396816726491356,
+        "near_cash_days_below_1pct_stock": 0,
+        "total_nominal_cost": 2453.113501340094,
+        "requested_orders": 371,
+        "requested_unique_instruments": 165,
+        "requested_buys_max_on_day": 10,
+        "holdings_count": "not saved by native artifact; order counts are not holdings or fills",
+        "weight_and_lot_note": "top10 target 95%, 100 raw-share units; price/lot/cash constraints affect realized exposures; requested orders not executed fill log"
+      },
+      "baseline": {
+        "days": 125,
+        "net_total_return_recomputed": -0.10774171532904564,
+        "gross_total_return_recomputed": -0.0797450457986566,
+        "terminal_account": 89225.82846709546,
+        "terminal_cash": 37704.828842102754,
+        "terminal_stock_value": 51520.99962499271,
+        "mean_stock_exposure": 0.7256844840318706,
+        "min_stock_exposure": 0.39071911520745384,
+        "max_stock_exposure": 0.9649499765661403,
+        "near_cash_days_below_1pct_stock": 0,
+        "total_nominal_cost": 2835.937158458317,
+        "requested_orders": 375,
+        "requested_unique_instruments": 179,
+        "requested_buys_max_on_day": 10,
+        "holdings_count": "not saved by native artifact; order counts are not holdings or fills",
+        "weight_and_lot_note": "top10 target 95%, 100 raw-share units; price/lot/cash constraints affect realized exposures; requested orders not executed fill log"
+      },
+      "equal_weight": {
+        "days": 125,
+        "net_total_return_recomputed": 4.984500691684879e-05,
+        "gross_total_return_recomputed": 5.0000014668816206e-05,
+        "terminal_account": 100004.9845006917,
+        "terminal_cash": 99968.98449967506,
+        "terminal_stock_value": 36.00000101664711,
+        "mean_stock_exposure": 0.00035806277018534115,
+        "min_stock_exposure": 0.0003100000512977675,
+        "max_stock_exposure": 0.0003799734690955244,
+        "near_cash_days_below_1pct_stock": 125,
+        "total_nominal_cost": 0.0155000001623879,
+        "requested_orders": 2,
+        "requested_unique_instruments": 2,
+        "requested_buys_max_on_day": 2,
+        "holdings_count": "not saved by native artifact; order counts are not holdings or fills",
+        "weight_and_lot_note": "top10 target 95%, 100 raw-share units; price/lot/cash constraints affect realized exposures; requested orders not executed fill log"
+      }
+    }
+  }
+]

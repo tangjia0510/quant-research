@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "mode": "factor",
+  "objective": "在预注册30只代码分层A股样本中，检验20日动量对return_5与volatility_20固定Ridge基线的增量；非全市场、非盲测结论",
+  "data": {
+    "format": "csv",
+    "region": "cn",
+    "price_basis": "adjusted",
+    "volume_unit": "units",
+    "synthetic": false,
+    "currency": "CNY",
+    "frequency": "day",
+    "adjustment_identity": "tencent-raw-sina-hfq-multiplicative-v1",
+    "volume_basis": "Tencent raw lots*100/Sina factor",
+    "limitations": [
+      "Unknown missing-session cause is preserved, not called verified suspension",
+      "Factors retrospectively obtained; no independently certified event-time/PIT correctness",
+      "Delisting liquidation not fully modeled by engine",
+      "Unified price-limit proxy does not implement historical ST and board limits",
+      "Small code-stratified sample not market-representative",
+      "Vendor data may be revised; snapshot not point-in-time certified",
+      "Calendar is observed SSE Composite sessions, not official holiday calendar"
+    ],
+    "universe_scope": "30 predeclared code-stratified pre2019 listings including selected delisted stocks; not CSI300/fullA",
+    "source": "Tencent raw daily + Sina hfq multiplicative factors; official SSE/SZSE listing histories",
+    "dataset_id": "cn30-mixed-multiplicative",
+    "dataset_version": "2026-11-01",
+    "manifest_hash": "ce99d09ba89faf852b8e43d072864926a61acf386a3a60d391e3f729d5ac289d"
+  },
+  "splits": {
+    "train": [
+      "2020-01-02",
+      "2024-12-31"
+    ],
+    "valid": [
+      "2025-01-02",
+      "2025-06-30"
+    ],
+    "discovery": [
+      "2025-07-01",
+      "2025-12-31"
+    ],
+    "final": [
+      "2026-01-05",
+      "2026-10-30"
+    ]
+  },
+  "model": {
+    "kind": "ridge",
+    "params": {
+      "alpha": 1.0
+    }
+  },
+  "label": {
+    "price": "open",
+    "entry_lag": 1,
+    "horizon": 5
+  },
+  "preprocessing": {
+    "clip": 10,
+    "label_transform": "raw"
+  },
+  "portfolio": {
+    "top_k": 10,
+    "rebalance": 5,
+    "initial_cash": 100000,
+    "position": 0.95,
+    "buy_cost": 0.0005,
+    "sell_cost": 0.0015,
+    "min_cost": 0,
+    "trade_unit": 100
+  },
+  "budget": {
+    "max_trials": 1,
+    "max_repairs": 1,
+    "timeout_seconds": 1200
+  },
+  "seed": 42,
+  "robustness": {
+    "enabled": true
+  },
+  "research_limitations": [
+    "Code-stratified sample is not representative of all A shares or a historical index",
+    "Vendor basic listing/delisting histories are not independently certified PIT data",
+    "SH60/SZ00/SZ30 equally sampled does not imply industry diversification",
+    "ST not automatically excluded; unified price-limit proxy may mismatch board rules",
+    "Delisting liquidation and actual capacity are not fully modeled",
+    "History has been discussed in prior research: do not claim final period is genuinely blind",
+    "No parameter search or performance-based sample replacement"
+  ],
+  "selection_rule": "see source-amendment-2.json and frozen selection.json; no post-return universe selection"
+}

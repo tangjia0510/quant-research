@@ -1,0 +1,52 @@
+{
+  "research_id": "20261102-price-volume-quality-v1",
+  "status": "dryrun_verified_not_recomputed",
+  "raw_or_normalized_source_files_verified": 10931,
+  "input_bytes_verified": 564731958,
+  "old_intermediate_panels_consumed": false,
+  "execution_order": [
+    {
+      "name": "rebuild_shared_diagnostic_from_frozen_lake_sources",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-price-volume-quality-v1/sandbox/quant-research-library/diagnostics/20261102-price-volume-quality-v1/scripts/build_diagnostic.py"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-price-volume-quality-v1/sandbox"
+    },
+    {
+      "name": "evaluate_fixed_diagnostic",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-price-volume-quality-v1/sandbox/quant-research-library/diagnostics/20261102-price-volume-quality-v1/scripts/evaluate.py"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-price-volume-quality-v1/sandbox"
+    },
+    {
+      "name": "seal_rebuilt_diagnostic_manifest",
+      "internal": "seal_diagnostic",
+      "target": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-price-volume-quality-v1/sandbox/quant-research-library/diagnostics/20261102-price-volume-quality-v1"
+    }
+  ],
+  "output_root": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261102-price-volume-quality-v1",
+  "protocol_locator_amendments": [],
+  "python": "3.11.17 (main, Oct 14 2026, 01:05:33) [Clang 23.1.3 ]",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.1",
+    "scipy": "1.17.1",
+    "pyqlib": "0.9.7",
+    "scikit-learn": "1.9.1"
+  },
+  "environment_lock_hashes": {
+    "environment/uv.lock": "387866300297eecb5a7fce2632ee02c9db09a26b6becc407aebb54d21200f7cb",
+    "environment/pyproject.toml": "94a14b4299e3945a1580887dd7624300af949cbf87e15b2d32e74bba6e9012e1"
+  },
+  "limitations": [
+    "Hash-validated external data-lake normalized source snapshots still required; these are external dataset inputs, not included in bundle.",
+    "Dryrun is path/inputs/dependency validation only; no new historical statistics computed."
+  ],
+  "adapter_sha256": "59f73d5a4e3bf6c7cb05585990c93dc39d71330a489042716ab76778c9993db9",
+  "entrypoint_sha256": "b6e7008f770101643cab504bda4dadecb0306efa61c60d42f672242c6be32fdd",
+  "verification_scope": "All frozen input sizes/SHA, staged commands and compilation checked. Heavy historical computations NOT executed; independent review separately required."
+}

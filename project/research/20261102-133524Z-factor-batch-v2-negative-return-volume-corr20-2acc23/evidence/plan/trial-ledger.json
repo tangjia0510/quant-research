@@ -1,0 +1,215 @@
+{
+  "plan_sha256": "bee18d090f8feb883ed7e8e616665a354543a5c593f912e37b2429482219df39",
+  "candidates": [
+    {
+      "id": "low-downside-risk20",
+      "status": "success",
+      "results_seen": true,
+      "seen_scope": "development direct/native and post-selection exposed2026 direct diagnostics",
+      "retained": false
+    },
+    {
+      "id": "negative-return-volume-corr20",
+      "status": "success",
+      "results_seen": true,
+      "seen_scope": "development direct/native and post-selection exposed2026 direct diagnostics",
+      "retained": false
+    },
+    {
+      "id": "volume-weighted-close-location20",
+      "status": "success",
+      "results_seen": true,
+      "seen_scope": "development direct/native and post-selection exposed2026 direct diagnostics",
+      "retained": false
+    }
+  ],
+  "global_mechanism_budget": 3,
+  "attempts": [
+    {
+      "at": "2026-11-02T13:18:05.604247+00:00",
+      "stage": "preflight_unit_tests_before_native_registration",
+      "attempt": 1,
+      "status": "failed_single_instrument_groupby_apply_return_shape",
+      "fix": "explicit_concat_of_per_instrument_series_same_formula",
+      "no_empirical_results_seen": true,
+      "retained_code": "outputs/factor-family-preflight-draft1.py",
+      "retained_log": "outputs/factor-tests-preflight-attempt1.log"
+    },
+    {
+      "at": "2026-11-02T13:53:02.404319+00:00",
+      "stage": "native_check",
+      "candidate": "negative-return-volume-corr20",
+      "attempt": 1,
+      "status": "failed_factor_subprocess_exit_with_empty_stderr",
+      "cause": "unconfirmed; concurrent sampledRSS3.25GiB+3.91GiB and lowheadroom suggest resource pressure; no definitive OOM log",
+      "next_action": "same-plan resume once after other branches terminal, unchanged formula/data/runtime",
+      "preserved_native_check": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/supplementary/failed-check-attempt1"
+    },
+    {
+      "at": "2026-11-02T14:25:47.214233+00:00",
+      "stage": "resource_recovery_lineage",
+      "status": "approved_serial_recovery_in_progress",
+      "original_state_sha256": "2d28f3e59d68b5d18bf538d6068a85a8ff43ef586df28410f8ed89f49b202da6",
+      "original_location_evaluate_attempt1": "failed_empty_stderr",
+      "failure_cause": "resource_pressure_associated_not_confirmed_OOM",
+      "recovery": "quant-research-library/batches/20261102-price-volume-mechanisms-v2-serial-recovery-v1",
+      "only_resource_changes": {
+        "max_workers": [
+          2,
+          1
+        ],
+        "worker_memory_mb": [
+          3000,
+          6000
+        ],
+        "prepare_memory_mb": [
+          4500,
+          6000
+        ]
+      },
+      "same_candidate_source_runtime": true,
+      "task_attempt_limit_unchanged": 2,
+      "successful_tasks_not_repeated": true,
+      "supersedes_prior_next_action": "Original dual-worker batch must never resume; unique approved serial lineage only"
+    }
+  ],
+  "native_task_attempts": [
+    {
+      "task": "low-downside-risk20-prepare",
+      "attempt": 1,
+      "started_at": "2026-11-02T13:36:29.663578+00:00",
+      "ended_at": "2026-11-02T13:39:10.829302+00:00",
+      "elapsed_seconds": 161.165724,
+      "returncode": 0,
+      "peak_process_group_rss_mb": 4783.1875,
+      "final_task_status": "success",
+      "inherited_from_original": true
+    },
+    {
+      "task": "negative-return-volume-corr20-prepare",
+      "attempt": 1,
+      "started_at": "2026-11-02T13:39:18.713922+00:00",
+      "ended_at": "2026-11-02T13:41:19.480166+00:00",
+      "elapsed_seconds": 120.766244,
+      "returncode": 0,
+      "peak_process_group_rss_mb": 4786.40625,
+      "final_task_status": "success",
+      "inherited_from_original": true
+    },
+    {
+      "task": "volume-weighted-close-location20-prepare",
+      "attempt": 1,
+      "started_at": "2026-11-02T13:41:22.792353+00:00",
+      "ended_at": "2026-11-02T13:44:31.700682+00:00",
+      "elapsed_seconds": 188.908329,
+      "returncode": 0,
+      "peak_process_group_rss_mb": 4732.01171875,
+      "final_task_status": "success",
+      "inherited_from_original": true
+    },
+    {
+      "task": "low-downside-risk20-check",
+      "attempt": 1,
+      "started_at": "2026-11-02T13:44:34.974285+00:00",
+      "ended_at": "2026-11-02T13:50:01.835283+00:00",
+      "elapsed_seconds": 326.860998,
+      "returncode": 0,
+      "peak_process_group_rss_mb": 4194.13671875,
+      "final_task_status": "success",
+      "inherited_from_original": true
+    },
+    {
+      "task": "low-downside-risk20-evaluate",
+      "attempt": 1,
+      "started_at": "2026-11-02T13:50:24.523355+00:00",
+      "ended_at": "2026-11-02T13:58:42.266179+00:00",
+      "elapsed_seconds": 497.742824,
+      "returncode": 0,
+      "peak_process_group_rss_mb": 3929.44140625,
+      "final_task_status": "success",
+      "inherited_from_original": true
+    },
+    {
+      "task": "negative-return-volume-corr20-check",
+      "attempt": 1,
+      "started_at": "2026-11-02T13:44:34.980759+00:00",
+      "ended_at": "2026-11-02T13:49:17.853617+00:00",
+      "elapsed_seconds": 282.872858,
+      "returncode": 1,
+      "peak_process_group_rss_mb": 3905.18359375,
+      "final_task_status": "success",
+      "inherited_from_original": true
+    },
+    {
+      "task": "negative-return-volume-corr20-check",
+      "attempt": 2,
+      "started_at": "2026-11-02T14:13:34.121838+00:00",
+      "ended_at": "2026-11-02T14:15:28.839239+00:00",
+      "elapsed_seconds": 114.717401,
+      "returncode": 0,
+      "peak_process_group_rss_mb": 4288.88671875,
+      "final_task_status": "success",
+      "inherited_from_original": false
+    },
+    {
+      "task": "negative-return-volume-corr20-evaluate",
+      "attempt": 1,
+      "started_at": "2026-11-02T14:15:34.161841+00:00",
+      "ended_at": "2026-11-02T14:24:16.463256+00:00",
+      "elapsed_seconds": 522.301415,
+      "returncode": 0,
+      "peak_process_group_rss_mb": 4306.52734375,
+      "final_task_status": "success",
+      "inherited_from_original": false
+    },
+    {
+      "task": "volume-weighted-close-location20-check",
+      "attempt": 1,
+      "started_at": "2026-11-02T13:49:17.968476+00:00",
+      "ended_at": "2026-11-02T13:51:35.742587+00:00",
+      "elapsed_seconds": 137.774111,
+      "returncode": 0,
+      "peak_process_group_rss_mb": 4496.09375,
+      "final_task_status": "success",
+      "inherited_from_original": true
+    },
+    {
+      "task": "volume-weighted-close-location20-evaluate",
+      "attempt": 1,
+      "started_at": "2026-11-02T13:52:11.790667+00:00",
+      "ended_at": "2026-11-02T13:53:30.483451+00:00",
+      "elapsed_seconds": 78.692784,
+      "returncode": 1,
+      "peak_process_group_rss_mb": 4288.24609375,
+      "final_task_status": "success",
+      "inherited_from_original": true
+    },
+    {
+      "task": "volume-weighted-close-location20-evaluate",
+      "attempt": 2,
+      "started_at": "2026-11-02T14:24:23.779853+00:00",
+      "ended_at": "2026-11-02T14:32:39.253988+00:00",
+      "elapsed_seconds": 495.474135,
+      "returncode": 0,
+      "peak_process_group_rss_mb": 4467.62890625,
+      "final_task_status": "success",
+      "inherited_from_original": false
+    }
+  ],
+  "final_batch_status": {
+    "low-downside-risk20-prepare": "success",
+    "negative-return-volume-corr20-prepare": "success",
+    "volume-weighted-close-location20-prepare": "success",
+    "low-downside-risk20-check": "success",
+    "low-downside-risk20-evaluate": "success",
+    "negative-return-volume-corr20-check": "success",
+    "negative-return-volume-corr20-evaluate": "success",
+    "volume-weighted-close-location20-check": "success",
+    "volume-weighted-close-location20-evaluate": "success"
+  },
+  "decision": "none_admitted",
+  "native_finalize_executed": false,
+  "new2026_used_for_selection": false,
+  "exposed2026_analysis_completed_at_observation": "2026-11-02T14:37:47.572743+00:00",
+  "selection_sha256": "159e3c1db9c9400e09f89cb1821349c4b9b75796dc4c67ce0805be7f86d56ec3"
+}

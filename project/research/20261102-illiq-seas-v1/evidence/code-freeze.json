@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-02T15:00:02.961474+00:00",
+  "new_local_results_seen": false,
+  "sha256": {
+    "test_formulas.py": "5cedd1c15b5d1ff9199d32307481d6596d7b891e53568cd0d89086cb2be8ba77",
+    "formulas.py": "d07961ab438a59975b7b6a44ad726fd31957960dc66b844049e3e7e358f1280e",
+    "build_monthly.py": "68e271b3a1de42ee7d106b4d1e535b19c8732ba0d7b5a162c9d626e51b4b57c1"
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "primary": [
+    {
+      "kind": "boll_breakout",
+      "total_friction_bp": 10,
+      "blocked_orders": 1,
+      "total_return": 0.214905068646003,
+      "cagr": 0.02517235172372856,
+      "annualized_volatility": 0.11639351896475031,
+      "sharpe_rf0": 0.27996823912457597,
+      "max_drawdown": -0.22768741763007416,
+      "max_drawdown_duration_sessions": 1527,
+      "mean_exposure": 0.2878189356955518,
+      "trades": 72,
+      "sum_traded_notional": 8385886.8708,
+      "turnover_notional_over_mean_equity": 72.1360838941439,
+      "commission": 4192.9434354,
+      "slippage_cost": 4192.94969999962,
+      "final_equity": 121490.50686460029,
+      "calendar_years": 7.83025325119781
+    },
+    {
+      "kind": "boll_reentry",
+      "total_friction_bp": 10,
+      "blocked_orders": 1,
+      "total_return": 0.2408072749377561,
+      "cagr": 0.02793809339007125,
+      "annualized_volatility": 0.08947129336358238,
+      "sharpe_rf0": 0.36503293896047795,
+      "max_drawdown": -0.12977248861419333,
+      "max_drawdown_duration_sessions": 812,
+      "mean_exposure": 0.22155232117447782,
+      "trades": 68,
+      "sum_traded_notional": 8286895.91245,
+      "turnover_notional_over_mean_equity": 67.7245078682211,
+      "commission": 4143.447956225,
+      "slippage_cost": 4143.424549999585,
+      "final_equity": 124080.72749377562,
+      "calendar_years": 7.83025325119781
+    },
+    {
+      "kind": "benchmark",
+      "total_friction_bp": 10,
+      "blocked_orders": 1,
+      "total_return": 0.5325315122035006,
+      "cagr": 0.05603569322746771,
+      "annualized_volatility": 0.19154929117542469,
+      "sharpe_rf0": 0.3918459919281187,
+      "max_drawdown": -0.4207302988026379,
+      "max_drawdown_duration_sessions": 1382,
+      "mean_exposure": 0.9978816100923983,
+      "trades": 9,
+      "sum_traded_notional": 120778.95929999997,
+      "turnover_notional_over_mean_equity": 0.8154570159152993,
+      "commission": 60.38947965,
+      "slippage_cost": 60.35929999998615,
+      "final_equity": 153253.15122035006,
+      "calendar_years": 7.83025325119781
+    }
+  ],
+  "primary_active": [
+    {
+      "kind": "boll_breakout",
+      "total_friction_bp": 10,
+      "n": 94,
+      "mean": -0.0033667475666123692,
+      "lag": 3,
+      "se": 0.0040792191644042014,
+      "ci95": [
+        -0.011362017128844604,
+        0.004628521995619864
+      ],
+      "p_two_sided_normal": 0.4091779176639048,
+      "holm_p_two_strategies": 0.8183558353278096
+    },
+    {
+      "kind": "boll_reentry",
+      "total_friction_bp": 10,
+      "n": 94,
+      "mean": -0.003442516387277961,
+      "lag": 3,
+      "se": 0.005215478059365986,
+      "ci95": [
+        -0.013664853383635293,
+        0.006779820609079371
+      ],
+      "p_two_sided_normal": 0.5092168103607337,
+      "holm_p_two_strategies": 0.8183558353278096
+    }
+  ],
+  "holding": {
+    "boll_breakout": {
+      "episodes": 36,
+      "holding_sessions": 547,
+      "mean_held_sessions": 15.194444444444445,
+      "median_held_sessions": 13.0,
+      "max_held_sessions": 41
+    },
+    "boll_reentry": {
+      "episodes": 34,
+      "holding_sessions": 421,
+      "mean_held_sessions": 12.382352941176471,
+      "median_held_sessions": 9.0,
+      "max_held_sessions": 30
+    },
+    "benchmark": {
+      "episodes": 1,
+      "holding_sessions": 1897,
+      "mean_held_sessions": 1897.0,
+      "median_held_sessions": 1897.0,
+      "max_held_sessions": 1897
+    }
+  },
+  "decisions": [
+    {
+      "kind": "boll_breakout",
+      "net_outperformance_supported": false,
+      "drawdown_reduced": true,
+      "registry_admitted": false,
+      "investable_certification": false
+    },
+    {
+      "kind": "boll_reentry",
+      "net_outperformance_supported": false,
+      "drawdown_reduced": true,
+      "registry_admitted": false,
+      "investable_certification": false
+    }
+  ],
+  "diagnostic": {
+    "n": 1892,
+    "pearson": 0.008164705751048145,
+    "spearman": -0.021928611506483387,
+    "label": "Overlapping5-session close-total-return; descriptive single-ETF time-series association, not cross-sectional IC or executable return",
+    "terminal_missing_labels": 5,
+    "used_for_selection": false,
+    "numerical_note": "Spearman about -0.0219; independent arithmetic differs by 0.00000366 due to machine-precision ties in near-zero forward returns; saved-label calculation reproduces exactly; no significance claim."
+  },
+  "fixed_cost_sensitivity": [
+    {
+      "kind": "boll_breakout",
+      "total_friction_bp": 0,
+      "total_return": 0.3047360000000001,
+      "cagr": 0.03455449696057089,
+      "max_drawdown": -0.20510292418419507
+    },
+    {
+      "kind": "boll_reentry",
+      "total_friction_bp": 0,
+      "total_return": 0.327136000000001,
+      "cagr": 0.036806004742595544,
+      "max_drawdown": -0.1196286765998461
+    },
+    {
+      "kind": "benchmark",
+      "total_friction_bp": 0,
+      "total_return": 0.5325940000000002,
+      "cagr": 0.056041192191293554,
+      "max_drawdown": -0.42073541352042443
+    },
+    {
+      "kind": "boll_breakout",
+      "total_friction_bp": 10,
+      "total_return": 0.214905068646003,
+      "cagr": 0.02517235172372856,
+      "max_drawdown": -0.22768741763007416
+    },
+    {
+      "kind": "boll_reentry",
+      "total_friction_bp": 10,
+      "total_return": 0.2408072749377561,
+      "cagr": 0.02793809339007125,
+      "max_drawdown": -0.12977248861419333
+    },
+    {
+      "kind": "benchmark",
+      "total_friction_bp": 10,
+      "total_return": 0.5325315122035006,
+      "cagr": 0.05603569322746771,
+      "max_drawdown": -0.4207302988026379
+    },
+    {
+      "kind": "boll_breakout",
+      "total_friction_bp": 30,
+      "total_return": 0.05220428164875068,
+      "cagr": 0.006519966839894309,
+      "max_drawdown": -0.2719859308100441
+    },
+    {
+      "kind": "boll_reentry",
+      "total_friction_bp": 30,
+      "total_return": 0.08575428787100048,
+      "cagr": 0.010562711227535493,
+      "max_drawdown": -0.15951342315027717
+    },
+    {
+      "kind": "benchmark",
+      "total_friction_bp": 30,
+      "total_return": 0.5285169427390002,
+      "cagr": 0.05568199810782315,
+      "max_drawdown": -0.4206585316549021
+    }
+  ],
+  "limitations": [
+    "SingleETF historical adaptation, no unseen future holdout",
+    "Original Bollinger screening is not a fully specified proven trading strategy; exits/account are local hypotheses",
+    "Incomplete historical orderbook/limits and dividend as-of chain",
+    "Cash interest0, fixed friction, open fill assumptions"
+  ],
+  "status": "independently_audited"
+}

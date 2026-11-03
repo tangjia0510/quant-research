@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-02T09:54:25.101200+00:00",
+  "fixed_protocol_sha256": "58132cd85b98098bf516cf4d68a30a30ef1c1798de28e9c19c14f4952fd4722f",
+  "phases_about_to_be_read": [
+    "historical_descriptive",
+    "validation_descriptive",
+    "discovery",
+    "final"
+  ],
+  "no_tuning_after_exposure": true,
+  "final_not_available_as_untouched_holdout_for_future_research": true
+}

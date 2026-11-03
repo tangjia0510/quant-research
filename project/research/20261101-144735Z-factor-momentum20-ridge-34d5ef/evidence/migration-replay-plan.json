@@ -1,0 +1,188 @@
+{
+  "research_id": "20261101-144735Z-factor-momentum20-ridge-34d5ef",
+  "status": "dryrun_verified_not_recomputed",
+  "raw_or_normalized_source_files_verified": 157,
+  "input_bytes_verified": 7542464,
+  "old_intermediate_panels_consumed": false,
+  "execution_order": [
+    {
+      "name": "normalize_30stock_raw_inputs",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox/quant-research-library/plans/momentum20-v1/normalize_mixed.py"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox"
+    },
+    {
+      "name": "initialize_replay_study",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/skill/scripts/quant.py",
+        "--config",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/quant-research.json",
+        "--worker-threads",
+        "1",
+        "init",
+        "--workspace",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox/quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef",
+        "--protocol",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/runtime-protocol.json"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox"
+    },
+    {
+      "name": "copy_frozen_candidates",
+      "internal": "copy_drafts",
+      "source": "${PROJECT_ROOT}/research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-drafts",
+      "target": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox/quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/drafts"
+    },
+    {
+      "name": "prepare_native_replay",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/skill/scripts/quant.py",
+        "--config",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/quant-research.json",
+        "--worker-threads",
+        "1",
+        "prepare",
+        "--workspace",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox/quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox"
+    },
+    {
+      "name": "check_momentum20-ridge-v1",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/skill/scripts/quant.py",
+        "--config",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/quant-research.json",
+        "--worker-threads",
+        "1",
+        "check",
+        "--workspace",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox/quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef",
+        "--candidate",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox/quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/drafts/candidate.json"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox"
+    },
+    {
+      "name": "evaluate_momentum20-ridge-v1",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/skill/scripts/quant.py",
+        "--config",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/quant-research.json",
+        "--worker-threads",
+        "1",
+        "evaluate",
+        "--workspace",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox/quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef",
+        "--candidate",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox/quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/drafts/candidate.json"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox"
+    },
+    {
+      "name": "report_native_replay",
+      "argv": [
+        "${LEGACY_LIBRARY}/runtime/py311/bin/python",
+        "${PROJECT_ROOT}/skill/scripts/quant.py",
+        "--config",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/quant-research.json",
+        "--worker-threads",
+        "1",
+        "report",
+        "--workspace",
+        "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox/quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef"
+      ],
+      "cwd": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox"
+    }
+  ],
+  "output_root": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef",
+  "protocol_locator_amendments": [
+    {
+      "reason": "External managed dataset locator replaced by recomputed work-local files; statistical rules unchanged",
+      "original_data_identity": {
+        "format": "csv",
+        "region": "cn",
+        "price_basis": "adjusted",
+        "volume_unit": "units",
+        "synthetic": false,
+        "currency": "CNY",
+        "frequency": "day",
+        "adjustment_identity": "tencent-raw-sina-hfq-multiplicative-v1",
+        "volume_basis": "Tencent raw lots*100/Sina factor",
+        "limitations": [
+          "Unknown missing-session cause is preserved, not called verified suspension",
+          "Factors retrospectively obtained; no independently certified event-time/PIT correctness",
+          "Delisting liquidation not fully modeled by engine",
+          "Unified price-limit proxy does not implement historical ST and board limits",
+          "Small code-stratified sample not market-representative",
+          "Vendor data may be revised; snapshot not point-in-time certified",
+          "Calendar is observed SSE Composite sessions, not official holiday calendar"
+        ],
+        "universe_scope": "30 predeclared code-stratified pre2019 listings including selected delisted stocks; not CSI300/fullA",
+        "source": "Tencent raw daily + Sina hfq multiplicative factors; official SSE/SZSE listing histories",
+        "dataset_id": "cn30-mixed-multiplicative",
+        "dataset_version": "2026-11-01",
+        "manifest_hash": "ce99d09ba89faf852b8e43d072864926a61acf386a3a60d391e3f729d5ac289d"
+      },
+      "runtime_data_identity": {
+        "format": "csv",
+        "region": "cn",
+        "price_basis": "adjusted",
+        "volume_unit": "units",
+        "synthetic": false,
+        "currency": "CNY",
+        "frequency": "day",
+        "adjustment_identity": "tencent-raw-sina-hfq-multiplicative-v1",
+        "volume_basis": "Tencent raw lots*100/Sina factor",
+        "limitations": [
+          "Unknown missing-session cause is preserved, not called verified suspension",
+          "Factors retrospectively obtained; no independently certified event-time/PIT correctness",
+          "Delisting liquidation not fully modeled by engine",
+          "Unified price-limit proxy does not implement historical ST and board limits",
+          "Small code-stratified sample not market-representative",
+          "Vendor data may be revised; snapshot not point-in-time certified",
+          "Calendar is observed SSE Composite sessions, not official holiday calendar"
+        ],
+        "universe_scope": "30 predeclared code-stratified pre2019 listings including selected delisted stocks; not CSI300/fullA",
+        "source": "Tencent raw daily + Sina hfq multiplicative factors; official SSE/SZSE listing histories",
+        "path": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox/quant-research-library/plans/momentum20-v1/normalized/bars.csv",
+        "universe": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox/quant-research-library/plans/momentum20-v1/normalized/universe.csv",
+        "calendar": "${PROJECT_ROOT}/work/legacy-final-dryrun-20261101-144735Z-factor-momentum20-ridge-34d5ef/sandbox/quant-research-library/plans/momentum20-v1/mixed-source/calendar.txt"
+      },
+      "original_protocol_sha256": "4bf55e45f8ab5a74644682f4ad6d8151c776694c52421fbd5625240e14081952",
+      "runtime_protocol_sha256": "023d9c5e9a905eb18cc212b8b4797e490765b4277da9388a4219a42026f8e08b"
+    },
+    {
+      "native_candidate_ids": [
+        "momentum20-ridge-v1"
+      ],
+      "selection": "Historical frozen choices replayed, no new candidate selection; no finalize or fresh holdout claim."
+    }
+  ],
+  "python": "3.11.17 (main, Oct 14 2026, 01:05:33) [Clang 23.1.3 ]",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.1",
+    "scipy": "1.17.1",
+    "pyqlib": "0.9.7",
+    "scikit-learn": "1.9.1"
+  },
+  "environment_lock_hashes": {
+    "environment/uv.lock": "387866300297eecb5a7fce2632ee02c9db09a26b6becc407aebb54d21200f7cb",
+    "environment/pyproject.toml": "94a14b4299e3945a1580887dd7624300af949cbf87e15b2d32e74bba6e9012e1"
+  },
+  "limitations": [
+    "Hash-validated external data-lake normalized source snapshots still required; these are external dataset inputs, not included in bundle.",
+    "Dryrun is path/inputs/dependency validation only; no new historical statistics computed."
+  ],
+  "adapter_sha256": "59f73d5a4e3bf6c7cb05585990c93dc39d71330a489042716ab76778c9993db9",
+  "entrypoint_sha256": "b6e7008f770101643cab504bda4dadecb0306efa61c60d42f672242c6be32fdd",
+  "verification_scope": "All frozen input sizes/SHA, staged commands and compilation checked. Heavy historical computations NOT executed; independent review separately required."
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "boll-source-calendar-observed-2019-2026-txt",
+  "kind": "file",
+  "version": "frozen-20261102",
+  "sha256": "164762ead9ff63bf5356a361bbd6c6ebd872bdca14861467b5074ac2929a2a3a",
+  "locator": {
+    "root": "legacy_library",
+    "path": "reproductions/20261102-strategies-v1/sources/calendar-observed-2019-2026.txt"
+  },
+  "provenance": {},
+  "description": "Observed exchange calendar dates copied from existing daily-market source",
+  "limitations": [
+    "Retrospective source snapshot; not PIT-certified"
+  ]
+}

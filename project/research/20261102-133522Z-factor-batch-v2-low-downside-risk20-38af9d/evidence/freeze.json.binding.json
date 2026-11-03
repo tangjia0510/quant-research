@@ -1,0 +1,14 @@
+{
+  "source": "studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/freeze.json",
+  "source_root": "legacy_library",
+  "sha256": "3a5a7cc985694aa467910430b51b101dbd0214774e5d9bf169d4d6b4cfec1556",
+  "bytes": 4599855,
+  "top_level_keys": [
+    "candidates",
+    "data",
+    "protocol_hash",
+    "discovery_inputs",
+    "frozen_at"
+  ],
+  "note": "Full enumerated data/derived hashes stay external; this binding is not the full frozen manifest."
+}

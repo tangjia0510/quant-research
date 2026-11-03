@@ -1,0 +1,646 @@
+{
+  "schema_version": 1,
+  "mode": "repository-source",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "30ce8de926ea07d4a7c29aea49c433c0bc85d19e51fbf7f37f5e5b79cbf03eac"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "e96a77f4d40ad6cfff96982f46186c43746431c2f556f0e159559bcd0c3d3fab"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "6bc8ee652b23cf44f55180729f27d818af18fd1d19fee09fce3b0f9c35f8eae4"
+    },
+    {
+      "path": "assets/example_factor.py",
+      "sha256": "97e53b681fb0f597ccd61945b96171c939cd0d2450a2faff4d459e0c8ccbb646"
+    },
+    {
+      "path": "assets/example_report.md",
+      "sha256": "918bfbb1f973b4c56dc9bed47ae8791040047e24c98e868f8d9d786666ed46b8"
+    },
+    {
+      "path": "assets/factor-library/deltab5/1.0.0/definition.json",
+      "sha256": "a6d3bf0d290d901c1df1f167bf3ecb126d96e947efc5611c54d98979cd1b9a42"
+    },
+    {
+      "path": "assets/factor-library/deltab5/1.0.0/factor.py",
+      "sha256": "e2b1ad9ded4a1a085023dc9bb3bba43521433ece16116164c00371a7f946b40d"
+    },
+    {
+      "path": "assets/factor-library/deltab5/1.0.0/provenance/adapter-parity.json",
+      "sha256": "8d98ee94bd8f501180dc7d389cc818bb0e76dec1301a2630309ccbd4a89c23eb"
+    },
+    {
+      "path": "assets/factor-library/deltab5/1.0.0/provenance/factor-code-checks.json",
+      "sha256": "791c457a7314e8c9c55bde056094303e6de4377c19593b5856fb585fdb0a3a8c"
+    },
+    {
+      "path": "assets/factor-library/deltab5/1.0.0/provenance/factor-freeze.json",
+      "sha256": "4b758d4e423e07c51cbfc4bad12371b288ba01d063772e64ff5e6b281fb247db"
+    },
+    {
+      "path": "assets/factor-library/deltab5/1.0.0/provenance/original.py",
+      "sha256": "ed4b6bdc118c86ad255d840e81e093183357535eb4bf48cbabca4de00a5e7387"
+    },
+    {
+      "path": "assets/factor-library/deltab5/1.0.0/provenance/proposal-rejections.json",
+      "sha256": "7372177ad4b0ac992a16c8748018dd2e1b7668e731e1a35f77bc056c30ade161"
+    },
+    {
+      "path": "assets/factor-library/momentum_20/1.0.0/definition.json",
+      "sha256": "48618b3003c5830b2076df2085d97d0f9bc040694c5dfeb8fc3e113dd3059775"
+    },
+    {
+      "path": "assets/factor-library/momentum_20/1.0.0/factor.py",
+      "sha256": "8c3ff6fc796e96e9642ef22f1cf9879edec357c575ed3ffea7068518a51e8405"
+    },
+    {
+      "path": "assets/factor-library/momentum_20/1.0.0/provenance/adapter-parity.json",
+      "sha256": "ba785c675d5b51ededc31215ae7ba38b2ab9e79b6d5bc3b127169ce30ec05f85"
+    },
+    {
+      "path": "assets/factor-library/momentum_20/1.0.0/provenance/original.py",
+      "sha256": "688b40cd0cf8aea3eae239b992aa391ff62fe7a53c595eecab16ae4156fe885e"
+    },
+    {
+      "path": "assets/factor-library/r1_band_volume_trend/1.0.0/definition.json",
+      "sha256": "c3973557b7c8b2bfdf4bf10daa0a74b9e224943076a65aabd31ac05ee9d0ee90"
+    },
+    {
+      "path": "assets/factor-library/r1_band_volume_trend/1.0.0/factor.py",
+      "sha256": "87593612dd4520c7d74812d63ec49a2f96b2a886cf7e1f84ea9523586a825f25"
+    },
+    {
+      "path": "assets/factor-library/r1_band_volume_trend/1.0.0/provenance/adapter-parity.json",
+      "sha256": "0adbafeeda49ff6b801e1ccb109417cf2bdbc375066b705a3e0fa85f44754a05"
+    },
+    {
+      "path": "assets/factor-library/r1_band_volume_trend/1.0.0/provenance/factor-code-checks-round-1.json",
+      "sha256": "d52a5504a5ba188ea321133ad0723daa87f3c3b796c0cbf7651cd7c72c04c936"
+    },
+    {
+      "path": "assets/factor-library/r1_band_volume_trend/1.0.0/provenance/factor-freeze.json",
+      "sha256": "1076ec780258defb53d5b01848c71ba4c10305afdb3dab6399c38908a43625ff"
+    },
+    {
+      "path": "assets/factor-library/r1_band_volume_trend/1.0.0/provenance/factor-math-checks.json",
+      "sha256": "1ad7e4ce939d0b7da9e58491e461d8f53a798b08281ca83ccf536cd30cc6360a"
+    },
+    {
+      "path": "assets/factor-library/r1_band_volume_trend/1.0.0/provenance/original.py",
+      "sha256": "d11bb30ce0a9ad3337632123478b651742b5a02ebad96c82d111f7304d41efdb"
+    },
+    {
+      "path": "assets/factor-library/r1_band_volume_trend/1.0.0/provenance/technical-repair.json",
+      "sha256": "4de133148006fb7e1f3eb887bdae2fdeb7dbb5c150ca088bbf7eb9b95be46a9e"
+    },
+    {
+      "path": "assets/factor-library/r1_range_pos20/1.0.0/definition.json",
+      "sha256": "c9b77fff3403e949ad7ef74c1c61817f60c523080e3cd9d3928727e99f0ebbde"
+    },
+    {
+      "path": "assets/factor-library/r1_range_pos20/1.0.0/factor.py",
+      "sha256": "ee0603d7fd1ae11b1817751108483091a52dc7f922430674b406948774f9f12c"
+    },
+    {
+      "path": "assets/factor-library/r1_range_pos20/1.0.0/provenance/adapter-parity.json",
+      "sha256": "86491231f317618d64c85a33165b9bf0da97476a370b89a28cd8cefc4e9dcbee"
+    },
+    {
+      "path": "assets/factor-library/r1_range_pos20/1.0.0/provenance/factor-code-checks-round-1.json",
+      "sha256": "d52a5504a5ba188ea321133ad0723daa87f3c3b796c0cbf7651cd7c72c04c936"
+    },
+    {
+      "path": "assets/factor-library/r1_range_pos20/1.0.0/provenance/factor-freeze.json",
+      "sha256": "1076ec780258defb53d5b01848c71ba4c10305afdb3dab6399c38908a43625ff"
+    },
+    {
+      "path": "assets/factor-library/r1_range_pos20/1.0.0/provenance/factor-math-checks.json",
+      "sha256": "1ad7e4ce939d0b7da9e58491e461d8f53a798b08281ca83ccf536cd30cc6360a"
+    },
+    {
+      "path": "assets/factor-library/r1_range_pos20/1.0.0/provenance/original.py",
+      "sha256": "de978f99bca6f0c09a9cc7bde2bdf3fbdf062ec43a1f470ed0a9be1251319bd6"
+    },
+    {
+      "path": "assets/factor-library/r1_range_pos20/1.0.0/provenance/technical-repair.json",
+      "sha256": "4de133148006fb7e1f3eb887bdae2fdeb7dbb5c150ca088bbf7eb9b95be46a9e"
+    },
+    {
+      "path": "assets/factor-library/r2_band_dir_persist/1.0.0/definition.json",
+      "sha256": "fa84b34b37c2d8822fe885ea6ea8bf767dadb9f82726dfd46d40fe948259d330"
+    },
+    {
+      "path": "assets/factor-library/r2_band_dir_persist/1.0.0/factor.py",
+      "sha256": "688f925ee3312c9ee02ac0192166d7ffe96cb9ab614ad009d1cf61f53264429f"
+    },
+    {
+      "path": "assets/factor-library/r2_band_dir_persist/1.0.0/provenance/adapter-parity.json",
+      "sha256": "ed5468332005037f5d55f14018f8e3a53cf1fc22e681fa5f80bfc67404bf1dee"
+    },
+    {
+      "path": "assets/factor-library/r2_band_dir_persist/1.0.0/provenance/factor-code-checks-round-2.json",
+      "sha256": "925d45b7781af296ec26a3ceab56138d03f732a7f67692fdb1916bba9fc1f90d"
+    },
+    {
+      "path": "assets/factor-library/r2_band_dir_persist/1.0.0/provenance/factor-freeze.json",
+      "sha256": "1076ec780258defb53d5b01848c71ba4c10305afdb3dab6399c38908a43625ff"
+    },
+    {
+      "path": "assets/factor-library/r2_band_dir_persist/1.0.0/provenance/factor-math-checks.json",
+      "sha256": "1ad7e4ce939d0b7da9e58491e461d8f53a798b08281ca83ccf536cd30cc6360a"
+    },
+    {
+      "path": "assets/factor-library/r2_band_dir_persist/1.0.0/provenance/original.py",
+      "sha256": "f32f2d83e1d996a2313a3d6f2432e8d227314f871037cf8425e995e70ad75c8a"
+    },
+    {
+      "path": "assets/factor-library/r2_band_dir_persist/1.0.0/provenance/technical-repair.json",
+      "sha256": "4de133148006fb7e1f3eb887bdae2fdeb7dbb5c150ca088bbf7eb9b95be46a9e"
+    },
+    {
+      "path": "assets/factor-library/r2_expand_on_volume/1.0.0/definition.json",
+      "sha256": "b504a98c9fb914b028b8c8de7ed205cc21895b638a55521309655b5490bb12a4"
+    },
+    {
+      "path": "assets/factor-library/r2_expand_on_volume/1.0.0/factor.py",
+      "sha256": "5b5edb1e39da4bff65f6f1b7eafca0d210e8f7383fcf99e4470234ebf00dedc9"
+    },
+    {
+      "path": "assets/factor-library/r2_expand_on_volume/1.0.0/provenance/adapter-parity.json",
+      "sha256": "78a170bd9375f1fb04c14733c098e094baed0beec13f32353918c319001af2f0"
+    },
+    {
+      "path": "assets/factor-library/r2_expand_on_volume/1.0.0/provenance/factor-code-checks-round-2.json",
+      "sha256": "925d45b7781af296ec26a3ceab56138d03f732a7f67692fdb1916bba9fc1f90d"
+    },
+    {
+      "path": "assets/factor-library/r2_expand_on_volume/1.0.0/provenance/factor-freeze.json",
+      "sha256": "1076ec780258defb53d5b01848c71ba4c10305afdb3dab6399c38908a43625ff"
+    },
+    {
+      "path": "assets/factor-library/r2_expand_on_volume/1.0.0/provenance/factor-math-checks.json",
+      "sha256": "1ad7e4ce939d0b7da9e58491e461d8f53a798b08281ca83ccf536cd30cc6360a"
+    },
+    {
+      "path": "assets/factor-library/r2_expand_on_volume/1.0.0/provenance/original.py",
+      "sha256": "6740fe7cca62754d5aa36b44bc04f78731408249b91a1df383d878a93825a97f"
+    },
+    {
+      "path": "assets/factor-library/r2_expand_on_volume/1.0.0/provenance/technical-repair.json",
+      "sha256": "4de133148006fb7e1f3eb887bdae2fdeb7dbb5c150ca088bbf7eb9b95be46a9e"
+    },
+    {
+      "path": "assets/factor-library/range_position_20/1.0.0/definition.json",
+      "sha256": "e3494c5e2366dc4a1cad04d6eaa452d4f34df972c446fc1a73c57bd0ee147db2"
+    },
+    {
+      "path": "assets/factor-library/range_position_20/1.0.0/factor.py",
+      "sha256": "5386c283de6c2bf4aeb8ed3b60284d174ad26ff74d9dff5fd7e5930cc3083759"
+    },
+    {
+      "path": "assets/factor-library/range_position_20/1.0.0/provenance/adapter-parity.json",
+      "sha256": "de9949ceb01184cd437cf5dc779788ca1b3880b0e72cf686a39c6bae3e3b4207"
+    },
+    {
+      "path": "assets/factor-library/range_position_20/1.0.0/provenance/original.py",
+      "sha256": "688b40cd0cf8aea3eae239b992aa391ff62fe7a53c595eecab16ae4156fe885e"
+    },
+    {
+      "path": "assets/factor-library/return_5/1.0.0/definition.json",
+      "sha256": "958ca70284099470eb3030ece43e636e3cf2088243c09a7ab74754490e1307be"
+    },
+    {
+      "path": "assets/factor-library/return_5/1.0.0/factor.py",
+      "sha256": "3125952d7a8680b22790c85536aed9dc788de4c52e07be7bba6439c0f45e5c27"
+    },
+    {
+      "path": "assets/factor-library/return_5/1.0.0/provenance/adapter-parity.json",
+      "sha256": "8c780eae9fde2d013b89bf349b632eff7d8c8846026bc5955d55c6ccf8ca50e0"
+    },
+    {
+      "path": "assets/factor-library/return_5/1.0.0/provenance/original.py",
+      "sha256": "688b40cd0cf8aea3eae239b992aa391ff62fe7a53c595eecab16ae4156fe885e"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_range_pos20/1.0.0/definition.json",
+      "sha256": "97a3a2810e8f604c15570b91de0255ac837e4bdc3541e38f043e5dea7570017a"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_range_pos20/1.0.0/factor.py",
+      "sha256": "f5837224c47b298db9961c0a7a2122ea195a0456f954e84d8e176051b39da6fa"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_range_pos20/1.0.0/provenance/adapter-parity.json",
+      "sha256": "7b789f3904f89b4448cfef361a478c965e7af698473cc6b425e16ec8b28bb992"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_range_pos20/1.0.0/provenance/agent-completion-REV-initial-failure.json",
+      "sha256": "eadd39a7bf44e12dd4d65e11e856c630c0b11085d8e84ae52453702289d0c145"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_range_pos20/1.0.0/provenance/factor-code-checks-REV.json",
+      "sha256": "0a07b1b202acb8bf55858024137609077440e7f39ac2129b42485947db4c32fa"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_range_pos20/1.0.0/provenance/factor-freeze.json",
+      "sha256": "3bf8c2646ba78cdc35ac68427caf2a2434521e973b82949fc6e79c8a204330bd"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_range_pos20/1.0.0/provenance/factor-math-checks.json",
+      "sha256": "c3e3afb00e765f7306bd9c925855691cde1b09eaf1b6d37beb17da66e5410a55"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_range_pos20/1.0.0/provenance/format-recovery-checks.json",
+      "sha256": "f106a063bc354df39e50a6bdb50936b177bad6bca3ff2a33c53463c23912e06c"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_range_pos20/1.0.0/provenance/original.py",
+      "sha256": "70a58b84716d774abffc791f2493b208d3aef6a4e0ecbdcae7c088fc9a2ab716"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_vol_dryup5/1.0.0/definition.json",
+      "sha256": "9e79f08310d596b4750ad9384ec4ed60c4b68faa9431d7eef846fe08af8232f2"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_vol_dryup5/1.0.0/factor.py",
+      "sha256": "c824f3847c509b5f1a6b3339a2d38462072bec9d68c7d190fcc7dd03c72605f8"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_vol_dryup5/1.0.0/provenance/adapter-parity.json",
+      "sha256": "08d7ad99667aa86c2fbd211fc4b5b9d65219613c3913a8434b31ca4a20080024"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_vol_dryup5/1.0.0/provenance/agent-completion-REV-initial-failure.json",
+      "sha256": "eadd39a7bf44e12dd4d65e11e856c630c0b11085d8e84ae52453702289d0c145"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_vol_dryup5/1.0.0/provenance/factor-code-checks-REV.json",
+      "sha256": "0a07b1b202acb8bf55858024137609077440e7f39ac2129b42485947db4c32fa"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_vol_dryup5/1.0.0/provenance/factor-freeze.json",
+      "sha256": "3bf8c2646ba78cdc35ac68427caf2a2434521e973b82949fc6e79c8a204330bd"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_vol_dryup5/1.0.0/provenance/factor-math-checks.json",
+      "sha256": "c3e3afb00e765f7306bd9c925855691cde1b09eaf1b6d37beb17da66e5410a55"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_vol_dryup5/1.0.0/provenance/format-recovery-checks.json",
+      "sha256": "f106a063bc354df39e50a6bdb50936b177bad6bca3ff2a33c53463c23912e06c"
+    },
+    {
+      "path": "assets/factor-library/rev_r1_vol_dryup5/1.0.0/provenance/original.py",
+      "sha256": "8a7dfad9d1d94bfb1fdbdafa2f1b5e06ff108f9c0d96406eb7eeb0294daa2459"
+    },
+    {
+      "path": "assets/factor-library/squeeze20_40/1.0.0/definition.json",
+      "sha256": "5827c67fcaefdd1d8fdd25d229116f50e3087668287fb0e0e852fe348b08980b"
+    },
+    {
+      "path": "assets/factor-library/squeeze20_40/1.0.0/factor.py",
+      "sha256": "12d75162bb2115ecf6d9f2077f9116acf41305563ec18a9f0388ee97231bbd83"
+    },
+    {
+      "path": "assets/factor-library/squeeze20_40/1.0.0/provenance/adapter-parity.json",
+      "sha256": "0a6730e52416e175fe0ec359678aff3ff52aac51cffb9682fab3fc405f04163e"
+    },
+    {
+      "path": "assets/factor-library/squeeze20_40/1.0.0/provenance/factor-code-checks.json",
+      "sha256": "791c457a7314e8c9c55bde056094303e6de4377c19593b5856fb585fdb0a3a8c"
+    },
+    {
+      "path": "assets/factor-library/squeeze20_40/1.0.0/provenance/factor-freeze.json",
+      "sha256": "4b758d4e423e07c51cbfc4bad12371b288ba01d063772e64ff5e6b281fb247db"
+    },
+    {
+      "path": "assets/factor-library/squeeze20_40/1.0.0/provenance/original.py",
+      "sha256": "969d0d0c6fb08331c5e101efffd9299a584dd9f5bd58bda0c30f491f84d49537"
+    },
+    {
+      "path": "assets/factor-library/squeeze20_40/1.0.0/provenance/proposal-rejections.json",
+      "sha256": "7372177ad4b0ac992a16c8748018dd2e1b7668e731e1a35f77bc056c30ade161"
+    },
+    {
+      "path": "assets/factor-library/trend_r1_trend_range_pos55/1.0.0/definition.json",
+      "sha256": "f793da4788876cb8139b5eb975136b45048f721860ee3d39ab022d8ff93a7ab3"
+    },
+    {
+      "path": "assets/factor-library/trend_r1_trend_range_pos55/1.0.0/provenance/factor-freeze.json",
+      "sha256": "3bf8c2646ba78cdc35ac68427caf2a2434521e973b82949fc6e79c8a204330bd"
+    },
+    {
+      "path": "assets/factor-library/trend_r1_trend_range_pos55/1.0.0/provenance/failure-TREND.json",
+      "sha256": "f8cbbffbbacc5d97c816d71fb0d5d19901dde804af35cc766d3d8a109fb83b9a"
+    },
+    {
+      "path": "assets/factor-library/trend_r1_trend_range_pos55/1.0.0/provenance/original.py",
+      "sha256": "53e106ac2c2369e0dd8ae80e7ad49c6a3f4a719a41693fcf8c77d5af29d6f7ef"
+    },
+    {
+      "path": "assets/factor-library/trend_r1_trend_range_pos55/1.0.0/provenance/proposal-TREND.json",
+      "sha256": "9f315faab75dfb7834e826506fe1c00ae88281f847f0dfd5fef8d791fa004432"
+    },
+    {
+      "path": "assets/factor-library/trend_r1_trend_range_pos55/1.0.0/provenance/trend-code-diagnostic.json",
+      "sha256": "83169a4dad99b4146c4a9e2f62ec2e50530921febd648a0f853221e9f8c3881f"
+    },
+    {
+      "path": "assets/factor-library/volatility_20/1.0.0/definition.json",
+      "sha256": "37ffef3c7ef34d473b09d2e68ce94ec42ed88b01bf305f112c55c7d8617682f1"
+    },
+    {
+      "path": "assets/factor-library/volatility_20/1.0.0/factor.py",
+      "sha256": "33ea411b5ffb6ca5bdfafa3fefd882410da0b404c5d6bf7872e7fe225a72b870"
+    },
+    {
+      "path": "assets/factor-library/volatility_20/1.0.0/provenance/adapter-parity.json",
+      "sha256": "319ec9966f00c909fd1b5b5443418337dc50d400b330d5dc974f4736a5eb3f81"
+    },
+    {
+      "path": "assets/factor-library/volatility_20/1.0.0/provenance/original.py",
+      "sha256": "688b40cd0cf8aea3eae239b992aa391ff62fe7a53c595eecab16ae4156fe885e"
+    },
+    {
+      "path": "assets/factor-library/volume_ratio_5/1.0.0/definition.json",
+      "sha256": "8b2b26c0e9c763f35fc5d4678a5c4af23279258e41e451f6d07d6fce37f39193"
+    },
+    {
+      "path": "assets/factor-library/volume_ratio_5/1.0.0/factor.py",
+      "sha256": "39ad96b8d8fdb200c00ba47698618201fe26ffaceaf74ef78462c385b9777664"
+    },
+    {
+      "path": "assets/factor-library/volume_ratio_5/1.0.0/provenance/adapter-parity.json",
+      "sha256": "1123fbe69bd8e0556f4c51c0ccf1ba202112b87f8dfd9079985ae10757bd2583"
+    },
+    {
+      "path": "assets/factor-library/volume_ratio_5/1.0.0/provenance/original.py",
+      "sha256": "688b40cd0cf8aea3eae239b992aa391ff62fe7a53c595eecab16ae4156fe885e"
+    },
+    {
+      "path": "assets/make_demo.py",
+      "sha256": "f266659fc5691efe78fd2d22a8d67d71abbfb62eb62bcc3cdd00c7d3689c7581"
+    },
+    {
+      "path": "assets/tiny_model.py",
+      "sha256": "670e9e7fc48bb8d8afa5c9a036d0330b1f186ac0820d6f5f8ebf104009fbe3a9"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "94a14b4299e3945a1580887dd7624300af949cbf87e15b2d32e74bba6e9012e1"
+    },
+    {
+      "path": "references/batch-research.md",
+      "sha256": "31a4a4006da2f5b6eec23aa714840f7ae0a707e3910725e57c91305415d85477"
+    },
+    {
+      "path": "references/contracts.md",
+      "sha256": "e85817ead596be9a25a75bc45b8c1926b9e3e08e126b7071045f452cd5f9f7a3"
+    },
+    {
+      "path": "references/data-preparation.md",
+      "sha256": "f96350085a083914f8cdd145e117137faa41fa17cf373101a378a26daaf25f11"
+    },
+    {
+      "path": "references/factor-discovery.md",
+      "sha256": "9f233d7366d0c702ba271dc0cadd574808e0c2fcd0a4bd471529f973f96bb773"
+    },
+    {
+      "path": "references/factor-library.md",
+      "sha256": "9877034937930459ab809964e8535bee3003ecde7e43efa76b08e7fe8509c180"
+    },
+    {
+      "path": "references/factor-optimization.md",
+      "sha256": "a5fff54d645f4252ceb9594d997c8f308d7abba9c80e7c88b2ac6337b9912684"
+    },
+    {
+      "path": "references/factor-validation.md",
+      "sha256": "abedcb770cf53ac43cd2c4a90a64f15d53405c3f055b7e96d1e781de3e269d4c"
+    },
+    {
+      "path": "references/portability.md",
+      "sha256": "54d7d4189bca5441ac405dbcc7acfd01c5cfd6b5331b499b2f1eb7437efe58af"
+    },
+    {
+      "path": "references/portable-project.md",
+      "sha256": "a78ac9dd35ee295e35cf62f8103572e4c30db6e983f4dbb69961b24daf3768d4"
+    },
+    {
+      "path": "references/provenance.md",
+      "sha256": "57cf22224baca483478ad1ef7ea2552a06bb42d33fc15d6e852dfdd0c0193a59"
+    },
+    {
+      "path": "references/rd-agent-license.txt",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "references/research-modes.md",
+      "sha256": "227357006e97c2473c8605b7be56c50efaa226028006aa3afbca62e1ecfda7cc"
+    },
+    {
+      "path": "references/storage.md",
+      "sha256": "f76b4927db13666b374271c8fd560ea1c21fa2600568728df6c07723ea86af2a"
+    },
+    {
+      "path": "references/temporal-design.md",
+      "sha256": "23155e998a0d09cde79153b928486f40102f85f286bf8272b59df2948b17b73c"
+    },
+    {
+      "path": "references/validation.md",
+      "sha256": "7e97ff7fa520207e50278bc55f4556fba06724fcdb73cc315334615faa185153"
+    },
+    {
+      "path": "scripts/batch.py",
+      "sha256": "a9c7279bce2c54e5ebba10119eb348577d02b26e6faae9587a22d0074b064cf8"
+    },
+    {
+      "path": "scripts/check_worker.py",
+      "sha256": "a52ca3134f475b9da63176a1be991ce27ee592853a32d95a007af96b57c199ec"
+    },
+    {
+      "path": "scripts/evaluate_worker.py",
+      "sha256": "4a16b63f45ba7d9c916a20eaa41acb9755427417335de158625cd33beb46e303"
+    },
+    {
+      "path": "scripts/project.py",
+      "sha256": "a6e08deed15e96a0e41e550bfe2948b151984673fe3d2689f36e04be0c55c077"
+    },
+    {
+      "path": "scripts/quant.py",
+      "sha256": "6dbbdd0f385f141f843bf1d685ff564572278989f637f7e228fc9d8078ce14c5"
+    },
+    {
+      "path": "scripts/quantlib/__init__.py",
+      "sha256": "895638a1d66d89ab11eaf6ef5530a07693ab3b816223cc0d35fea700cc8e5cd0"
+    },
+    {
+      "path": "scripts/quantlib/catalog.py",
+      "sha256": "6836878993d29b536099fa8dcc94deb8801d463aec86c834c558b49dbcc03a90"
+    },
+    {
+      "path": "scripts/quantlib/composition.py",
+      "sha256": "208dffc41f6c03d7fc09f465923a20f6d6769deb1b0cc917c60a9bae449fea9f"
+    },
+    {
+      "path": "scripts/quantlib/data.py",
+      "sha256": "34125bc0c62b78f02ddb6f6d650984cd6891b622df60c6236beeff87cf274d06"
+    },
+    {
+      "path": "scripts/quantlib/defaults.py",
+      "sha256": "6f392aa0956aa16f8767db301c8e0944f4b78afa0b63f7e86c8083f591c5eb69"
+    },
+    {
+      "path": "scripts/quantlib/engine.py",
+      "sha256": "a5eb51e6c40432ca7b091e54df153feacd63c7874d6cc851441c2a42bcb7c3e2"
+    },
+    {
+      "path": "scripts/quantlib/factor_registry.py",
+      "sha256": "116bef8378c0a6a730a495c4aaa969971527565a59ca5223e8332b3bad22dcde"
+    },
+    {
+      "path": "scripts/quantlib/factor_worker.py",
+      "sha256": "6e1d0e9273f0a5f68baeffbdd5f411c76c4c1599b1f4293a91d600dd13786d3b"
+    },
+    {
+      "path": "scripts/quantlib/factors.py",
+      "sha256": "9dbad5b52373ad1dea801588302a0aee8b41fa75e274dad53a2f5d26f573189e"
+    },
+    {
+      "path": "scripts/quantlib/history.py",
+      "sha256": "7ec020708f82415bbd4a1ba299dd7c3673c27555f949df3d85fadcdf64ae4351"
+    },
+    {
+      "path": "scripts/quantlib/ingestion.py",
+      "sha256": "2debdc3481b3fced5caa81d535536d2c923f036fcbd4c7f83e0193d2cffa164e"
+    },
+    {
+      "path": "scripts/quantlib/library.py",
+      "sha256": "d97dd9cee460210d5fc16d9cc79e08e103dd2fda19b55b2d89100c95bd1d3f02"
+    },
+    {
+      "path": "scripts/quantlib/models.py",
+      "sha256": "7541747e55fdec73137da44620010924deaeb74266064ff4d85b3c138c4d18a7"
+    },
+    {
+      "path": "scripts/quantlib/sources/__init__.py",
+      "sha256": "5b8bf70c7491d8d3ebcaa76124b59b88fcf6c64d361697f6ffd487453482c761"
+    },
+    {
+      "path": "scripts/quantlib/sources/baostock.py",
+      "sha256": "47e047a5dac5cf9e1baf63adc15648fa7f92d9f33c7563d614d8536ed95e66db"
+    },
+    {
+      "path": "scripts/quantlib/statistics.py",
+      "sha256": "c5ae1d845f125c3ae180bb17b8435142826cce5e4e7c14203038749d1d68f6eb"
+    },
+    {
+      "path": "scripts/quantlib/workspace.py",
+      "sha256": "9378aa46b5fe9b85adcadb3c764dfd310a154b35acddef928c801e81aae45717"
+    },
+    {
+      "path": "tests/smoke_batch.py",
+      "sha256": "b2b32d12e32fa728384eae7574c3a2918c49aa49cb8ed1d7b486e8551ce982cf"
+    },
+    {
+      "path": "tests/smoke_factor_modes.py",
+      "sha256": "5dcaf5ba5322d53d4cf47c6bda84e98d3fceda69733321eadfae525a69f015a7"
+    },
+    {
+      "path": "tests/smoke_library.py",
+      "sha256": "d9e9126d83fce8839a3af0ce0dfdae98d5c659e8890413f70d633e093ee583f0"
+    },
+    {
+      "path": "tests/smoke_modes.py",
+      "sha256": "8a3bb8c91aaa32006216810171b9df8b779f69d71c5c3db3263300363040a907"
+    },
+    {
+      "path": "tests/test_batch.py",
+      "sha256": "fdf57ca9e0f4574e0b97cda408083294427a1e780061020b5f6572feec1cf498"
+    },
+    {
+      "path": "tests/test_catalog.py",
+      "sha256": "b9b49daa7bb84c18c57525512d7f2357517f18e3810ffe8046513d90b7c48f02"
+    },
+    {
+      "path": "tests/test_composition.py",
+      "sha256": "92f4085f5a8c1d74fe3fae836410258a02925c96893d10e38aebb80f5ebdde71"
+    },
+    {
+      "path": "tests/test_data_factors.py",
+      "sha256": "a166f5ad4055ed0da5d122d8068a875be41adc62cb9922db5f9ef14a81a1a05f"
+    },
+    {
+      "path": "tests/test_data_preparation_cli.py",
+      "sha256": "7c67414963697b026fad0ec186ed1ca29b88c176e86841d9be8fe74547415d7e"
+    },
+    {
+      "path": "tests/test_engine.py",
+      "sha256": "f48423a9d97dca1e26165315fb3057bd6393b921d46cd2a063ea9e90aefd2e54"
+    },
+    {
+      "path": "tests/test_factor_adapters.py",
+      "sha256": "2a5fb13a0b4ad3c54196e6708d4e78642374a8be39cff56e5c413bcfb48162e9"
+    },
+    {
+      "path": "tests/test_factor_registry.py",
+      "sha256": "6f980d20e77c470cb8fbe46cecf30a23168639c97ae2191449ba058cae69a821"
+    },
+    {
+      "path": "tests/test_history.py",
+      "sha256": "f5fc5ab2761045c67a33ccc9a4dd9ecbb00d7d6a630dd4e4fe1541a83ac541ea"
+    },
+    {
+      "path": "tests/test_ingestion.py",
+      "sha256": "c43f1a5d65a46272280783487147b8e7d92fbdfe77554cd0f3ecb2f3857445a7"
+    },
+    {
+      "path": "tests/test_library.py",
+      "sha256": "6fa1870059d6683c735866105aeb261ead37ef2cfcee0566106e539e8d2c27e8"
+    },
+    {
+      "path": "tests/test_managed_cli.py",
+      "sha256": "50a8118d6c7fe3e2afd895f224cee058f8002aacbdfbcfe7606b7df56e41f53b"
+    },
+    {
+      "path": "tests/test_project.py",
+      "sha256": "c45b05cdca80adcebae56c15d03d7742b4f725118e0a802a95cef2d20be5fff3"
+    },
+    {
+      "path": "tests/test_recovery.py",
+      "sha256": "3ea2a7ca7ddd244cb1230ee007e9fcf0d98443e80162037449ec32b35a185a62"
+    },
+    {
+      "path": "tests/test_registered_candidates.py",
+      "sha256": "ef1bf3b01bf2197d3e3faf5c255e52d9a182e2dd19f43444b9b43cfe97fb06d5"
+    },
+    {
+      "path": "tests/test_repository_project.py",
+      "sha256": "63a1130603e51e81068182282cd33de4a72de39998ddec2657486a8a12d07871"
+    },
+    {
+      "path": "tests/test_research_defaults.py",
+      "sha256": "175f0eb8d51001fc11a63dbbfa004c3d713a65f1df79b5d6fc27caf5f0656324"
+    },
+    {
+      "path": "tests/test_sources.py",
+      "sha256": "28ddd2e108ae29de935e76e42435859c39a6bc859369d45b492238c7a37f54ff"
+    },
+    {
+      "path": "tests/test_workflow.py",
+      "sha256": "369ee016ca52a52f1bcab68526908aa57f371d2d2d40f1409430e6af9ce50fd1"
+    },
+    {
+      "path": "tests/test_workspace.py",
+      "sha256": "876e4922682648822c57b4d811b1867725535c985e813f42f666c336f85225e2"
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "387866300297eecb5a7fce2632ee02c9db09a26b6becc407aebb54d21200f7cb"
+    }
+  ]
+}

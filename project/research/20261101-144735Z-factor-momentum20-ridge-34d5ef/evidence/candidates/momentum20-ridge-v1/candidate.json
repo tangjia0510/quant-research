@@ -1,0 +1,23 @@
+{
+  "id": "momentum20-ridge-v1",
+  "kind": "factor",
+  "hypothesis": "固定Ridge(alpha=1)和return_5、volatility_20基线，仅增加20交易日收益率；预期提高开发期逐日RankIC与扣费净收益且不增加最大回撤。只检验此一候选，不追逐结果调参。",
+  "features": [
+    "return_5",
+    "volatility_20"
+  ],
+  "factor_file": "candidates/momentum20-ridge-v1/factor.py",
+  "factor_params": {},
+  "max_lookback": 21,
+  "scale_invariant": true,
+  "model": {
+    "kind": "ridge",
+    "params": {
+      "alpha": 1.0
+    }
+  },
+  "files": {
+    "factor.py": "ec5a33ce63cc70eb98e80182a75aaca0d2ba73f9d382189f7d7e2d50a96c8184"
+  },
+  "candidate_hash": "8c39d122335cdb8a007f561ec0ed9fcf48a88ac3ca8568f77b09654205cc7bde"
+}

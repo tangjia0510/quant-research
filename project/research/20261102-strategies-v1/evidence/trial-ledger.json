@@ -1,0 +1,56 @@
+{
+  "utc": "2026-11-02T16:48:26.981516+00:00",
+  "statistical_trials_planned": 1,
+  "statistical_trials_completed": 1,
+  "candidate": "faber_sma10_510300",
+  "cost_cases_bp": [
+    0,
+    10,
+    30
+  ],
+  "technical_attempts": [
+    {
+      "stage": "HTML inspect",
+      "attempt": 1,
+      "status": "failed",
+      "reason": "systemPython bs4 absent; correct existingresearchPython used, noinstall"
+    },
+    {
+      "stage": "original2026PDF download",
+      "attempt": 1,
+      "status": "HTTP503",
+      "resolution": "retain failedresponse; officialwebreader independently verified page2; no repeatedownload"
+    },
+    {
+      "stage": "nativePDF extraction",
+      "attempt": 1,
+      "status": "failed",
+      "reason": "researchPython missingpypdf"
+    },
+    {
+      "stage": "nativePDF extraction",
+      "attempt": 2,
+      "status": "success70pages",
+      "resolution": "samequantCLI systemPython haspypdf; no runtimechange"
+    },
+    {
+      "stage": "synthetic accountingtests",
+      "attempt": 1,
+      "status": "pendingoverride fixturefailed",
+      "reason": "syntheticbdate included Jan1; blockedorders startedJan2; correctedteststartJan2,noenginechange"
+    },
+    {
+      "stage": "synthetic accountingtests",
+      "attempt": 2,
+      "status": "8passed"
+    }
+  ],
+  "first_result_utc_interval": [
+    "2026-11-02T16:49:04Z",
+    "2026-11-02T16:49:11Z"
+  ],
+  "selection": "none; fixedsinglecandidate nooptimization",
+  "result": "net_outperformance_not_supported; maximumdrawdown_not_reduced",
+  "primary_eval_exit_code": 0,
+  "all_cost_cases_preserved": true
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "lake-important-gaps-round5",
+  "version": "20261102-round5-context",
+  "sha256": "bda2cbacdb9ed4cc1ee2b21890975d7652cf9317155364700ac5dad987b1c185",
+  "kind": "file",
+  "locator": {
+    "root": "data_lake",
+    "path": "catalog/priority-gap-round5/IMPORTANT_GAPS.json"
+  },
+  "role": "Current consolidated known gaps after round5",
+  "limitations": [
+    "Metadata reference only; does not itself contain or certify every underlying dataset."
+  ]
+}

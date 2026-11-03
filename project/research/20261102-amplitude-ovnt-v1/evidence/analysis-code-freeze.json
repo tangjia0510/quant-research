@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-02T15:51:07.001699+00:00",
+  "new_candidate_results_seen": false,
+  "statistical_changes_from_previous_round": [
+    "Candidate-specific bins5/10",
+    "Candidate-specific HAC lags3/12",
+    "Add fixed30bp sensitivity",
+    "Report sum and average two-leg turnover distinctly"
+  ],
+  "sha256": {
+    "test_formulas.py": "2cb1dac692e58bee35062c021904ab7b23be959b535b7cb5296a354f74d699c6",
+    "formulas.py": "42d4aa623bf49a98b43cc43748e3ccd043de0c4f4440696506e52cb2c8b121cf",
+    "analyze.py": "00a781c64ac8d7921b5e6c9d22626febe2f8daf900d4a1fa35ab5e63efb678a4",
+    "test_analysis.py": "0d2471fc125363c1551964a9d8cb83e3d844feaeb7bb3e9d52d7261e8e03c716",
+    "build_monthly.py": "b6f603f1d4d8e54ec8e48a06ac7464afbffa5ece99c3c93d4abdf37e17b5c1fb"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": "lake-reference",
+  "title": "证券主表、交易日历、行业与指数成分权重",
+  "version": "inventory-as-observed-20261103",
+  "sha256": null,
+  "kind": "directory",
+  "locator": {
+    "root": "data_lake",
+    "path": "reference"
+  },
+  "identity_status": "inventory_only_not_frozen_snapshot",
+  "limitations": [
+    "Branch contains mixed raw and normalized tables; schema and vintage must be chosen per dataset before research.",
+    "No full-branch SHA has been computed in this migration; do not treat this inventory reference as a verified dataset version.",
+    "Bulk files stay external and must be separately preserved; some historical source snapshots cannot be reacquired exactly."
+  ],
+  "source_map_ref": "lake-source-map-round2",
+  "latest_gap_ref": "lake-important-gaps-round5",
+  "acquisition": "See frozen source-map metadata and original branch acquisition scripts; do not assume endpoint responses remain unchanged."
+}

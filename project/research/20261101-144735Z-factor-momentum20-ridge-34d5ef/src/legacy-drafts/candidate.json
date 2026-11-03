@@ -1,0 +1,13 @@
+{
+  "id": "momentum20-ridge-v1",
+  "kind": "factor",
+  "hypothesis": "固定Ridge(alpha=1)和return_5、volatility_20基线，仅增加20交易日收益率；预期提高开发期逐日RankIC与扣费净收益且不增加最大回撤。只检验此一候选，不追逐结果调参。",
+  "features": [
+    "return_5",
+    "volatility_20"
+  ],
+  "factor_file": "drafts/momentum20.py",
+  "factor_params": {},
+  "max_lookback": 21,
+  "scale_invariant": true
+}

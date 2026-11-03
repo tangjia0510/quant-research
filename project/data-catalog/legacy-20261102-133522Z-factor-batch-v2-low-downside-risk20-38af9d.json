@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "legacy-20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d",
+  "version": "frozen-20261102",
+  "sha256": null,
+  "locator": {
+    "root": "legacy_library",
+    "path": "studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d"
+  },
+  "kind": "directory",
+  "limitations": [
+    "External frozen archive; not included in portable package. Bind legacy_library on destination.",
+    "Historical code may require original execution layout; source hash alone does not guarantee executable replay."
+  ],
+  "reacquisition": "Historical source may change; preserve external frozen raw inputs separately.",
+  "manifest": {
+    "path": "supplementary/final-artifact-manifest.json",
+    "sha256": "45469a9f5ab13902a85301b55c868c795759b4d433c6220832c41a1be0aafd07"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "phase": "discovery",
+  "candidate_id": "momentum20-reference",
+  "signal": {
+    "ic": 0.012899541439435235,
+    "rank_ic": 0.013258009213347596,
+    "ic_days": 120,
+    "rank_ic_positive_fraction": 0.525
+  },
+  "portfolio": {
+    "days": 125,
+    "total_net_return": -0.30968444777902915,
+    "net_cagr": -0.5262817916225782,
+    "max_drawdown": -0.30968444777902915,
+    "annualized_arithmetic_excess": -1.0776357325108659,
+    "information_ratio": -5.017142861794332,
+    "mean_daily_cost": 0.00023755599463782482,
+    "mean_daily_turnover": 0.24046510806565294
+  },
+  "equal_weight": {
+    "days": 125,
+    "total_net_return": 4.984500691684879e-05,
+    "net_cagr": 0.0001004900784162821,
+    "max_drawdown": -1.9998601375581515e-05,
+    "annualized_arithmetic_excess": -0.3609793655083777,
+    "information_ratio": -2.315368086959485,
+    "mean_daily_cost": 1.2400000129910362e-09,
+    "mean_daily_turnover": 2.4800000259820724e-06
+  },
+  "equal_weight_excess_annualized": -0.716656367002488,
+  "folds": [
+    {
+      "splits": {
+        "train": [
+          "2020-01-02",
+          "2024-12-31"
+        ],
+        "valid": [
+          "2025-01-02",
+          "2025-06-30"
+        ],
+        "discovery": [
+          "2025-07-01",
+          "2025-12-31"
+        ],
+        "final": [
+          "2026-01-05",
+          "2026-10-30"
+        ]
+      },
+      "rows": {
+        "train": 5460638,
+        "valid": 564844,
+        "evaluation": 647737
+      },
+      "feature_names": [
+        "return_5",
+        "volatility_20",
+        "x_momentum20_reference"
+      ],
+      "label_transform": "raw",
+      "train_only_preprocessing": true,
+      "validation_label_boundary": "2025-07-01",
+      "label_boundaries_purged": true,
+      "model": {
+        "kind": "ridge",
+        "seed": 42,
+        "reload_predictions_match": true,
+        "best_iteration": 0
+      }
+    }
+  ],
+  "factor_checks": {
+    "stage": "discovery",
+    "rows": 7748812,
+    "builtin_features": [
+      "return_5",
+      "volatility_20"
+    ],
+    "input_end": "2025-12-31",
+    "generated_factor": true,
+    "execution_is_security_sandbox": false,
+    "factor_sha256": "d0a546ca00b960ebab9fe6ba2b3df8afce659c66c3db402da7b7f93bd005c637",
+    "future_perturbation": true,
+    "prefix_invariance": true,
+    "declared_lookback_verified": 21,
+    "scale_invariance_checked": true,
+    "coverage": {
+      "return_5": 0.9921807368665029,
+      "volatility_20": 0.9748241407844196,
+      "x_momentum20_reference": 0.9811439482594235
+    }
+  },
+  "prediction_rows": 647737,
+  "simulator": "qlib.SimulatorExecutor",
+  "benchmark": "synthetic equal-weight close index; not an official market index",
+  "interpretation": "historical research; implementation checks are not investment validation",
+  "robustness": {
+    "double_cost": {
+      "days": 125,
+      "total_net_return": -0.3294729933493866,
+      "net_cagr": -0.5532596198665392,
+      "max_drawdown": -0.3294729933493866,
+      "annualized_arithmetic_excess": -1.1362582136768953,
+      "information_ratio": -5.294598743372764,
+      "mean_daily_cost": 0.00047322562078161656,
+      "mean_daily_turnover": 0.2393671934314894
+    },
+    "delayed_signal": {
+      "days": 125,
+      "total_net_return": -0.34919137591222316,
+      "net_cagr": -0.5793490719880927,
+      "max_drawdown": -0.34919137591222316,
+      "annualized_arithmetic_excess": -1.2056089916411235,
+      "information_ratio": -6.429111976117742,
+      "mean_daily_cost": 0.0002230693079138466,
+      "mean_daily_turnover": 0.22643001072782484
+    }
+  },
+  "baseline": {
+    "model": {
+      "kind": "ridge",
+      "params": {
+        "alpha": 1.0
+      }
+    },
+    "features": [
+      "return_5",
+      "volatility_20"
+    ],
+    "signal": {
+      "ic": 0.014952576279706786,
+      "rank_ic": 0.011390654695277624,
+      "ic_days": 120,
+      "rank_ic_positive_fraction": 0.5083333333333333
+    },
+    "portfolio": {
+      "days": 125,
+      "total_net_return": -0.10774171532904564,
+      "net_cagr": -0.20532595693160827,
+      "max_drawdown": -0.14805042009255553,
+      "annualized_arithmetic_excess": -0.5578388161316976,
+      "information_ratio": -2.556381312726749,
+      "mean_daily_cost": 0.00024593423053294804,
+      "mean_daily_turnover": 0.24814277259447576
+    }
+  },
+  "increment": {
+    "days": 120,
+    "mean_rank_ic_increment": 0.0018673545180699761,
+    "hac_lag": 5,
+    "hac_ci95": [
+      -0.0070390397945904945,
+      0.010773748830730446
+    ],
+    "interpretation": "exploratory paired estimate; not corrected for adaptive search or multiple trials",
+    "annualized_net_return_difference": -0.519796916379168
+  }
+}

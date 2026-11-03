@@ -1,0 +1,11 @@
+{
+  "source": "studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/prepared.json",
+  "source_root": "legacy_library",
+  "sha256": "696660649671187614555482adeb2c94274a1f79535db4f903e98115e52ffeb9",
+  "bytes": 27111,
+  "top_level_keys": [
+    "files",
+    "prepared_at"
+  ],
+  "note": "Full enumerated data/derived hashes stay external; this binding is not the full frozen manifest."
+}

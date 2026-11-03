@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "20261102-illiq-seas-v1",
+  "title": "非流动性ILLIQ20与季节性SEAS复现",
+  "type": "factor",
+  "status": "inconclusive",
+  "data_refs": [
+    "legacy-20261102-illiq-seas-v1",
+    "legacy-diagnostic-input-manifest"
+  ],
+  "entrypoint": "src/replay.py",
+  "legacy_ref": {
+    "root": "legacy_library",
+    "path": "reproductions/20261102-illiq-seas-v1"
+  },
+  "favorite": true,
+  "registry_admitted": false,
+  "replay_status": "adapter_dryrun_verified_not_recomputed",
+  "replay_limitations": [
+    "Heavy historical pipeline not recomputed during migration; dry-run checks original data files and staged command/input/output paths.",
+    "Normalized data-lake source snapshots remain external; old intermediate diagnostic panels and trained files are rebuilt, not required as migrated input.",
+    "Replayed manifests/time metadata differ; data-path amendments are recorded under work and original frozen protocols remain untouched."
+  ],
+  "evidence_level": "historical_research_only",
+  "migration_scope": "lightweight_source_protocol_conclusions_and_attempt_history",
+  "favorite_scope": [
+    "illiq20"
+  ],
+  "replay_verification": "evidence/migration-replay-plan.json"
+}

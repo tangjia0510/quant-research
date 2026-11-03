@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "boll-510300-bars-20261102",
+  "version": "frozen-20261102",
+  "kind": "file",
+  "sha256": "60c84020ff067776282687f76f1c92ab6688db441266496b8e94ca62dabef160",
+  "locator": {
+    "root": "legacy_library",
+    "path": "reproductions/20261102-strategies-v1/sources/510300-raw-normalized.csv"
+  },
+  "description": "Reused frozen source from independently audited Faber ETF study; no new downloads",
+  "limitations": [
+    "Vendor historical snapshot, not point-in-time certified",
+    "Raw external input remains outside portable project; must resolve exact hash"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "boll-source-510300-2024-raw-json",
+  "kind": "file",
+  "version": "frozen-20261102",
+  "sha256": "d119dd860deb4f3e934da6c7f50142660d43f2733558c9e968552e2d8f990e2d",
+  "locator": {
+    "root": "legacy_library",
+    "path": "reproductions/20261102-strategies-v1/sources/510300-2024-raw.json"
+  },
+  "provenance": {
+    "url": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get?param=sh510300%2Cday%2C2024-01-01%2C2025-12-31%2C640%2C",
+    "status": 200,
+    "sha256": "d119dd860deb4f3e934da6c7f50142660d43f2733558c9e968552e2d8f990e2d",
+    "requested_start": "2024-01-01",
+    "requested_end": "2025-12-31",
+    "acquired_utc": "2026-11-02T16:40:27.623340+00:00"
+  },
+  "description": "Original vendor response",
+  "limitations": [
+    "Retrospective source snapshot; not PIT-certified"
+  ]
+}

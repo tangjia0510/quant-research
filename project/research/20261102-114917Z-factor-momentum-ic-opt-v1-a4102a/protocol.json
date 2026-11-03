@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "mode": "factor",
+  "objective": "Mechanism-bounded momentum/reversal IC optimization; native fixed Ridge increment separate from direct factor IC;2026 previously exposed",
+  "data": {
+    "region": "cn",
+    "price_basis": "adjusted",
+    "volume_unit": "units",
+    "synthetic": false,
+    "currency": "CNY",
+    "frequency": "day",
+    "adjustment_identity": "audited-shsz-multiplicative-v1",
+    "volume_basis": "raw volume_shares / asof Sina factor",
+    "limitations": [
+      "All input snapshots retrospective, not independently certified PIT/vintage",
+      "No future-label condition used in source eligibility; missing current bars remain NaN",
+      "Native train-median factor imputation differs from supplementary matched61 complete history sample",
+      "Historical ST/board-specific limits/suspensions not fully available",
+      "No complete terminal delisting returns or forced liquidation",
+      "302132 pre-switch mapped history excluded; old300114 not independently covered",
+      "sh689009 excluded for missing factor; sh600680 no period bars",
+      "Calendar observed SSE composite, not exchange certified",
+      "2026 previously exposed; final means retrospective robustness not untouched holdout",
+      "Daily simulator not calibrated slippage/capacity and benchmark synthetic"
+    ],
+    "universe_scope": "Frozen SH/SZ master including delisted, lifecycle/code boundaries and IPO>=60 observed calendar sessions; not complete historical entire A-share identity universe",
+    "source": "Frozen audited Tencent whole rows + HF whole rows + Tencent supplement; Sina effective-date factors",
+    "format": "parquet",
+    "dataset_id": "cn-shsz-audited-quality",
+    "dataset_version": "2026-11-02-v1",
+    "manifest_hash": "c055571c73783e99138542f753db0bdadf9b6bcf514e4030e8e8591177598ede"
+  },
+  "splits": {
+    "train": [
+      "2020-01-02",
+      "2024-12-31"
+    ],
+    "valid": [
+      "2025-01-02",
+      "2025-06-30"
+    ],
+    "discovery": [
+      "2025-07-01",
+      "2025-12-31"
+    ],
+    "final": [
+      "2026-01-05",
+      "2026-10-30"
+    ]
+  },
+  "model": {
+    "kind": "ridge",
+    "params": {
+      "alpha": 1.0
+    }
+  },
+  "baseline_features": [
+    "return_5",
+    "volatility_20"
+  ],
+  "label": {
+    "price": "open",
+    "entry_lag": 1,
+    "horizon": 5
+  },
+  "preprocessing": {
+    "clip": 10,
+    "label_transform": "raw"
+  },
+  "portfolio": {
+    "top_k": 10,
+    "rebalance": 5,
+    "initial_cash": 100000,
+    "position": 0.95,
+    "buy_cost": 0.0005,
+    "sell_cost": 0.0015,
+    "min_cost": 0,
+    "trade_unit": 100
+  },
+  "budget": {
+    "max_trials": 2,
+    "max_repairs": 2,
+    "timeout_seconds": 3600
+  },
+  "seed": 42,
+  "robustness": {
+    "enabled": true
+  },
+  "research_limitations": [
+    "No complete delisting liquidation or terminal returns",
+    "Historical ST/board limits/tradability incomplete",
+    "Vendor snapshots not vintage/PIT certified",
+    "Ex-post missing outcome selection uncertainty remains",
+    "Synthetic benchmark not official index; daily fills/impact/capacity unassessed",
+    "2025 and2026 price-volume results already exposed in previous20d diagnostic; this is retrospective research. 2026 metrics revealed only after candidate frozen but cannot restore independent holdout",
+    "engine train-median imputation differs from direct complete61 matched-signal estimand; native predictions available without future label; endpoint missing exclusions remain disclosed",
+    "not performed; complete historical PIT industry/size controls unavailable"
+  ],
+  "selection_rule": "Frozen research-plan.json; see supplementary ledger, Holm6 primary, fixed candidates, no guarantee of admission"
+}

@@ -1,0 +1,80 @@
+{
+  "catalog_id": "legacy-20261102-strategies-v1",
+  "inputs": [
+    {
+      "path": "sources/510300-2018-raw.json",
+      "sha256": "10b06ee708fd382225c7f1476feeaa845961df9d03c0fe21a5c60aaa085599f0",
+      "bytes": 63869
+    },
+    {
+      "path": "sources/510300-2020-raw.json",
+      "sha256": "bbe852a69ff87a255594d040b42c077ad1cc9fc0dc326444d07c4291079693c9",
+      "bytes": 64288
+    },
+    {
+      "path": "sources/510300-2022-raw.json",
+      "sha256": "3fb1381050da0426e46338878997a23f1cfa6326ee1efcf6e9bd2e51c2d216f6",
+      "bytes": 64422
+    },
+    {
+      "path": "sources/510300-2024-raw.json",
+      "sha256": "d119dd860deb4f3e934da6c7f50142660d43f2733558c9e968552e2d8f990e2d",
+      "bytes": 64683
+    },
+    {
+      "path": "sources/510300-2026-raw.json",
+      "sha256": "b02cfc05f9471244732c1c852c9686abc12752e5bcefb8284fe246fdd359adb0",
+      "bytes": 64710
+    },
+    {
+      "path": "sources/510300-2018-raw.receipt.json",
+      "sha256": "325e9ca1bf73eb50f11a2745eebc7f410a5a45e4e5e33a5059f5e2b3ead7759e",
+      "bytes": 356
+    },
+    {
+      "path": "sources/510300-2020-raw.receipt.json",
+      "sha256": "32b02f26e791f5ed63a9e2a7830476d7959432dadc7fee5944cd9bcbca8d43ff",
+      "bytes": 356
+    },
+    {
+      "path": "sources/510300-2022-raw.receipt.json",
+      "sha256": "9dad23768554e13442f4e0d4c2f88211d8fd040898a10234027b266ab31c34f3",
+      "bytes": 356
+    },
+    {
+      "path": "sources/510300-2024-raw.receipt.json",
+      "sha256": "a7eca770de65bc3347f0229d1bce2fb51ff890e68e5cd403fee36fbfbe8bec21",
+      "bytes": 356
+    },
+    {
+      "path": "sources/510300-2026-raw.receipt.json",
+      "sha256": "15758e9b19b793add59da0d4a2a5b1d8b099aa6bbafe0d0cb64fa2e734ec307a",
+      "bytes": 356
+    },
+    {
+      "path": "sources/510300-distributions.html",
+      "sha256": "5e4ae101f0657c392798170029ef5de9f05900da49e57c6f03b0bc4226bc25d3",
+      "bytes": 45737
+    },
+    {
+      "path": "sources/calendar-2018.json",
+      "sha256": "cacb806f53eb63f337c92a2bf2805f2bf9a7d130e46e87e45871845699ebd179",
+      "bytes": 71067
+    },
+    {
+      "path": "sources/calendar-observed-2019-2026.txt",
+      "sha256": "164762ead9ff63bf5356a361bbd6c6ebd872bdca14861467b5074ac2929a2a3a",
+      "bytes": 20867
+    }
+  ],
+  "derived_hashes": {
+    "sources/510300-raw-normalized.csv": "60c84020ff067776282687f76f1c92ab6688db441266496b8e94ca62dabef160",
+    "sources/510300-dividends.csv": "e60fa7af893e9405b65e2694d2a58cca175c3744c876905e57dbb26909152728"
+  },
+  "protocol_sha256": "bc8e8b48f197bbbc098a5ee2a040907ca225571cdc15dd4acf2fa86338cc25e7",
+  "code_sha256": {
+    "src/legacy/strategy.py": "2cee0e2a2f21f15b4ef43392606cfe58f61d0f683f873e3446522b8a3e3c2a7e",
+    "src/legacy/evaluate.py": "afee6a5dba89384408c06770032d5aa809d9c928cd990f77cb55a771d79eeff1"
+  },
+  "note": "Only raw public source responses/receipts/observed calendar externally required; normalized CSV and daily account outputs rebuilt in work."
+}

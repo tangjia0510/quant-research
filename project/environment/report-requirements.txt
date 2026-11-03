@@ -1,0 +1,7 @@
+# Optional presentation-only dependencies; no effect on frozen research/account calculations.
+# Validated under Python 3.12.14 in the document runtime; install in a separate optional environment.
+numpy==2.3.5
+matplotlib==3.10.8
+python-docx==1.2.0
+# Noto Sans CJK font or another CJK font supplied via --font-file is required for readable Chinese charts.
+# DOCX visual rendering additionally used the document skill's render_docx.py/LibreOffice, not part of research execution.

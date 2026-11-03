@@ -1,0 +1,26 @@
+{
+  "id": "momentum20-reference",
+  "kind": "factor",
+  "hypothesis": "prespecified continuation baseline, known weak in prior diagnostic; direct selected by frozen Holm6 gates; model prediction IC is a separate baseline increment; all reversal-family directions influenced by previously exposed history",
+  "features": [
+    "return_5",
+    "volatility_20"
+  ],
+  "factor_file": "candidates/momentum20-reference/factor.py",
+  "factor_params": {
+    "candidate_id": "momentum20-reference"
+  },
+  "max_lookback": 21,
+  "factor_timeout": 600,
+  "scale_invariant": true,
+  "model": {
+    "kind": "ridge",
+    "params": {
+      "alpha": 1.0
+    }
+  },
+  "files": {
+    "factor.py": "d0a546ca00b960ebab9fe6ba2b3df8afce659c66c3db402da7b7f93bd005c637"
+  },
+  "candidate_hash": "4bedac01c88a0f77d4d35de6a2f4f633cc3c03c780cec5dfd8d86595dcd5837c"
+}

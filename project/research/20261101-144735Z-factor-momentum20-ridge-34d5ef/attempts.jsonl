@@ -1,0 +1,4 @@
+{"source": "events.jsonl", "record": {"at": "2026-11-01T14:47:47.104121+00:00", "action": "data_prepared"}}
+{"source": "events.jsonl", "record": {"at": "2026-11-01T14:48:03.116324+00:00", "action": "candidate_registered", "candidate": "momentum20-ridge-v1", "candidate_hash": "8c39d122335cdb8a007f561ec0ed9fcf48a88ac3ca8568f77b09654205cc7bde"}}
+{"source": "events.jsonl", "record": {"at": "2026-11-01T14:48:27.733115+00:00", "action": "evaluation_started", "status": "running", "candidate": "momentum20-ridge-v1", "phase": "discovery", "attempt": 1, "input_hash": "9d8eea77f45fd486615ecfb7e03ab508e2562c3c48c0e3d9da875f5efaf80874", "started_at": "2026-11-01T14:48:27.726830+00:00"}}
+{"source": "events.jsonl", "record": {"at": "2026-11-01T14:48:51.248228+00:00", "action": "evaluation_completed", "candidate": "momentum20-ridge-v1", "phase": "discovery", "input_hash": "9d8eea77f45fd486615ecfb7e03ab508e2562c3c48c0e3d9da875f5efaf80874"}}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "legacy-momentum30-source-root",
+  "version": "frozen-20261102",
+  "sha256": null,
+  "locator": {
+    "root": "legacy_library",
+    "path": "plans/momentum20-v1"
+  },
+  "kind": "directory",
+  "limitations": [
+    "Frozen external source; not included in portable payload."
+  ]
+}

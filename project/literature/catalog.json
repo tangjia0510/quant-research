@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "objects": [
+    {
+      "sha256": "0b63cecee922e8125525415c3f6bf1afcf802c37fc8ae42b03a475dfe158516a",
+      "path": "literature/objects/0b63cecee922e8125525415c3f6bf1afcf802c37fc8ae42b03a475dfe158516a.md",
+      "bytes": 8006,
+      "sources": [
+        {
+          "root": "legacy_library",
+          "path": "literature/20261102/RESEARCH_CARDS.md"
+        }
+      ]
+    },
+    {
+      "sha256": "4e3373680e289ac71983695070b13bafe98cbac50331afba17eb8c9695a9677b",
+      "path": "literature/objects/4e3373680e289ac71983695070b13bafe98cbac50331afba17eb8c9695a9677b.md",
+      "bytes": 1679,
+      "sources": [
+        {
+          "root": "legacy_library",
+          "path": "literature/20261102-round2/AMPLITUDE_SOURCE_EVIDENCE.md"
+        }
+      ]
+    },
+    {
+      "sha256": "bf9c80bfef4b8db125407c0788736c71efb85926b55a9923b51d00a56b540ae5",
+      "path": "literature/objects/bf9c80bfef4b8db125407c0788736c71efb85926b55a9923b51d00a56b540ae5.md",
+      "bytes": 8386,
+      "sources": [
+        {
+          "root": "legacy_library",
+          "path": "literature/20261102-round2/RESEARCH_CARDS.md"
+        }
+      ]
+    },
+    {
+      "sha256": "2467eb45e11625ed92d9d011cf413745124f4d9446c142c4d1aceb2b92ebc6f8",
+      "path": "literature/objects/2467eb45e11625ed92d9d011cf413745124f4d9446c142c4d1aceb2b92ebc6f8.md",
+      "bytes": 2410,
+      "sources": [
+        {
+          "root": "legacy_library",
+          "path": "literature/20261102-strategies-v1/SOURCE_REGISTER.md"
+        }
+      ]
+    },
+    {
+      "sha256": "187af01aeb69431318937641d6ef89f61158c734a9e1574e7c7f6bfbf8cd73e9",
+      "path": "literature/objects/187af01aeb69431318937641d6ef89f61158c734a9e1574e7c7f6bfbf8cd73e9.md",
+      "bytes": 3275,
+      "sources": [
+        {
+          "root": "legacy_library",
+          "path": "literature/20261102-strategies-v1/STRATEGY_01_FABER_SMA10.md"
+        }
+      ]
+    }
+  ],
+  "note": "Original PDFs/source cards retained once per content. Re-extractable PDF text excluded.",
+  "external_objects": [
+    {
+      "sha256": "7b3cf15008779e9a974a3d9f2cb84d9c48b0ba526dd232544c6a2301c14f90ab",
+      "bytes": 1713434,
+      "sources": [
+        {
+          "root": "legacy_library",
+          "path": "literature/20261102/jansen_swinkels_zhou_2021.pdf"
+        }
+      ],
+      "status": "external-omitted-from-public-release",
+      "original_path": "literature/objects/7b3cf15008779e9a974a3d9f2cb84d9c48b0ba526dd232544c6a2301c14f90ab.pdf",
+      "reason": "Public edition excludes all third-party full-text PDF copies; obtain from cited authors/publishers.",
+      "source_url": "https://pure.eur.nl/ws/portalfiles/portal/58642799/Anomalies_in_the_China_A_share_market.pdf"
+    },
+    {
+      "sha256": "df21355fd97daa6bf0dc36e72f0f7a01d9a07733e8539a6cbeae21b79088086a",
+      "bytes": 389479,
+      "sources": [
+        {
+          "root": "legacy_library",
+          "path": "literature/20261102/liu_zhou_zhu_2019_trend.pdf"
+        }
+      ],
+      "status": "external-omitted-from-public-release",
+      "original_path": "literature/objects/df21355fd97daa6bf0dc36e72f0f7a01d9a07733e8539a6cbeae21b79088086a.pdf",
+      "reason": "Public edition excludes all third-party full-text PDF copies; obtain from cited authors/publishers.",
+      "source_url": "https://wrds-www.wharton.upenn.edu/documents/1119/WARSP_TrendChina.pdf"
+    },
+    {
+      "sha256": "0ed9988aa6c60173e687083653ce9a92eeca9a510ee691a1c9b2c09b8083d0e6",
+      "bytes": 1085761,
+      "sources": [
+        {
+          "root": "legacy_library",
+          "path": "literature/20261102-round2/guo_etal_2025_ovnt.pdf"
+        }
+      ],
+      "status": "external-omitted-from-public-release",
+      "original_path": "literature/objects/0ed9988aa6c60173e687083653ce9a92eeca9a510ee691a1c9b2c09b8083d0e6.pdf",
+      "reason": "Public edition excludes all third-party full-text PDF copies; obtain from cited authors/publishers.",
+      "source_url": "https://research-management.mq.edu.au/ws/portalfiles/portal/397611310/397269748.pdf"
+    },
+    {
+      "sha256": "595bbe748df51506ab44b90c54aedda1006da190822dc8e66e94f3044fce2506",
+      "bytes": 577924,
+      "sources": [
+        {
+          "root": "legacy_library",
+          "path": "literature/20261102-round2/nartea_wu_2014.pdf"
+        }
+      ],
+      "status": "external-omitted-from-public-release",
+      "original_path": "literature/objects/595bbe748df51506ab44b90c54aedda1006da190822dc8e66e94f3044fce2506.pdf",
+      "reason": "Public edition excludes all third-party full-text PDF copies; obtain from cited authors/publishers.",
+      "source_url": "https://acfr.aut.ac.nz/__data/assets/pdf_file/0008/29906/484630-Nartea-and-Wu.pdf"
+    },
+    {
+      "sha256": "b958a4da96783b9db082935994fb644cdaaf503945ec280c39a1e3d07fc62e00",
+      "bytes": 644883,
+      "sources": [
+        {
+          "root": "legacy_library",
+          "path": "literature/20261102-round2/signedmomentum_2019.pdf"
+        }
+      ],
+      "status": "external-omitted-from-public-release",
+      "original_path": "literature/objects/b958a4da96783b9db082935994fb644cdaaf503945ec280c39a1e3d07fc62e00.pdf",
+      "reason": "Public edition excludes all third-party full-text PDF copies; obtain from cited authors/publishers.",
+      "source_url": "https://cirforum.org/2019forum_papers/CIRF2019_paper_57.pdf"
+    },
+    {
+      "sha256": "4888e9f328ce5d63f863e26a73999fbb717b6589d3530560518c68c233ab73ae",
+      "bytes": 1100951,
+      "sources": [
+        {
+          "root": "legacy_library",
+          "path": "literature/20261102-round2/tailrisk_2021.pdf"
+        }
+      ],
+      "status": "external-omitted-from-public-release",
+      "original_path": "literature/objects/4888e9f328ce5d63f863e26a73999fbb717b6589d3530560518c68c233ab73ae.pdf",
+      "reason": "Public edition excludes all third-party full-text PDF copies; obtain from cited authors/publishers.",
+      "source_url": "https://cirforum.org/cirf2022/forum_files/papers/CIRF-205.pdf"
+    },
+    {
+      "sha256": "f2dabb6d31b18901cb64a0f57cea86f32f514570dcb5840fbeaa4877f24bdd3f",
+      "bytes": 945897,
+      "sources": [
+        {
+          "root": "legacy_library",
+          "path": "literature/20261102-strategies-v1/faber_2013_taa.pdf"
+        }
+      ],
+      "status": "external-omitted-from-public-release",
+      "original_path": "literature/objects/f2dabb6d31b18901cb64a0f57cea86f32f514570dcb5840fbeaa4877f24bdd3f.pdf",
+      "reason": "Public edition excludes all third-party full-text PDF copies; obtain from cited authors/publishers.",
+      "source_url": "https://mebfaber.com/wp-content/uploads/2016/05/SSRN-id962461.pdf"
+    },
+    {
+      "sha256": "6908ca31e92e750881255742a99ffc3daf00ca2e9d0b0012652809d0f538b87a",
+      "bytes": 156275,
+      "sources": [
+        {
+          "root": "legacy_library",
+          "path": "literature/20261102-strategies-v1/zhu_2015_rules.pdf"
+        }
+      ],
+      "status": "external-omitted-from-public-release",
+      "original_path": "literature/objects/6908ca31e92e750881255742a99ffc3daf00ca2e9d0b0012652809d0f538b87a.pdf",
+      "reason": "Public edition excludes all third-party full-text PDF copies; obtain from cited authors/publishers.",
+      "source_url": "https://arxiv.org/pdf/1504.04254"
+    }
+  ]
+}

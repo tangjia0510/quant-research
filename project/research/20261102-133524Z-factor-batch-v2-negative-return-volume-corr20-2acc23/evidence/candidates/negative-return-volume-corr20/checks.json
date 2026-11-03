@@ -1,0 +1,28 @@
+{
+  "candidate": "negative-return-volume-corr20",
+  "factor_checks": {
+    "stage": "discovery",
+    "rows": 7748812,
+    "builtin_features": [
+      "return_5",
+      "volatility_20"
+    ],
+    "input_end": "2025-12-31",
+    "generated_factor": true,
+    "execution_is_security_sandbox": false,
+    "factor_sha256": "7597bd19371951a7e852080d7f808bbb4ff6fb3cf9e1ff3cfa52b9d8580476ae",
+    "future_perturbation": true,
+    "prefix_invariance": true,
+    "declared_lookback_verified": 21,
+    "scale_invariance_checked": true,
+    "coverage": {
+      "return_5": 0.9921807368665029,
+      "volatility_20": 0.9748241407844196,
+      "x_negative_return_volume_corr20": 0.9748241407844196
+    }
+  },
+  "model_checks": {
+    "kind": "ridge",
+    "dependency_available": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "changes": [
+    {
+      "path": "research/legacy_replay.py",
+      "original_sha256": "59f73d5a4e3bf6c7cb05585990c93dc39d71330a489042716ab76778c9993db9",
+      "repository_sha256": "0c2ad8d90ed555de3cc0eaddbd05de979fdb4e94a0c02fe507ecd6cf67d4f43c",
+      "change": "Resolve sole root Skill in repository mode; standalone snapshot still supported"
+    },
+    {
+      "path": "research/20261103-boll-etf-v1/src/run.py",
+      "original_sha256": "1fc6cad82ad7ab24ef98466956e933ecb1192c7e997a0da64fde866a18d424d7",
+      "repository_sha256": "859c793f4d67af118dfa2805ada80aeef4b465f0dab5007cc995d3c15a3e65c7",
+      "change": "Resolve sole root Skill in repository mode; standalone snapshot still supported"
+    },
+    {
+      "path": "research/20261102-strategies-v1/src/replay.py",
+      "original_sha256": "7dc959729ea6d3f64576ee4e1a25da1c94d60ac56b560ffa141f96cd91df1b94",
+      "repository_sha256": "1422ead7dc4c524f6238d5a8a1356cb5761b3417db0abca314cb79e0d3e77bab",
+      "change": "Resolve sole root Skill in repository mode; standalone snapshot still supported"
+    }
+  ],
+  "historical_numeric_evidence": "Unchanged; not newly certified by this path-only adaptation"
+}

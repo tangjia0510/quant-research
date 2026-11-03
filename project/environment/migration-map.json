@@ -1,0 +1,2108 @@
+{
+  "schema_version": 1,
+  "kind": "migration_audit",
+  "entries": [
+    {
+      "id": "20261101-144735Z-factor-momentum20-ridge-34d5ef",
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef",
+      "source_files": 276,
+      "source_bytes": 4428089,
+      "copied_files": 36,
+      "copied_bytes": 77879,
+      "replay_status": "adapter_dryrun_verified_not_recomputed",
+      "portable_record_files": 42,
+      "portable_record_bytes": 96883
+    },
+    {
+      "id": "20261102-114917Z-factor-momentum-ic-opt-v1-a4102a",
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a",
+      "source_files": 38241,
+      "source_bytes": 1833077809,
+      "copied_files": 50,
+      "copied_bytes": 134272,
+      "replay_status": "adapter_dryrun_verified_not_recomputed",
+      "portable_record_files": 57,
+      "portable_record_bytes": 171232
+    },
+    {
+      "id": "20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d",
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d",
+      "source_files": 38106,
+      "source_bytes": 745444177,
+      "copied_files": 34,
+      "copied_bytes": 100591,
+      "replay_status": "adapter_dryrun_verified_not_recomputed",
+      "portable_record_files": 41,
+      "portable_record_bytes": 132659
+    },
+    {
+      "id": "20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23",
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23",
+      "source_files": 38108,
+      "source_bytes": 745450752,
+      "copied_files": 34,
+      "copied_bytes": 101041,
+      "replay_status": "adapter_dryrun_verified_not_recomputed",
+      "portable_record_files": 41,
+      "portable_record_bytes": 133836
+    },
+    {
+      "id": "20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757",
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757",
+      "source_files": 38107,
+      "source_bytes": 745453332,
+      "copied_files": 34,
+      "copied_bytes": 101056,
+      "replay_status": "adapter_dryrun_verified_not_recomputed",
+      "portable_record_files": 41,
+      "portable_record_bytes": 135796
+    },
+    {
+      "id": "20261102-amplitude-ovnt-v1",
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1",
+      "target": "research/20261102-amplitude-ovnt-v1",
+      "source_files": 59,
+      "source_bytes": 64007497,
+      "copied_files": 17,
+      "copied_bytes": 95658,
+      "replay_status": "adapter_dryrun_verified_not_recomputed",
+      "portable_record_files": 22,
+      "portable_record_bytes": 111735
+    },
+    {
+      "id": "20261102-illiq-seas-v1",
+      "source": "quant-research-library/reproductions/20261102-illiq-seas-v1",
+      "target": "research/20261102-illiq-seas-v1",
+      "source_files": 54,
+      "source_bytes": 45620549,
+      "copied_files": 16,
+      "copied_bytes": 83532,
+      "replay_status": "adapter_dryrun_verified_not_recomputed",
+      "portable_record_files": 21,
+      "portable_record_bytes": 95327
+    },
+    {
+      "id": "20261102-strategies-v1",
+      "source": "quant-research-library/reproductions/20261102-strategies-v1",
+      "target": "research/20261102-strategies-v1",
+      "source_files": 102,
+      "source_bytes": 7048508,
+      "copied_files": 16,
+      "copied_bytes": 39385,
+      "replay_status": "verified_with_external_raw",
+      "portable_record_files": 22,
+      "portable_record_bytes": 54632
+    },
+    {
+      "id": "20261102-price-volume-quality-v1",
+      "source": "quant-research-library/diagnostics/20261102-price-volume-quality-v1",
+      "target": "research/20261102-price-volume-quality-v1",
+      "source_files": 5497,
+      "source_bytes": 879997304,
+      "copied_files": 12,
+      "copied_bytes": 54133,
+      "replay_status": "adapter_dryrun_verified_not_recomputed",
+      "portable_record_files": 17,
+      "portable_record_bytes": 65648
+    }
+  ],
+  "copies": [
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/protocol.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/protocol.json",
+      "bytes": 3069,
+      "sha256": "4bf55e45f8ab5a74644682f4ad6d8151c776694c52421fbd5625240e14081952",
+      "reason": "frozen original protocol"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/report.md",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/legacy-conclusion.md",
+      "bytes": 4980,
+      "sha256": "6a3f133077896059d74d273285bb4dc89869ee47ad3907127d6544ceecdb71a3",
+      "reason": "byte-identical historical conclusion retained; current conclusion adds portable navigation"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/drafts/candidate.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-drafts/candidate.json",
+      "bytes": 458,
+      "sha256": "67a9b26abb584ac45b48ba3cf18e52878d415193db03d7325435612fad5a06c4",
+      "reason": "original candidate implementation/configuration"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/drafts/momentum20.py",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-drafts/momentum20.py",
+      "bytes": 289,
+      "sha256": "ec5a33ce63cc70eb98e80182a75aaca0d2ba73f9d382189f7d7e2d50a96c8184",
+      "reason": "original candidate implementation/configuration"
+    },
+    {
+      "source": "quant-research-library/plans/momentum20-v1/acquire_mixed.py",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-plan/acquire_mixed.py",
+      "bytes": 3084,
+      "sha256": "788deec167e15282e2065b0c18f6b8ff0bff2ab05037084bec5e7c770e6fa8e9",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum20-v1/classify_missing.py",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-plan/classify_missing.py",
+      "bytes": 3044,
+      "sha256": "5ba2d776667551e9d53d9bd875824f29a60964eba974c15eb4b9cec905906915",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum20-v1/fetch_newspaper_notice.py",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-plan/fetch_newspaper_notice.py",
+      "bytes": 1276,
+      "sha256": "1411f207312a73fbb6e6a0d1281509a6a38dfbb765802e5f775148042fb62556",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum20-v1/fetch_retry_notice.py",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-plan/fetch_retry_notice.py",
+      "bytes": 1131,
+      "sha256": "6f2a054d0adab14910d16f9a0b435a38bfdc56472c10ea814acdd6080c9b2fb1",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum20-v1/fetch_supplemental_notices.py",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-plan/fetch_supplemental_notices.py",
+      "bytes": 1120,
+      "sha256": "902bbdee4f1d2e0d5956868374ebd0be55012dc3a419ae25ead061c68a552031",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum20-v1/fetch_terminal_notices.py",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-plan/fetch_terminal_notices.py",
+      "bytes": 1134,
+      "sha256": "7c4154afc1fbee7f7e8058b339d5ed8735b8926943da96366de5f6d1cc0fc0c9",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum20-v1/momentum20.py",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-plan/momentum20.py",
+      "bytes": 289,
+      "sha256": "ec5a33ce63cc70eb98e80182a75aaca0d2ba73f9d382189f7d7e2d50a96c8184",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum20-v1/normalize_mixed.py",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-plan/normalize_mixed.py",
+      "bytes": 8273,
+      "sha256": "035b1e751b4d463e7d6386d9eb2ecaa0a58c09fabb3c4b83f66a85d5c2d968d0",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum20-v1/probe_https_sources.py",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-plan/probe_https_sources.py",
+      "bytes": 1570,
+      "sha256": "208b7354362de7608f00ef23f263b290b69daf8c86a28843e72eea1a996012c7",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum20-v1/probe_tencent.py",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-plan/probe_tencent.py",
+      "bytes": 1213,
+      "sha256": "106e2d7670523d446149262d0b694a2db8753673b8740b0bbe71ef024a0e9496",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum20-v1/record_decision.py",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-plan/record_decision.py",
+      "bytes": 5042,
+      "sha256": "48cbc7d64eea9a1fafb607e54104a3021b3707cb5643cd33fe57d0e64b8447f9",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum20-v1/register_dataset.py",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-plan/register_dataset.py",
+      "bytes": 1398,
+      "sha256": "a7b003e46891dea4d9a3f058904b6328036f10e563a63fcef67817f04d513bf4",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum20-v1/select_official_universe.py",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-plan/select_official_universe.py",
+      "bytes": 3540,
+      "sha256": "bad54eedfb5e9a8a8174f31bac6213dce9d1d38a2a61d1ba4688c450ccab2180",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum20-v1/select_universe.py",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/src/legacy-plan/select_universe.py",
+      "bytes": 1645,
+      "sha256": "97a6908b181569834f7eb5b06b2504384f55b19510834ac44aa160b2b8e826ba",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum20-v1/preregistration.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/plan/preregistration.json",
+      "bytes": 2429,
+      "sha256": "cff1eb7f4d9143a4a85f30a8d63765cd8c2efff5c4c57172b50d94d86d3e5afe",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/study.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/study.json",
+      "bytes": 245,
+      "sha256": "2df808e9d761090fde9bc5bdd3bc35a43eecb7c69a8c28bb40dfced9151e0c64",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/registry.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/registry.json",
+      "bytes": 246,
+      "sha256": "c07e9c590de516fb2fb9e47965224d42cdd099682afa2692d98b7e6e684b8df9",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/research-decision.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/research-decision.json",
+      "bytes": 2541,
+      "sha256": "28284a8b608a00d788fe7eaa2b9beb5e8946e7322ed7d65e391b2e8f2a1c5139",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/interpretation.md",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/interpretation.md",
+      "bytes": 3033,
+      "sha256": "4e19ae585b1a0f9010319934279d9451a8b025ae77b22a3073f4dd1191a12b00",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/research-evidence/preregistration.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/research-evidence/preregistration.json",
+      "bytes": 2429,
+      "sha256": "cff1eb7f4d9143a4a85f30a8d63765cd8c2efff5c4c57172b50d94d86d3e5afe",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/research-evidence/freeze-receipt.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/research-evidence/freeze-receipt.json",
+      "bytes": 630,
+      "sha256": "867e16edc6e0ac8efb2921cb3edd89105e403907cd293d2f2d19ae560a43a9c3",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/research-evidence/source-amendment.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/research-evidence/source-amendment.json",
+      "bytes": 1192,
+      "sha256": "9359362a294819ac4390d616973335ba9c1b0122f0ecd93ac4e8e82811c57576",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/research-evidence/source-amendment-2.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/research-evidence/source-amendment-2.json",
+      "bytes": 2074,
+      "sha256": "9686f33a24f51d02d523e62270d366f7ccbf0c5a6575e17c454f6de6078c6934",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/runs/discovery/momentum20-ridge-v1/run.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/runs/discovery/momentum20-ridge-v1/run.json",
+      "bytes": 3062,
+      "sha256": "da565aa8d267d9f68ec9f8f59867fcad58e608f7cc22b0df4a12a09577ecf88e",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/runs/discovery/momentum20-ridge-v1/result.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/runs/discovery/momentum20-ridge-v1/result.json",
+      "bytes": 4612,
+      "sha256": "f93815c887b1558df3fa1e41a15089ad2000e3cef2f29fbf2f456404c7166fe4",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/runs/discovery/momentum20-ridge-v1/attempt-1/metrics.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/runs/discovery/momentum20-ridge-v1/attempt-1/metrics.json",
+      "bytes": 4611,
+      "sha256": "2e0c647efc9f9490af060c8286d5809e9e52446fabfc4a159160311bd967087d",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/runs/discovery/momentum20-ridge-v1/attempt-1/result.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/runs/discovery/momentum20-ridge-v1/attempt-1/result.json",
+      "bytes": 4612,
+      "sha256": "f93815c887b1558df3fa1e41a15089ad2000e3cef2f29fbf2f456404c7166fe4",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/runs/discovery/momentum20-ridge-v1/attempt-1/fold-0/checks.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/runs/discovery/momentum20-ridge-v1/attempt-1/fold-0/checks.json",
+      "bytes": 694,
+      "sha256": "83af04ead8c7d1c4ce10d407725b085e519d63733989af0f3ff30ffa3d27a969",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/runs/discovery/momentum20-ridge-v1/attempt-1/baseline/fold-0/checks.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/runs/discovery/momentum20-ridge-v1/attempt-1/baseline/fold-0/checks.json",
+      "bytes": 670,
+      "sha256": "01276ee9ef60797c9fbab6452355a43859ebc70954b7d9366b6ee1eb08c7f18c",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/candidates/momentum20-ridge-v1/checks.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/candidates/momentum20-ridge-v1/checks.json",
+      "bytes": 748,
+      "sha256": "e247c378482176fbd0b92522dc95779683aacb8142f56af6c82811b2fee4f2e8",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/candidates/momentum20-ridge-v1/candidate.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/candidates/momentum20-ridge-v1/candidate.json",
+      "bytes": 748,
+      "sha256": "ad53e2b9a894ce5042270924737bba80ea3b6db48f8f43c72b311f9c0ea11626",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/candidates/momentum20-ridge-v1/check-7d4d12eb/result.json",
+      "target": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/evidence/candidates/momentum20-ridge-v1/check-7d4d12eb/result.json",
+      "bytes": 748,
+      "sha256": "e247c378482176fbd0b92522dc95779683aacb8142f56af6c82811b2fee4f2e8",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/protocol.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/protocol.json",
+      "bytes": 3715,
+      "sha256": "232a80672d6d2e94a4fb7d0b5980ee0940c256f74ce136c710b97244cbc7dd37",
+      "reason": "frozen original protocol"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/report.md",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/legacy-conclusion.md",
+      "bytes": 8893,
+      "sha256": "38f6d33709c40495a903b6e4bcb01a3cde038b3a60be000be01c419221393789",
+      "reason": "byte-identical historical conclusion retained; current conclusion adds portable navigation"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/drafts/factor_family.py",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-drafts/factor_family.py",
+      "bytes": 958,
+      "sha256": "d0a546ca00b960ebab9fe6ba2b3df8afce659c66c3db402da7b7f93bd005c637",
+      "reason": "original candidate implementation/configuration"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/drafts/momentum20-reference.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-drafts/momentum20-reference.json",
+      "bytes": 630,
+      "sha256": "c9e591342310b939f7985f01e45447ac3db8626368a8769e3d47d5eebcd81ecb",
+      "reason": "original candidate implementation/configuration"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/drafts/reversal20.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-drafts/reversal20.json",
+      "bytes": 651,
+      "sha256": "f3cd55a1d903247acbf5d00ab26c6a0343bcd432c80b0af17abdb98eb78e5542",
+      "reason": "original candidate implementation/configuration"
+    },
+    {
+      "source": "quant-research-library/plans/momentum-opt-v1/scripts/analyze_native_evidence.py",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-plan/analyze_native_evidence.py",
+      "bytes": 2679,
+      "sha256": "194efd71ed7bad7fee2cb317d4c408d64e68f7cf548f5287b081af02e5151847",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum-opt-v1/scripts/analyze_supplementary.py",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-plan/analyze_supplementary.py",
+      "bytes": 7230,
+      "sha256": "b5bd66a84b6601dba4f99bdf847308fcd7a9ad3809bd90d691f4c82edb08b809",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum-opt-v1/scripts/build_native_source.py",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-plan/build_native_source.py",
+      "bytes": 6003,
+      "sha256": "6691e302799c010bfe5438816c78db2002bfd449743e73178067c13a19ac756d",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum-opt-v1/scripts/build_supplementary.py",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-plan/build_supplementary.py",
+      "bytes": 2784,
+      "sha256": "8c460eb8c247670bbb769b1d170948822cf1fc254a3cb5b588366d9a2082d563",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum-opt-v1/scripts/eligibility_performance_patch.py",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-plan/eligibility_performance_patch.py",
+      "bytes": 1463,
+      "sha256": "b2fa5b0336f276d7a7bb40a351adbd0feefb3f50614de23e5db9c40f0852806c",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum-opt-v1/scripts/factor_family.py",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-plan/factor_family.py",
+      "bytes": 958,
+      "sha256": "d0a546ca00b960ebab9fe6ba2b3df8afce659c66c3db402da7b7f93bd005c637",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum-opt-v1/scripts/package_deliverable.py",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-plan/package_deliverable.py",
+      "bytes": 4033,
+      "sha256": "9258bfe8996855f4a89754296e4730a54ad0cde6eb2792474e4a44609a857f52",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum-opt-v1/scripts/run_native_candidates.py",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-plan/run_native_candidates.py",
+      "bytes": 2663,
+      "sha256": "e92246952ee7475c4339c58f05dfcff40b6a8bcffafc24e053a381f8390698db",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum-opt-v1/scripts/seal_study.py",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-plan/seal_study.py",
+      "bytes": 1496,
+      "sha256": "23c0da141588e6c78b496810b1e771044a29ab7653f61a0fbf72f7690b51c229",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum-opt-v1/scripts/setup_native.py",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-plan/setup_native.py",
+      "bytes": 3560,
+      "sha256": "7b9f42e07b16b59f7baf71a9f585c5cbf66cc9b15c06f9b37bca4ab859ca2f7e",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum-opt-v1/scripts/test_eligibility_performance_patch.py",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-plan/test_eligibility_performance_patch.py",
+      "bytes": 2836,
+      "sha256": "d70227933d5091dffa48fa41305cc5abec29ac53c72e89a7620428b0551ba0fd",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum-opt-v1/scripts/test_family.py",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-plan/test_family.py",
+      "bytes": 1578,
+      "sha256": "a57e07510d0bc4f445d4caba665206d189e20a7643f54a81cadbee8480b3d712",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum-opt-v1/scripts/test_native_boundaries.py",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-plan/test_native_boundaries.py",
+      "bytes": 1695,
+      "sha256": "64bfa4d1873a8f23a70d7b3f6c88b7d13ebd49869678f0a8c32cc8b3fb4144cf",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum-opt-v1/scripts/verify_selection_integrity.py",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/src/legacy-plan/verify_selection_integrity.py",
+      "bytes": 1584,
+      "sha256": "6e802ff26e8131b142348ad185cc29049693be0b26b8cd0a6d1609fd93b17861",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/momentum-opt-v1/research-plan.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/plan/research-plan.json",
+      "bytes": 4858,
+      "sha256": "c2832608004391320034f5ec8609ca68fe61a387b3fc9ab68113d4dd0f643e25",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/plans/momentum-opt-v1/exposure-ledger.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/plan/exposure-ledger.json",
+      "bytes": 464,
+      "sha256": "8ac6a8dcaf60a9ae60c959b2dde4859b7bdc82e1968b21053b7d34633ede4136",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/plans/momentum-opt-v1/trial-ledger.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/plan/trial-ledger.json",
+      "bytes": 2601,
+      "sha256": "918af31d48ab0b182cb147d549545af0e03242816a8da4c23568bd8d088282d3",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/study.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/study.json",
+      "bytes": 330,
+      "sha256": "ce652a3236a5ea2a45fccbaacdf6abe165ddc6221e11c831cc47d377a9e99e36",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/registry.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/registry.json",
+      "bytes": 245,
+      "sha256": "c6bfa402b33354836f0e05b6a02fefafdd103b88b45ee5641834e95079159cb8",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/supplementary/admission.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/supplementary/admission.json",
+      "bytes": 1383,
+      "sha256": "5e9a3a54e7bed3d0b086260984d9b4bcfbffb780a51027dd068e824749f41343",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/supplementary/exposure-ledger.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/supplementary/exposure-ledger.json",
+      "bytes": 464,
+      "sha256": "8ac6a8dcaf60a9ae60c959b2dde4859b7bdc82e1968b21053b7d34633ede4136",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/supplementary/final-trial-ledger.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/supplementary/final-trial-ledger.json",
+      "bytes": 3666,
+      "sha256": "fa68f2d6b1a3d90e73dc66526fe071a73676adfb85aae33e24f732205f3b4192",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/supplementary/native-command-ledger.jsonl",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/supplementary/native-command-ledger.jsonl",
+      "bytes": 4640,
+      "sha256": "08f0605c98de758305c0828bc0f596c1391eaf85b08654acc6657d7c15727cab",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/supplementary/native-evidence-summary.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/supplementary/native-evidence-summary.json",
+      "bytes": 8248,
+      "sha256": "99e7a4502db973d770b663141e797ceb8557d503166924cdff07cd232b5b4f3f",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/supplementary/research-plan.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/supplementary/research-plan.json",
+      "bytes": 4858,
+      "sha256": "c2832608004391320034f5ec8609ca68fe61a387b3fc9ab68113d4dd0f643e25",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/supplementary/trial-ledger.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/supplementary/trial-ledger.json",
+      "bytes": 2601,
+      "sha256": "918af31d48ab0b182cb147d549545af0e03242816a8da4c23568bd8d088282d3",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/supplementary/supplementary-selection-freeze.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/supplementary/supplementary-selection-freeze.json",
+      "bytes": 3156,
+      "sha256": "819a16e3f83c462b5a5a3785b9b8da593be5b905bbf60c74a872971a884695a0",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/runs/discovery/reversal20/run.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/runs/discovery/reversal20/run.json",
+      "bytes": 3053,
+      "sha256": "e3f44ce6d980a06bc14cf789c092252203b21da4ccdc8440aa88c1234aad9075",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/runs/discovery/reversal20/result.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/runs/discovery/reversal20/result.json",
+      "bytes": 4621,
+      "sha256": "c3fd5450c29637b84713744fc2352b4b561c6090c7847decb8ea94946edf9994",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/runs/discovery/momentum20-reference/run.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/runs/discovery/momentum20-reference/run.json",
+      "bytes": 3063,
+      "sha256": "c509646fca64493aa09e78f111e1e3d3a1e8e7ba94794da85ba7f81089a4fe64",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/runs/discovery/momentum20-reference/result.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/runs/discovery/momentum20-reference/result.json",
+      "bytes": 4647,
+      "sha256": "5c754c831aae72ec1b41dc151b767a35d6d396f4d56ce2d9731a2074f0a1fb9d",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/runs/discovery/reversal20/attempt-1/metrics.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/runs/discovery/reversal20/attempt-1/metrics.json",
+      "bytes": 4620,
+      "sha256": "8629b09b791ce9396be71e73996595dfd44aa9e5bb5831c0a1bc2525e4b5e04a",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/runs/discovery/reversal20/attempt-1/result.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/runs/discovery/reversal20/attempt-1/result.json",
+      "bytes": 4621,
+      "sha256": "c3fd5450c29637b84713744fc2352b4b561c6090c7847decb8ea94946edf9994",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/runs/discovery/reversal20/attempt-1/fold-0/checks.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/runs/discovery/reversal20/attempt-1/fold-0/checks.json",
+      "bytes": 696,
+      "sha256": "35587430565b952f5ee66a83c0927e178d4c1d339155612a34008310c17b1c32",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/runs/discovery/reversal20/attempt-1/baseline/fold-0/checks.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/runs/discovery/reversal20/attempt-1/baseline/fold-0/checks.json",
+      "bytes": 676,
+      "sha256": "e1f49d80ec6324aaa51ad072ab3da57fcc529a60f7212402e893421ccb2669d6",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/runs/discovery/momentum20-reference/attempt-1/metrics.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/runs/discovery/momentum20-reference/attempt-1/metrics.json",
+      "bytes": 4646,
+      "sha256": "6686afe9ce16d35ba4e414f75cc8b1119cb93570146f63e1c2a12feacfb9c5d2",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/runs/discovery/momentum20-reference/attempt-1/result.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/runs/discovery/momentum20-reference/attempt-1/result.json",
+      "bytes": 4647,
+      "sha256": "5c754c831aae72ec1b41dc151b767a35d6d396f4d56ce2d9731a2074f0a1fb9d",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/runs/discovery/momentum20-reference/attempt-1/fold-0/checks.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/runs/discovery/momentum20-reference/attempt-1/fold-0/checks.json",
+      "bytes": 706,
+      "sha256": "06c15cff18d7a2180bc26643bc348a3fe0162416321a16d19cd9ac003217a0ce",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/runs/discovery/momentum20-reference/attempt-1/baseline/fold-0/checks.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/runs/discovery/momentum20-reference/attempt-1/baseline/fold-0/checks.json",
+      "bytes": 676,
+      "sha256": "e1f49d80ec6324aaa51ad072ab3da57fcc529a60f7212402e893421ccb2669d6",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/candidates/reversal20/checks.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/candidates/reversal20/checks.json",
+      "bytes": 737,
+      "sha256": "9dd5c59de382263f6de6e341b1851edadca9d8cda531c8d32965f971aa01a0f4",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/candidates/reversal20/candidate.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/candidates/reversal20/candidate.json",
+      "bytes": 850,
+      "sha256": "3fab76326bf141e319cfcdf658b96ef2590becabbce3058b15649a94f96f787d",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/candidates/momentum20-reference/checks.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/candidates/momentum20-reference/checks.json",
+      "bytes": 757,
+      "sha256": "1128403090aa5a1b3805308561b8df8d142baa1646366fd4aba38b2c636955b7",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/candidates/momentum20-reference/candidate.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/candidates/momentum20-reference/candidate.json",
+      "bytes": 839,
+      "sha256": "50a79d974063968770645419b5c6bf166f222dadf888a5f17c1f683eefd7e58b",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/candidates/reversal20/check-dd1bfea9/result.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/candidates/reversal20/check-dd1bfea9/result.json",
+      "bytes": 737,
+      "sha256": "9dd5c59de382263f6de6e341b1851edadca9d8cda531c8d32965f971aa01a0f4",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/candidates/momentum20-reference/check-1ea6139d/result.json",
+      "target": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/evidence/candidates/momentum20-reference/check-1ea6139d/result.json",
+      "bytes": 757,
+      "sha256": "1128403090aa5a1b3805308561b8df8d142baa1646366fd4aba38b2c636955b7",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/protocol.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/protocol.json",
+      "bytes": 4125,
+      "sha256": "9ecb6b4d2afb1aacd6c6512447ef9b1332f2bcf5a0d0324f5916e7c342e7d3bb",
+      "reason": "frozen original protocol"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/report.md",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/legacy-conclusion.md",
+      "bytes": 5296,
+      "sha256": "2630eb04edf57dbf548c84c6be08be13f8d4f241df9cc309730813fafce3f173",
+      "reason": "byte-identical historical conclusion retained; current conclusion adds portable navigation"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/drafts/factor_family.py",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/src/legacy-drafts/factor_family.py",
+      "bytes": 1907,
+      "sha256": "7597bd19371951a7e852080d7f808bbb4ff6fb3cf9e1ff3cfa52b9d8580476ae",
+      "reason": "original candidate implementation/configuration"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/drafts/low-downside-risk20.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/src/legacy-drafts/low-downside-risk20.json",
+      "bytes": 624,
+      "sha256": "6b1f980464eb0507e26c09ebd48676cb198e0819e4bede88db6b0b4fd6133291",
+      "reason": "original candidate implementation/configuration"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/analyze_supplementary.py",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/src/legacy-plan/analyze_supplementary.py",
+      "bytes": 7153,
+      "sha256": "b5207ef38f6a19a319e25c694e3d440b3096f2f455655bee8f445b208683d97c",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/archive_native.py",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/src/legacy-plan/archive_native.py",
+      "bytes": 926,
+      "sha256": "33ec768ca74ceee27dc17cf3d6f3d0cf1172b8b6146411eee30c10ebdbd873ef",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/build_supplementary.py",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/src/legacy-plan/build_supplementary.py",
+      "bytes": 3580,
+      "sha256": "35b36a90ca9e298cd35042c464ef3008ee947336f6ad60401d45827378a599df",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/factor_family.py",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/src/legacy-plan/factor_family.py",
+      "bytes": 1907,
+      "sha256": "7597bd19371951a7e852080d7f808bbb4ff6fb3cf9e1ff3cfa52b9d8580476ae",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/package_results.py",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/src/legacy-plan/package_results.py",
+      "bytes": 3085,
+      "sha256": "1fec2afc14705ee855bf858a2b4296e961de2314140e1092ed78e99067369e95",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/record_batch_completion.py",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/src/legacy-plan/record_batch_completion.py",
+      "bytes": 2905,
+      "sha256": "14e3f67d8807a1b68f640ee762ba9764e94e4dcc09a0a597a28b8770476b649d",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/seal_batch_plan.py",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/src/legacy-plan/seal_batch_plan.py",
+      "bytes": 983,
+      "sha256": "4fe581044b65437ab75052d37976e472edba44038e5d97199b2ae7c4205e5557",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/seal_native_studies.py",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/src/legacy-plan/seal_native_studies.py",
+      "bytes": 1178,
+      "sha256": "01c524fc58c58eea6dae6af12444abc63db3559481757e587dc975d6631512f6",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/select_batch.py",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/src/legacy-plan/select_batch.py",
+      "bytes": 5303,
+      "sha256": "307e3e126434ea432f5599b9c0afe60eb35231c080d3865bbe7575902717dd86",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/setup_native_studies.py",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/src/legacy-plan/setup_native_studies.py",
+      "bytes": 4846,
+      "sha256": "bbeca4877d29aa3ae325b45c6b53c97312a1086ef65daad5487abeba61a7ad93",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/test_factor_family.py",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/src/legacy-plan/test_factor_family.py",
+      "bytes": 4115,
+      "sha256": "5b4372aa1339707a3cb66ba1237dd07968f7993e979d82be10735b9b56c2285a",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/research-plan.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/plan/research-plan.json",
+      "bytes": 8518,
+      "sha256": "bee18d090f8feb883ed7e8e616665a354543a5c593f912e37b2429482219df39",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/plan-freeze.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/plan/plan-freeze.json",
+      "bytes": 200,
+      "sha256": "9ec6da68b1eaaaa593917029c7f6d53b63dedc6ff63f2a8f0167dee175e75144",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/analysis-code-freeze.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/plan/analysis-code-freeze.json",
+      "bytes": 211,
+      "sha256": "99454f19bd320e9ce622f9f33d354fd4be098f33b346bd425d1f3ce57fae37a5",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/code-freeze.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/plan/code-freeze.json",
+      "bytes": 409,
+      "sha256": "7f5da387521215560f71640375f36235f6556495bb506f7a4fdebb043ed43c89",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/batch-plan.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/plan/batch-plan.json",
+      "bytes": 4503,
+      "sha256": "1f3bb10fcc2080beb3603ee82d3872fca4762c62ad7cbb4be0431478b8ca97bb",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/trial-ledger.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/plan/trial-ledger.json",
+      "bytes": 7998,
+      "sha256": "128a47d723ef047ba6147e2820cdc87aeb65cf99fb2fcfbc8974867fb92955b2",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/study.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/study.json",
+      "bytes": 330,
+      "sha256": "a0f0e242228ca90ce398bdcca59269e07048a36b2878d2d7690697c1d9c27069",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/registry.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/registry.json",
+      "bytes": 264,
+      "sha256": "a3fcd6a69ccdfc314f68f13d2236a98917f902b7d9f79a6f4d2a93598ca667e8",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/supplementary/research-plan.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/supplementary/research-plan.json",
+      "bytes": 8518,
+      "sha256": "bee18d090f8feb883ed7e8e616665a354543a5c593f912e37b2429482219df39",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/supplementary/trial-ledger.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/supplementary/trial-ledger.json",
+      "bytes": 958,
+      "sha256": "edf8e12272d700a35afa56bf20c054c1c0025cfa1003d6b6805557783f4934f5",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/runs/discovery/low-downside-risk20/run.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/runs/discovery/low-downside-risk20/run.json",
+      "bytes": 3062,
+      "sha256": "2e0fefc5211f6d1f326977f52611345d3c4de6560b13fdea99dd3639cf0d85a2",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/runs/discovery/low-downside-risk20/result.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/runs/discovery/low-downside-risk20/result.json",
+      "bytes": 4655,
+      "sha256": "acf361bec0e358b47277e51d3c4c897904e99400acf397d2b8a83d28704d94ab",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/runs/discovery/low-downside-risk20/attempt-1/metrics.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/runs/discovery/low-downside-risk20/attempt-1/metrics.json",
+      "bytes": 4654,
+      "sha256": "b03e148fb01ee85328b1c7ee4b2a994b07cbadd60857cdedd21a1ab0952dde48",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/runs/discovery/low-downside-risk20/attempt-1/result.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/runs/discovery/low-downside-risk20/attempt-1/result.json",
+      "bytes": 4655,
+      "sha256": "acf361bec0e358b47277e51d3c4c897904e99400acf397d2b8a83d28704d94ab",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/runs/discovery/low-downside-risk20/attempt-1/fold-0/checks.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/runs/discovery/low-downside-risk20/attempt-1/fold-0/checks.json",
+      "bytes": 705,
+      "sha256": "9104fe80fd447eaf39711498f6cfd3cae6de78e71192053c0a673c3a8765a6d4",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/runs/discovery/low-downside-risk20/attempt-1/baseline/fold-0/checks.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/runs/discovery/low-downside-risk20/attempt-1/baseline/fold-0/checks.json",
+      "bytes": 676,
+      "sha256": "e1f49d80ec6324aaa51ad072ab3da57fcc529a60f7212402e893421ccb2669d6",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/candidates/low-downside-risk20/checks.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/candidates/low-downside-risk20/checks.json",
+      "bytes": 755,
+      "sha256": "839c06dce0cff8c2f41fb7dc60da9671f4a16bccb4b7d10812d790bc9ce0edf5",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/candidates/low-downside-risk20/candidate.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/candidates/low-downside-risk20/candidate.json",
+      "bytes": 832,
+      "sha256": "731b84b4b34cd21cb9eb1b5a518b73ef240c3dca8315028c8196b963fe58edd9",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/candidates/low-downside-risk20/check-52aee3dc/result.json",
+      "target": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/evidence/candidates/low-downside-risk20/check-52aee3dc/result.json",
+      "bytes": 755,
+      "sha256": "839c06dce0cff8c2f41fb7dc60da9671f4a16bccb4b7d10812d790bc9ce0edf5",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/protocol.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/protocol.json",
+      "bytes": 4125,
+      "sha256": "9ecb6b4d2afb1aacd6c6512447ef9b1332f2bcf5a0d0324f5916e7c342e7d3bb",
+      "reason": "frozen original protocol"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/report.md",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/legacy-conclusion.md",
+      "bytes": 5387,
+      "sha256": "df67f3c4befbc05e96fcef9c865155826c2b4d9d3e1451b43c39ab4af4bc96fe",
+      "reason": "byte-identical historical conclusion retained; current conclusion adds portable navigation"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/drafts/factor_family.py",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/src/legacy-drafts/factor_family.py",
+      "bytes": 1907,
+      "sha256": "7597bd19371951a7e852080d7f808bbb4ff6fb3cf9e1ff3cfa52b9d8580476ae",
+      "reason": "original candidate implementation/configuration"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/drafts/negative-return-volume-corr20.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/src/legacy-drafts/negative-return-volume-corr20.json",
+      "bytes": 701,
+      "sha256": "8bcafcb7889633dd23025cace3aaa7cf14aad1e0195834baba1a226bf85ca94d",
+      "reason": "original candidate implementation/configuration"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/analyze_supplementary.py",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/src/legacy-plan/analyze_supplementary.py",
+      "bytes": 7153,
+      "sha256": "b5207ef38f6a19a319e25c694e3d440b3096f2f455655bee8f445b208683d97c",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/archive_native.py",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/src/legacy-plan/archive_native.py",
+      "bytes": 926,
+      "sha256": "33ec768ca74ceee27dc17cf3d6f3d0cf1172b8b6146411eee30c10ebdbd873ef",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/build_supplementary.py",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/src/legacy-plan/build_supplementary.py",
+      "bytes": 3580,
+      "sha256": "35b36a90ca9e298cd35042c464ef3008ee947336f6ad60401d45827378a599df",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/factor_family.py",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/src/legacy-plan/factor_family.py",
+      "bytes": 1907,
+      "sha256": "7597bd19371951a7e852080d7f808bbb4ff6fb3cf9e1ff3cfa52b9d8580476ae",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/package_results.py",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/src/legacy-plan/package_results.py",
+      "bytes": 3085,
+      "sha256": "1fec2afc14705ee855bf858a2b4296e961de2314140e1092ed78e99067369e95",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/record_batch_completion.py",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/src/legacy-plan/record_batch_completion.py",
+      "bytes": 2905,
+      "sha256": "14e3f67d8807a1b68f640ee762ba9764e94e4dcc09a0a597a28b8770476b649d",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/seal_batch_plan.py",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/src/legacy-plan/seal_batch_plan.py",
+      "bytes": 983,
+      "sha256": "4fe581044b65437ab75052d37976e472edba44038e5d97199b2ae7c4205e5557",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/seal_native_studies.py",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/src/legacy-plan/seal_native_studies.py",
+      "bytes": 1178,
+      "sha256": "01c524fc58c58eea6dae6af12444abc63db3559481757e587dc975d6631512f6",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/select_batch.py",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/src/legacy-plan/select_batch.py",
+      "bytes": 5303,
+      "sha256": "307e3e126434ea432f5599b9c0afe60eb35231c080d3865bbe7575902717dd86",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/setup_native_studies.py",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/src/legacy-plan/setup_native_studies.py",
+      "bytes": 4846,
+      "sha256": "bbeca4877d29aa3ae325b45c6b53c97312a1086ef65daad5487abeba61a7ad93",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/test_factor_family.py",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/src/legacy-plan/test_factor_family.py",
+      "bytes": 4115,
+      "sha256": "5b4372aa1339707a3cb66ba1237dd07968f7993e979d82be10735b9b56c2285a",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/research-plan.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/plan/research-plan.json",
+      "bytes": 8518,
+      "sha256": "bee18d090f8feb883ed7e8e616665a354543a5c593f912e37b2429482219df39",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/plan-freeze.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/plan/plan-freeze.json",
+      "bytes": 200,
+      "sha256": "9ec6da68b1eaaaa593917029c7f6d53b63dedc6ff63f2a8f0167dee175e75144",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/analysis-code-freeze.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/plan/analysis-code-freeze.json",
+      "bytes": 211,
+      "sha256": "99454f19bd320e9ce622f9f33d354fd4be098f33b346bd425d1f3ce57fae37a5",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/code-freeze.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/plan/code-freeze.json",
+      "bytes": 409,
+      "sha256": "7f5da387521215560f71640375f36235f6556495bb506f7a4fdebb043ed43c89",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/batch-plan.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/plan/batch-plan.json",
+      "bytes": 4503,
+      "sha256": "1f3bb10fcc2080beb3603ee82d3872fca4762c62ad7cbb4be0431478b8ca97bb",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/trial-ledger.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/plan/trial-ledger.json",
+      "bytes": 7998,
+      "sha256": "128a47d723ef047ba6147e2820cdc87aeb65cf99fb2fcfbc8974867fb92955b2",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/study.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/study.json",
+      "bytes": 330,
+      "sha256": "9a6889d7ff12d9b1256dd16926822610cccc14b81b4bc86179bdd69fe754f94e",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/registry.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/registry.json",
+      "bytes": 294,
+      "sha256": "e8f7c3177e12a33a11c0ef6b097aa7715ed0a6f77a9a7008fbe9f44aba38f582",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/supplementary/research-plan.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/supplementary/research-plan.json",
+      "bytes": 8518,
+      "sha256": "bee18d090f8feb883ed7e8e616665a354543a5c593f912e37b2429482219df39",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/supplementary/trial-ledger.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/supplementary/trial-ledger.json",
+      "bytes": 958,
+      "sha256": "edf8e12272d700a35afa56bf20c054c1c0025cfa1003d6b6805557783f4934f5",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/runs/discovery/negative-return-volume-corr20/run.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/runs/discovery/negative-return-volume-corr20/run.json",
+      "bytes": 3072,
+      "sha256": "014d6b69335a8d393a9bddd2143ac6cb99f9dd461d72530504e986eb4a5fa160",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/runs/discovery/negative-return-volume-corr20/result.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/runs/discovery/negative-return-volume-corr20/result.json",
+      "bytes": 4690,
+      "sha256": "77d5f905d5e1b42f06a5c6cb757b34b8a908129ca41cb25fb348950d93d9067a",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/runs/discovery/negative-return-volume-corr20/attempt-1/metrics.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/runs/discovery/negative-return-volume-corr20/attempt-1/metrics.json",
+      "bytes": 4689,
+      "sha256": "e2d2e76aaca72aed94c525a1e0222f4559b50b30d6b95e925ae048cdd1651126",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/runs/discovery/negative-return-volume-corr20/attempt-1/result.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/runs/discovery/negative-return-volume-corr20/attempt-1/result.json",
+      "bytes": 4690,
+      "sha256": "77d5f905d5e1b42f06a5c6cb757b34b8a908129ca41cb25fb348950d93d9067a",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/runs/discovery/negative-return-volume-corr20/attempt-1/fold-0/checks.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/runs/discovery/negative-return-volume-corr20/attempt-1/fold-0/checks.json",
+      "bytes": 715,
+      "sha256": "5b18dc0328417cdf5d1dc8270fa035905d5a9100b013ccbcf959b5dfee770502",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/runs/discovery/negative-return-volume-corr20/attempt-1/baseline/fold-0/checks.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/runs/discovery/negative-return-volume-corr20/attempt-1/baseline/fold-0/checks.json",
+      "bytes": 676,
+      "sha256": "e1f49d80ec6324aaa51ad072ab3da57fcc529a60f7212402e893421ccb2669d6",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/candidates/negative-return-volume-corr20/checks.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/candidates/negative-return-volume-corr20/checks.json",
+      "bytes": 775,
+      "sha256": "7f14060c0761e4f5e45d6403b57bd63134cb303ec1d5d320add316d2aab43fdc",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/candidates/negative-return-volume-corr20/candidate.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/candidates/negative-return-volume-corr20/candidate.json",
+      "bytes": 919,
+      "sha256": "19a87ad2e6f29da9b279de7804b58f0adb89697dd955cb74a33cf133f7352c2f",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/candidates/negative-return-volume-corr20/check-dbfca656/result.json",
+      "target": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/evidence/candidates/negative-return-volume-corr20/check-dbfca656/result.json",
+      "bytes": 775,
+      "sha256": "7f14060c0761e4f5e45d6403b57bd63134cb303ec1d5d320add316d2aab43fdc",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/protocol.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/protocol.json",
+      "bytes": 4125,
+      "sha256": "9ecb6b4d2afb1aacd6c6512447ef9b1332f2bcf5a0d0324f5916e7c342e7d3bb",
+      "reason": "frozen original protocol"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/report.md",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/legacy-conclusion.md",
+      "bytes": 5342,
+      "sha256": "d42b54a0b65582312c2a2af41445181d2436340ae9a944be535b76cc1d346311",
+      "reason": "byte-identical historical conclusion retained; current conclusion adds portable navigation"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/drafts/factor_family.py",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/src/legacy-drafts/factor_family.py",
+      "bytes": 1907,
+      "sha256": "7597bd19371951a7e852080d7f808bbb4ff6fb3cf9e1ff3cfa52b9d8580476ae",
+      "reason": "original candidate implementation/configuration"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/drafts/volume-weighted-close-location20.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/src/legacy-drafts/volume-weighted-close-location20.json",
+      "bytes": 653,
+      "sha256": "6bdf700f935d3513d779302f4072814511e9f9ad9ec631782c39a396dbec40e6",
+      "reason": "original candidate implementation/configuration"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/analyze_supplementary.py",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/src/legacy-plan/analyze_supplementary.py",
+      "bytes": 7153,
+      "sha256": "b5207ef38f6a19a319e25c694e3d440b3096f2f455655bee8f445b208683d97c",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/archive_native.py",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/src/legacy-plan/archive_native.py",
+      "bytes": 926,
+      "sha256": "33ec768ca74ceee27dc17cf3d6f3d0cf1172b8b6146411eee30c10ebdbd873ef",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/build_supplementary.py",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/src/legacy-plan/build_supplementary.py",
+      "bytes": 3580,
+      "sha256": "35b36a90ca9e298cd35042c464ef3008ee947336f6ad60401d45827378a599df",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/factor_family.py",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/src/legacy-plan/factor_family.py",
+      "bytes": 1907,
+      "sha256": "7597bd19371951a7e852080d7f808bbb4ff6fb3cf9e1ff3cfa52b9d8580476ae",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/package_results.py",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/src/legacy-plan/package_results.py",
+      "bytes": 3085,
+      "sha256": "1fec2afc14705ee855bf858a2b4296e961de2314140e1092ed78e99067369e95",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/record_batch_completion.py",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/src/legacy-plan/record_batch_completion.py",
+      "bytes": 2905,
+      "sha256": "14e3f67d8807a1b68f640ee762ba9764e94e4dcc09a0a597a28b8770476b649d",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/seal_batch_plan.py",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/src/legacy-plan/seal_batch_plan.py",
+      "bytes": 983,
+      "sha256": "4fe581044b65437ab75052d37976e472edba44038e5d97199b2ae7c4205e5557",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/seal_native_studies.py",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/src/legacy-plan/seal_native_studies.py",
+      "bytes": 1178,
+      "sha256": "01c524fc58c58eea6dae6af12444abc63db3559481757e587dc975d6631512f6",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/select_batch.py",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/src/legacy-plan/select_batch.py",
+      "bytes": 5303,
+      "sha256": "307e3e126434ea432f5599b9c0afe60eb35231c080d3865bbe7575902717dd86",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/setup_native_studies.py",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/src/legacy-plan/setup_native_studies.py",
+      "bytes": 4846,
+      "sha256": "bbeca4877d29aa3ae325b45c6b53c97312a1086ef65daad5487abeba61a7ad93",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/scripts/test_factor_family.py",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/src/legacy-plan/test_factor_family.py",
+      "bytes": 4115,
+      "sha256": "5b4372aa1339707a3cb66ba1237dd07968f7993e979d82be10735b9b56c2285a",
+      "reason": "upstream data and analysis code"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/research-plan.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/plan/research-plan.json",
+      "bytes": 8518,
+      "sha256": "bee18d090f8feb883ed7e8e616665a354543a5c593f912e37b2429482219df39",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/plan-freeze.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/plan/plan-freeze.json",
+      "bytes": 200,
+      "sha256": "9ec6da68b1eaaaa593917029c7f6d53b63dedc6ff63f2a8f0167dee175e75144",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/analysis-code-freeze.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/plan/analysis-code-freeze.json",
+      "bytes": 211,
+      "sha256": "99454f19bd320e9ce622f9f33d354fd4be098f33b346bd425d1f3ce57fae37a5",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/code-freeze.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/plan/code-freeze.json",
+      "bytes": 409,
+      "sha256": "7f5da387521215560f71640375f36235f6556495bb506f7a4fdebb043ed43c89",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/batch-plan.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/plan/batch-plan.json",
+      "bytes": 4503,
+      "sha256": "1f3bb10fcc2080beb3603ee82d3872fca4762c62ad7cbb4be0431478b8ca97bb",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/plans/price-volume-batch-v2/trial-ledger.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/plan/trial-ledger.json",
+      "bytes": 7998,
+      "sha256": "128a47d723ef047ba6147e2820cdc87aeb65cf99fb2fcfbc8974867fb92955b2",
+      "reason": "selection budget, provenance or freeze evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/study.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/study.json",
+      "bytes": 330,
+      "sha256": "c092d36d4683506884af6d45f6962ad889d3c6dba6f533b4d3e19ac2bd3ceb76",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/registry.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/registry.json",
+      "bytes": 303,
+      "sha256": "432cb92d6d7d67b281a0233524f2a4ac6633b88cbdcf6327a3cb4f0338b3305f",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/supplementary/research-plan.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/supplementary/research-plan.json",
+      "bytes": 8518,
+      "sha256": "bee18d090f8feb883ed7e8e616665a354543a5c593f912e37b2429482219df39",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/supplementary/trial-ledger.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/supplementary/trial-ledger.json",
+      "bytes": 958,
+      "sha256": "edf8e12272d700a35afa56bf20c054c1c0025cfa1003d6b6805557783f4934f5",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/runs/discovery/volume-weighted-close-location20/run.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/runs/discovery/volume-weighted-close-location20/run.json",
+      "bytes": 3174,
+      "sha256": "7c3f6369014e2331bee1ec19b208007a5dda0d3287d0537a4c3cdb0fdadf42be",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/runs/discovery/volume-weighted-close-location20/result.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/runs/discovery/volume-weighted-close-location20/result.json",
+      "bytes": 4699,
+      "sha256": "9a7a7ec0290de23b35128d6882357f265f53089b62b8ca3bafdd116dd2e049d3",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/runs/discovery/volume-weighted-close-location20/attempt-2/metrics.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/runs/discovery/volume-weighted-close-location20/attempt-2/metrics.json",
+      "bytes": 4698,
+      "sha256": "9deb4ccfa513e30883c03288a671d0221e547caa7b74b99279a1240f0898c8f8",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/runs/discovery/volume-weighted-close-location20/attempt-2/result.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/runs/discovery/volume-weighted-close-location20/attempt-2/result.json",
+      "bytes": 4699,
+      "sha256": "9a7a7ec0290de23b35128d6882357f265f53089b62b8ca3bafdd116dd2e049d3",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/runs/discovery/volume-weighted-close-location20/attempt-2/fold-0/checks.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/runs/discovery/volume-weighted-close-location20/attempt-2/fold-0/checks.json",
+      "bytes": 718,
+      "sha256": "1ff63fd91c88fc1f69f3330e57d7b15d21a0cd8217b1fa05bb161e625b731b5b",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/runs/discovery/volume-weighted-close-location20/attempt-2/baseline/fold-0/checks.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/runs/discovery/volume-weighted-close-location20/attempt-2/baseline/fold-0/checks.json",
+      "bytes": 676,
+      "sha256": "e1f49d80ec6324aaa51ad072ab3da57fcc529a60f7212402e893421ccb2669d6",
+      "reason": "native attempt/result summary"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/candidates/volume-weighted-close-location20/checks.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/candidates/volume-weighted-close-location20/checks.json",
+      "bytes": 781,
+      "sha256": "7938fffefe51d49e976c9d234fd90cdf63e040b2254bc9a7eed71ac30c6cb906",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/candidates/volume-weighted-close-location20/candidate.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/candidates/volume-weighted-close-location20/candidate.json",
+      "bytes": 874,
+      "sha256": "1df584091a4c207bb9112720737f969dc270f88df65c3e41de416ae79a6569b7",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/candidates/volume-weighted-close-location20/check-85d00033/result.json",
+      "target": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/evidence/candidates/volume-weighted-close-location20/check-85d00033/result.json",
+      "bytes": 781,
+      "sha256": "7938fffefe51d49e976c9d234fd90cdf63e040b2254bc9a7eed71ac30c6cb906",
+      "reason": "candidate/check records including failures"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/protocol.json",
+      "target": "research/20261102-amplitude-ovnt-v1/protocol.json",
+      "bytes": 9779,
+      "sha256": "58b6490676ef273df6876b9f5dbfc3eab8e0ee1fa7b28e2b046138e2081e0676",
+      "reason": "frozen original protocol"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/HANDOFF.md",
+      "target": "research/20261102-amplitude-ovnt-v1/evidence/legacy-conclusion.md",
+      "bytes": 4190,
+      "sha256": "b37c4ae137c11b364fa643bf6b590a62b81b68aecfb9755e8c07e683f415ed22",
+      "reason": "byte-identical historical conclusion retained; current conclusion adds portable navigation"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/scripts/analyze.py",
+      "target": "research/20261102-amplitude-ovnt-v1/src/legacy/analyze.py",
+      "bytes": 9098,
+      "sha256": "00a781c64ac8d7921b5e6c9d22626febe2f8daf900d4a1fa35ab5e63efb678a4",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/scripts/audit_coverage.py",
+      "target": "research/20261102-amplitude-ovnt-v1/src/legacy/audit_coverage.py",
+      "bytes": 3343,
+      "sha256": "33bfbb0cff04facd62fc7fd2ff5e59dd3014bc779c7cc13840f51bbac741f532",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/scripts/build_monthly.py",
+      "target": "research/20261102-amplitude-ovnt-v1/src/legacy/build_monthly.py",
+      "bytes": 5791,
+      "sha256": "b6f603f1d4d8e54ec8e48a06ac7464afbffa5ece99c3c93d4abdf37e17b5c1fb",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/scripts/formulas.py",
+      "target": "research/20261102-amplitude-ovnt-v1/src/legacy/formulas.py",
+      "bytes": 1754,
+      "sha256": "42d4aa623bf49a98b43cc43748e3ccd043de0c4f4440696506e52cb2c8b121cf",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/scripts/seal_and_package.py",
+      "target": "research/20261102-amplitude-ovnt-v1/src/legacy/seal_and_package.py",
+      "bytes": 2690,
+      "sha256": "135c410d096d1810f0ab717a608ccb6ce41ea026bea0fa014cc23c2414a1c09c",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/scripts/test_analysis.py",
+      "target": "research/20261102-amplitude-ovnt-v1/src/legacy/test_analysis.py",
+      "bytes": 1340,
+      "sha256": "0d2471fc125363c1551964a9d8cb83e3d844feaeb7bb3e9d52d7261e8e03c716",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/scripts/test_formulas.py",
+      "target": "research/20261102-amplitude-ovnt-v1/src/legacy/test_formulas.py",
+      "bytes": 2636,
+      "sha256": "2cb1dac692e58bee35062c021904ab7b23be959b535b7cb5296a354f74d699c6",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/admission.json",
+      "target": "research/20261102-amplitude-ovnt-v1/evidence/admission.json",
+      "bytes": 1641,
+      "sha256": "70f628f3fe5ec2d8cd5322b5979937765ac19f4221bf3fd3730a9e2623d9cef4",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/trial-ledger.json",
+      "target": "research/20261102-amplitude-ovnt-v1/evidence/trial-ledger.json",
+      "bytes": 3397,
+      "sha256": "ff3786a1b091eb6ee1892efd553423794cb5eb167a47942cfba420368c52ac10",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/protocol-freeze.json",
+      "target": "research/20261102-amplitude-ovnt-v1/evidence/protocol-freeze.json",
+      "bytes": 161,
+      "sha256": "460e4cc94a144b1de427281182a3fe24ac591b08cf1e84ee06c08dd379bbbf17",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/code-freeze.json",
+      "target": "research/20261102-amplitude-ovnt-v1/evidence/code-freeze.json",
+      "bytes": 374,
+      "sha256": "cd333a60dbe5279cb4536d6392adbf5b5cd739c255d554b7afbdd60ac29580a2",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/analysis-code-freeze.json",
+      "target": "research/20261102-amplitude-ovnt-v1/evidence/analysis-code-freeze.json",
+      "bytes": 768,
+      "sha256": "c69d8e54e95e3a23b3d5c2204e8a24d0ae078c98174f8f48aef49ce595bbd83f",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/outputs/summary.json",
+      "target": "research/20261102-amplitude-ovnt-v1/evidence/outputs/summary.json",
+      "bytes": 47394,
+      "sha256": "e0512d7a24f5fa3e7acc6549c1e26200da25cad2cedc3352d813716e33e9937f",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/amendments/zero-return-frequency-proxy.json",
+      "target": "research/20261102-amplitude-ovnt-v1/evidence/amendments/zero-return-frequency-proxy.json",
+      "bytes": 835,
+      "sha256": "21e59d0d36922da66192a5d66a2186bbfc5d311aafede487e1370f98154723cc",
+      "reason": "pre/post-result amendment history"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/amendments/ovnt-alpha-vs-raw-return.json",
+      "target": "research/20261102-amplitude-ovnt-v1/evidence/amendments/ovnt-alpha-vs-raw-return.json",
+      "bytes": 467,
+      "sha256": "bcc9a6af2fad8352d265b7553ffff31d06074244a4fa5b810c6834e7f16adc7a",
+      "reason": "pre/post-result amendment history"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-illiq-seas-v1/protocol.json",
+      "target": "research/20261102-illiq-seas-v1/protocol.json",
+      "bytes": 8581,
+      "sha256": "66234bbc9ebcad5305690a776c15ccfd4dfdb8146b8ab958415e09b98bd6877e",
+      "reason": "frozen original protocol"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-illiq-seas-v1/HANDOFF.md",
+      "target": "research/20261102-illiq-seas-v1/evidence/legacy-conclusion.md",
+      "bytes": 4260,
+      "sha256": "b2a19446e7e7d13c98294694f8398373bef3ae0c8adb13d92cceb5b13b218be4",
+      "reason": "byte-identical historical conclusion retained; current conclusion adds portable navigation"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-illiq-seas-v1/scripts/analyze.py",
+      "target": "research/20261102-illiq-seas-v1/src/legacy/analyze.py",
+      "bytes": 8662,
+      "sha256": "babbdd546c9649f3c69310cd3ce05eaa9b43b4e09f53967ef4c3a44591e46d2f",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-illiq-seas-v1/scripts/audit_coverage.py",
+      "target": "research/20261102-illiq-seas-v1/src/legacy/audit_coverage.py",
+      "bytes": 3201,
+      "sha256": "b8c802b4c9874218d6b5360a2c79ef0e83c3098bbe98b9d09330bc94275873b0",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-illiq-seas-v1/scripts/build_monthly.py",
+      "target": "research/20261102-illiq-seas-v1/src/legacy/build_monthly.py",
+      "bytes": 4657,
+      "sha256": "68e271b3a1de42ee7d106b4d1e535b19c8732ba0d7b5a162c9d626e51b4b57c1",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-illiq-seas-v1/scripts/formulas.py",
+      "target": "research/20261102-illiq-seas-v1/src/legacy/formulas.py",
+      "bytes": 1341,
+      "sha256": "d07961ab438a59975b7b6a44ad726fd31957960dc66b844049e3e7e358f1280e",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-illiq-seas-v1/scripts/seal_and_package.py",
+      "target": "research/20261102-illiq-seas-v1/src/legacy/seal_and_package.py",
+      "bytes": 2635,
+      "sha256": "23626dac11db2957a3fbc0f2759de336bf3aa97104cfb94819e72b1ed087f786",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-illiq-seas-v1/scripts/test_analysis.py",
+      "target": "research/20261102-illiq-seas-v1/src/legacy/test_analysis.py",
+      "bytes": 1340,
+      "sha256": "0d2471fc125363c1551964a9d8cb83e3d844feaeb7bb3e9d52d7261e8e03c716",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-illiq-seas-v1/scripts/test_formulas.py",
+      "target": "research/20261102-illiq-seas-v1/src/legacy/test_formulas.py",
+      "bytes": 2146,
+      "sha256": "5cedd1c15b5d1ff9199d32307481d6596d7b891e53568cd0d89086cb2be8ba77",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-illiq-seas-v1/admission.json",
+      "target": "research/20261102-illiq-seas-v1/evidence/admission.json",
+      "bytes": 1311,
+      "sha256": "e2d94694a2a693b7c798f06a14e60a5d35c657ce0e850d3b4ffed843806e2dab",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-illiq-seas-v1/trial-ledger.json",
+      "target": "research/20261102-illiq-seas-v1/evidence/trial-ledger.json",
+      "bytes": 2133,
+      "sha256": "2841c94d3f5a28129ccb36ce89812cddf18bd9e0f5dbd62bd924a17b16274754",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-illiq-seas-v1/protocol-freeze.json",
+      "target": "research/20261102-illiq-seas-v1/evidence/protocol-freeze.json",
+      "bytes": 161,
+      "sha256": "e3bbe5cc532aa13817244171b096e3246075d480540e9176fbf1ac1f676a98a3",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-illiq-seas-v1/code-freeze.json",
+      "target": "research/20261102-illiq-seas-v1/evidence/code-freeze.json",
+      "bytes": 370,
+      "sha256": "193a4da65f93b77e95f77b90fc1bb84592f99037616590645a6f6034198d686b",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-illiq-seas-v1/analysis-code-freeze.json",
+      "target": "research/20261102-illiq-seas-v1/evidence/analysis-code-freeze.json",
+      "bytes": 682,
+      "sha256": "06214fb3686ce218bb84e42fdaa1c1526cc8dfd245cf06f4d1f1fd302deb4082",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-illiq-seas-v1/outputs/summary.json",
+      "target": "research/20261102-illiq-seas-v1/evidence/outputs/summary.json",
+      "bytes": 37148,
+      "sha256": "8c31ca8984429442e2be3cba7294af6f0ee04d61fa45237689b83a63eeae5e63",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/favorites/illiq20-jansen2021.json",
+      "target": "research/20261102-illiq-seas-v1/evidence/bookmark.json",
+      "bytes": 4904,
+      "sha256": "e142da47681437a5359eaa3c754f9d93c0fd0e106f52cb1a8e2aa5fb30c037f7",
+      "reason": "research bookmark only, not registry admission"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-strategies-v1/protocol.json",
+      "target": "research/20261102-strategies-v1/protocol.json",
+      "bytes": 4711,
+      "sha256": "bc8e8b48f197bbbc098a5ee2a040907ca225571cdc15dd4acf2fa86338cc25e7",
+      "reason": "frozen original protocol"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-strategies-v1/HANDOFF.md",
+      "target": "research/20261102-strategies-v1/evidence/legacy-conclusion.md",
+      "bytes": 2080,
+      "sha256": "9ef198de6207c1be35dddc1ce728f1f8153fcac1f47018f34fd858ae59998191",
+      "reason": "byte-identical historical conclusion retained; current conclusion adds portable navigation"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-strategies-v1/scripts/collect_etf.py",
+      "target": "research/20261102-strategies-v1/src/legacy/collect_etf.py",
+      "bytes": 1290,
+      "sha256": "89dd536d81e78d4162159acfe97c544c554f1863b9edabd293009233a417d95d",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-strategies-v1/scripts/diagnose_results.py",
+      "target": "research/20261102-strategies-v1/src/legacy/diagnose_results.py",
+      "bytes": 2393,
+      "sha256": "84b34d271f62a1784c0f52544274310c4310eaaaf175c3be96764f834882545b",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-strategies-v1/scripts/evaluate.py",
+      "target": "research/20261102-strategies-v1/src/legacy/evaluate.py",
+      "bytes": 4278,
+      "sha256": "afee6a5dba89384408c06770032d5aa809d9c928cd990f77cb55a771d79eeff1",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-strategies-v1/scripts/prepare_inputs.py",
+      "target": "research/20261102-strategies-v1/src/legacy/prepare_inputs.py",
+      "bytes": 4138,
+      "sha256": "5c532fdde7fdaeb3d6025a8aa51603f790d216b1e1b1e0b8f6fbeffeb962f316",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-strategies-v1/scripts/seal_and_package.py",
+      "target": "research/20261102-strategies-v1/src/legacy/seal_and_package.py",
+      "bytes": 2281,
+      "sha256": "c07b47363c6b19e318ce608802ecc042009934f51d248d90149892a1fc5e58ca",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-strategies-v1/scripts/strategy.py",
+      "target": "research/20261102-strategies-v1/src/legacy/strategy.py",
+      "bytes": 4144,
+      "sha256": "2cee0e2a2f21f15b4ef43392606cfe58f61d0f683f873e3446522b8a3e3c2a7e",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-strategies-v1/scripts/test_strategy.py",
+      "target": "research/20261102-strategies-v1/src/legacy/test_strategy.py",
+      "bytes": 3001,
+      "sha256": "4cf35132dade17f268e0d795a38ead6abb0b161aebc4882c2b0697196ce00063",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-strategies-v1/trial-ledger.json",
+      "target": "research/20261102-strategies-v1/evidence/trial-ledger.json",
+      "bytes": 1593,
+      "sha256": "61e716a7b51655228c8b0bb3fa8dcdf65894c896f88b4cc3836e155e6fa95a55",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-strategies-v1/outputs/summary.json",
+      "target": "research/20261102-strategies-v1/evidence/outputs/summary.json",
+      "bytes": 5321,
+      "sha256": "88f0aa20efdd643158d38328448a0753d7d1ab7f6486424a401e4ce5d5c51a27",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-strategies-v1/outputs/data-quality.json",
+      "target": "research/20261102-strategies-v1/evidence/outputs/data-quality.json",
+      "bytes": 517,
+      "sha256": "8f3b92104c56f062c512320c3ac41d513cc89a990e97810262ed9f5c1feb2e36",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-strategies-v1/outputs/interpretation-notes.json",
+      "target": "research/20261102-strategies-v1/evidence/outputs/interpretation-notes.json",
+      "bytes": 748,
+      "sha256": "cdb74a58b83b3285bf52a71c85af7f4efe9cb2b76180db8130547befe68eb23b",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-strategies-v1/amendments/payment-availability-before-results.json",
+      "target": "research/20261102-strategies-v1/evidence/amendments/payment-availability-before-results.json",
+      "bytes": 595,
+      "sha256": "7001ba0e78104ddf17060db8a677c17ee6ea18e18c3481104ff6531925cb71c8",
+      "reason": "pre/post-result amendment history"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-strategies-v1/amendments/open-information-set-before-results.json",
+      "target": "research/20261102-strategies-v1/evidence/amendments/open-information-set-before-results.json",
+      "bytes": 1182,
+      "sha256": "484aa5a28f94c32939d08db1127078a529b732ee1410ddf0eb1806560b3ba17b",
+      "reason": "pre/post-result amendment history"
+    },
+    {
+      "source": "quant-research-library/reproductions/20261102-strategies-v1/amendments/execution-detail-before-results.json",
+      "target": "research/20261102-strategies-v1/evidence/amendments/execution-detail-before-results.json",
+      "bytes": 1113,
+      "sha256": "ee05b98a6dcdd11ae81ffa6ee7aa510158aba0bc4534c1b1926b5edb8c4903aa",
+      "reason": "pre/post-result amendment history"
+    },
+    {
+      "source": "quant-research-library/diagnostics/20261102-price-volume-quality-v1/protocol.json",
+      "target": "research/20261102-price-volume-quality-v1/protocol.json",
+      "bytes": 2486,
+      "sha256": "58132cd85b98098bf516cf4d68a30a30ef1c1798de28e9c19c14f4952fd4722f",
+      "reason": "frozen original protocol"
+    },
+    {
+      "source": "quant-research-library/diagnostics/20261102-price-volume-quality-v1/REPORT.md",
+      "target": "research/20261102-price-volume-quality-v1/evidence/legacy-conclusion.md",
+      "bytes": 6300,
+      "sha256": "02224163b5df5970acae5c528c993c22a7151d885116747fa5ba02fc0a89f5b4",
+      "reason": "byte-identical historical conclusion retained; current conclusion adds portable navigation"
+    },
+    {
+      "source": "quant-research-library/diagnostics/20261102-price-volume-quality-v1/scripts/build_diagnostic.py",
+      "target": "research/20261102-price-volume-quality-v1/src/legacy/build_diagnostic.py",
+      "bytes": 9779,
+      "sha256": "b8e771a3100634abfd33c7b5d11128a5bbc6552c647735a3187c3bbdbc1ef65a",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/diagnostics/20261102-price-volume-quality-v1/scripts/build_diagnostic_initial.py",
+      "target": "research/20261102-price-volume-quality-v1/src/legacy/build_diagnostic_initial.py",
+      "bytes": 9601,
+      "sha256": "0304506fe48488bb14fa22139d44912714723cf71e00b64934ec8878e8c9159c",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/diagnostics/20261102-price-volume-quality-v1/scripts/evaluate.py",
+      "target": "research/20261102-price-volume-quality-v1/src/legacy/evaluate.py",
+      "bytes": 6273,
+      "sha256": "2eb6c851a3d34f9feaddf54f952ec66682078db8f77b05b2eed565a5bfa192d9",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/diagnostics/20261102-price-volume-quality-v1/scripts/plot_coverage.py",
+      "target": "research/20261102-price-volume-quality-v1/src/legacy/plot_coverage.py",
+      "bytes": 838,
+      "sha256": "522af0358e3c3581f4e86fc7e735db8b403e060781001e5d18303111c959f416",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/diagnostics/20261102-price-volume-quality-v1/scripts/report.py",
+      "target": "research/20261102-price-volume-quality-v1/src/legacy/report.py",
+      "bytes": 7939,
+      "sha256": "b4663b56952a2e821e4aff9183cc2ce31d03193fbf0b105128b43eedcd817c37",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/diagnostics/20261102-price-volume-quality-v1/scripts/test_diagnostic.py",
+      "target": "research/20261102-price-volume-quality-v1/src/legacy/test_diagnostic.py",
+      "bytes": 2479,
+      "sha256": "200bbe0bb1ce32379e5447947e3b4b21ab4b834b221ed6355f111a3c0f47c27b",
+      "reason": "original replay/research code; path compatibility not assumed"
+    },
+    {
+      "source": "quant-research-library/diagnostics/20261102-price-volume-quality-v1/artifacts/exposure-ledger.json",
+      "target": "research/20261102-price-volume-quality-v1/evidence/artifacts/exposure-ledger.json",
+      "bytes": 374,
+      "sha256": "1f88b0fec423c7aff71524b910e85eb3446f0a7a7551c8a368309bbe595c407a",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/diagnostics/20261102-price-volume-quality-v1/artifacts/implementation-repairs.json",
+      "target": "research/20261102-price-volume-quality-v1/evidence/artifacts/implementation-repairs.json",
+      "bytes": 657,
+      "sha256": "0388d35a33b5ed52dd284c34f9bd416dea38155c9707f4af5c032badfd393d3e",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/diagnostics/20261102-price-volume-quality-v1/artifacts/metrics.json",
+      "target": "research/20261102-price-volume-quality-v1/evidence/artifacts/metrics.json",
+      "bytes": 6564,
+      "sha256": "c60daa3b19b517ebcfb11a9a5083f680f8408914ce9d1da3e25c7cd61ff31da9",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/diagnostics/20261102-price-volume-quality-v1/artifacts/quality-summary.json",
+      "target": "research/20261102-price-volume-quality-v1/evidence/artifacts/quality-summary.json",
+      "bytes": 843,
+      "sha256": "517ce0beb47ff858fd38afa88306f3b2ae35f143dd87f7d1e46bdba02f68430f",
+      "reason": "small decision/attempt/freeze/metric evidence"
+    },
+    {
+      "source": "quant-research-library/literature/20261102/RESEARCH_CARDS.md",
+      "target": "literature/objects/0b63cecee922e8125525415c3f6bf1afcf802c37fc8ae42b03a475dfe158516a.md",
+      "bytes": 8006,
+      "sha256": "0b63cecee922e8125525415c3f6bf1afcf802c37fc8ae42b03a475dfe158516a",
+      "reason": "deduplicated original paper or source card"
+    },
+    {
+      "source": "quant-research-library/literature/20261102/jansen_swinkels_zhou_2021.pdf",
+      "target": "literature/objects/7b3cf15008779e9a974a3d9f2cb84d9c48b0ba526dd232544c6a2301c14f90ab.pdf",
+      "bytes": 1713434,
+      "sha256": "7b3cf15008779e9a974a3d9f2cb84d9c48b0ba526dd232544c6a2301c14f90ab",
+      "reason": "deduplicated original paper or source card"
+    },
+    {
+      "source": "quant-research-library/literature/20261102/liu_zhou_zhu_2019_trend.pdf",
+      "target": "literature/objects/df21355fd97daa6bf0dc36e72f0f7a01d9a07733e8539a6cbeae21b79088086a.pdf",
+      "bytes": 389479,
+      "sha256": "df21355fd97daa6bf0dc36e72f0f7a01d9a07733e8539a6cbeae21b79088086a",
+      "reason": "deduplicated original paper or source card"
+    },
+    {
+      "source": "quant-research-library/literature/20261102-round2/AMPLITUDE_SOURCE_EVIDENCE.md",
+      "target": "literature/objects/4e3373680e289ac71983695070b13bafe98cbac50331afba17eb8c9695a9677b.md",
+      "bytes": 1679,
+      "sha256": "4e3373680e289ac71983695070b13bafe98cbac50331afba17eb8c9695a9677b",
+      "reason": "deduplicated original paper or source card"
+    },
+    {
+      "source": "quant-research-library/literature/20261102-round2/RESEARCH_CARDS.md",
+      "target": "literature/objects/bf9c80bfef4b8db125407c0788736c71efb85926b55a9923b51d00a56b540ae5.md",
+      "bytes": 8386,
+      "sha256": "bf9c80bfef4b8db125407c0788736c71efb85926b55a9923b51d00a56b540ae5",
+      "reason": "deduplicated original paper or source card"
+    },
+    {
+      "source": "quant-research-library/literature/20261102-round2/guo_etal_2025_ovnt.pdf",
+      "target": "literature/objects/0ed9988aa6c60173e687083653ce9a92eeca9a510ee691a1c9b2c09b8083d0e6.pdf",
+      "bytes": 1085761,
+      "sha256": "0ed9988aa6c60173e687083653ce9a92eeca9a510ee691a1c9b2c09b8083d0e6",
+      "reason": "deduplicated original paper or source card"
+    },
+    {
+      "source": "quant-research-library/literature/20261102-round2/nartea_wu_2014.pdf",
+      "target": "literature/objects/595bbe748df51506ab44b90c54aedda1006da190822dc8e66e94f3044fce2506.pdf",
+      "bytes": 577924,
+      "sha256": "595bbe748df51506ab44b90c54aedda1006da190822dc8e66e94f3044fce2506",
+      "reason": "deduplicated original paper or source card"
+    },
+    {
+      "source": "quant-research-library/literature/20261102-round2/signedmomentum_2019.pdf",
+      "target": "literature/objects/b958a4da96783b9db082935994fb644cdaaf503945ec280c39a1e3d07fc62e00.pdf",
+      "bytes": 644883,
+      "sha256": "b958a4da96783b9db082935994fb644cdaaf503945ec280c39a1e3d07fc62e00",
+      "reason": "deduplicated original paper or source card"
+    },
+    {
+      "source": "quant-research-library/literature/20261102-round2/tailrisk_2021.pdf",
+      "target": "literature/objects/4888e9f328ce5d63f863e26a73999fbb717b6589d3530560518c68c233ab73ae.pdf",
+      "bytes": 1100951,
+      "sha256": "4888e9f328ce5d63f863e26a73999fbb717b6589d3530560518c68c233ab73ae",
+      "reason": "deduplicated original paper or source card"
+    },
+    {
+      "source": "quant-research-library/literature/20261102-strategies-v1/SOURCE_REGISTER.md",
+      "target": "literature/objects/2467eb45e11625ed92d9d011cf413745124f4d9446c142c4d1aceb2b92ebc6f8.md",
+      "bytes": 2410,
+      "sha256": "2467eb45e11625ed92d9d011cf413745124f4d9446c142c4d1aceb2b92ebc6f8",
+      "reason": "deduplicated original paper or source card"
+    },
+    {
+      "source": "quant-research-library/literature/20261102-strategies-v1/STRATEGY_01_FABER_SMA10.md",
+      "target": "literature/objects/187af01aeb69431318937641d6ef89f61158c734a9e1574e7c7f6bfbf8cd73e9.md",
+      "bytes": 3275,
+      "sha256": "187af01aeb69431318937641d6ef89f61158c734a9e1574e7c7f6bfbf8cd73e9",
+      "reason": "deduplicated original paper or source card"
+    },
+    {
+      "source": "quant-research-library/literature/20261102-strategies-v1/faber_2013_taa.pdf",
+      "target": "literature/objects/f2dabb6d31b18901cb64a0f57cea86f32f514570dcb5840fbeaa4877f24bdd3f.pdf",
+      "bytes": 945897,
+      "sha256": "f2dabb6d31b18901cb64a0f57cea86f32f514570dcb5840fbeaa4877f24bdd3f",
+      "reason": "deduplicated original paper or source card"
+    },
+    {
+      "source": "quant-research-library/literature/20261102-strategies-v1/zhu_2015_rules.pdf",
+      "target": "literature/objects/6908ca31e92e750881255742a99ffc3daf00ca2e9d0b0012652809d0f538b87a.pdf",
+      "bytes": 156275,
+      "sha256": "6908ca31e92e750881255742a99ffc3daf00ca2e9d0b0012652809d0f538b87a",
+      "reason": "deduplicated original paper or source card"
+    }
+  ],
+  "anchors": [
+    {
+      "path": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/artifact-receipt.json",
+      "sha256": "e17f74b99a708c4090099f7a6eb49d6101ed82fbb905c5b9a18b720f654863d1"
+    },
+    {
+      "path": "quant-research-library/studies/20261101-144735Z-factor-momentum20-ridge-34d5ef/prepared.json",
+      "sha256": "696660649671187614555482adeb2c94274a1f79535db4f903e98115e52ffeb9"
+    },
+    {
+      "path": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/supplementary/final-artifact-manifest.json",
+      "sha256": "a8eef7164086482f4337255508090c59901d2ec3c74b31a74d2a3d4fc2590108"
+    },
+    {
+      "path": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/freeze.json",
+      "sha256": "b12492234e80787ca6eb863177b09da22d586ec7b10db1e0600afd3aecb1514a"
+    },
+    {
+      "path": "quant-research-library/studies/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/prepared.json",
+      "sha256": "644a94b24533b8a89f97c3ccf9ecd34e9069521c6ab36c764678291c2db03a93"
+    },
+    {
+      "path": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/supplementary/final-artifact-manifest.json",
+      "sha256": "45469a9f5ab13902a85301b55c868c795759b4d433c6220832c41a1be0aafd07"
+    },
+    {
+      "path": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/freeze.json",
+      "sha256": "3a5a7cc985694aa467910430b51b101dbd0214774e5d9bf169d4d6b4cfec1556"
+    },
+    {
+      "path": "quant-research-library/studies/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/prepared.json",
+      "sha256": "e2fc276302652dd37be882df947bc5f53545132acc9d59cc53825d0f259b9ef3"
+    },
+    {
+      "path": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/supplementary/final-artifact-manifest.json",
+      "sha256": "41939a3b54bac3c658e6e4e2c782d88b4249c7b5d3d1ceba6287e273ff118a77"
+    },
+    {
+      "path": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/freeze.json",
+      "sha256": "07f58acbce2184ba39c6154dac1736ef1add1aef62c2162725b4f15d508bffa5"
+    },
+    {
+      "path": "quant-research-library/studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/prepared.json",
+      "sha256": "02d002bff950f6c66fee966e59dc7ab1c6bee25fa685063c7d3290b4e7265144"
+    },
+    {
+      "path": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/supplementary/final-artifact-manifest.json",
+      "sha256": "9e85618031349cfd488ec1178092e4fc94ea6d203e7695133868da3c73deb368"
+    },
+    {
+      "path": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/freeze.json",
+      "sha256": "c9d1371b5438753a4ba45ef3eb81d8fb8802cf31be85967d288625dfa2fd8fde"
+    },
+    {
+      "path": "quant-research-library/studies/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/prepared.json",
+      "sha256": "185aa01d89d7112de82c403973b951b43f9f5d004974ca9d6e72f678d7263dc8"
+    },
+    {
+      "path": "quant-research-library/reproductions/20261102-amplitude-ovnt-v1/final-artifact-manifest.json",
+      "sha256": "b036660794cb19d8facadc2f6796098d18a38e607c3ce4ed2795662c39b9a313"
+    },
+    {
+      "path": "quant-research-library/reproductions/20261102-illiq-seas-v1/final-artifact-manifest.json",
+      "sha256": "e9137c1255b7308a3f6b158bab4930034e4fe4dc920dbf93510a780e25b8a272"
+    },
+    {
+      "path": "quant-research-library/reproductions/20261102-strategies-v1/artifacts-manifest.json",
+      "sha256": "502a058e5b8c34e9e51d54f573ea014e8e57d9a9b1a4145e1c34eaa632abb18e"
+    },
+    {
+      "path": "quant-research-library/diagnostics/20261102-price-volume-quality-v1/artifacts/artifact-manifest.json",
+      "sha256": "5d3b44f9c463931ba4a3e19f04c32bad21f4c7170fdbdbf6d9a02cfdf924ed56"
+    }
+  ],
+  "original_archives_modified": false,
+  "excluded": [
+    "prepared/provider/features/labels/matrices",
+    "full transaction and daily equity series",
+    "rendered reports and figures",
+    "virtual environments/caches",
+    "bulk raw data; externally bound instead"
+  ],
+  "note": "Copied bytes are not whole portable project size; see bundle manifest after tools/skill snapshot.",
+  "additional_generated_files": [
+    {
+      "path": "research/20261102-strategies-v1/src/replay.py",
+      "sha256": "7dc959729ea6d3f64576ee4e1a25da1c94d60ac56b560ffa141f96cd91df1b94",
+      "bytes": 5754
+    },
+    {
+      "path": "research/20261102-strategies-v1/evidence/replay-inputs.json",
+      "sha256": "40b20370dca3e4f25cb5ed4e6058dbf88a360134c4e5fe963432f3539dc906c9",
+      "bytes": 2945
+    },
+    {
+      "path": "research/20261102-strategies-v1/evidence/migration-replay.json",
+      "sha256": "2bfe1c966811fdc67d3c5c56e7508f1b32c09a43fdb8be08128666415cceb6d6",
+      "bytes": 1338
+    }
+  ],
+  "verified_original_anchors_unchanged": 18,
+  "verified_copy_hashes": 262,
+  "adapter_summary": {
+    "legacy_records": 9,
+    "full_raw_replay_compared": 1,
+    "staged_hash_verified_not_recomputed": 8,
+    "shared_adapter_sha256": "59f73d5a4e3bf6c7cb05585990c93dc39d71330a489042716ab76778c9993db9",
+    "all_entrypoints_present": true,
+    "no_historical_intermediate_panel_required_as_input": true,
+    "external_normalized_data_lake_inputs_required": true
+  },
+  "generated_navigation_files": [
+    {
+      "path": "research/20261101-144735Z-factor-momentum20-ridge-34d5ef/conclusion.md",
+      "sha256": "89381a7030d6a0b20fcf00c3a374bc1cee84f556421197bb8ea0d4dd7e3f8596",
+      "bytes": 5937
+    },
+    {
+      "path": "research/20261102-114917Z-factor-momentum-ic-opt-v1-a4102a/conclusion.md",
+      "sha256": "c4fd6ae2afe94a4ae4edee6f1e6d36dea96d814e9df8b8e55650716546a65879",
+      "bytes": 9856
+    },
+    {
+      "path": "research/20261102-133522Z-factor-batch-v2-low-downside-risk20-38af9d/conclusion.md",
+      "sha256": "ac3b47900cc76c3e62a76188105d85e07e85fc50738bc98db6e6691dd00e5319",
+      "bytes": 6231
+    },
+    {
+      "path": "research/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23/conclusion.md",
+      "sha256": "2e1bc6365d15b5fa4e14bb4da0ba0f37dbd8bf69ca70aa2290c85c0c064fd678",
+      "bytes": 6322
+    },
+    {
+      "path": "research/20261102-133527Z-factor-batch-v2-volume-weighted-close-location20-81f757/conclusion.md",
+      "sha256": "9ac690dea4c77260681e52485ab93ef19f0adc85796feb69637724d7a79b8526",
+      "bytes": 6277
+    },
+    {
+      "path": "research/20261102-amplitude-ovnt-v1/conclusion.md",
+      "sha256": "648d3386f346024850968eab24f54fc2f56ab0261387f19db73d7536118631fb",
+      "bytes": 5172
+    },
+    {
+      "path": "research/20261102-illiq-seas-v1/conclusion.md",
+      "sha256": "19c0565e9fcd4fb1f820a0fe89da3abf2fb07f9d9654877e2cf24559408d998a",
+      "bytes": 5242
+    },
+    {
+      "path": "research/20261102-strategies-v1/conclusion.md",
+      "sha256": "209a3a62dcdb3be7ca206cc211640ffaed040bd2ab66e39b888d8471ab0a7614",
+      "bytes": 2952
+    },
+    {
+      "path": "research/20261102-price-volume-quality-v1/conclusion.md",
+      "sha256": "ad6f4f555f639f085df2363c242b1d13f8c5e3dc290a0dbf4c3e741588c6afc2",
+      "bytes": 7257
+    }
+  ]
+}

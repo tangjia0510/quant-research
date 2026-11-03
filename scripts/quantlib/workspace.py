@@ -300,4 +300,5 @@ def fingerprint(root, candidate, phase):
     versions['platform'] = platform.platform()
     versions['machine'] = platform.machine()
     return identity({'protocol': digest(Path(root) / 'protocol.json'), 'candidate': candidate['candidate_hash'],
-                     'data': snapshot(root), 'phase': phase, 'runtime': runtime, 'versions': versions})
+                     'data': snapshot(root), 'phase': phase, 'runtime': runtime, 'versions': versions,
+                     'worker_threads': int(os.environ.get('QUANT_WORKER_THREADS', '4'))})

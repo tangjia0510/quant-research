@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "input_rows": 2140,
+  "execution_scenarios": 6,
+  "source_normalized_csv_hashes_reproduced": true,
+  "all_frozen_metric_fields_match": true,
+  "comparison_tolerance": 1e-11,
+  "inputs_are_raw_external": true,
+  "derived_files_migrated": false,
+  "entrypoint": "src/replay.py",
+  "commands": [
+    "python src/replay.py --project-root PROJECT --work-dir PROJECT/work/NEW_ATTEMPT"
+  ],
+  "technical_attempts": [
+    {
+      "attempt": 1,
+      "result": "blocked_before_data_or_output",
+      "reason": "Original native study IDs contain uppercase Z; project resolver initially rejected identifiers. Fixed schema to retain native IDs."
+    },
+    {
+      "attempt": 2,
+      "result": "passed",
+      "research_parameters_changed": false
+    }
+  ],
+  "legacy_sha256": {
+    "strategy.py": "2cee0e2a2f21f15b4ef43392606cfe58f61d0f683f873e3446522b8a3e3c2a7e",
+    "evaluate.py": "afee6a5dba89384408c06770032d5aa809d9c928cd990f77cb55a771d79eeff1"
+  },
+  "adapter_sha256": "7dc959729ea6d3f64576ee4e1a25da1c94d60ac56b560ffa141f96cd91df1b94",
+  "verification_summary_sha256": "ba244b0c2c54758f7af7d2a49c2a068a6e84c887e09fb2743ae5b9bd87e644c1",
+  "limitations": [
+    "Not a new strategy trial; exact reconstruction of existing exposed result.",
+    "Assumed fills and original strategy limitations remain unchanged."
+  ]
+}

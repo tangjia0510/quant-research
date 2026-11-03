@@ -1,0 +1,107 @@
+{
+  "frozen_at": "2026-11-02T11:46:42.450755+00:00",
+  "candidates": [
+    {
+      "id": "momentum20-reference",
+      "formula": "close[t]/close[t-20]-1",
+      "direction": "positive",
+      "mechanism": "prespecified continuation baseline, known weak in prior diagnostic",
+      "lookback": 21,
+      "status": "direct_development_complete",
+      "result_seen": true,
+      "selected_for_native": true,
+      "direct_gate_pass": false,
+      "native_status": "rejected_discovery"
+    },
+    {
+      "id": "reversal5",
+      "formula": "-(close[t]/close[t-5]-1)",
+      "direction": "positive",
+      "mechanism": "short-term price pressure reversal",
+      "lookback": 6,
+      "status": "direct_development_complete",
+      "result_seen": true,
+      "selected_for_native": false,
+      "direct_gate_pass": true,
+      "native_status": "not_selected_within_fixed_native_budget"
+    },
+    {
+      "id": "reversal20",
+      "formula": "-(close[t]/close[t-20]-1)",
+      "direction": "positive",
+      "mechanism": "monthly reversal; direction chosen with prior exposed negative momentum evidence, NOT independent discovery",
+      "lookback": 21,
+      "status": "direct_development_complete",
+      "result_seen": true,
+      "selected_for_native": true,
+      "direct_gate_pass": true,
+      "native_status": "rejected_discovery"
+    },
+    {
+      "id": "momentum60-skip5",
+      "formula": "close[t-5]/close[t-60]-1",
+      "direction": "positive",
+      "mechanism": "medium-term continuation excluding recent reversal window",
+      "lookback": 61,
+      "status": "direct_development_complete",
+      "result_seen": true,
+      "selected_for_native": false,
+      "direct_gate_pass": false,
+      "native_status": "not_selected_within_fixed_native_budget"
+    },
+    {
+      "id": "reversal5-risk-adjusted",
+      "formula": "-(close[t]/close[t-5]-1)/std(daily_return,20,ddof=0)",
+      "direction": "positive",
+      "mechanism": "short-term reversal scaled by recent risk; zero variance yields missing",
+      "lookback": 21,
+      "status": "direct_development_complete",
+      "result_seen": true,
+      "selected_for_native": false,
+      "direct_gate_pass": true,
+      "native_status": "not_selected_within_fixed_native_budget"
+    },
+    {
+      "id": "reversal5-volume-confirmed",
+      "formula": "-(close[t]/close[t-5]-1)*clip(mean(adjusted_volume,5)/mean(adjusted_volume,20),0.25,4)",
+      "direction": "positive",
+      "mechanism": "recent volume pressure amplifies transitory reversal",
+      "lookback": 20,
+      "status": "direct_development_complete",
+      "result_seen": true,
+      "selected_for_native": false,
+      "direct_gate_pass": true,
+      "native_status": "not_selected_within_fixed_native_budget"
+    }
+  ],
+  "native_budget": 2,
+  "pipeline_attempts": [
+    {
+      "step": "source_build",
+      "attempt": 1,
+      "status": "failed_before_any_metrics",
+      "reason": "recent IPO has no60-session eligible interval; explicitly exclude as prespecified gate, retain log"
+    },
+    {
+      "step": "source_build",
+      "attempt": 2,
+      "status": "completed"
+    },
+    {
+      "step": "prepare",
+      "attempt": 1,
+      "status": "stopped_exit130",
+      "reason": "audited performance-only repair;27minute quadratic membership hotspot"
+    },
+    {
+      "step": "prepare",
+      "attempt": 2,
+      "status": "success",
+      "performance_amendment": "supplementary/amendments/membership-performance-amendment.json"
+    }
+  ],
+  "updated_at": "2026-11-02T12:49:26.854874+00:00",
+  "native_final_status": "not_run_after_discovery_rejection",
+  "new_candidates_added": false,
+  "positive_momentum_found": false
+}

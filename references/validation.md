@@ -24,7 +24,7 @@ The default robustness paths double the configured fees and, separately, use sig
 
 ## Final exposure and reproducibility
 
-Freeze code, protocol and dataset identity before final evaluation. If final results influence another decision, subsequent results on that interval are retrospective research. Existing local reports may already have exposed a period even if this workspace is new. Hashes and directory separation do not create a security boundary against the host agent.
+Freeze code, protocol and dataset identity before final evaluation. Follow [Temporal research design](temporal-design.md) to record whether an evaluation period was unseen, seen only for frozen reproduction, or used to influence research. Final evaluation is not limited to one execution: a faithful frozen rerun can check reproducibility but cannot create new independent evidence. If final results influence another decision, subsequent results on that interval are retrospective research. Existing local reports may already have exposed a period even if this workspace is new. Hashes and directory separation do not create a security boundary against the host agent.
 
 Exact byte-level model equivalence across different hardware is not guaranteed. Record environment versions and seeds, use numerical tolerances for predictions and metrics, and distinguish computational reproduction of frozen code from stochastic generation of new ideas.
 

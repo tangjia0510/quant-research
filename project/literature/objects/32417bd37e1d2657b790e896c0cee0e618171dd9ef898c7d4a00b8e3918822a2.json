@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "boll-author-evidence-v1",
+  "status": "source_evidence_not_strategy_performance",
+  "sources": [
+    {
+      "url": "https://www.bollingerbands.com/bollinger-bands",
+      "status": 200,
+      "retrieved_at": "2026-11-03T04:07:46.193654+00:00",
+      "size": 619673,
+      "sha256": "a651e85983337548837b010f60ea89e261080ea33faead82954011b27f8fc3f0",
+      "external_ref": {
+        "root": "legacy_library",
+        "path": "literature/20261103-boll-v1/raw/author-definition.html"
+      }
+    },
+    {
+      "url": "https://www.bollingerbands.com/bollinger-band-rules",
+      "status": 200,
+      "retrieved_at": "2026-11-03T04:07:49.099316+00:00",
+      "size": 605778,
+      "sha256": "bb3fdbb135586a0cc7b86279464644dcae1294b967b24b23dc60868fadabda5b",
+      "external_ref": {
+        "root": "legacy_library",
+        "path": "literature/20261103-boll-v1/raw/author-rules.html"
+      }
+    },
+    {
+      "url": "https://bollingerbands.us/help-screening.php",
+      "status": 200,
+      "retrieved_at": "2026-11-03T04:07:52.700872+00:00",
+      "size": 29590,
+      "sha256": "ee8454f689c3390672ec45c67a238bd03d68a34eb54b8de5acb8b462040e3cce",
+      "external_ref": {
+        "root": "legacy_library",
+        "path": "literature/20261103-boll-v1/raw/author-screening.html"
+      }
+    },
+    {
+      "url": "https://www.bollingerbands.com/_files/ugd/58be43_d09c50b6e8ea4afd9af0523ef94de876.pdf",
+      "status": 200,
+      "retrieved_at": "2026-11-03T04:07:55.110711+00:00",
+      "size": 957044,
+      "sha256": "9d00065edaf4fac96a7ba819be55515ed2fd2701e7eb9b45f7c341f9726c6c8e",
+      "external_ref": {
+        "root": "legacy_library",
+        "path": "literature/20261103-boll-v1/raw/author-toolkit.pdf"
+      }
+    }
+  ],
+  "source_card_role": "Pre-result proposed local rule adaptation; frozen research protocol controls final executed rules.",
+  "raw_migration_policy": "Raw HTML/PDF remain in external legacy_library; this manifest and small rule card are portable."
+}

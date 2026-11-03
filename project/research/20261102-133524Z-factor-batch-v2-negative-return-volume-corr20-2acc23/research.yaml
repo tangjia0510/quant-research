@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23",
+  "title": "负收益量能相关20日因子",
+  "type": "factor",
+  "status": "rejected",
+  "data_refs": [
+    "legacy-20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23",
+    "legacy-diagnostic-input-manifest"
+  ],
+  "entrypoint": "src/replay.py",
+  "legacy_ref": {
+    "root": "legacy_library",
+    "path": "studies/20261102-133524Z-factor-batch-v2-negative-return-volume-corr20-2acc23"
+  },
+  "favorite": false,
+  "registry_admitted": false,
+  "replay_status": "adapter_dryrun_verified_not_recomputed",
+  "replay_limitations": [
+    "Heavy historical pipeline not recomputed during migration; dry-run checks original data files and staged command/input/output paths.",
+    "Normalized data-lake source snapshots remain external; old intermediate diagnostic panels and trained files are rebuilt, not required as migrated input.",
+    "Replayed manifests/time metadata differ; data-path amendments are recorded under work and original frozen protocols remain untouched."
+  ],
+  "evidence_level": "historical_research_only",
+  "migration_scope": "lightweight_source_protocol_conclusions_and_attempt_history",
+  "replay_verification": "evidence/migration-replay-plan.json"
+}

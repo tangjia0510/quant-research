@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "lake-acceptance-round5",
+  "version": "20261102-round5-context",
+  "sha256": "525d2c04c8296a46cd8abe03469c89f0bea11cd9d2690263e9258a1d0d2316c4",
+  "kind": "file",
+  "locator": {
+    "root": "data_lake",
+    "path": "catalog/priority-gap-round5/ROUND_ACCEPTANCE.json"
+  },
+  "role": "Audit of round5 increments only, not a full lake certification",
+  "limitations": [
+    "Metadata reference only; does not itself contain or certify every underlying dataset."
+  ]
+}

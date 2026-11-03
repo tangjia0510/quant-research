@@ -21,6 +21,7 @@ from quantlib import workspace as W
 def parser():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--version', action='version', version='quant-research 1.5.1')
+    p.add_argument('--worker-threads', type=int, default=4, help='Worker BLAS/OpenMP thread cap (1..64; default 4)')
     p.add_argument('--config', help='Library configuration file (or QUANT_RESEARCH_CONFIG)')
     sub = p.add_subparsers(dest='command', required=True)
     sub.add_parser('doctor')
@@ -185,14 +186,18 @@ def valid_result(folder):
 
 def run_worker(cmd, log_path, timeout):
     env = {k: v for k, v in os.environ.items() if k in ('PATH', 'HOME', 'TMPDIR', 'TEMP', 'SYSTEMROOT', 'LANG')}
-    env.update(PYTHONNOUSERSITE='1', OMP_NUM_THREADS='4', OPENBLAS_NUM_THREADS='4',
+    threads = str(int(os.environ.get('QUANT_WORKER_THREADS', '4')))
+    env.update(PYTHONNOUSERSITE='1', OMP_NUM_THREADS=threads, OPENBLAS_NUM_THREADS=threads,
+               MKL_NUM_THREADS=threads, NUMEXPR_NUM_THREADS=threads, QUANT_WORKER_THREADS=threads,
                MLFLOW_DISABLE_AGENT_HINT='1', MLFLOW_ENABLE_SYSTEM_METRICS_LOGGING='false')
     with Path(log_path).open('w') as log:
-        process = subprocess.Popen(cmd, env=env, stdout=log, stderr=log, start_new_session=os.name != 'nt')
+        batch_group = os.environ.get('QUANT_BATCH_PROCESS_GROUP') == '1'
+        process = subprocess.Popen(cmd, env=env, stdout=log, stderr=log,
+                                   start_new_session=os.name != 'nt' and not batch_group)
         try:
             code = process.wait(timeout=timeout)
         except (subprocess.TimeoutExpired, KeyboardInterrupt):
-            if os.name != 'nt':
+            if os.name != 'nt' and not batch_group:
                 os.killpg(process.pid, signal.SIGKILL)
             else:
                 process.kill()
@@ -512,6 +517,9 @@ def _dispatch(args):
     config = W.load(root)
     from filelock import FileLock
     with FileLock(str(root / '.study.lock'), timeout=0):
+        if args.command in ('prepare', 'check', 'evaluate') and any((root / p).exists() for p in
+                ('freeze.json', 'archive.json', 'supplementary/final-artifact-manifest.json')):
+            raise ValueError('Study is frozen or sealed; new development requires a new study')
         if args.command == 'prepare':
             if (root / 'prepared.json').exists():
                 prepared(root)
@@ -606,7 +614,12 @@ def dispatch(args):
 
 
 def main():
+    if os.environ.get('QUANT_BATCH_START_GATE') == '1' and sys.stdin.readline().strip() != 'GO':
+        raise SystemExit(130)
     args = parser().parse_args()
+    if not 1 <= args.worker_threads <= 64:
+        raise SystemExit('--worker-threads must be in 1..64')
+    os.environ['QUANT_WORKER_THREADS'] = str(args.worker_threads)
     try:
         with contextlib.redirect_stdout(sys.stderr):
             result = dispatch(args)
