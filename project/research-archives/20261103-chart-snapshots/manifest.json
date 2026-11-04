@@ -1,0 +1,81 @@
+{
+  "format_version": 1,
+  "archive_kind": "chart_only_snapshot",
+  "source_period": "2026-11-03",
+  "recovered_at": "2026-11-04",
+  "reproducible": false,
+  "figures": [
+    {
+      "file": "annual-returns.png",
+      "title": "510300方差管理：年度收益",
+      "size_bytes": 47529,
+      "sha256": "861c5cb8d66eafe242772e3bf8393a25f3f9f75dc1720400ed76b652b015bde2"
+    },
+    {
+      "file": "equity-drawdown.png",
+      "title": "510300方差管理：净值与回撤",
+      "size_bytes": 294971,
+      "sha256": "e5f8fb442b35fd45fe58bb3a0af4e3e19190ce74767745fb77b83ee72a752184"
+    },
+    {
+      "file": "attribution.png",
+      "title": "ETF轮动：品种收益贡献",
+      "size_bytes": 189014,
+      "sha256": "09f3af90d30d70ddaec9d548a831fb231da58c667eae0d64c659436fe715d591"
+    },
+    {
+      "file": "reversal-pressure.png",
+      "title": "短期反转：市场压力分组",
+      "size_bytes": 87204,
+      "sha256": "4ef39c71ba51ed6910b1aca9d6cf5bd584f559c28e556caa8270c6aa0859f15e"
+    },
+    {
+      "file": "three-patterns.png",
+      "title": "同花顺启发的三个量价形态",
+      "size_bytes": 132707,
+      "sha256": "e1f4d45e2874405693f7f6f6195d84518ae271c6cc0efc435c85fce19fa326bf"
+    },
+    {
+      "file": "tom-overview.png",
+      "title": "月末月初固定日历窗口",
+      "size_bytes": 365047,
+      "sha256": "8e5b83529145b25844077b59aae953c338d7997efd6c1a78cba8931ab04c9dd4"
+    },
+    {
+      "file": "longleg-costs.png",
+      "title": "短期反转：多头贡献与成本敏感性",
+      "size_bytes": 109660,
+      "sha256": "9ab4803bad31e763d3a4a30a8484efe9b9af41cf25a1f3095d05c36dec90e40b"
+    },
+    {
+      "file": "comparison.png",
+      "title": "缩量回踩：定义与暴露匹配诊断",
+      "size_bytes": 89878,
+      "sha256": "d113925a4b11050fa30e061aa2b5a625e0ec4ff7fd399715bdf44dee753255b4"
+    },
+    {
+      "file": "high52-monthly.png",
+      "title": "52周高点接近度：月度多头诊断",
+      "size_bytes": 84812,
+      "sha256": "b635076d07085cc46835e217d2c6b320e973ed4d9d6be6293c12159beb2723c3"
+    },
+    {
+      "file": "rotation-overview.png",
+      "title": "ETF轮动：净值、回撤与年度收益",
+      "size_bytes": 479838,
+      "sha256": "f3425cb8b79148832ae7ca08c94d7efc56a5d4f598ed1bb9df07fd266a1efff5"
+    },
+    {
+      "file": "universe-comparison.png",
+      "title": "ILLIQ20：股票池敏感性",
+      "size_bytes": 109167,
+      "sha256": "5ffa4afb0e5b87d81e5852a42d11707f195ebb2c4dcb9273d5e90eec9052a042"
+    },
+    {
+      "file": "rotation-risk-v46-curves.pdf",
+      "title": "v46轮动风险控制：收益、回撤与敞口",
+      "size_bytes": 205431,
+      "sha256": "e677709e65cac5ad4f23923a6a0d3440569170779561324c86ebff5845e40916"
+    }
+  ]
+}
