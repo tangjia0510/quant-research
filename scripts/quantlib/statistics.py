@@ -9,17 +9,69 @@ def finite(value):
     return float(value) if value is not None and np.isfinite(value) else None
 
 
-def signal_metrics(predictions: pd.DataFrame):
+def signal_metrics(predictions: pd.DataFrame, *, frequency='unspecified',
+                   label_horizon_sessions=None, label_entry_lag_sessions=None):
+    """Equal-weighted cross-sectional correlations over dates, not pooled stock-days.
+
+    ICIR and RankICIR are signed, non-annualized mean/sample-SD ratios.
+    Metadata describes the caller's design; it does not infer independence.
+    """
+    if predictions.index.has_duplicates:
+        raise ValueError('Signal rows must have a unique (datetime, instrument) index')
+    clean = predictions[['prediction', 'label']].replace([np.inf, -np.inf], np.nan)
     rows = []
-    for date, group in predictions.dropna(subset=['prediction', 'label']).groupby(level='datetime'):
+    input_dates = clean.index.get_level_values('datetime').nunique()
+    for date, group in clean.dropna().groupby(level='datetime'):
         if len(group) < 3 or group.prediction.nunique() < 2 or group.label.nunique() < 2:
             continue
         rows.append({'date': str(date.date()), 'n': len(group),
                      'ic': finite(group.prediction.corr(group.label)),
                      'rank_ic': finite(group.prediction.corr(group.label, method='spearman'))})
     daily = pd.DataFrame(rows, columns=['date', 'n', 'ic', 'rank_ic'])
-    return {'ic': finite(daily.ic.mean()), 'rank_ic': finite(daily.rank_ic.mean()),
-            'ic_days': len(daily), 'rank_ic_positive_fraction': finite((daily.rank_ic > 0).mean())}, daily
+    metrics = {'ic_days': len(daily), 'ic_input_dates': int(input_dates),
+               'ic_frequency': frequency, 'ic_std_ddof': 1, 'icir_annualized': False,
+               'label_horizon_sessions': label_horizon_sessions,
+               'label_entry_lag_sessions': label_entry_lag_sessions,
+               'ic_min_cross_section': 3,
+               'ic_missing_policy': 'pairwise finite observations; no imputation',
+               'ic_inference': 'descriptive ratios, not significance tests; serial dependence and overlapping labels may apply'}
+    for column, ratio in [('ic', 'icir'), ('rank_ic', 'rank_icir')]:
+        series = pd.to_numeric(daily[column], errors='coerce').dropna()
+        n = len(series)
+        mean = finite(series.mean())
+        std = finite(series.std(ddof=1)) if n >= 2 else None
+        # Identical floating observations can have tiny numerical nonzero SD.
+        if n >= 2 and series.nunique() == 1:
+            std = 0.0
+        reason = 'insufficient_dates' if n < 2 else ('zero_variance' if std == 0 else None)
+        if n >= 2 and std is None:
+            reason = 'nonfinite_dispersion'
+        metrics.update({column: mean, column + '_std': std,
+                        column + '_n': n, column + '_excluded_dates': int(input_dates - n),
+                        ratio: finite(mean / std) if reason is None else None,
+                        ratio + '_undefined_reason': reason})
+    rank = pd.to_numeric(daily.rank_ic, errors='coerce').dropna()
+    metrics['rank_ic_positive_fraction'] = finite((rank > 0).mean()) if len(rank) else None
+    return metrics, daily
+
+
+def factor_signal_metrics(features, predictions, **metadata):
+    """Raw standalone feature diagnostics on the model's eligible evaluation rows.
+
+    Reuse the model's purged raw labels, but never its imputed feature values.
+    Each column is a separate estimand, not a combined model score.
+    """
+    summaries, series = {}, []
+    for name in features.columns:
+        frame = pd.DataFrame({'prediction': features[name].reindex(predictions.index),
+                              'label': predictions['label']})
+        summary, daily = signal_metrics(frame, **metadata)
+        summaries[str(name)] = summary
+        if not daily.empty:
+            series.append(daily.assign(factor=str(name)))
+    daily = pd.concat(series, ignore_index=True) if series else pd.DataFrame(
+        columns=['date', 'n', 'ic', 'rank_ic', 'factor'])
+    return summaries, daily
 
 
 def portfolio_metrics(report: pd.DataFrame):
