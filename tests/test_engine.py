@@ -199,6 +199,17 @@ class EngineTests(unittest.TestCase):
                          'hypothesis': 'Native runtime compatibility regression'}
             result = evaluate(workspace, config, candidate, 'discovery', workspace / 'result')
             self.assertEqual(result['simulator'], 'qlib.SimulatorExecutor')
+            for scope in (result['signal'], result['baseline']['signal']):
+                self.assertIn('icir', scope)
+                self.assertIn('rank_icir', scope)
+                self.assertEqual(scope['ic_std_ddof'], 1)
+                self.assertFalse(scope['icir_annualized'])
+                self.assertEqual(scope['label_horizon_sessions'], config['label']['horizon'])
+            self.assertEqual(set(result['factor_signal']), set(candidate['features']))
+            factor_daily = pd.read_csv(workspace / 'result/factor-daily-ic.csv')
+            for name, summary in result['factor_signal'].items():
+                direct = factor_daily.loc[factor_daily.factor == name, 'ic']
+                self.assertAlmostEqual(summary['icir'], direct.mean() / direct.std(ddof=1))
             self.assertEqual(result['folds'][0]['model']['kind'], 'custom')
             self.assertTrue(result['folds'][0]['model']['reload_predictions_match'])
             self.assertTrue((workspace / 'result/fold-0/model.pt').is_file())
@@ -225,6 +236,17 @@ class EngineTests(unittest.TestCase):
             candidate = {'id': 'same', 'kind': 'factor', 'features': ['return_5', 'volatility_20'], 'hypothesis': 'baseline parity'}
             result = evaluate(workspace, config, candidate, 'discovery', workspace / 'result')
             self.assertEqual(result['simulator'], 'qlib.SimulatorExecutor')
+            for scope in (result['signal'], result['baseline']['signal']):
+                self.assertIn('icir', scope)
+                self.assertIn('rank_icir', scope)
+                self.assertEqual(scope['ic_std_ddof'], 1)
+                self.assertFalse(scope['icir_annualized'])
+                self.assertEqual(scope['label_horizon_sessions'], config['label']['horizon'])
+            self.assertEqual(set(result['factor_signal']), set(candidate['features']))
+            factor_daily = pd.read_csv(workspace / 'result/factor-daily-ic.csv')
+            for name, summary in result['factor_signal'].items():
+                direct = factor_daily.loc[factor_daily.factor == name, 'ic']
+                self.assertAlmostEqual(summary['icir'], direct.mean() / direct.std(ddof=1))
             self.assertEqual(result['increment']['mean_rank_ic_increment'], 0.)
             self.assertTrue(result['folds'][0]['model']['reload_predictions_match'])
             self.assertGreater(result['portfolio']['days'], 20)

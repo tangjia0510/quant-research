@@ -251,13 +251,19 @@ def evaluate(workspace: Path, config: dict, candidate: dict, phase: str, output:
     if not observed_dates.equals(expected_dates):
         raise ValueError('Evaluation folds must cover a continuous calendar interval; missing whole-day signals cannot be silently carried')
     predictions.to_parquet(output / 'predictions.parquet')
-    signal, daily = statistics.signal_metrics(predictions)
+    signal_metadata = {'frequency': 'daily',
+                       'label_horizon_sessions': int(config['label'].get('horizon', 5)),
+                       'label_entry_lag_sessions': int(config['label'].get('entry_lag', 1))}
+    signal, daily = statistics.signal_metrics(predictions, **signal_metadata)
+    factor_signal, factor_daily = statistics.factor_signal_metrics(features, predictions, **signal_metadata)
+    factor_daily.to_csv(output / 'factor-daily-ic.csv', index=False)
     daily.to_csv(output / 'daily-ic.csv', index=False)
     base = _backtest(workspace, config, predictions, calendar, output / 'portfolio.csv')
     control = _backtest(workspace, config, predictions, calendar, output / 'equal-weight.csv', equal_weight=True)
     net = base['return'] - base.cost
     control_net = control['return'] - control.cost
     metrics = {'phase': phase, 'candidate_id': candidate.get('id'), 'signal': signal,
+               'factor_signal': factor_signal,
                'portfolio': statistics.portfolio_metrics(base),
                'equal_weight': statistics.portfolio_metrics(control),
                'equal_weight_excess_annualized': statistics.finite((net - control_net).mean() * 252),
@@ -299,7 +305,7 @@ def evaluate(workspace: Path, config: dict, candidate: dict, phase: str, output:
     if not baseline_predictions.index.equals(predictions.index):
         raise ValueError('Candidate and baseline evaluation samples must match')
     baseline_predictions.to_parquet(output / 'baseline/predictions.parquet')
-    baseline_signal, baseline_daily = statistics.signal_metrics(baseline_predictions)
+    baseline_signal, baseline_daily = statistics.signal_metrics(baseline_predictions, **signal_metadata)
     baseline_daily.to_csv(output / 'baseline/daily-ic.csv', index=False)
     baseline_report = _backtest(workspace, config, baseline_predictions, calendar, output / 'baseline/portfolio.csv')
     metrics['baseline'] = {'model': baseline_candidate.get('model', config.get('model', {'kind': 'ridge'})),

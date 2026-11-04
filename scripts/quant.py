@@ -314,6 +314,7 @@ def report(root):
                     data = W.read(folder / 'result.json')
                     # Keep scopes separate: portfolio days and paired IC sample days differ.
                     scopes = {scope: data.get(scope, {}) for scope in ('signal', 'portfolio', 'equal_weight', 'increment')}
+                    scopes.update({'factor_signal.' + name: metrics for name, metrics in data.get('factor_signal', {}).items()})
                     scopes.update({'baseline.' + scope: data.get('baseline', {}).get(scope, {}) for scope in ('signal', 'portfolio')})
                     scopes.update({'robustness.' + scope: metrics for scope, metrics in data.get('robustness', {}).items()})
                     table(['Scope', 'Metric', 'Value'], [[scope, key, value] for scope, metrics in scopes.items()

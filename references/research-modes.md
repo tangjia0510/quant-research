@@ -2,7 +2,7 @@
 
 Read the relevant mode before choosing candidates. The same numerical engine supports all modes; the difference is what the agent changes, records and compares.
 
-Choose the time design according to [Temporal research design](temporal-design.md). Direct fixed-factor diagnostics do not inherently require model-training segments, but remain supplementary rather than a separate native CLI mode. Unless the user supplies an explicit protocol, the installed CLI still uses the legacy [default research plan](contracts.md#default-research-plan): 2020–2024 training, 2025 validation split internally into H1 model validation and H2 discovery, then 2026 testing, with 100,000 initial cash. This fixed plan does not imply rolling retraining. Inspect its materialized date endpoints before starting research.
+Choose the time design according to [Temporal research design](temporal-design.md). Direct fixed-factor studies do not inherently require model-training segments and still have no separate native CLI mode. The model engine now emits raw per-feature IC/ICIR and RankIC/RankICIR on its eligible evaluation sample; independent standalone designs remain supplementary. See the [signal metric contract](contracts.md#signal-metrics-and-icir). Unless the user supplies an explicit protocol, the installed CLI still uses the legacy [default research plan](contracts.md#default-research-plan): 2020–2024 training, 2025 validation split internally into H1 model validation and H2 discovery, then 2026 testing, with 100,000 initial cash. This fixed plan does not imply rolling retraining. Inspect its materialized date endpoints before starting research.
 
 ## Factor research
 

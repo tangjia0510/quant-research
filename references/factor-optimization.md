@@ -4,7 +4,7 @@ Use this guide when improving a factor, not merely checking one implementation. 
 
 When the hypothesis itself is not yet defined, start with [Factor discovery](factor-discovery.md); a post-hoc mechanism story must not be relabeled a prespecified reason for optimization.
 
-This is an agent research recipe, not an automated optimizer, new CLI command or protocol schema. Direct-factor diagnostics remain supplementary study-local analysis; native `factor` mode evaluates a trained predictor with additional factors. Keep those evidence streams separate. Do not retrospectively replace an ongoing or frozen study's objective, selection rule or protocol with this guide. Record later changes as new trials where permitted, or a new study when frozen inputs must change, carrying exposed history forward.
+This is an agent research recipe, not an automated optimizer, new CLI command or protocol schema. Native `factor` mode evaluates a trained predictor with additional factors and now reports raw per-feature IC/RankIC and their respective ICIR/RankICIR on its eligible evaluation sample. Additional standalone-factor analyses (quantile portfolios, separate horizons or neutralization) remain study-local diagnostics. See the [signal metric contract](contracts.md#signal-metrics-and-icir). Keep those evidence streams separate. Do not retrospectively replace an ongoing or frozen study's objective, selection rule or protocol with this guide. Record later changes as new trials where permitted, or a new study when frozen inputs must change, carrying exposed history forward.
 
 ## 1. Diagnose and predeclare
 
