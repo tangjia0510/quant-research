@@ -1,0 +1,174 @@
+{
+  "scope": "Source ZIP members intentionally excluded; filenames/hashes only, no payload values.",
+  "omitted": [
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/actions-final-manifest-audit.json",
+      "bytes": 329,
+      "sha256": "65ecb0b907524ae6c9ef7d9ca9dbb4da0ca22cfe090a99f29e1de85b56ee7040",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/coverage.json",
+      "bytes": 23722132,
+      "sha256": "6654cae0c40293d19dc08fe3beae936d1fa2193b8ce1fa6c911b979513deb6ec",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/factors-final-independent-audit.json",
+      "bytes": 1651,
+      "sha256": "1b09c86a1fcdc10603767ac010e450f28b40dd247194a895b7e0c71961eb521d",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/finalization.json",
+      "bytes": 2049,
+      "sha256": "ed5e48060d63f1df14f026dc1b2879396b26a92d275aacf0c5d6646ae9feedd7",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/freshness.json",
+      "bytes": 611945,
+      "sha256": "03c6d86bb79b45ceb57570052056ffa54570605da191b6d58bdf8c7ca5dd0faa",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/fundamentals-core-final-audit.json",
+      "bytes": 415,
+      "sha256": "9b318e14fd13ccd2be6d5f346a6d0b599af389e41700187fa4642553aba6e64e",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/fundamentals-final-independent-audit.json",
+      "bytes": 742,
+      "sha256": "b1bc9d21da7782e1cb9130745610e33c5af01920dee5440b36c13d9d6ff4bc43",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/fundamentals-full-final-audit.json",
+      "bytes": 450,
+      "sha256": "6e7bda936c59aa680656c22c7ec002b0f99f009b42d60382b2f1563d35c916c3",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/intraday-final-independent-audit.json",
+      "bytes": 590,
+      "sha256": "dda4799b1593367eb81c3455804426e6d4b9850ebc84dbed9cf401196e222f68",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/macro-final-independent-audit.json",
+      "bytes": 578,
+      "sha256": "463dacb4b3f2d4c361e520c2679f1c6cc82b08f028d4eeacd7d93c2ed7376fc5",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/macro-rate-flow-audit.json",
+      "bytes": 1887,
+      "sha256": "741d1c20bdb58100d960c955b8eb9d84c4b2137d57e23bca61c09605fc9adc71",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/margin-latest-final-independent-audit.json",
+      "bytes": 612,
+      "sha256": "eee2374b10f5cc6cb29c6b088dc43b50d9e49efce68910374f6faa2bd066e04d",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/margin-per-market-freshness.json",
+      "bytes": 148005,
+      "sha256": "a87d5d03611ec73796eb8e846f83bf5ba262d5f6d50350bba9f9008c066a341f",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/margin-union-coverage.json",
+      "bytes": 2506913,
+      "sha256": "379e6296f880ea863bbd748998bd969faf8c5e1510b211e83d8c5f39dc4bfba2",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/margin-vendor-date-gap-audit.json",
+      "bytes": 939,
+      "sha256": "2b5b4d1b84f06232b819bcf647b8bd5c3969dab385161a61f0b1aee6eb6b9ed8",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/margin-vendor-final-independent-audit.json",
+      "bytes": 399,
+      "sha256": "397f51984187ce6a7b52760f233521ae12f46f81f35cc889f29aeed27e125e33",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/market-final-manifest-audit.json",
+      "bytes": 581,
+      "sha256": "43b90e1731dddf9a2050803501e9b133ccc42f3ab3e6c74387778d0222c58d35",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/market-sample-audit.json",
+      "bytes": 1146,
+      "sha256": "2d550f4a529bbbac8f66bcd75de26b362a6274431fa6d336cbb9e4edd4fc5be7",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/nbs-final-independent-audit.json",
+      "bytes": 791,
+      "sha256": "b151fdca0433fff0118f3291386313202160a0145db3e9d2fd12b08a8324c2e1",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/official-margin-final-independent-audit.json",
+      "bytes": 450,
+      "sha256": "2367965d006ee3bc06d534794f5ad63035d4abe68eb846ea06a1042cf9610bb7",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/recovery-manifest.json",
+      "bytes": 36269,
+      "sha256": "df9034bd0669d06785caabe1c79843b7b7b57cdf43643ebc8b1d006052168622",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/reference-audit.json",
+      "bytes": 3429,
+      "sha256": "086d536ff26c8981681e48c4629f78e031f9520531af7cd13b240d438ac42959",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/reference-supplementary-audit.json",
+      "bytes": 195,
+      "sha256": "57de988344d4d5d805395465987fd79e14c6b24a78e146e6d45cd74c560536dd",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/star-repair-verification.json",
+      "bytes": 3086,
+      "sha256": "b2b6e750144eb229bd279e7a1069491f17c05550e439c21c880323b1c143433a",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/volume-unit-hypothesis-audit.json",
+      "bytes": 1516,
+      "sha256": "b8fcfa8a1e149da801c6cf7362f4a69e5324860ab07e98f5914078d4f0007b93",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    },
+    {
+      "archive_member": "CODE_INDEX_RECOVERY_ONLY/a-share-data-lake/catalog/volume-unit-independent-cache-comparison.json",
+      "bytes": 527,
+      "sha256": "55ddb80615c2e0b318306966285a82447b51e0b959e5f97493c2211592519716",
+      "reason": "Historical generated index/audit output; omitted from source-only package."
+    }
+  ],
+  "already_excluded_by_original_archive": [
+    "intraday/scripts/probe.py",
+    "market/scripts/acquire_tencent_daily_serial_sharded_v2.py",
+    "market/scripts/review_focused_sina_prices.py",
+    "market/scripts/acquire_tencent_daily_pre_star_units_v3.py",
+    "market/scripts/acquire_tencent_daily_full_v1.py",
+    "reference/supplementary/scripts/probe2.py",
+    "reference/supplementary/scripts/probe.py",
+    "actions/scripts/probe_suspensions.py",
+    "actions/scripts/probe_batch_reports.py",
+    "actions/scripts/baostock_two_gap_check.py",
+    "actions/scripts/probe_actions.py"
+  ]
+}

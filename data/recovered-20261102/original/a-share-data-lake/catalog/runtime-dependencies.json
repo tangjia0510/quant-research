@@ -1,0 +1,16 @@
+{
+  "python": "Historical Python 3.11 scripts; exact host environment is not published.",
+  "selected_package_versions": {
+    "requests": "2.34.2",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.1",
+    "openpyxl": null,
+    "xlrd": null,
+    "beautifulsoup4": "4.15.0",
+    "lxml": null,
+    "duckdb": null,
+    "baostock": "0.9.4"
+  },
+  "scope": "Selected known collector/parquet/XLSX dependencies only; not full environment, lockfile or portability guarantee. Do not install/run automatically.",
+  "warning": "Selected historical dependency versions only, not an installable lockfile. Validate each archived entrypoint in an isolated environment. Machine paths and unrelated host-package inventory were removed."
+}

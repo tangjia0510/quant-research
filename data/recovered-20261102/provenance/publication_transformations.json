@@ -1,0 +1,190 @@
+{
+  "date": "2026-11-06",
+  "private_originals_modified": false,
+  "changes": [
+    {
+      "path": "original/a-share-data-lake/actions/scripts/fetch_factors.py",
+      "original_export_sha256": "6bdb73f1e843e54b9a0011a301345a98f0dbb1f42c19731046db7eb05f03e7b5",
+      "original_export_bytes": 6283,
+      "public_sha256": "3b0d3945a4e3717e23292d37f8f25d91fc2c33f65de344d88aaf7d83d5bddca9",
+      "public_bytes": 6345,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    },
+    {
+      "path": "original/a-share-data-lake/actions/scripts/fetch_factors_parallel.py",
+      "original_export_sha256": "484edd0876ace591c9b611d7b6ce1fa2462fcd337a155befa03f9cde29f4b9d3",
+      "original_export_bytes": 6382,
+      "public_sha256": "37c0853c86849edeacd9033492188dd86abba7d03165b6b46b2a71b779a63804",
+      "public_bytes": 6444,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    },
+    {
+      "path": "original/a-share-data-lake/catalog/HANDOFF.md",
+      "original_export_sha256": "c39d4999041260366151a735a36601df61eb67525e8213919e17a0ce10f41a16",
+      "original_export_bytes": 9078,
+      "public_sha256": "fee8ad6430a9d8e3a0f78ec1522c110750fcbf6aff18917819ae0680d6b568fc",
+      "public_bytes": 1390,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    },
+    {
+      "path": "original/a-share-data-lake/catalog/README.md",
+      "original_export_sha256": "fb9e689c71a9a670fb4d4329c2b33ed9a10c7e2a82eb352a88396b773bf31a14",
+      "original_export_bytes": 4801,
+      "public_sha256": "b3fb81c7730a7f352d9af6897ffba439bdb4d8de7be5b4a87e370521dfcbe206",
+      "public_bytes": 4761,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    },
+    {
+      "path": "original/a-share-data-lake/catalog/build_handoff_package.py",
+      "original_export_sha256": "5752e1720eef7dd342f8b4090043e5828230b2c75baee1278fa8fa6360e62813",
+      "original_export_bytes": 5940,
+      "public_sha256": "875622f1fff6f320e882df396707dd4c57e79026b19de356ddb276c3d9f46867",
+      "public_bytes": 6043,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    },
+    {
+      "path": "original/a-share-data-lake/catalog/build_recovery_manifest.py",
+      "original_export_sha256": "c292b63fd5faea20d67f5f67f85592ff75f87d53c272355e4291d924371a15de",
+      "original_export_bytes": 4935,
+      "public_sha256": "b6adfedc8690c7ed3d1f433fde43f5f9595ed5a305a6709ba24a760f472b7a96",
+      "public_bytes": 5052,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    },
+    {
+      "path": "original/a-share-data-lake/catalog/runtime-dependencies.json",
+      "original_export_sha256": "b9dc6f3c374da5bd1bcc6ee470be364b5a80755e2d578f4b70a2dc103dd7d615",
+      "original_export_bytes": 1063,
+      "public_sha256": "85195ecf673011f19f42734bc207dcf1241861c19bd618b3f41a4ecc42173f35",
+      "public_bytes": 717,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    },
+    {
+      "path": "original/a-share-data-lake/intraday/README.md",
+      "original_export_sha256": "4055ebaa7a19483cf94b4e4d3332a1ccda99f85c00ed6d87d047738ecd1e93f0",
+      "original_export_bytes": 4564,
+      "public_sha256": "0157f92efa6989fc20cd09be230a1330718b7b0ae356d741e9db5363c77c7862",
+      "public_bytes": 4484,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    },
+    {
+      "path": "original/a-share-data-lake/market/README.md",
+      "original_export_sha256": "7a3c150fc8a54a7e7d706a6c66a98fe24ed4b6f010e80533382e9540db2c9721",
+      "original_export_bytes": 12724,
+      "public_sha256": "5bacdc9d9b646f0f42f0ca4b55c9e5901250241f50e4d59faa45a344c1b80acf",
+      "public_bytes": 12684,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    },
+    {
+      "path": "original/a-share-data-lake/market/scripts/acquire_tencent_daily.py",
+      "original_export_sha256": "e84fe9bcf14e96fbeefdbb542c766e5581a3b6026d02fddc5003b7748f1c984e",
+      "original_export_bytes": 14157,
+      "public_sha256": "c603e89c2975e0ba51984344c5fa0ce9ef74067926e32ad30b38a26fb12a74d1",
+      "public_bytes": 14251,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    },
+    {
+      "path": "original/a-share-data-lake/market/scripts/audit_hf_bulk.py",
+      "original_export_sha256": "d4bc887246ee98bc71b2e3ebef1b8b4636d7bf63a166b06372d1348df35489a6",
+      "original_export_bytes": 5352,
+      "public_sha256": "9a1ec91e8e470811857bd938b2c82e9b483ef3b6022f0575f8324753cbdb94fc",
+      "public_bytes": 5446,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    },
+    {
+      "path": "original/a-share-data-lake/market/scripts/audit_hf_calendar.py",
+      "original_export_sha256": "e0fb47cf0521654d33c286c6ba55813adfdcc13428854e4bfc4dda9dd06b3c06",
+      "original_export_bytes": 2016,
+      "public_sha256": "5d6956bb17097489793f1afa6d7156659cef7f9b99838886f726cf4c0b11c08e",
+      "public_bytes": 2110,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    },
+    {
+      "path": "original/a-share-data-lake/market/scripts/build_price_coverage_union.py",
+      "original_export_sha256": "d16ca7988b227960e548893cfcce031a02b0d9169b8d1f0bac28ece4d18dd41b",
+      "original_export_bytes": 3577,
+      "public_sha256": "1d0a97708d0f5233cd03f1fa1d0de7ac2650ec72dc73c60471565fd20b535ac7",
+      "public_bytes": 3671,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    },
+    {
+      "path": "original/a-share-data-lake/market/scripts/sample_hf_feature_conflicts.py",
+      "original_export_sha256": "c57927a3589c0f24f9adef42dab52e10ce8454b643063529343ecf73908337c2",
+      "original_export_bytes": 1645,
+      "public_sha256": "d2ade6c19bd6bed73826e23af085c87aa9f73e0e5aecc9afebe4664062fc9594",
+      "public_bytes": 1739,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    },
+    {
+      "path": "original/a-share-data-lake/reference/scripts/build_master.py",
+      "original_export_sha256": "61318976df5597c33dc3d5359585df93980e1b7fce202f197e535b50b324a72e",
+      "original_export_bytes": 3218,
+      "public_sha256": "9fa8c1a1e010377eb81f19ca001317183ea36e7ec98c1450a2b7b184f46b20c7",
+      "public_bytes": 3312,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    },
+    {
+      "path": "original/a-share-data-lake/reference/scripts/finalize_catalog.py",
+      "original_export_sha256": "beb7770c070809c7e65432ce9fea642f1e56bcbdcb41034c6dacae72ce32ce79",
+      "original_export_bytes": 5092,
+      "public_sha256": "81a895436951d5285104dbf4457bebb86b885fea9af664013ec385707d42fafb",
+      "public_bytes": 5186,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    },
+    {
+      "path": "original/legacy-price-limits-20261031/acquire_limit_parquet.py",
+      "original_export_sha256": "6adf3516c2f735565fc22d7ecd56025bef67c7030bb848acdcb5700af27e2d70",
+      "original_export_bytes": 835,
+      "public_sha256": "4b7265cba6bc05fc33f2bc55b633dba5d4c93db41feb772df2447d068c9a0cdf",
+      "public_bytes": 970,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    },
+    {
+      "path": "original/legacy-price-limits-20261031/extract_limits.py",
+      "original_export_sha256": "f592c6a7c4702f6596ec419a41ba80a7049eb4c2481bfbe8ae2cdf47ec17ab42",
+      "original_export_bytes": 2289,
+      "public_sha256": "d946c6df1ca8537ebf13437287377b9d85e318616a6180ff3fc71c2e9d586f32",
+      "public_bytes": 2421,
+      "change": "Generalized machine/research-specific paths; removed unnecessary machine runtime details or rewrote handoff. Data algorithms preserved; legacy paths remain migration placeholders."
+    }
+  ],
+  "omitted_from_public_copy": [
+    {
+      "path": "original/a-share-data-lake/catalog/FINAL_SUMMARY.md",
+      "original_export_sha256": "c8ef4aa25434baedf7048a0c57d9b72dd67752a9a4b5596b884c51b3cc675e16",
+      "original_export_bytes": 3684,
+      "reason": "Unnecessary historical runtime/coverage summary or superseded publication validation; excluded from public copy."
+    },
+    {
+      "path": "original/a-share-data-lake/catalog/coverage.md",
+      "original_export_sha256": "1fbb589ab4bfd039f671186bf56201445cef9f6eb5e6932e6564b252fc20fb00",
+      "original_export_bytes": 11578,
+      "reason": "Unnecessary historical runtime/coverage summary or superseded publication validation; excluded from public copy."
+    },
+    {
+      "path": "original/a-share-data-lake/catalog/freshness.md",
+      "original_export_sha256": "bbf8cf537955d9818c697ebad55e12391b921f8c7f94b81faade25836317b56b",
+      "original_export_bytes": 66182,
+      "reason": "Unnecessary historical runtime/coverage summary or superseded publication validation; excluded from public copy."
+    },
+    {
+      "path": "validation/test-results.json",
+      "original_export_sha256": "398be8f89dcd16c3a0a3d731c2b7c17b9cb8806275d1a69d3cee79fcfce1429b",
+      "original_export_bytes": 980,
+      "reason": "Unnecessary historical runtime/coverage summary or superseded publication validation; excluded from public copy."
+    },
+    {
+      "path": "validation/security-check.json",
+      "original_export_sha256": "2f1c6d561c4a5ebfcc52833c2f6750542e605bac082eb49926ddbea24bf8c7cd",
+      "original_export_bytes": 750,
+      "reason": "Unnecessary historical runtime/coverage summary or superseded publication validation; excluded from public copy."
+    },
+    {
+      "path": "PUBLICATION_FILES.json",
+      "original_export_sha256": "c78f03269960c2615c8df231cf7aac9b08886d5af8fd4855d338f3c8e409bd6e",
+      "original_export_bytes": 29945,
+      "reason": "Unnecessary historical runtime/coverage summary or superseded publication validation; excluded from public copy."
+    }
+  ],
+  "runtime_root": "fin_data/",
+  "warning": "Generalized legacy paths are logical placeholders, not a claim that historical entrypoints now run unchanged."
+}

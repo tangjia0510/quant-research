@@ -1,0 +1,3 @@
+# Isolated from the main research project's Python 3.11 environment.
+# Tested here on CPython 3.12. DuckDB publishes Python 3.11/3.12 wheels.
+duckdb==1.4.3

@@ -35,3 +35,6 @@ project/local-paths.json
 **/__pycache__/
 **/.pytest_cache/
 *.zip
+
+# Private downloaded data and local databases; never commit.
+/fin_data/

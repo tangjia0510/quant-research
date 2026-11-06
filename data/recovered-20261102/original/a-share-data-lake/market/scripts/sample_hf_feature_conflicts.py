@@ -1,0 +1,8 @@
+# PUBLIC SANITIZED COPY (2026-11-06): machine paths generalized; see provenance/publication_transformations.json.
+import json,pathlib,pyarrow.dataset as ds
+R=pathlib.Path(__file__).resolve().parents[1]/'hf_features';selection=json.load(open(R.parents[2]/'fin_data/legacy-inputs/selection.json'));codes=[x[3:]+'.'+x[:2].upper() for x in selection['instruments']]
+d=ds.dataset(str(R/'raw'),format='parquet').to_table(filter=ds.field('code').isin(codes)).to_pandas();g=d.groupby(['code','date'],dropna=False);counts=g.size();dups=counts[counts>1].index;x=d.set_index(['code','date']).loc[dups].reset_index();n=x.groupby(['code','date'],dropna=False).nunique(dropna=False);conf={str(c):int((n[c]>1).sum()) for c in n};examples=[]
+for key,row in n[(n>1).any(axis=1)].head(10).iterrows():
+ part=x[(x.code==key[0])&(x.date==key[1])];fields=row[row>1].index.tolist();examples.append({'code':key[0],'date':key[1],'conflicting_fields':fields,'values':{f:[None if str(v)=='nan' else v for v in part[f].tolist()] for f in fields}})
+a={'scope':'Predeclared30code research sample only; not global conflict certification','requested_codes':codes,'found_codes':d.code.nunique(),'rows':len(d),'duplicate_keys':len(dups),'duplicate_rows':int((counts-1).clip(lower=0).sum()),'keys_with_any_field_conflict':int((n>1).any(axis=1).sum()),'conflicting_keys_by_field':conf,'examples':examples,'decision':'Keep entire feature snapshot quarantined; this bounded sample does not establish global duplicate consistency or field units/PIT semantics'}
+(R/'duplicate-sample-audit.json').write_text(json.dumps(a,ensure_ascii=False,indent=2,allow_nan=False)+'\n');print(json.dumps({k:v for k,v in a.items() if k not in ['examples','requested_codes']},ensure_ascii=False))

@@ -1,0 +1,9 @@
+{
+  "checked_on": "2026-11-06",
+  "files_checked": 165,
+  "python_files_ast_parsed": 136,
+  "findings": [],
+  "scope": "Static credential, machine-path, file-type and symlink scan; cannot prove absence of every possible secret.",
+  "private_original_source_hashes_unchanged": 140,
+  "public_sanitization": "18 historical source/doc files changed; 6 unneeded outputs omitted; provenance records dual hashes."
+}
