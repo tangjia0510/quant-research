@@ -9,7 +9,7 @@
 | 前复权 | `qfq` | 9,353,034 | 5,246 | 2018-01-02—2026-11-16 | 紧凑 DuckDB + XZ | 266.241 MiB |
 | 不复权 | `none` | 4,961,305 | 4,086 | 2018-01-02—2026-11-16 | Parquet + Zstd-22，重复核验证据独立字典 | 164.519 MiB |
 
-两类数据合并为 `mip-daily-20261116.tar.zst`，**451,292,748 字节（430.386 MiB）**。载荷大小之和不等于外层归档大小。归档内含 `restore.py`、固定依赖、`schema.sql`、文件 SHA-256 清单及来源/压缩比较记录。恢复会重新拼接字典，保留全部 17 字段、NULL、DOUBLE 位值及 `raw_json` 原文。恢复出的 DuckDB 物理布局不保证与原库相同。
+两类数据合并为 `mip-daily-20261116.tar.zst`，**451,292,748 字节（430.386 MiB）**。Release 按 32 MiB 拆成 14 个传输分片，下载后按编号拼回同一个归档；分片总大小等于原归档大小，未改变压缩内容。载荷大小之和不等于外层归档大小。归档内含 `restore.py`、固定依赖、`schema.sql`、文件 SHA-256 清单及来源/压缩比较记录。恢复会重新拼接字典，保留全部 17 字段、NULL、DOUBLE 位值及 `raw_json` 原文。恢复出的 DuckDB 物理布局不保证与原库相同。
 
 上述日期、代码数表示整体覆盖，不表示所有证券每天都有两种价格。备份沿用原有证券范围，包含不同证券类型；它不是完整全市场、历史成分股清单或历史可交易资格库。仅包含 `kline_daily_bars` 中 `period='daily' AND adjust IN ('qfq','none')` 的记录；不包含后复权、财务、ST/停牌历史、指数成分、行业、因子缓存及研究记录库。
 
@@ -28,8 +28,13 @@ mkdir -p "$HOME/quant-data/mip-20261116-v1"
 cd "$HOME/quant-data/mip-20261116-v1"
 gh release download data-mip-daily-20261116-v1 \
   --repo tangjia0510/quant-research \
-  --pattern 'mip-daily-20261116.tar.zst' \
+  --pattern 'mip-daily-20261116.tar.zst.part-*' \
+  --pattern 'mip-daily-20261116.parts.*' \
   --pattern 'mip-daily-20261116.tar.zst.sha256'
+shasum -a 256 -c mip-daily-20261116.parts.sha256 || exit 1
+# 只在新目录拼接；不要覆盖已经保留的归档。
+test ! -e mip-daily-20261116.tar.zst || exit 1
+cat mip-daily-20261116.tar.zst.part-[0-9][0-9] > mip-daily-20261116.tar.zst
 printf '%s  %s\n' \
   '2223a8ac2522c2911347c2c410ad97d756926cd001eda3ff25e3958b1ff03eb2' \
   'mip-daily-20261116.tar.zst' | shasum -a 256 -c - || exit 1

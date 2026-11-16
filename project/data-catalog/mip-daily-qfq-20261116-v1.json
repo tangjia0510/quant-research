@@ -23,8 +23,13 @@
   "distribution": {
     "repository": "tangjia0510/quant-research",
     "release_tag": "data-mip-daily-20261116-v1",
-    "asset": "mip-daily-20261116.tar.zst",
-    "checksum_asset": "mip-daily-20261116.tar.zst.sha256"
+    "checksum_asset": "mip-daily-20261116.tar.zst.sha256",
+    "reassembled_archive": "mip-daily-20261116.tar.zst",
+    "parts_pattern": "mip-daily-20261116.tar.zst.part-*",
+    "parts_count": 14,
+    "part_bytes": 33554432,
+    "parts_manifest": "mip-daily-20261116.parts.json",
+    "parts_checksums": "mip-daily-20261116.parts.sha256"
   },
   "usage_reference": "references/mip-daily-data.md",
   "limitations": [
