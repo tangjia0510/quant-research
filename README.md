@@ -8,6 +8,8 @@ Single-source quantitative research Skill and lightweight research records.
 - `project/literature/`: source links; third-party PDFs are omitted.
 - `project/work/`: regenerated output, excluded from Git and migration.
 
+The [MIP daily-data reference](references/mip-daily-data.md) documents the frozen 2026-11-16 `qfq` and `none` snapshot. The two datasets share one 430.39 MiB lossless archive distributed as a GitHub Release attachment; Git tracks only the usage reference and versioned data-catalog identities. Download the attachments separately with the commands in the reference; `git clone` and GitHub's source ZIP do not include the market-data bytes.
+
 ```sh
 python scripts/project.py --project project validate
 python scripts/project.py --project project export --output /tmp/quant-research.zip

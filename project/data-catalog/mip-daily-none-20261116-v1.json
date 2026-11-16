@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "mip-daily-none-20261116-v1",
+  "version": "2026-11-16-v1",
+  "kind": "file",
+  "sha256": "2223a8ac2522c2911347c2c410ad97d756926cd001eda3ff25e3958b1ff03eb2",
+  "bytes": 451292748,
+  "locator": {
+    "root": "mip_backup",
+    "path": "mip-daily-20261116.tar.zst"
+  },
+  "description": "MIP daily/none component of the shared lossless daily-price backup; source data, not canonical Qlib bars.",
+  "component": {
+    "table": "kline_daily_bars",
+    "period": "daily",
+    "adjust": "none",
+    "rows": 4961305,
+    "symbols": 4086,
+    "first_date": "2018-01-02",
+    "last_date": "2026-11-16",
+    "payload_format": "factored_parquet_zstd22"
+  },
+  "distribution": {
+    "repository": "tangjia0510/quant-research",
+    "release_tag": "data-mip-daily-20261116-v1",
+    "asset": "mip-daily-20261116.tar.zst",
+    "checksum_asset": "mip-daily-20261116.tar.zst.sha256"
+  },
+  "usage_reference": "references/mip-daily-data.md",
+  "limitations": [
+    "Hash identifies the complete archive shared by qfq and none; resolve does not extract or certify the component.",
+    "Coverage dates and symbol counts are aggregate, not a complete daily universe or matched qfq/none coverage.",
+    "Latest-vintage vendor prices, not certified point-in-time market information.",
+    "Volume units, amount scale, security type and adjustment consistency require validation before canonical conversion.",
+    "No historical membership, ST/suspension history, financials, factor cache or corporate-action cash ledger included.",
+    "Supplier data rights are separate from repository code licensing."
+  ]
+}

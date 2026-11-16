@@ -4,11 +4,11 @@
   "files": [
     {
       "path": "README.md",
-      "sha256": "30ce8de926ea07d4a7c29aea49c433c0bc85d19e51fbf7f37f5e5b79cbf03eac"
+      "sha256": "5ee6d9636216f67e4620da5fc56c8c942f7a598e7a3ec22aa973c21a6e2df12a"
     },
     {
       "path": "SKILL.md",
-      "sha256": "e96a77f4d40ad6cfff96982f46186c43746431c2f556f0e159559bcd0c3d3fab"
+      "sha256": "67af550b18c9cb11f132ec92e6c9c934e3eb262bbb3ec1b5dd9c61315204b561"
     },
     {
       "path": "agents/openai.yaml",
@@ -392,7 +392,7 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "94a14b4299e3945a1580887dd7624300af949cbf87e15b2d32e74bba6e9012e1"
+      "sha256": "92d194683990b0580779459cfaba2b8272990405c8d87f112c9283ef0da755d8"
     },
     {
       "path": "references/batch-research.md",
@@ -400,7 +400,7 @@
     },
     {
       "path": "references/contracts.md",
-      "sha256": "e85817ead596be9a25a75bc45b8c1926b9e3e08e126b7071045f452cd5f9f7a3"
+      "sha256": "47b6b7e11fd42f0abd2ed1966df77fb62f35e6db3100abbcbf4462bc829dbe38"
     },
     {
       "path": "references/data-preparation.md",
@@ -416,11 +416,15 @@
     },
     {
       "path": "references/factor-optimization.md",
-      "sha256": "a5fff54d645f4252ceb9594d997c8f308d7abba9c80e7c88b2ac6337b9912684"
+      "sha256": "a9a52657ceca97af9978ac085fb6892ecaca087d24e8d6228dca02bb72eafc09"
     },
     {
       "path": "references/factor-validation.md",
-      "sha256": "abedcb770cf53ac43cd2c4a90a64f15d53405c3f055b7e96d1e781de3e269d4c"
+      "sha256": "665f423e4410ad7e9a04d3e41e816f816aee63febd7bd9550592eb9dc45e508b"
+    },
+    {
+      "path": "references/mip-daily-data.md",
+      "sha256": "033af689a683136b044edcf48487ccdd80137509f1fc396acb03face2b5ffb36"
     },
     {
       "path": "references/portability.md",
@@ -440,7 +444,7 @@
     },
     {
       "path": "references/research-modes.md",
-      "sha256": "227357006e97c2473c8605b7be56c50efaa226028006aa3afbca62e1ecfda7cc"
+      "sha256": "3434677a51f9bd1d833a25d6d96702df8734e0fd9b66ff9b6be1472773abb38b"
     },
     {
       "path": "references/storage.md",
@@ -472,7 +476,7 @@
     },
     {
       "path": "scripts/quant.py",
-      "sha256": "6dbbdd0f385f141f843bf1d685ff564572278989f637f7e228fc9d8078ce14c5"
+      "sha256": "31ad0d8562459c88754c8363ca6971a2a01961a4826e8d274c6563c7743f7d7f"
     },
     {
       "path": "scripts/quantlib/__init__.py",
@@ -496,7 +500,7 @@
     },
     {
       "path": "scripts/quantlib/engine.py",
-      "sha256": "a5eb51e6c40432ca7b091e54df153feacd63c7874d6cc851441c2a42bcb7c3e2"
+      "sha256": "baf6f2955dd0f6673cf9385072cdb5ca2095d107334a67fb28dbc872243fb7d6"
     },
     {
       "path": "scripts/quantlib/factor_registry.py",
@@ -536,7 +540,7 @@
     },
     {
       "path": "scripts/quantlib/statistics.py",
-      "sha256": "c5ae1d845f125c3ae180bb17b8435142826cce5e4e7c14203038749d1d68f6eb"
+      "sha256": "08545007568f120a97c99f46f426e1f18f70c3e14f136251d46dfd0ad3ee3046"
     },
     {
       "path": "scripts/quantlib/workspace.py",
@@ -580,7 +584,7 @@
     },
     {
       "path": "tests/test_engine.py",
-      "sha256": "f48423a9d97dca1e26165315fb3057bd6393b921d46cd2a063ea9e90aefd2e54"
+      "sha256": "afb07f878deeb8aef5719fe583ef2a58ff4a5a9637638537af64547bb50805dd"
     },
     {
       "path": "tests/test_factor_adapters.py",
@@ -627,8 +631,16 @@
       "sha256": "175f0eb8d51001fc11a63dbbfa004c3d713a65f1df79b5d6fc27caf5f0656324"
     },
     {
+      "path": "tests/test_signal_report.py",
+      "sha256": "0d566372e6fca766e01cab193a1059ff4358b6bc9875db06cc255c78101ec49a"
+    },
+    {
       "path": "tests/test_sources.py",
       "sha256": "28ddd2e108ae29de935e76e42435859c39a6bc859369d45b492238c7a37f54ff"
+    },
+    {
+      "path": "tests/test_statistics.py",
+      "sha256": "fc348e499f7956561e714310c434e8bea0ad509f5e1adce69bb2d75b0f4ed5ea"
     },
     {
       "path": "tests/test_workflow.py",
@@ -640,7 +652,7 @@
     },
     {
       "path": "uv.lock",
-      "sha256": "387866300297eecb5a7fce2632ee02c9db09a26b6becc407aebb54d21200f7cb"
+      "sha256": "0d4588ec00c41c3a1061a13d5f2ce0c7da3c2a2104923e4329e7a0f518734437"
     }
   ]
 }
